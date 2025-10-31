@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<g id="_16-Time">
+	<path class="st0" d="M256,0C114.6,0,0,114.6,0,256s114.6,256,256,256s256-114.6,256-256S397.4,0,256,0z M256,490.7
+		C126.4,490.7,21.3,385.6,21.3,256S126.4,21.3,256,21.3S490.7,126.4,490.7,256S385.6,490.7,256,490.7z"/>
+	<path class="st0" d="M256,64C150,64,64,150,64,256s86,192,192,192s192-86,192-192S362,64,256,64z M266.7,426.1v-52.8h-21.3v52.8
+		c-85.7-5.5-154-73.8-159.5-159.5h63.5v-21.3H85.9c5.5-85.7,73.8-154,159.5-159.5v52.8h21.3V85.9c85.7,5.5,154,73.8,159.5,159.5
+		h-63.5v21.3h63.5C420.7,352.4,352.4,420.7,266.7,426.1z"/>
+	<path class="st0" d="M266.7,181.3h-21.3V256c0,2.8,1.1,5.6,3.1,7.6l64,64l15-15l-60.8-60.9V181.3z"/>
+</g>
+</svg>

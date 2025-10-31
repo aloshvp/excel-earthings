@@ -1,0 +1,20 @@
+/* styles/font.css */
+
+@font-face {
+    font-family: 'NeueHaasDisplayMedium';
+    src: url('/fonts/NeueHaasDisplayMediu.ttf') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: 'MyFont';
+    src: url('/fonts/MyFont-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+} */
+
+/* Apply the font globally (optional) */
+body {
+    font-family: 'MyFont', sans-serif;
+}
