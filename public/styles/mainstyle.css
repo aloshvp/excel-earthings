@@ -1,0 +1,32 @@
+/*Common*/
+.homeCmnHead{}
+
+
+/*Banner*/
+.bannerWrap { height: 100vh; background: linear-gradient(rgba(7, 22, 55, 0.85), rgba(7, 22, 55, 0.85)), url('/images/home/banner-home-bg.jpg') no-repeat center center; background-size: cover; color: #fff; position: relative;}
+.bannerWrap .container{height: 100%;}
+.bannerContent{display: flex;justify-content: space-between;align-items: center;height: 100%;}
+.bannerContentLft > h1{font-size: 40px;line-height: 1.2em;margin: 0;position: relative;}
+.bannerContentLft > h1:before{content:"";position: absolute;bottom: 0;}
+.bannerContentLft > h1 > em,.bannerContentLft > p > em{display: block;}
+
+
+.bannerGrid{display:grid;grid-template-columns: repeat(2, 1fr);gap: 20px;}
+.bannerGridItem{border-radius:10px;background:#22345A;padding: 25px;min-width: 450px;}
+.bannerGridItem > em{display: block;color: #808EAB;font-style: normal;font-size: 30px;line-height: 1em;padding-bottom: 15px;border-bottom: 1px solid #808EAB;font-family: var(--light);}
+.bannerGridItem > h2{padding: 25px 0 10px;font-family: var(--medium);line-height: 1.2em;}
+.bannerGridItem > h2 > em {display: block;}
+.bannerGridItem > p{font-size: 18px;max-width: 350px;}
+
+/*area of applications*/
+.areaOfApplicationsWrap { padding: 80px 0; }  
+.areaOfApplicationsSlider .slideSec { display: flex; flex-direction: column; gap: 30px; }  
+.areaOfApplicationsSlider .slideImg > img { border-radius: 20px; }  
+.areaOfApplicationsSlider .slideTitle { display: flex; align-items: center; gap: 30px; }  
+.slideContent p { margin: 0; }  
+.slideContent a { text-decoration: none; color: #0070f3; }  
+.skeleton-wrapper { display: flex; gap: 30px; }  
+.skeleton-slide { flex: 1; display: flex; flex-direction: column; gap: 15px; }  
+.skeleton-img { height: 200px; background: #ccc; border-radius: 20px; }  
+.skeleton-title { height: 30px; width: 50%; background: #ddd; border-radius: 6px; }  
+.skeleton-text { height: 20px; width: 100%; background: #eee; border-radius: 6px; }  

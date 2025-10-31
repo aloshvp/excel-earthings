@@ -7,8 +7,6 @@ const Footer = () => {
         <footer className='footerWrap'>
             <div className="container">
                 <div className="footerBody">
-
-
                     <div className="footerLogoSec">
                         <div className="footerLogoImg">
                             <Image src='/images/logo-excel-earthings.svg' width={180} height={30} alt="" title="" />
@@ -74,7 +72,7 @@ const Footer = () => {
                             <Link href=""></Link>
                         </div>
                         <div className="footerLinks">
-                            <b></b>
+                            <b>Quick Links</b>
                             <div className='footerLinkNav'>
                                 <ul>
                                     <li><Link href="">Home</Link></li>

@@ -1,21 +1,23 @@
 
 :root {
-    --medium: 'NeueHaasDisplayMedium', sans-serif;
+    --medium: 'NeueHaasDisplayMedium';
+    --light: 'NeueHaasDisplayLight';
+    --regular: :'NeueHaasDisplayRegular';
 }
-.container {width:100%;margin-right:auto;margin-left:auto;padding-right:1rem;padding-left:1rem;} 
 
+.container {width:100%;margin-right:auto;margin-left:auto;padding-right:1rem;padding-left:1rem;} 
 
 *{margin:0;padding:0;box-sizing:border-box}
 ul,ol{list-style:none}
 a{text-decoration:none;color:inherit}
-body{font-family:Arial,Helvetica,sans-serif;line-height:1.5;color:#000;background-color:#fff}
+body{font-family:var(--regular);color:#000;background-color:#fff}
 img{max-width:100%;height:auto;display:block}
 button{background:none;border:none;cursor:pointer;font:inherit}
 table{border-collapse:collapse;border-spacing:0}
 h1,h2,h3,h4,h5,h6{font-weight:normal;margin:0}
-p{margin:0 0 0 0}
+p{margin:0}
 
-.footerWrap {padding: 60px 0;background: linear-gradient(rgba(20, 33, 61, 0.93), rgba(20, 33, 61, 0.93)),url('/images/footer-bg.jpg') no-repeat center center;background-size: cover;border-radius:100px 100px 0 0;color: #fff;position: relative;}
+.footerWrap {padding: 120px 0;background: linear-gradient(rgba(20, 33, 61, 0.93), rgba(20, 33, 61, 0.93)),url('/images/footer-bg.jpg') no-repeat center center;background-size: cover;border-radius:100px 100px 0 0;color: #fff;position: relative;}
 .footerLogoSec{display: flex;justify-content: space-between;padding: 0 0 60px;}
 .footerLogoSec { display: flex; align-items: flex-start; gap: 40px;} 
 .footerLogoImg { display: flex; align-items: center; gap: 20px; } 
@@ -46,9 +48,11 @@ p{margin:0 0 0 0}
 .footerBottomSecLft > p{margin: 0;font-size: 14px;}
 .footerBottomSecRght > em{display: block;color: #878787;font-size: 12px;line-height: 1em;font-style: normal;}
 
+.footerBody b{display: block;font-size: 16px;line-height: 1em;margin: 0 0 12px;font-family: var(--medium);}
 
-@media (min-width:576px){.container{max-width:540px;}} 
-@media (min-width:768px){.container{max-width:720px;}} 
-@media (min-width:992px){.container{max-width:960px;}} 
-@media (min-width:1200px){.container{max-width:1140px;}}
-@media (min-width:1400px){.container{max-width:1320px;}}
+
+@media (min-width:576px){} 
+@media (min-width:768px){} 
+@media (min-width:992px){.container{padding-right: 50px; padding-left: 50px;}} 
+@media (min-width:1200px){}
+@media (min-width:1400px){.container{padding-right: 100px; padding-left: 100px;}}
