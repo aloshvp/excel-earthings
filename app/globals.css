@@ -66,11 +66,13 @@ p>em {display:block;}
 .footerAboutCont>a {}
 .footerSocialMediaLinks {display:flex;gap:10px;}
 .footerLinkNav {display:flex;gap:60px;}
-.footerLinkNav>ul>li>a {font-size:14px;line-height:1em;}
+.footerLinkNav>ul>li>a {display: block;font-size:18px;line-height:1.4em;margin:0 0 8px;}
 .footerBottomSec {padding:30px 0 0;display:flex;justify-content:space-between;}
 .footerBottomSecLft>p {margin:0;font-size:14px;}
 .footerBottomSecRght>em {display:block;color:#878787;font-size:12px;line-height:1em;font-style:normal;}
-.footerBody b {display:block;font-size:16px;line-height:1em;margin:0 0 12px;font-family:var(--medium);}
+.footerBody b {display:block;font-size:20px;line-height:1em;margin:0 0 12px;font-family:var(--bold);}
+.footerBody p {font-size:18px;line-height:1.4em;margin:0 0 24px;}
+
 
 
 

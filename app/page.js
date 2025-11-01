@@ -1,23 +1,45 @@
-import Footer from "./components/common/Footer";
+import React, { Suspense } from "react";
+import dynamic from "next/dynamic";
 import Header from "./components/common/Header";
-import AreaOfApplications from "./components/home/AreaOfApplications";
 import Banner from "./components/home/Banner";
-import OurAssociates from "./components/home/OurAssociates";
-import OurCertifications from "./components/home/OurCertifications";
-import Tesimonials from "./components/home/Tesimonials";
-import ViewOurProfile from "./components/home/ViewOurProfile";
+
+// Dynamic imports for below-the-fold components
+const AreaOfApplications = dynamic(() => import("./components/home/AreaOfApplications"), { suspense: true });
+const OurAssociates = dynamic(() => import("./components/home/OurAssociates"), { suspense: true });
+const OurCertifications = dynamic(() => import("./components/home/OurCertifications"), { suspense: true });
+const Tesimonials = dynamic(() => import("./components/home/Tesimonials"), { suspense: true });
+const ViewOurProfile = dynamic(() => import("./components/home/ViewOurProfile"), { suspense: true });
+const Footer = dynamic(() => import("./components/common/Footer"), { suspense: true });
 
 export default function Home() {
   return (
     <>
       <Header />
       <Banner />
-      <AreaOfApplications />
-      <OurAssociates />
-      <OurCertifications />
-      <Tesimonials />
-      <ViewOurProfile />
-      <Footer />
+
+      <Suspense>
+        <AreaOfApplications />
+      </Suspense>
+
+      <Suspense>
+        <OurAssociates />
+      </Suspense>
+
+      <Suspense>
+        <OurCertifications />
+      </Suspense>
+
+      <Suspense>
+        <Tesimonials />
+      </Suspense>
+
+      <Suspense>
+        <ViewOurProfile />
+      </Suspense>
+
+      <Suspense>
+        <Footer />
+      </Suspense>
     </>
   );
 }
