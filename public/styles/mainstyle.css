@@ -9,8 +9,6 @@
 .bannerContentLft > h1{font-size: 40px;line-height: 1.2em;margin: 0;position: relative;}
 .bannerContentLft > h1:before{content:"";position: absolute;bottom: 0;}
 .bannerContentLft > h1 > em,.bannerContentLft > p > em{display: block;}
-
-
 .bannerGrid{display:grid;grid-template-columns: repeat(2, 1fr);gap: 20px;}
 .bannerGridItem{border-radius:10px;background:#22345A;padding: 25px;min-width: 450px;}
 .bannerGridItem > em{display: block;color: #808EAB;font-style: normal;font-size: 30px;line-height: 1em;padding-bottom: 15px;border-bottom: 1px solid #808EAB;font-family: var(--light);}
@@ -30,3 +28,13 @@
 .skeleton-img { height: 200px; background: #ccc; border-radius: 20px; }  
 .skeleton-title { height: 30px; width: 50%; background: #ddd; border-radius: 6px; }  
 .skeleton-text { height: 20px; width: 100%; background: #eee; border-radius: 6px; }  
+
+
+/*our associate*/
+.ourAssociatesWrap{padding: 120px 0 200px; background: linear-gradient(rgba(255, 255, 255, 0.9)), url('/images/home/bg-approvals-and-associates.jpg') no-repeat center center; background-size: cover; color: #fff; position: relative;border-radius:100px 100px 0 0;}
+.ourAssociatesSlider .associateSlide{position:relative;display: flex;justify-content: center;align-items: center;flex-direction: column;gap: 15px;}
+.associateSlide  .associateImg > img{border-radius: 20px;}
+.associateSlide .associateDesc{font-size: 16px;line-height: 1.4em;color: #000;font-family: var(--medium);text-align: center;}
+
+/*our certification*/
+.ourCertificationWrap{padding: 120px 0 200px; background: #fff; position: relative;border-radius:100px 100px 0 0;margin-top: -80px;}

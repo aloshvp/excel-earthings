@@ -6,12 +6,7 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import Link from 'next/link';
 import Image from 'next/image';
-
-const slidesData = [
-    { img: '/images/home/building-installations.jpg', icon: '/images/home/icon-building-installations.svg', title: 'Industrial Installations', content: "Lorem Ipsum text", link: '' },
-    { img: '/images/home/building-installations.jpg', icon: '/images/home/icon-building-installations.svg', title: 'Industrial Installations', content: "Lorem Ipsum text", link: '' },
-    { img: '/images/home/building-installations.jpg', icon: '/images/home/icon-building-installations.svg', title: 'Industrial Installations', content: "Lorem Ipsum text", link: '' },
-];
+import { slidesData } from '@/utils/homeData';
 
 const AreaOfApplications = () => {
     const [allLoaded, setAllLoaded] = useState(false);
@@ -31,7 +26,7 @@ const AreaOfApplications = () => {
                 <div className="areaOfApplicationsSlider">
                     {!allLoaded && (
                         <div className="skeleton-wrapper">
-                            {slidesData.map((_, i) => (
+                            {slidesData?.map((_, i) => (
                                 <div className="skeleton-slide" key={i}>
                                     <div className="skeleton-img"></div>
                                     <div className="skeleton-title"></div>
@@ -51,7 +46,7 @@ const AreaOfApplications = () => {
                         loop
                         breakpoints={{ 320: { slidesPerView: 1 }, 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }}
                     >
-                        {slidesData.map((slide, idx) => (
+                        {slidesData?.map((slide, idx) => (
                             <SwiperSlide key={idx}>
                                 <div className="slideSec">
                                     <div className="slideImg">
