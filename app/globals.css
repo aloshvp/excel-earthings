@@ -43,6 +43,10 @@ h1,h2,h3,h4,h5,h6 {font-weight:normal;margin:0;}
 p {margin:0;}
 p>em {display:block;}
 
+/*header*/
+.headerWrap{position: absolute;display: flex;justify-content: space-between;padding: 20px 30px;top: 0;left: 0;z-index: 1;height: 100px;}
+.headerNavSec>ul{display: flex;gap: 25px;align-items: center;height: 100%;} 
+.headerNavSec>ul>li{color: #fff;}
 
 /*Footer*/
 .footerWrap {padding:140px 0;background:linear-gradient(rgba(20,33,61,0.93),rgba(20,33,61,0.93)),url('/images/footer-bg.jpg') no-repeat center center;background-size:cover;border-radius:100px 100px 0 0;color:#fff;position:relative;margin-top: -100px;z-index: 1;}
