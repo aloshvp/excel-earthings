@@ -7,11 +7,12 @@ const Footer = () => {
         <footer className='footerWrap'>
             <div className="container">
                 <div className="footerBody">
+
                     <div className="footerLogoSec">
                         <div className="footerLogoImg">
-                            <Image src='/images/logo-excel-earthings.svg' width={180} height={30} alt="" title="" />
+                            <Image src='/images/logo-excel-earthings.svg' width={340} height={100} alt="Excel Earthings" title="Excel Earthings" />
                             <div className="dividerVertical"></div> {/* Divider between images */}
-                            <Image src='/images/logo-excel-safepower.svg' width={180} height={30} alt="" title="" />
+                            <Image src='/images/logo-excel-safepower.svg' width={238} height={70} alt="Excel Safepower" title="Excel Safepower" />
                         </div>
 
                         <div className="footerContact">
@@ -19,9 +20,7 @@ const Footer = () => {
                                 <b>Customer Care</b>
                                 <span><Link href={"tel:90487 44551"}>+91 90487 44551</Link></span>
                             </div>
-
                             <div className="dividerVertical"></div> {/* Divider between contact items */}
-
                             <div>
                                 <b>Send Your Mail at</b>
                                 <span><Link href={"mailto:mail@excelearthings.com"}>mail@excelearthings.com</Link></span>
@@ -69,27 +68,27 @@ const Footer = () => {
                                 ensure Electrical Safety and Power Quality Improvements in the
                                 <em></em>
                                 Electrical Network. </p>
-                            <Link href=""></Link>
+                            <Link href="" scroll={false}>Learn More</Link>
                         </div>
                         <div className="footerLinks">
                             <b>Quick Links</b>
                             <div className='footerLinkNav'>
                                 <ul>
-                                    <li><Link href="">Home</Link></li>
-                                    <li><Link href="">About Us</Link></li>
-                                    <li><Link href="">Products</Link></li>
-                                    <li><Link href="">Certifications & Quality Assurance</Link></li>
-                                    <li><Link href="">Approvals & Associates</Link></li>
-                                    <li><Link href="">Applications</Link></li>
-                                    <li><Link href="">Dealership</Link></li>
+                                    <li><Link href="" scroll={false}>Home</Link></li>
+                                    <li><Link href="" scroll={false}>About Us</Link></li>
+                                    <li><Link href="" scroll={false}>Products</Link></li>
+                                    <li><Link href="" scroll={false}>Certifications & Quality Assurance</Link></li>
+                                    <li><Link href="" scroll={false}>Approvals & Associates</Link></li>
+                                    <li><Link href="" scroll={false}>Applications</Link></li>
+                                    <li><Link href="" scroll={false}>Dealership</Link></li>
                                 </ul>
                                 <ul>
-                                    <li><Link href="">E-Learning</Link></li>
-                                    <li><Link href="">Transformer Earthing Design</Link></li>
-                                    <li><Link href="">Faq</Link></li>
-                                    <li><Link href="">Careers</Link></li>
-                                    <li><Link href="">Insights & Updates</Link></li>
-                                    <li><Link href="">Contact Us</Link></li>
+                                    <li><Link href="" scroll={false}>E-Learning</Link></li>
+                                    <li><Link href="" scroll={false}>Transformer Earthing Design</Link></li>
+                                    <li><Link href="" scroll={false}>Faq</Link></li>
+                                    <li><Link href="" scroll={false}>Careers</Link></li>
+                                    <li><Link href="" scroll={false}>Insights & Updates</Link></li>
+                                    <li><Link href="" scroll={false}>Contact Us</Link></li>
                                 </ul>
                             </div>
                         </div>
