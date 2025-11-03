@@ -1,5 +1,4 @@
 :root {
-
         /* Extra Extra Thin */
         --xxthin: 'neue_haas_grotesk_displ15xxTh', sans-serif;
 
@@ -46,7 +45,7 @@ p>em {display:block;}
 
 
 /*Footer*/
-.footerWrap {padding:140px 0;background:linear-gradient(rgba(20,33,61,0.93),rgba(20,33,61,0.93)),url('/images/footer-bg.jpg') no-repeat center center;background-size:cover;border-radius:100px 100px 0 0;color:#fff;position:relative;}
+.footerWrap {padding:140px 0;background:linear-gradient(rgba(20,33,61,0.93),rgba(20,33,61,0.93)),url('/images/footer-bg.jpg') no-repeat center center;background-size:cover;border-radius:100px 100px 0 0;color:#fff;position:relative;margin-top: -100px;z-index: 1;}
 .footerLogoSec {display:flex;justify-content:space-between;padding:0 0 60px;}
 .footerLogoSec {display:flex;align-items:flex-start;gap:40px;}
 .footerLogoImg {display:flex;align-items:center;gap:30px;}
@@ -77,9 +76,6 @@ p>em {display:block;}
 .footerBottomSecRght>em {display:block;color:#878787;font-size:16px;line-height:1em;font-style:normal;}
 .footerBody b {display:block;font-size:20px;line-height:1em;margin:0 0 16px;font-family:var(--bold);}
 .footerBody p {font-size:18px;line-height:1.5em;margin:0 0 24px;}
-
-
-
 
 @media (min-width:576px) {}
 @media (min-width:768px) {}

@@ -138,7 +138,7 @@ const Footer = () => {
 
                     <div className="footerBottomSec">
                         <div className="footerBottomSecLft">
-                            <p>© 2025  M/S.Excel Earthings. All Rights Reserved.</p>
+                            <p>© {new Date().getFullYear()} M/S.Excel Earthings. All Rights Reserved.</p>
                         </div>
                         <div className="footerBottomSecRght">
                             <em>Developed by Marin Infotech</em>

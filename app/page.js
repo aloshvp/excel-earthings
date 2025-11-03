@@ -10,6 +10,8 @@ const OurCertifications = dynamic(() => import("./components/home/OurCertificati
 const Tesimonials = dynamic(() => import("./components/home/Tesimonials"), { suspense: true });
 const OurProducts = dynamic(() => import("./components/home/OurProducts"), { suspense: true });
 const ViewOurProfile = dynamic(() => import("./components/home/ViewOurProfile"), { suspense: true });
+const InsightsUpdates = dynamic(() => import("./components/home/InsightsUpdates"), { suspense: true });
+const Events = dynamic(() => import("./components/home/Events"), { suspense: true });
 const Footer = dynamic(() => import("./components/common/Footer"), { suspense: true });
 
 export default function Home() {
@@ -40,6 +42,14 @@ export default function Home() {
 
       <Suspense>
         <ViewOurProfile />
+      </Suspense>
+
+      <Suspense>
+        <InsightsUpdates />
+      </Suspense>
+
+      <Suspense>
+        <Events />
       </Suspense>
 
       <Suspense>

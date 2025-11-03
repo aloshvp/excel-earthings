@@ -21,7 +21,7 @@ const OurProducts = () => {
                         <h2 className="homeCmnHead">Our Products</h2>
                     </div>
                     <div className="ourProductsHeadRght">
-                        <Link href="/products" className="exploreMoreBtn">
+                        <Link href="" className="exploreMoreBtn" scroll={false}>
                             View All
                         </Link>
                     </div>
@@ -30,9 +30,9 @@ const OurProducts = () => {
 
             <div className="ourProductsBody">
                 {/* Custom navigation buttons */}
-                <div className="SliderCustomNav">
-                    <div ref={prevRef} className="SlierNavBtn SliderPrevBtn"></div>
-                    <div ref={nextRef} className="SlierNavBtn SliderNextBtn"></div>
+                <div className="ourProductsSliderNav">
+                    <div ref={prevRef} className="ourProductsSlierNavBtn ourProductsSliderPrevBtn"></div>
+                    <div ref={nextRef} className="ourProductsSlierNavBtn ourProductsSliderNextBtn"></div>
                 </div>
 
                 <Swiper

@@ -22,9 +22,9 @@ const Testimonials = () => {
                 </div>
                 <div className="testimonialsBody">
 
-                    <div className="SliderCustomNav">
-                        <div ref={prevRef} className="SlierNavBtn SliderPrevBtn"></div>
-                        <div ref={nextRef} className="SlierNavBtn SliderNextBtn"></div>
+                    <div className="testimonialsSliderNav">
+                        <div ref={prevRef} className="testimonialsSlierNavBtn testimonialsSliderPrevBtn"></div>
+                        <div ref={nextRef} className="testimonialsSlierNavBtn testimonialsSliderNextBtn"></div>
                     </div>
 
                     <Swiper
