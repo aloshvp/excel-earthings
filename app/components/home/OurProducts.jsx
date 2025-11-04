@@ -40,7 +40,7 @@ const OurProducts = () => {
                     spaceBetween={30}
                     slidesPerView={3}
                     loop
-                    allowTouchMove={false} 
+                    allowTouchMove={false}
                     onBeforeInit={(swiper) => {
                         swiper.params.navigation.prevEl = prevRef.current;
                         swiper.params.navigation.nextEl = nextRef.current;
@@ -64,7 +64,7 @@ const OurProducts = () => {
                                 <div className="productContent">
                                     <span className="productNumber">{product.number}</span>
                                     <h3 className="productName">{product.name}</h3>
-                                    <Link href={product.link}>Explore More</Link>
+                                    <Link href="" scroll={false}>Explore More <span className="arrow"></span></Link>
                                 </div>
                             </div>
                         </SwiperSlide>

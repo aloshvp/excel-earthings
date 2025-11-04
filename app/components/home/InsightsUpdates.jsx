@@ -13,7 +13,7 @@ const InsightsUpdates = () => {
                         <h2 className="homeCmnHead">Insights & Updates</h2>
                     </div>
                     <div className="insightsUpdateHeadRght">
-                        <Link href="" className="exploreMoreBtn">Explore More</Link>
+                        <Link href="" className='exploreMoreBtn' scroll={false}>Explore More <span className="arrow"></span></Link>
                     </div>
                 </div>
 
@@ -31,7 +31,7 @@ const InsightsUpdates = () => {
                                 <span>{item.date}</span>
                                 <h4>{item.title}</h4>
                                 <p>{item.description}</p>
-                                <Link href={item.link}>Learn More</Link>
+                                <Link href={item.link} scroll={false}>Learn More</Link>
                             </div>
                         ))}
                     </div>

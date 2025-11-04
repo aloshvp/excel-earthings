@@ -26,8 +26,8 @@ const OurAssociates = () => {
                             Organizations and Private Companies, with its inherent quality and standards.
                         </p>
                     </div>
-                    <div className="ourAssociatesHeadBtn">
-                        <Link href="" className='exploreMoreBtn'>Explore More</Link>
+                    <div className="ourAssociatesHeadBtn">                        
+                        <Link href="" className='exploreMoreBtn' scroll={false}>Explore More <span className="arrow"></span></Link>
                     </div>
                 </div>
                 <div className="ourAssociatesBody">

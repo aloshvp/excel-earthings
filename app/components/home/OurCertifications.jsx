@@ -19,17 +19,17 @@ const OurCertifications = () => {
 
                 <div className="ourCertificationHead">
                     <div className="ourCertificationHeadTitle">
-                        <h4 className='homeCmnSubHead'>APPROVALS & ASSOCIATES</h4>
-                        <h2 className='homeCmnHead'>Our Approvals & Associates</h2>
+                        <h4 className='homeCmnSubHead'>CERTIFICATIONS</h4>
+                        <h2 className='homeCmnHead'>Our Certifications</h2>
                     </div>
                     <div className="ourCertificationHeadCont">
                         <p>
-                            Our Products are widely accepted and approved by Leading PSUs, State Government <em></em>
-                            Organizations and Private Companies, with its inherent quality and standards.
+                            Our Products are Tested and Certified in accordance with International and National<em></em>
+                            Standards from well established NABL Accredited Laboratories.
                         </p>
                     </div>
-                    <div className="ourCertificationHeadBtn">
-                        <Link href="" className='exploreMoreBtn'>Explore More</Link>
+                    <div className="ourCertificationHeadBtn">                        
+                        <Link href="" className='exploreMoreBtn' scroll={false}>Explore More <span className="arrow"></span></Link>
                     </div>
                 </div>
 
@@ -38,9 +38,9 @@ const OurCertifications = () => {
 
 
                         {/* Custom Navigation Buttons */}
-                        <div className="SliderCustomNav">
-                            <div ref={prevRef} className="SlierNavBtn SliderPrevBtn"></div>
-                            <div ref={nextRef} className="SlierNavBtn SliderNextBtn"></div>
+                        <div className="ourCertificationNav">
+                            <div ref={prevRef} className="ourCertificationSlierNavBtn ourCertificationSliderPrevBtn"></div>
+                            <div ref={nextRef} className="ourCertificationSlierNavBtn ourCertificationSliderNextBtn"></div>
                         </div>
 
                         <Swiper
