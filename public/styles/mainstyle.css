@@ -6,7 +6,6 @@
 .exploreMoreBtn:hover{background:var(--blue);color:#fff;} 
 .exploreMoreBtn:hover .arrow{transform:translateX(5px);}
 
-
 /*Banner*/
 .bannerWrap { height: 100vh; background: linear-gradient(rgba(7, 22, 55, 0.85), rgba(7, 22, 55, 0.85)), url('/images/home/banner-home-bg.jpg') no-repeat center center; background-size: cover; color: #fff; position: relative;}
 .bannerWrap .container{height: 100%;}
@@ -68,7 +67,6 @@
 .ourCertificationNav { position: absolute; bottom: -100px; left: 50%;transform: translateX(-50%); display: flex;gap: 15px; z-index: 10; }
 .ourCertificationSlierNavBtn{ width: 40px; height: 40px; background-image: url('/images/home/right-arrow.svg'); background-size: contain; background-repeat: no-repeat; cursor: pointer; }
 .ourCertificationSlierNavBtn.ourCertificationSliderPrevBtn { rotate: 180deg; }
-
 
 /*tesimonials*/
 .tesimonialsWrap{padding: 150px 0 250px; background: linear-gradient(rgba(17, 17, 17, 0.8)), url('/images/home/bg-testimonials.jpg') no-repeat center center; background-size: cover; color: #fff; position: relative;border-radius:100px 100px 0 0;margin-top: -100px;z-index: 1;}
@@ -136,8 +134,9 @@
 .insightsUpdateGridItem a { font-size: 18px;font-family: var(--medium); color: var(--blue); cursor: pointer; }
 
 /*our Specialities*/
-.ourSpecialitiesWrap { padding: 150px 0 250px;background:#848484;position: relative;border-radius:100px 100px 0 0;margin-top: -100px;z-index: 1; } 
+.ourSpecialitiesWrap { padding: 150px 0 200px;background:#848484;position: relative;border-radius:100px 100px 0 0;margin-top: -100px;z-index: 1; } 
 .ourSpecialitiesHead .homeCmnSubHead,.ourSpecialitiesHead .homeCmnHead{color: #fff;}
+.ourSpecialitiesHead{padding-bottom: 50px;}
 .specialitySlide { background-size: cover; background-position: center; padding: 60px 40px; border-radius: 10px; color: #fff; position: relative; } 
 .specialitySlideTitle { text-align: center; font-size: 28px; font-weight: 700; margin-bottom: 40px; } 
 .specialityItems { display: flex; justify-content: space-between; gap: 20px; }  
@@ -149,5 +148,5 @@
 .specialityOverlay p { font-size: 14px; line-height: 1.4; }
 .ourSpecialitiesSliderNav { position: absolute; top: -60px; right: 0; display: flex; gap: 15px; }
 .ourSpecialitiesSliderBtn { width: 40px; height: 40px; background-color: #eee; border-radius: 50%; cursor: pointer; }
-.ourSpecialitiesMarquee{padding: 0 25px ; overflow: hidden;}
+.ourSpecialitiesMarquee{padding: 60px 0 0 ; overflow: hidden;}
 .ourSpecialitiesMarquee .marqueeText{font-family:var(--marquee-black);font-size: 80px;color: #A8A8A8;text-transform: uppercase;}
