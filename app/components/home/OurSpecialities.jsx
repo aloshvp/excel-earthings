@@ -164,7 +164,7 @@ const OurSpecialities = () => {
                                         backgroundImage: `url(${slide.bg})`,
                                     }}
                                 >
-                                    <h3 className="slideTitle">{slide.title}</h3>
+                                    <h3 className="specialitySlideTitle">{slide.title}</h3>
 
                                     <div className="specialityItems">
                                         {slide.items.map((item, index) => (

@@ -1,7 +1,46 @@
 export const slidesData = [
-    { img: '/images/home/building-installations.jpg', icon: '/images/home/icon-building-installations.svg', title: 'Industrial Installations', content: "Lorem Ipsum text", link: '' },
-    { img: '/images/home/building-installations.jpg', icon: '/images/home/icon-building-installations.svg', title: 'Industrial Installations', content: "Lorem Ipsum text", link: '' },
-    { img: '/images/home/building-installations.jpg', icon: '/images/home/icon-building-installations.svg', title: 'Industrial Installations', content: "Lorem Ipsum text", link: '' },
+    {
+        img: '/images/home/building-installations.jpg',
+        icon: '/images/home/icon-building-installations.svg',
+        title: 'Building Installations',
+        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+        link: ''
+    },
+    {
+        img: '/images/home/building-installations.jpg',
+        icon: '/images/home/icon-building-installations.svg',
+        title: 'Building Installations',
+        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+        link: ''
+    },
+    {
+        img: '/images/home/building-installations.jpg',
+        icon: '/images/home/icon-building-installations.svg',
+        title: 'Building Installations',
+        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+        link: ''
+    },
+    {
+        img: '/images/home/building-installations.jpg',
+        icon: '/images/home/icon-building-installations.svg',
+        title: 'Building Installations',
+        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+        link: ''
+    },
+    {
+        img: '/images/home/building-installations.jpg',
+        icon: '/images/home/icon-building-installations.svg',
+        title: 'Building Installations',
+        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+        link: ''
+    },
+    {
+        img: '/images/home/building-installations.jpg',
+        icon: '/images/home/icon-building-installations.svg',
+        title: 'Building Installations',
+        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+        link: ''
+    },
 ];
 
 export const associatesData = [

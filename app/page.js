@@ -25,9 +25,9 @@ export default function Home() {
         <AreaOfApplications />
       </Suspense>
 
-      <Suspense>
+      {/* <Suspense>
         <OurSpecialities />
-      </Suspense>
+      </Suspense> */}
 
       <Suspense>
         <OurAssociates />

@@ -34,9 +34,9 @@ const OurAssociates = () => {
                     <div className="ourAssociatesSlider">
 
                         {/* Custom Navigation Buttons */}
-                        <div className="SliderCustomNav">
-                            <div ref={prevRef} className="SlierNavBtn SliderPrevBtn"></div>
-                            <div ref={nextRef} className="SlierNavBtn SliderNextBtn"></div>
+                        <div className="ourAssociatesSliderNav">
+                            <div ref={prevRef} className="ourAssociatesSliderNavBtn ourAssociatesSliderPrevBtn"></div>
+                            <div ref={nextRef} className="ourAssociatesSliderNavBtn ourAssociatesSliderNextBtn"></div>
                         </div>
 
                         <Swiper
@@ -44,7 +44,7 @@ const OurAssociates = () => {
                             spaceBetween={40}
                             slidesPerView={4}
                             loop
-                            allowTouchMove={false} 
+                            allowTouchMove={false}
                             onBeforeInit={(swiper) => {
                                 swiper.params.navigation.prevEl = prevRef.current;
                                 swiper.params.navigation.nextEl = nextRef.current;

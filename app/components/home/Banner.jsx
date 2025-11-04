@@ -17,26 +17,28 @@ const Banner = () => {
                         <div className="bannerGrid">
                             <div className="bannerGridItem">
                                 <em>01</em>
-                                <h2>Electrical  <em></em>
-                                    Earthing</h2>
-                                <p>Lorem Ipsum has been the industry's standard dummy text ever since</p>
-                            </div>
-                            <div className="bannerGridItem">
-                                <em>01</em>
-                                <h2>Electrical<em></em>
-                                    Earthing</h2>
-                                <p>Lorem Ipsum has been the industry's standard dummy text ever since</p>
-                            </div>
-                            <div className="bannerGridItem">
-                                <em>01</em>
                                 <h2>Electrical <em></em>
                                     Earthing</h2>
                                 <p>Lorem Ipsum has been the industry's standard dummy text ever since</p>
                             </div>
                             <div className="bannerGridItem">
-                                <em>01</em>
+                                <em>02</em>
+                                <h2>Lightning
+                                    <em></em>
+                                    Protection
+                                </h2>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since</p>
+                            </div>
+                            <div className="bannerGridItem">
+                                <em>03</em>
                                 <h2>Electrical <em></em>
-                                    Earthing</h2>
+                                    Enclosures</h2>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since</p>
+                            </div>
+                            <div className="bannerGridItem">
+                                <em>04</em>
+                                <h2>Cable <em></em>
+                                    Management</h2>
                                 <p>Lorem Ipsum has been the industry's standard dummy text ever since</p>
                             </div>
                         </div>
