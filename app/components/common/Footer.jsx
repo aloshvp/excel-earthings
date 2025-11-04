@@ -95,41 +95,51 @@ const Footer = () => {
                         <div className="footerSocialMedia">
                             <b>Follow Us</b>
                             <div className="footerSocialMediaLinks">
-                                <Image
-                                    src='/images/icons/facebook.svg'
-                                    alt="facebook"
-                                    title="facebook"
-                                    width={20}
-                                    height={20}
-                                />
-                                <Image
-                                    src='/images/icons/facebook.svg'
-                                    alt="facebook"
-                                    title="facebook"
-                                    width={20}
-                                    height={20}
-                                />
-                                <Image
-                                    src='/images/icons/facebook.svg'
-                                    alt="facebook"
-                                    title="facebook"
-                                    width={20}
-                                    height={20}
-                                />
-                                <Image
-                                    src='/images/icons/facebook.svg'
-                                    alt="facebook"
-                                    title="facebook"
-                                    width={20}
-                                    height={20}
-                                />
-                                <Image
-                                    src='/images/icons/facebook.svg'
-                                    alt="facebook"
-                                    title="facebook"
-                                    width={20}
-                                    height={20}
-                                />
+                                <Link href="" scroll={false}>
+                                    <Image
+                                        src='/images/icons/facebook.svg'
+                                        alt="facebook"
+                                        title="facebook"
+                                        width={10}
+                                        height={10}
+                                    />
+                                </Link>
+                                <Link href="" scroll={false}>
+                                    <Image
+                                        src='/images/icons/instagram.svg'
+                                        alt="instagram"
+                                        title="instagram"
+                                        width={20}
+                                        height={20}
+                                    />
+                                </Link>
+                                <Link href="" scroll={false}>
+                                    <Image
+                                        src='/images/icons/youtube.svg'
+                                        alt="youtube"
+                                        title="youtube"
+                                        width={20}
+                                        height={20}
+                                    />
+                                </Link>
+                                {/* <Link href="" scroll={false}>
+                                    <Image
+                                        src='/images/icons/linkedin.svg'
+                                        alt="linkedin"
+                                        title="linkedin"
+                                        width={15}
+                                        height={15}
+                                    />
+                                </Link> */}
+                                <Link href="" scroll={false}>
+                                    <Image
+                                        src='/images/icons/twitter.svg'
+                                        alt="twitter"
+                                        title="twitter"
+                                        width={15}
+                                        height={15}
+                                    />
+                                </Link>
                             </div>
                         </div>
                     </div>
