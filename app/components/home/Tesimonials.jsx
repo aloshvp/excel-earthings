@@ -31,7 +31,8 @@ const Testimonials = () => {
                         modules={[Navigation]}
                         spaceBetween={40}
                         slidesPerView={4}
-                        loop
+                        loop                         
+                        allowTouchMove={false} 
                         onBeforeInit={(swiper) => {
                             swiper.params.navigation.prevEl = prevRef.current;
                             swiper.params.navigation.nextEl = nextRef.current;

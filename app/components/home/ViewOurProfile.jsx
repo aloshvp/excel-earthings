@@ -6,18 +6,18 @@ const ViewOurProfile = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     // Lock body scroll when modal is open
-    useEffect(() => {
-        if (isOpen) {
-            document.body.style.overflow = "hidden";
-        } else {
-            document.body.style.overflow = "";
-        }
+    // useEffect(() => {
+    //     if (isOpen) {
+    //         document.body.style.overflow = "hidden";
+    //     } else {
+    //         document.body.style.overflow = "";
+    //     }
 
-        // Cleanup on unmount
-        return () => {
-            document.body.style.overflow = "";
-        };
-    }, [isOpen]);
+    //     // Cleanup on unmount
+    //     return () => {
+    //         document.body.style.overflow = "";
+    //     };
+    // }, [isOpen]);
 
     return (
         <section className="viewOurProfileWrap">
@@ -43,7 +43,7 @@ const ViewOurProfile = () => {
             </div>
 
             {/* Popup / Modal */}
-            {isOpen && (
+            {/* {isOpen && (
                 <div className="videoPopupOverlay" onClick={() => setIsOpen(false)}>
                     <div
                         className="videoPopupContent"
@@ -69,7 +69,7 @@ const ViewOurProfile = () => {
                         </div>
                     </div>
                 </div>
-            )}
+            )} */}
         </section>
     );
 };

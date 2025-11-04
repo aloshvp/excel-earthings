@@ -24,9 +24,15 @@
         --bold: 'neue_haas_grotesk_display75Bd', sans-serif;
         --bold-italic: 'neue_haas_grotesk_displ76BdIt', sans-serif;
 
+        /*Marquee text*/
+        --marquee-black: 'Playfair_Display_Black', sans-serif;
+        --marquee-regular: 'Playfair_Display_Regular', sans-serif;
+        
         /* Black */
         --black: 'neue_haas_grotesk_displa95Blk', sans-serif;
         --black-italic: 'neue_haas_grotesk_disp96BlkIt', sans-serif;
+
+        
 
     }
 

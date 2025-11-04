@@ -5,7 +5,6 @@
 .exploreMoreBtn::after{content:"";position:absolute;top:50%;right:20px;width:16px;height:16px;background-image:url('/images/icons/right-arrow.svg');background-size:contain;background-repeat:no-repeat;background-position:center;transform:translateY(-50%);}
 .exploreMoreBtn:hover{background: #002581;color: #fff;}
 
-
 /*Banner*/
 .bannerWrap { height: 100vh; background: linear-gradient(rgba(7, 22, 55, 0.85), rgba(7, 22, 55, 0.85)), url('/images/home/banner-home-bg.jpg') no-repeat center center; background-size: cover; color: #fff; position: relative;}
 .bannerWrap .container{height: 100%;}
@@ -35,7 +34,7 @@
 .skeleton-text { height: 20px; width: 100%; background: #eee; border-radius: 6px; }  
 
 /*our associate*/
-.ourAssociatesWrap{padding: 120px 0 300px; background: linear-gradient(rgba(255, 255, 255, 0.9)), url('/images/home/bg-approvals-and-associates.jpg') no-repeat center center; background-size: cover; color: #fff; position: relative;border-radius:100px 100px 0 0;}
+.ourAssociatesWrap{padding: 120px 0 300px; background: linear-gradient(rgba(255, 255, 255, 0.9)), url('/images/home/bg-approvals-and-associates.jpg') no-repeat center center; background-size: cover; color: #fff; position: relative;border-radius:100px 100px 0 0;margin-top: -100px;z-index: 1;}
 .ourAssociatesHead{padding-bottom: 60px;display: flex;justify-content: space-between;align-items: flex-end;}
 .ourAssociatesHeadCont > p{font-size: 18px;line-height: 1.4em;color: #111111;}
 .ourAssociatesHeadCont > p > em{display: block;}
@@ -121,4 +120,19 @@
 .insightsUpdateGridItem p { font-size: 18px;line-height: 1.5em; color: #111111; margin: 25px 0 50px; }
 .insightsUpdateGridItem a { font-size: 18px;font-family: var(--medium); color: #002581; cursor: pointer; }
 
-
+/*our Specialities*/
+.ourSpecialitiesWrap { padding: 150px 0 250px;background:#848484;position: relative;border-radius:100px 100px 0 0;margin-top: -100px;z-index: 1; } 
+.ourSpecialitiesHead .homeCmnSubHead,.ourSpecialitiesHead .homeCmnHead{color: #fff;}
+.specialitySlide { background-size: cover; background-position: center; padding: 60px 40px; border-radius: 10px; color: #fff; position: relative; } 
+.slideTitle { text-align: center; font-size: 28px; font-weight: 700; margin-bottom: 40px; } 
+.specialityItems { display: flex; justify-content: space-between; gap: 20px; }  
+.specialityCard { position: relative; flex: 1; overflow: hidden; border-radius: 10px; cursor: pointer; }  
+.specialityImage { width: 100%; height: 100%; object-fit: cover; border-radius: 10px; }  
+.specialityOverlay { position: absolute; inset: 0; background: rgba(0,0,0,0.6); display: flex; flex-direction: column; justify-content: center; align-items: center; color: #fff; opacity: 0; transition: all 0.4s ease; text-align: center; padding: 20px; } 
+.specialityCard:hover .specialityOverlay { opacity: 1; } 
+.specialityOverlay h4 { font-size: 20px; font-weight: 600; margin-bottom: 10px; } 
+.specialityOverlay p { font-size: 14px; line-height: 1.4; }
+.ourSpecialitiesSliderNav { position: absolute; top: -60px; right: 0; display: flex; gap: 15px; }
+.ourSpecialitiesSliderBtn { width: 40px; height: 40px; background-color: #eee; border-radius: 50%; cursor: pointer; }
+.ourSpecialitiesMarquee{padding: 0 25px ; overflow: hidden;}
+.ourSpecialitiesMarquee .marqueeText{font-family:var(--marquee-black);font-size: 80px;color: #A8A8A8;text-transform: uppercase;}

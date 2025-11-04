@@ -44,6 +44,7 @@ const OurAssociates = () => {
                             spaceBetween={40}
                             slidesPerView={4}
                             loop
+                            allowTouchMove={false} 
                             onBeforeInit={(swiper) => {
                                 swiper.params.navigation.prevEl = prevRef.current;
                                 swiper.params.navigation.nextEl = nextRef.current;

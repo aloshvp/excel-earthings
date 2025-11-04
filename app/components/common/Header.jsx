@@ -5,7 +5,7 @@ import Link from "next/link"
 const Header = () => {
     return (
         <header className='headerWrap'>
-            <div className="headerLogoSec"></div>
+            {/* <div className="headerLogoSec"></div>
             <div className="headerNavSec">
                 <ul>
                     <li><Link href="" scroll={false}>Home</Link></li>
@@ -18,7 +18,7 @@ const Header = () => {
                     <li><Link href="" scroll={false}>Home</Link></li>
                 </ul>
             </div>
-            <div className="headerBadgeSec"></div>
+            <div className="headerBadgeSec"></div> */}
         </header>
     )
 }

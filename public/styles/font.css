@@ -116,3 +116,21 @@
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: 'Playfair_Display_Black';
+    src: url('/fonts/PlayfairDisplay-Black.woff2') format('woff2'),
+        url('/fonts/PlayfairDisplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair_Display_Regular';
+    src: url('/fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('/fonts/PlayfairDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

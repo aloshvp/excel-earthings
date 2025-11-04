@@ -45,6 +45,7 @@ const AreaOfApplications = () => {
                         navigation
                         loop
                         breakpoints={{ 320: { slidesPerView: 1 }, 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }}
+                        allowTouchMove={false}
                     >
                         {slidesData?.map((slide, idx) => (
                             <SwiperSlide key={idx}>

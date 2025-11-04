@@ -28,6 +28,7 @@ const Events = () => {
                         spaceBetween={30}
                         slidesPerView={3}
                         loop
+                        allowTouchMove={false} 
                         onBeforeInit={(swiper) => {
                             swiper.params.navigation.prevEl = prevRef.current;
                             swiper.params.navigation.nextEl = nextRef.current;
