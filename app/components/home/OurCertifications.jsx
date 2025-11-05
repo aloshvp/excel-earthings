@@ -28,7 +28,7 @@ const OurCertifications = () => {
                             Standards from well established NABL Accredited Laboratories.
                         </p>
                     </div>
-                    <div className="ourCertificationHeadBtn">                        
+                    <div className="ourCertificationHeadBtn">
                         <Link href="" className='exploreMoreBtn' scroll={false}>Explore More <span className="arrow"></span></Link>
                     </div>
                 </div>
@@ -49,6 +49,7 @@ const OurCertifications = () => {
                             slidesPerView={3}
                             navigation
                             loop
+                            allowTouchMove={false}
                             onBeforeInit={(swiper) => {
                                 swiper.params.navigation.prevEl = prevRef.current;
                                 swiper.params.navigation.nextEl = nextRef.current;

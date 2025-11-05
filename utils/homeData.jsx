@@ -46,87 +46,107 @@ export const slidesData = [
 export const associatesData = [
     {
         name: 'Kerala State Electricity Board Limited',
-        img: '/images/associates/kseb.svg',
+        img: '/images/approvals/central-pwd.jpg',
     },
     {
         name: 'Kerala State Electricity Board Limited',
-        img: '/images/associates/kseb.svg',
+        img: '/images/approvals/cochinshipyard.jpg',
     },
     {
         name: 'Kerala State Electricity Board Limited',
-        img: '/images/associates/kseb.svg',
+        img: '/images/approvals/cochin-smart-city-ltd.jpg',
     },
     {
         name: 'Kerala State Electricity Board Limited',
-        img: '/images/associates/kseb.svg',
+        img: '/images/approvals/dharamshala-smart-city-ltd.jpg',
     },
     {
         name: 'Kerala State Electricity Board Limited',
-        img: '/images/associates/kseb.svg',
+        img: '/images/approvals/e-health-kerala.jpg',
     },
     {
         name: 'Kerala State Electricity Board Limited',
-        img: '/images/associates/kseb.svg',
+        img: '/images/approvals/inkel-ltd.jpg',
     },
     {
         name: 'Kerala State Electricity Board Limited',
-        img: '/images/associates/kseb.svg',
+        img: '/images/approvals/kfon.jpg',
     },
     {
         name: 'Kerala State Electricity Board Limited',
-        img: '/images/associates/kseb.svg',
+        img: '/images/approvals/kochi-metro-rail-ltd.jpg',
+    },
+
+    {
+        name: 'Kerala State Electricity Board Limited',
+        img: '/images/approvals/kseb.jpg',
+    },
+    {
+        name: 'Kerala State Electricity Board Limited',
+        img: '/images/approvals/ksebl-soura.jpg',
+    },
+    {
+        name: 'Kerala State Electricity Board Limited',
+        img: '/images/approvals/military-engineering-service.jpg',
+    },
+    {
+        name: 'Kerala State Electricity Board Limited',
+        img: '/images/approvals/national-test-house.jpg',
+    },
+    {
+        name: 'Kerala State Electricity Board Limited',
+        img: '/images/approvals/nit-calicut.jpg',
+    },
+    {
+        name: 'Kerala State Electricity Board Limited',
+        img: '/images/approvals/trivandrum-smart-city-ltd.jpg',
     },
 ];
 
 export const certificationsData = [
     {
         name: 'CPRI',
-        img: '/images/certificates/Central-power-research-institute.png',
+        img: '/images/Certifications/astm.jpg',
         desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
     },
     {
         name: 'CPRI',
-        img: '/images/certificates/Central-power-research-institute.png',
+        img: '/images/Certifications/cipet.jpg',
         desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
     },
     {
         name: 'CPRI',
-        img: '/images/certificates/Central-power-research-institute.png',
+        img: '/images/Certifications/cpri.jpg',
         desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
     },
     {
         name: 'CPRI',
-        img: '/images/certificates/Central-power-research-institute.png',
+        img: '/images/Certifications/iec.jpg',
         desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
     },
     {
         name: 'CPRI',
-        img: '/images/certificates/Central-power-research-institute.png',
+        img: '/images/Certifications/isi-marked.jpg',
         desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
     },
     {
         name: 'CPRI',
-        img: '/images/certificates/Central-power-research-institute.png',
+        img: '/images/Certifications/sgs.jpg',
         desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
     },
     {
         name: 'CPRI',
-        img: '/images/certificates/Central-power-research-institute.png',
+        img: '/images/Certifications/tuv-rheinland.jpg',
         desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
     },
     {
         name: 'CPRI',
-        img: '/images/certificates/Central-power-research-institute.png',
+        img: '/images/Certifications/ul.jpg',
         desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
     },
     {
         name: 'CPRI',
-        img: '/images/certificates/Central-power-research-institute.png',
-        desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
-    },
-    {
-        name: 'CPRI',
-        img: '/images/certificates/Central-power-research-institute.png',
+        img: '/images/Certifications/zed.jpg',
         desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
     },
 ];
