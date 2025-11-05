@@ -859,53 +859,78 @@
 
 .specialityItems {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 20px;
 }
 
 .specialityCard {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* background: #fff; */
+    border-radius: 12px;
+    /* padding: 20px; */
+    transition: background 0.3s ease;
     position: relative;
-    flex: 1;
-    overflow: hidden;
+}
+
+.specialityCard:hover {
+    background: #848484;
+    /* light hover bg */
+}
+
+/* Image */
+.specialityImageWrap {
+    flex: 0 0 200px;
     border-radius: 10px;
-    cursor: pointer;
+    overflow: hidden;
 }
 
 .specialityImage {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.specialityOverlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
+/* Content */
+.specialityContent {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    opacity: 0;
-    transition: all 0.4s ease;
-    text-align: center;
-    padding: 20px;
+    position: relative;
 }
 
-.specialityCard:hover .specialityOverlay {
-    opacity: 1;
-}
-
-.specialityOverlay h4 {
+.specialityContent h4 {
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 10px;
+    color: #111;
+    margin: 0;
 }
 
-.specialityOverlay p {
-    font-size: 14px;
-    line-height: 1.4;
+/* Hide description smoothly (no layout shift) */
+.specialityContent p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #555;
+    margin-top: 8px;
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    position: absolute;
+    top: 100%;
+}
+
+/* Fade + slide up animation on hover */
+.specialityCard:hover .specialityContent p {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.ourSpecialitiesBody {
+    position: relative;
 }
 
 .ourSpecialitiesSliderNav {

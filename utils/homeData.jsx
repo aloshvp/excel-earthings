@@ -7,8 +7,15 @@ export const slidesData = [
         link: ''
     },
     {
-        img: '/images/home/building-installations.jpg',
-        icon: '/images/home/icon-building-installations.svg',
+        img: '/images/home/industrial-installations.jpg',
+        icon: '/images/home/icon-industrial-installations.svg',
+        title: 'Building Installations',
+        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+        link: ''
+    },
+    {
+        img: '/images/home/sensitive-applications.jpg',
+        icon: '/images/home/icon-sensitive-applications.svg',
         title: 'Building Installations',
         content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
         link: ''
@@ -21,22 +28,15 @@ export const slidesData = [
         link: ''
     },
     {
-        img: '/images/home/building-installations.jpg',
-        icon: '/images/home/icon-building-installations.svg',
+        img: '/images/home/industrial-installations.jpg',
+        icon: '/images/home/icon-industrial-installations.svg',
         title: 'Building Installations',
         content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
         link: ''
     },
     {
-        img: '/images/home/building-installations.jpg',
-        icon: '/images/home/icon-building-installations.svg',
-        title: 'Building Installations',
-        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
-        link: ''
-    },
-    {
-        img: '/images/home/building-installations.jpg',
-        icon: '/images/home/icon-building-installations.svg',
+        img: '/images/home/sensitive-applications.jpg',
+        icon: '/images/home/icon-sensitive-applications.svg',
         title: 'Building Installations',
         content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
         link: ''

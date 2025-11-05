@@ -55,20 +55,24 @@ const OurSpecialities = () => {
                                     <div className="specialityItems">
                                         {slide.items.map((item, index) => (
                                             <div className="specialityCard" key={index}>
-                                                <Image
-                                                    src={item.image}
-                                                    alt={item.title}
-                                                    width={400}
-                                                    height={300}
-                                                    className="specialityImage"
-                                                />
-                                                <div className="specialityOverlay">
+                                                <div className="specialityImageWrap">
+                                                    <Image
+                                                        src={item.image}
+                                                        alt={item.title}
+                                                        width={400}
+                                                        height={300}
+                                                        className="specialityImage"
+                                                    />
+                                                </div>
+
+                                                <div className="specialityContent">
                                                     <h4>{item.title}</h4>
                                                     <p>{item.description}</p>
                                                 </div>
                                             </div>
                                         ))}
                                     </div>
+
                                 </div>
                             </SwiperSlide>
                         ))}
