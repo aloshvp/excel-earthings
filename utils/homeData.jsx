@@ -76,7 +76,6 @@ export const associatesData = [
         name: 'Kerala State Electricity Board Limited',
         img: '/images/approvals/kochi-metro-rail-ltd.jpg',
     },
-
     {
         name: 'Kerala State Electricity Board Limited',
         img: '/images/approvals/kseb.jpg',
@@ -185,19 +184,19 @@ export const productsData = [
         number: "02",
         name: "Electrical Earthing",
         link: "",
-        bgImage: "/images/home/categ-pro-01.jpg",
+        bgImage: "/images/home/categ-pro-02.jpg",
     },
     {
         number: "03",
         name: "Electrical Earthing",
         link: "",
-        bgImage: "/images/home/categ-pro-01.jpg",
+        bgImage: "/images/home/categ-pro-03.jpg",
     },
     {
         number: "04",
         name: "Electrical Earthing",
         link: "",
-        bgImage: "/images/home/categ-pro-01.jpg",
+        bgImage: "/images/home/categ-pro-04.jpg",
     },
 ];
 
