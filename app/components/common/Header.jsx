@@ -16,7 +16,7 @@ const Header = () => {
         <header className={`headerWrap ${scrolled ? "scrolled" : ""}`}>
             <div className="headerLogoSec">
                 <Link href={"/"}>
-                    <Image src="/images/logo.svg" alt="Logo" width={620} height={95} className="headerLogo" />
+                    <Image src="/images/logo.svg" alt="Logo" width={620} height={95} className="headerLogo" priority />
                 </Link>
             </div>
 
@@ -51,7 +51,7 @@ const Header = () => {
                 </nav>
 
                 <div className="headerBadgeSec">
-                    <Image src="/images/logo-since2006.svg" alt="Since 2006" width={100} height={100} className="headerBadge" />
+                    <Image src="/images/logo-since2006.svg" alt="Since 2006" width={100} height={100} className="headerBadge" priority />
                 </div>
             </div>
         </header>
