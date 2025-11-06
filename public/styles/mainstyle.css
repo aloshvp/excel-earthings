@@ -845,16 +845,16 @@
     background-size: cover;
     background-position: center;
     padding: 60px 40px;
-    border-radius: 10px;
+    border-radius: 20px;
     color: #fff;
     position: relative;
 }
 
 .specialitySlideTitle {
-    text-align: center;
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 40px;
+    font-size: 35px;
+    font-family: var(--medium);
+    color: #fff;
+    margin-top: 30px;
 }
 
 .specialityItems {
@@ -865,23 +865,19 @@
 
 .specialityCard {
     display: flex;
-    align-items: center;
-    gap: 15px;
-    /* background: #fff; */
+    gap: 30px;
     border-radius: 12px;
-    /* padding: 20px; */
     transition: background 0.3s ease;
     position: relative;
 }
 
 .specialityCard:hover {
-    background: #848484;
-    /* light hover bg */
+    background: rgba(0, 0, 0, 0.75);
 }
 
 /* Image */
 .specialityImageWrap {
-    flex: 0 0 200px;
+    flex: 0 0 150px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -899,27 +895,28 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    padding: 30px 60px 30px 0;
+    justify-content: center;
 }
 
 .specialityContent h4 {
-    font-size: 20px;
-    font-weight: 600;
-    color: #111;
+    font-size: 26px;
+    color: #fff;
     margin: 0;
 }
 
 /* Hide description smoothly (no layout shift) */
 .specialityContent p {
-    font-size: 15px;
-    line-height: 1.5;
-    color: #555;
-    margin-top: 8px;
+    font-size: 18px;
+    line-height: 1.5em;
+    color: #fff;
+    margin: 8px 30px 0 0;
     opacity: 0;
     transform: translateY(10px);
     pointer-events: none;
     transition: opacity 0.4s ease, transform 0.4s ease;
     position: absolute;
-    top: 100%;
+    top: 35%;
 }
 
 /* Fade + slide up animation on hover */
@@ -934,20 +931,27 @@
 }
 
 .ourSpecialitiesSliderNav {
-    position: absolute;
-    top: -60px;
-    right: 0;
-    display: flex;
+    z-index: 10;
     gap: 15px;
+    display: flex;
+    position: absolute;
+    top: -100px;
+    right: 0;
 }
 
 .ourSpecialitiesSliderBtn {
-    width: 40px;
-    height: 40px;
-    background-color: #eee;
-    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-image: url('/images/home/left-arrow.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
     cursor: pointer;
 }
+
+.ourSpecialitiesSliderBtn.ourSpecialitiesNextBtn {
+    rotate: 180deg;
+}
+
 
 .ourSpecialitiesMarquee {
     padding: 60px 0 0;

@@ -305,4 +305,46 @@ export const specialitiesSlides = [
             },
         ],
     },
+    {
+        title: "Fire Protection Systems",
+        bg: "/images/home/bg-earth-enhancing-compound.jpg",
+        items: [
+            {
+                image: "/images/home/nickel-sealing.jpg",
+                title: "Nickel Sealing",
+                description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text"
+            },
+            {
+                image: "/images/home/nickel-sealing.jpg",
+                title: "Pressed Contacts",
+                description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text"
+            },
+            {
+                image: "/images/home/nickel-sealing.jpg",
+                title: "Tinned Terminals",
+                description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text"
+            },
+        ],
+    },
+    {
+        title: "Security Systems",
+        bg: "/images/home/bg-earth-enhancing-compound.jpg",
+        items: [
+            {
+                image: "/images/home/nickel-sealing.jpg",
+                title: "CCTV",
+                description: "High-definition surveillance and analytics."
+            },
+            {
+                image: "/images/home/nickel-sealing.jpg",
+                title: "Access Control",
+                description: "Seamless, secure entry management systems."
+            },
+            {
+                image: "/images/home/nickel-sealing.jpg",
+                title: "Alarm Systems",
+                description: "Instant alerts for maximum safety."
+            },
+        ],
+    },
 ];

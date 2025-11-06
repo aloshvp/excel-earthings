@@ -44,35 +44,36 @@ const OurSpecialities = () => {
                     >
                         {specialitiesSlides.map((slide, i) => (
                             <SwiperSlide key={i}>
-                                <div
-                                    className="specialitySlide"
-                                    style={{
-                                        backgroundImage: `url(${slide.bg})`,
-                                    }}
-                                >
-                                    <h3 className="specialitySlideTitle">{slide.title}</h3>
+                                <div className='specialitySlideWrap'>
+                                    <div
+                                        className="specialitySlide"
+                                        style={{
+                                            backgroundImage: `url(${slide.bg})`,
+                                        }}
+                                    >
+                                        <div className="specialityItems">
+                                            {slide.items.map((item, index) => (
+                                                <div className="specialityCard" key={index}>
+                                                    <div className="specialityImageWrap">
+                                                        <Image
+                                                            src={item.image}
+                                                            alt={item.title}
+                                                            width={150}
+                                                            height={150}
+                                                            className="specialityImage"
+                                                        />
+                                                    </div>
 
-                                    <div className="specialityItems">
-                                        {slide.items.map((item, index) => (
-                                            <div className="specialityCard" key={index}>
-                                                <div className="specialityImageWrap">
-                                                    <Image
-                                                        src={item.image}
-                                                        alt={item.title}
-                                                        width={400}
-                                                        height={300}
-                                                        className="specialityImage"
-                                                    />
+                                                    <div className="specialityContent">
+                                                        <h4>{item.title}</h4>
+                                                        {/* <p>{item.description}</p> */}
+                                                    </div>
                                                 </div>
 
-                                                <div className="specialityContent">
-                                                    <h4>{item.title}</h4>
-                                                    <p>{item.description}</p>
-                                                </div>
-                                            </div>
-                                        ))}
+                                            ))}
+                                        </div>
                                     </div>
-
+                                    <h3 className="specialitySlideTitle">{slide.title}</h3>
                                 </div>
                             </SwiperSlide>
                         ))}
