@@ -54,14 +54,14 @@ p>em {display:block;}
 .headerWrap{position:fixed;top:0;left:0;z-index:1000;display:flex;justify-content:space-between;align-items:center;padding:20px 60px;width:100%;transition:all 0.6s cubic-bezier(0.25,0.8,0.25,1);background:transparent;will-change:padding,background,box-shadow;} 
 .headerWrap.scrolled{background:#333;backdrop-filter:blur(8px);padding:10px 40px;box-shadow:0 4px 12px rgba(0,0,0,0.3);} 
 .headerLogoSec img{transition:all 0.6s cubic-bezier(0.25,0.8,0.25,1);will-change:width,height;} 
-.headerWrap.scrolled .headerLogoSec img{width:300px !important;height:auto !important;} 
+.headerWrap.scrolled .headerLogoSec img{width:420px !important;height:auto !important;} 
 .headerNavSec>ul{display:flex;gap:25px;align-items:center;list-style:none;margin:0;padding:0;} 
 .headerNavSec>ul>li{position:relative;} 
 .headerNavSec>ul>li a{color:#fff;text-decoration:none;font-size:18px;transition:color 0.4s cubic-bezier(0.25,0.8,0.25,1);} 
 .headerNavSec>ul>li a:hover{color:#a8a8a8;} 
 .headerRghtSec{display:flex;gap:60px;align-items:center;} 
 .headerBadgeSec img{transition:all 0.6s cubic-bezier(0.25,0.8,0.25,1);will-change:width,height;} 
-.headerWrap.scrolled .headerBadgeSec img{width:60px !important;height:60px !important;} 
+.headerWrap.scrolled .headerBadgeSec img{width:80px !important;height:80px !important;} 
 
 /* Submenu Styles */
 .hasSubmenu:hover>.submenu{opacity:1;visibility:visible;transform:translateY(0);} 
@@ -96,6 +96,8 @@ p>em {display:block;}
 .footerAboutCont > a::before { content: ""; position: absolute; right: 0; width: 18px; height: 18px; background: url("/images/icons/right-arrow-white.svg") center/contain no-repeat; transition: transform 0.3s ease; }
 .footerAboutCont > a:hover::before { transform: translateX(3px); }
 .footerSocialMediaLinks {display:flex;gap:25px;align-items: center;}
+.footerSocialMediaLinks img{transition:transform 0.3s ease;} 
+.footerSocialMediaLinks a:hover img{transform:scale(1.2);}
 .footerLinkNav {display:flex;gap:60px;}
 .footerLinkNav>ul>li>a {display: block;font-size:18px;line-height:1.4em;margin:0 0 8px;transition: all 0.3s ease;}
 .footerLinkNav>ul>li>a:hover{color:#848484;}
