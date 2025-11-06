@@ -16,6 +16,11 @@ const Events = () => {
             <div className="container">
 
                 <div className="eventsBody">
+
+                    <div className="eventsBodyLft">
+                        <h2 className="homeCmnHead">Meet Excel in <em></em>Your City</h2>
+                    </div>
+
                     {/* Slider navigation */}
                     <div className="eventsSliderNav">
                         <div ref={prevRef} className="eventNavBtn eventsPrevBtn"></div>
@@ -25,10 +30,10 @@ const Events = () => {
 
                     <Swiper
                         modules={[Navigation]}
-                        spaceBetween={30}
+                        spaceBetween={25}
                         slidesPerView={3}
                         loop
-                        allowTouchMove={false} 
+                        allowTouchMove={false}
                         onBeforeInit={(swiper) => {
                             swiper.params.navigation.prevEl = prevRef.current;
                             swiper.params.navigation.nextEl = nextRef.current;
@@ -36,6 +41,7 @@ const Events = () => {
                         breakpoints={{
                             320: { slidesPerView: 1 },
                         }}
+                        className="eventSliderWrap"
                     >
                         {eventsData?.map((event) => (
                             <SwiperSlide key={event.id}>
@@ -49,10 +55,41 @@ const Events = () => {
                                             className="rounded-lg"
                                         />
                                     </div>
-                                    {/* <div className="eventInfo">
+                                    <div className="eventInfo">
                                         <h3>{event.title}</h3>
-                                        <span>{event.date}</span>
-                                    </div> */}
+
+                                        <span><Image
+                                            src="/images/home/icon-calendar.svg"
+                                            width={25}
+                                            height={25}
+                                            alt="calendar"
+                                            title="calendar"
+                                        />
+                                            {event.date}
+                                        </span>
+
+                                        <span><Image
+                                            src="/images/home/icon-time.svg"
+                                            width={25}
+                                            height={25}
+                                            alt="time"
+                                            title="time"
+                                        />
+                                            {event.time}
+                                        </span>
+
+                                        <span><Image
+                                            src="/images/home/icon-location.svg"
+                                            width={25}
+                                            height={25}
+                                            alt="location"
+                                            title="location"
+                                        />
+                                            {event.location}
+                                        </span>
+
+                                        <p>{event.description}</p>
+                                    </div>
                                 </div>
                             </SwiperSlide>
                         ))}

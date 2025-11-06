@@ -203,27 +203,21 @@ export const productsData = [
 export const eventsData = [
     {
         id: 1,
-        title: "Annual Conference 2025",
-        date: "March 15, 2025",
+        title: "Wetex Expo 2025",
+        date: "30Sep - 2Oct 2025",
+        time: "9am - 6pm",
+        location: "Dubai World Trade Centre (DWTC)",
         image: "/images/home/expo-1.jpg",
+        description: "Meet us at WETEX Expo to explore our tested solutions. Share your project requirements with our Engineers and discover how we can support your upcoming projects."
     },
     {
         id: 2,
-        title: "Workshop on Sustainability",
-        date: "April 10, 2025",
+        title: "Wetex Expo 2025",
+        date: "30Sep - 2Oct 2025",
+        time: "9am - 6pm",
+        location: "Dubai World Trade Centre (DWTC)",
         image: "/images/home/expo-1.jpg",
-    },
-    {
-        id: 3,
-        title: "Product Launch Event",
-        date: "May 5, 2025",
-        image: "/images/home/expo-1.jpg",
-    },
-    {
-        id: 4,
-        title: "Community Meet & Greet",
-        date: "June 20, 2025",
-        image: "/images/home/expo-1.jpg",
+        description: "Meet us at WETEX Expo to explore our tested solutions. Share your project requirements with our Engineers and discover how we can support your upcoming projects."
     },
 ];
 

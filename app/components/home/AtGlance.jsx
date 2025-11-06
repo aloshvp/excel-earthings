@@ -35,7 +35,10 @@ const AtGlance = () => {
                 </div>
             </div>
             <div className="atGlanceMarquee">
-                <Marquee gradient={false} speed={50}>
+                <Marquee
+                    gradient={false}
+                    speed={50}
+                >
                     <span className="marqueeText">
                         Be safe with Excel earthings Be safe with Excel earthings Be safe with Excel earthings
                     </span>
