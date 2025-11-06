@@ -10,20 +10,20 @@ const menuItems = [
     {
         title: "Products",
         href: "",
-        submenu: [
-            { title: "Product A", href: "" },
-            { title: "Product B", href: "" },
-            { title: "Product C", href: "" },
-        ]
+        // submenu: [
+        //     { title: "Product A", href: "" },
+        //     { title: "Product B", href: "" },
+        //     { title: "Product C", href: "" },
+        // ]
     },
     {
         title: "Applications",
         href: "",
-        submenu: [
-            { title: "App 1", href: "" },
-            { title: "App 2", href: "" },
-            { title: "App 3", href: "" },
-        ]
+        // submenu: [
+        //     { title: "App 1", href: "" },
+        //     { title: "App 2", href: "" },
+        //     { title: "App 3", href: "" },
+        // ]
     },
     { title: "Dealership", href: "" },
     { title: "Design", href: "" },
