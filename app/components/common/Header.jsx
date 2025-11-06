@@ -56,7 +56,7 @@ const Header = () => {
         <header className={`headerWrap ${scrolled ? "scrolled" : ""}`}>
             <div className="headerLogoSec">
                 <Link href={"/"}>
-                    <Image src="/images/logo.svg" alt="Logo" width={620} height={95} className="headerLogo" priority />
+                    <Image src="/images/logo.svg" alt="Logo"  width={620} height={95} className="headerLogo" priority />
                 </Link>
             </div>
 

@@ -1204,3 +1204,30 @@
     color: #A8A8A8;
     text-transform: uppercase;
 }
+
+.atGlanceGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding-top: 20px;
+}
+
+.atGlanceGridItem {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.atGlanceGridItem>img {}
+
+.atGlanceGridItem>.horizontalLIne {
+    height: 1px;
+    width: 100%;
+    background: #707070;
+}
+
+.atGlanceGridItem>p {
+    font-size: 22px;
+    line-height: 1.5em;
+    color: #333333;
+}

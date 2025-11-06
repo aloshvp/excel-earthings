@@ -31,7 +31,23 @@ const AtGlance = () => {
                             </em>
                         </div>
                     </div>
-                    <div className="atGlanceSlider"></div>
+                    <div className="atGlanceGrid">
+                        <div className="atGlanceGridItem">
+                            <Image src="/images/home/logo-iso.svg" width={100} height={80} alt='ISI'></Image>
+                            <div className='horizontalLIne'></div>
+                            <p>India's First ISI Certified Copper Bonded Earth Electrode Manufacturer</p>
+                        </div>
+                        <div className="atGlanceGridItem">
+                            <Image src="/images/home/logo-iso.svg" width={100} height={80} alt='ISI'></Image>
+                            <div className='horizontalLIne'></div>
+                            <p>India's First ISI Certified Copper Bonded Earth Electrode Manufacturer</p>
+                        </div>
+                        <div className="atGlanceGridItem">
+                            <Image src="/images/home/logo-iso.svg" width={100} height={80} alt='ISI'></Image>
+                            <div className='horizontalLIne'></div>
+                            <p>India's First ISI Certified Copper Bonded Earth Electrode Manufacturer</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="atGlanceMarquee">
