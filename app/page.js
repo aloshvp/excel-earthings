@@ -4,6 +4,7 @@ import Header from "./components/common/Header";
 import Banner from "./components/home/Banner";
 
 const AreaOfApplications = dynamic(() => import("./components/home/AreaOfApplications"), { suspense: true });
+const AtGlance = dynamic(() => import("./components/home/AtGlance"), { suspense: true });
 const OurSpecialities = dynamic(() => import("./components/home/OurSpecialities"), { suspense: true });
 const OurAssociates = dynamic(() => import("./components/home/OurAssociates"), { suspense: true });
 const OurCertifications = dynamic(() => import("./components/home/OurCertifications"), { suspense: true });
@@ -22,6 +23,10 @@ export default function Home() {
 
       <Suspense>
         <AreaOfApplications />
+      </Suspense>
+
+      <Suspense>
+        <AtGlance />
       </Suspense>
 
       <Suspense>
