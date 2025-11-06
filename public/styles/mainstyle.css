@@ -67,8 +67,9 @@
 .bannerContent {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     height: 100%;
+    padding-bottom: 100px;
 }
 
 .bannerContentLft>h1 {
