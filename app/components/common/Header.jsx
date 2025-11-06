@@ -2,15 +2,55 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import useWindowSize from "../functions/useWindowSize";
+
+const menuItems = [
+    { title: "Home", href: "/" },
+    { title: "Corporates", href: "" },
+    {
+        title: "Products",
+        href: "",
+        submenu: [
+            { title: "Product A", href: "" },
+            { title: "Product B", href: "" },
+            { title: "Product C", href: "" },
+        ]
+    },
+    {
+        title: "Applications",
+        href: "",
+        submenu: [
+            { title: "App 1", href: "" },
+            { title: "App 2", href: "" },
+            { title: "App 3", href: "" },
+        ]
+    },
+    { title: "Dealership", href: "" },
+    { title: "Design", href: "" },
+    { title: "E-Learning", href: "" },
+    { title: "Contact Us", href: "" },
+];
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [submenuOpen, setSubmenuOpen] = useState({});
+    const { width } = useWindowSize();
 
     useEffect(() => {
         const handleScroll = () => setScrolled(window.scrollY > 0);
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
+    const isMobile = width <= 991;
+
+    const toggleSubmenu = (index) => {
+        setSubmenuOpen((prev) => ({
+            ...prev,
+            [index]: !prev[index]
+        }));
+    };
 
     return (
         <header className={`headerWrap ${scrolled ? "scrolled" : ""}`}>
@@ -21,34 +61,64 @@ const Header = () => {
             </div>
 
             <div className="headerRghtSec">
-                <nav className="headerNavSec">
-                    <ul>
-                        <li><Link href="/">Home</Link></li>
-                        <li><Link href="">Corporates</Link></li>
-                        {/* <li className="hasSubmenu">
-                            <Link href="">Products</Link>
-                            <ul className="submenu">
-                                <li><Link href="">Product A</Link></li>
-                                <li><Link href="">Product B</Link></li>
-                                <li><Link href="">Product C</Link></li>
-                            </ul>
-                        </li>
-                        <li className="hasSubmenu">
-                            <Link href="">Applications</Link>
-                            <ul className="submenu">
-                                <li><Link href="">App 1</Link></li>
-                                <li><Link href="">App 2</Link></li>
-                                <li><Link href="">App 3</Link></li>
-                            </ul>
-                        </li> */}
-                        <li><Link href="">Products</Link></li>
-                        <li><Link href="">Applications</Link></li>
-                        <li><Link href="">Dealership</Link></li>
-                        <li><Link href="">Design</Link></li>
-                        <li><Link href="">E-Learning</Link></li>
-                        <li><Link href="">Contact Us</Link></li>
-                    </ul>
-                </nav>
+                {isMobile ? (
+                    <>
+                        {/* Hamburger */}
+                        <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+                            <span />
+                            <span />
+                            <span />
+                        </div>
+
+                        {/* Mobile menu */}
+                        {menuOpen && (
+                            <nav className="mobileNav">
+                                <ul>
+                                    {menuItems.map((item, index) => (
+                                        <li key={index}>
+                                            {item.submenu ? (
+                                                <>
+                                                    <div className="mobileSubmenuTitle" onClick={() => toggleSubmenu(index)}>
+                                                        {item.title}
+                                                        <span className="arrow">{submenuOpen[index] ? "▲" : "▼"}</span>
+                                                    </div>
+                                                    {submenuOpen[index] && (
+                                                        <ul className="mobileSubmenu">
+                                                            {item.submenu.map((sub, subIndex) => (
+                                                                <li key={subIndex}>
+                                                                    <Link href={sub.href}>{sub.title}</Link>
+                                                                </li>
+                                                            ))}
+                                                        </ul>
+                                                    )}
+                                                </>
+                                            ) : (
+                                                <Link href={item.href}>{item.title}</Link>
+                                            )}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </nav>
+                        )}
+                    </>
+                ) : (
+                    <nav className="headerNavSec">
+                        <ul>
+                            {menuItems.map((item, index) => (
+                                <li key={index} className={item.submenu ? "hasSubmenu" : ""}>
+                                    <Link href={item.href}>{item.title}</Link>
+                                    {item.submenu && (
+                                        <ul className="submenu">
+                                            {item.submenu.map((sub, subIndex) => (
+                                                <li key={subIndex}><Link href={sub.href}>{sub.title}</Link></li>
+                                            ))}
+                                        </ul>
+                                    )}
+                                </li>
+                            ))}
+                        </ul>
+                    </nav>
+                )}
 
                 <div className="headerBadgeSec">
                     <Image src="/images/logo-since2006.svg" alt="Since 2006" width={100} height={100} className="headerBadge" priority />

@@ -182,19 +182,19 @@ export const productsData = [
     },
     {
         number: "02",
-        name: "Electrical Earthing",
+        name: "Lightning Protection",
         link: "",
         bgImage: "/images/home/categ-pro-02.jpg",
     },
     {
         number: "03",
-        name: "Electrical Earthing",
+        name: "Electrical Enclosures",
         link: "",
         bgImage: "/images/home/categ-pro-03.jpg",
     },
     {
         number: "04",
-        name: "Electrical Earthing",
+        name: "Cable Management",
         link: "",
         bgImage: "/images/home/categ-pro-04.jpg",
     },

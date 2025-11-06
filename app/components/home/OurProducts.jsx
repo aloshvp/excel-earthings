@@ -1,9 +1,10 @@
 "use client";
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/effect-fade";
 import Image from "next/image";
 import Link from "next/link";
 import { productsData } from "@/utils/homeData";
@@ -36,18 +37,21 @@ const OurProducts = () => {
                 </div>
 
                 <Swiper
-                    modules={[Navigation]}
-                    spaceBetween={30}
-                    slidesPerView={3}
+                    modules={[Navigation, EffectFade]}
+                    effect="fade"
+                    slidesPerView={1}
                     loop
+                    speed={800}
+                    navigation={{
+                        prevEl: prevRef.current,
+                        nextEl: nextRef.current,
+                    }}
                     allowTouchMove={false}
                     onBeforeInit={(swiper) => {
                         swiper.params.navigation.prevEl = prevRef.current;
                         swiper.params.navigation.nextEl = nextRef.current;
                     }}
-                    breakpoints={{
-                        320: { slidesPerView: 1 },
-                    }}
+                    className="ourProductsSwiper"
                 >
                     {productsData.map((product, index) => (
                         <SwiperSlide key={index}>
@@ -64,7 +68,9 @@ const OurProducts = () => {
                                 <div className="productContent">
                                     <span className="productNumber">{product.number}</span>
                                     <h3 className="productName">{product.name}</h3>
-                                    <Link href="" scroll={false}>Explore More <span className="arrow"></span></Link>
+                                    <Link href="" scroll={false}>
+                                        Explore More <span className="arrow"></span>
+                                    </Link>
                                 </div>
                             </div>
                         </SwiperSlide>
