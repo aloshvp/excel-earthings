@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import Marquee from 'react-fast-marquee';
 import Image from 'next/image';
-import { specialitiesSlides } from '@/utils/homeData';
+import { specialitiesSlides } from '@utils/homeData';
 
 const OurSpecialities = () => {
     const prevRef = useRef(null);
@@ -39,7 +39,8 @@ const OurSpecialities = () => {
                             swiper.params.navigation.nextEl = nextRef.current;
                         }}
                         breakpoints={{
-                            320: { slidesPerView: 2 },
+                            320: { slidesPerView: 1 },
+                            1024: { slidesPerView: 2 },
                         }}
                     >
                         {specialitiesSlides.map((slide, i) => (

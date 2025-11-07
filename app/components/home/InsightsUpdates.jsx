@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { insightsData } from "@/utils/homeData";
+import { insightsData } from "@utils/homeData";
 
 const InsightsUpdates = () => {
     return (

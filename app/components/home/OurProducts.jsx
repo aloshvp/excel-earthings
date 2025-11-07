@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import Image from "next/image";
 import Link from "next/link";
-import { productsData } from "@/utils/homeData";
+import { productsData } from "@utils/homeData";
 
 const OurProducts = () => {
     const prevRef = useRef(null);

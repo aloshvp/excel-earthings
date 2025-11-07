@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import Image from "next/image";
-import { eventsData } from "@/utils/homeData";
+import { eventsData } from "@utils/homeData";
 
 const Events = () => {
     const prevRef = useRef(null);

@@ -846,7 +846,7 @@
 
 .eventsBody {
     display: flex;
-    gap: 80px;
+    gap: 40px;
 
 }
 
@@ -864,6 +864,7 @@
     display: flex;
     align-items: center;
     gap: 80px;
+    justify-content: center;
 }
 
 .eventImg>img {
@@ -887,6 +888,7 @@
     line-height: 1.5em;
     color: #fff;
     padding-top: 20px;
+    max-width: 550px;
 }
 
 .eventInfo>span {
@@ -1218,7 +1220,9 @@
     gap: 30px;
 }
 
-.atGlanceGridItem>img {}
+.atGlanceGridItem>img {
+    object-fit: cover;
+}
 
 .atGlanceGridItem>.horizontalLIne {
     height: 1px;

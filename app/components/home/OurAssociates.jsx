@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import Image from 'next/image';
-import { associatesData } from '@/utils/homeData';
+import { associatesData } from '@utils/homeData';
 import Link from 'next/link';
 
 const OurAssociates = () => {
@@ -26,7 +26,7 @@ const OurAssociates = () => {
                             Organizations and Private Companies, with its inherent quality and standards.
                         </p>
                     </div>
-                    <div className="ourAssociatesHeadBtn">                        
+                    <div className="ourAssociatesHeadBtn">
                         <Link href="" className='exploreMoreBtn' scroll={false}>Explore More <span className="arrow"></span></Link>
                     </div>
                 </div>

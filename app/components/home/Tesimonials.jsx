@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import Image from 'next/image';
-import { testimonialsData } from '@/utils/homeData';
+import { testimonialsData } from '@utils/homeData';
 
 
 const Testimonials = () => {
@@ -31,8 +31,8 @@ const Testimonials = () => {
                         modules={[Navigation]}
                         spaceBetween={40}
                         slidesPerView={4}
-                        loop                         
-                        allowTouchMove={false} 
+                        loop
+                        allowTouchMove={false}
                         onBeforeInit={(swiper) => {
                             swiper.params.navigation.prevEl = prevRef.current;
                             swiper.params.navigation.nextEl = nextRef.current;

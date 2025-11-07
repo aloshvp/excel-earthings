@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import Image from 'next/image';
-import { certificationsData } from '@/utils/homeData'; // make sure to create this data
+import { certificationsData } from '@utils/homeData';
 import Link from 'next/link';
 
 const OurCertifications = () => {

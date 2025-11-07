@@ -18,7 +18,7 @@ const Footer = dynamic(() => import("./components/common/Footer"), { suspense: t
 export default function Home() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Banner />
 
       <Suspense>

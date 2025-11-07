@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import Link from 'next/link';
 import Image from 'next/image';
-import { slidesData } from '@/utils/homeData';
+import { slidesData } from '@utils/homeData';
 
 const AreaOfApplications = () => {
     const [allLoaded, setAllLoaded] = useState(false);
