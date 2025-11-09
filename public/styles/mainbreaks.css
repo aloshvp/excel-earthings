@@ -13,31 +13,292 @@
 @media only screen and (max-width: 1100px) {}
 
 @media only screen and (max-width: 991px) {
+
+
+    /*common*/
+    .homeCmnHead {
+        font-size: 42px;
+    }
+
+    .exploreMoreBtn {
+        font-size: 16px;
+        padding: 16px 22px 16px 22px;
+    }
+
+    /*banner*/
     .bannerWrap {
         height: 100%;
     }
 
-    .bannerContentLft>h1>em {
+    .bannerContent {
+        align-items: flex-start;
+        padding-bottom: 60px;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .bannerGridItem>h2 {
+        padding: 30px 0 10px;
+    }
+
+    .bannerContentLft>h1>em,
+    .bannerContentLft>p>em {
         display: inline-block;
     }
 
-    .bannerContent {
-        align-items: flex-start;
-        padding-bottom: 30px;
+
+    .bannerGridItem {
+        min-width: 100%;
+    }
+
+    /*area of applications*/
+    .areaOfApplicationsWrap {
+        padding: 80px 0 280px;
+    }
+
+    .areaOfApplicationsSlider .slideSec {
+        gap: 25px;
+    }
+
+    .areaOfApplicationsSlider .slideTitle>h3 {
+        font-size: 22px;
+    }
+
+    .slideTitle>img {
+        max-width: 60px;
+    }
+
+    .slideContent a {
+        margin-top: 25px;
+    }
+
+    .areaOfApplicationsSliderNav {
+        bottom: -100px;
     }
 
 
-    .bannerContent {
-
-        flex-direction: column;
+    /*at glance*/
+    .atGlanceWrap {
+        padding: 80px 0 150px;
     }
 
     .atGlanceTopCont {
         flex-direction: column;
+        gap: 0;
     }
 
-    .bannerGridItem {
+    .atGlanceTopContLft>p {
+        margin-top: 30px;
+        font-size: 22px;
+    }
+
+
+    .atGlanceTopContRght {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .atGlanceTopContRght>span {
+        font-size: 420px;
+    }
+
+    .atGlanceTopContRght>em {
+        position: absolute;
+        bottom: 50px;
+        max-width: 300px;
+    }
+
+    .atGlanceGrid {
+        gap: 30px;
+    }
+
+    .atGlanceGridItem {
+        gap: 20px;
+    }
+
+    .atGlanceGridItem>p {
+        font-size: 18px;
+    }
+
+    .atGlanceTopContLft a {
+        margin-top: 25px;
+    }
+
+    .atGlanceMarquee .marqueeText {
+        font-size: 60px;
+    }
+
+    .atGlanceMarquee {
+        padding: 40px 25px 0;
+    }
+
+    /*our Specialities*/
+    .ourSpecialitiesWrap {
+        padding: 80px 0 150px;
+    }
+
+    .ourSpecialitiesMarquee .marqueeText {
+        font-size: 60px;
+    }
+
+    .ourSpecialitiesMarquee {
+        padding: 40px 25px 0;
+    }
+
+
+    /*our associate*/
+    .ourAssociatesWrap {
+        padding: 80px 0 280px;
+    }
+
+    .ourAssociatesHead {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+        padding-bottom: 40px;
+    }
+
+    .associateSlide .associateDesc {
+        font-size: 20px;
+    }
+
+    /*our certifications*/
+    .ourCertificationWrap {
+        padding: 80px 0 280px;
+    }
+
+    .ourCertificationHead {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding-bottom: 40px;
+    }
+
+    .certificationContent>h3 {
+        font-size: 20px;
+    }
+
+    /*our products*/
+    .ourProductsWrap {
+        padding: 80px 0 0;
+    }
+
+    .productContent {
+        left: 25px;
+        top: 60px;
+    }
+
+    .productName {
+        font-size: 40px;
+        margin: 5px 0px 12px;
+    }
+
+    .ourProductsSliderNav {
+        top: 60px;
+        right: 25px;
+    }
+
+    /*testimonials*/
+    .tesimonialsWrap {
+        padding: 80px 0 200px;
+    }
+
+    .testimonialItem {
+        padding: 40px 30px;
+    }
+
+    .testimonialDescription {
+        margin: 25px 0 35px;
+        font-size: 18px;
+        line-height: 1.5em;
+    }
+
+    .testimonialItem>h3 {
+        font-size: 20px;
+    }
+
+    .testimonialDesignation {
+        font-size: 16px;
+    }
+
+    /*view our profile*/
+    .viewOurProfileBody {
+        gap: 15px;
+    }
+
+    .viewOurProfileBody>h2 {
+        margin-bottom: 0;
+    }
+
+
+    .playButtonWrap {
+        margin: 10px;
+    }
+
+    /*Insights Updates*/
+    .insightsUpdatesWrap {
+        padding: 80px 0 200px;
+    }
+
+    .insightsUpdateGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px 30px;
+    }
+
+    .insightsUpdateGridItem h4 {
+        font-size: 22px;
+    }
+
+    .insightsUpdateGridItem span {
+        margin: 30px 0 15px;
+    }
+
+    .insightsUpdateGridItem p {
+        margin: 15px 0 30px;
+    }
+
+
+    /*event*/
+    .eventsWrap {
+        padding: 80px 0 200px;
+    }
+
+    .eventsBody {
+        flex-direction: column;
+    }
+
+    .eventsBodyLft {
         min-width: 100%;
+    }
+
+    .eventItem {
+        gap: 30px;
+        justify-content: flex-start;
+    }
+
+    .eventsSliderNav {
+        gap: 15px;
+        top: 80px;
+        right: 30px;
+    }
+
+    .eventsBodyLft>h2>em {
+        display: inline-block;
+    }
+
+    .eventImg {
+        max-width: 300px;
+    }
+
+    .eventInfo {
+        width: 100%;
+    }
+
+
+    .eventInfo>p {
+        max-width: 100%;
+        font-size: 18px;
     }
 }
 

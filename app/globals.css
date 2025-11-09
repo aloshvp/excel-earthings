@@ -35,6 +35,8 @@
   /*colors*/
   --blue: #002581;
 
+  /*border radius*/
+  --border-home: 100px 100px 0 0;
 }
 
 
@@ -361,7 +363,8 @@ p>em {
   padding: 140px 0;
   background: linear-gradient(rgba(20, 33, 61, 0.93), rgba(20, 33, 61, 0.93)), url('/images/footer-bg.jpg') no-repeat center center;
   background-size: cover;
-  border-radius: 100px 100px 0 0;
+  /* border-radius: 100px 100px 0 0; */
+  border-radius: var(--border-home);
   color: #fff;
   position: relative;
   margin-top: -100px;
@@ -585,6 +588,66 @@ p>em {
   .container {
     padding-left: 25px;
     padding-right: 25px;
+  }
+
+  p>em {
+    display: inline-block;
+  }
+
+  :root {
+    --border-home: 60px 60px 0 0;
+  }
+
+
+  /*footer*/
+  .footerWrap {
+    padding: 80px 0 60px;
+  }
+
+  .footerLogoImg {
+    gap: 15px;
+  }
+
+  .footerLogoImg>img {
+    max-width: 150px;
+  }
+
+  .footerLogoImg .dividerVertical {
+    height: 40px;
+  }
+
+  .footerContact {
+    gap: 15px;
+  }
+
+  .footerLogoSec {
+    gap: 40px;
+    padding: 0 0 40px;
+  }
+
+  .footerAddressSec {
+    padding: 40px 0;
+    gap: 30px;
+  }
+
+  .footerBody b {
+    font-size: 18px;
+    margin: 0px 0px 14px;
+  }
+
+  .footerBody p {
+    margin: 0 0 16px;
+    font-size: 16px;
+  }
+
+  .footerAboutSec {
+    flex-direction: column;
+    padding: 40px 0;
+    gap: 35px;
+  }
+
+  .footerBody p>em {
+    display: inline-block;
   }
 }
 
