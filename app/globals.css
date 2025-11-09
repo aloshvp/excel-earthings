@@ -656,6 +656,38 @@ p>em {
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  /*footer*/
+  .footerWrap {
+    padding: 60px 0 40px;
+  }
+
+  .footerLogoSec {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 0 30px;
+  }
+
+  .footerAddressSec {
+    gap: 30px;
+    padding: 30px 0;
+    /* flex-direction: column; */
+  }
+
+  .footerAboutSec {
+    gap: 30px;
+    padding: 30px 0;
+  }
+
+  .footerBottomSec {
+    padding: 30px 0 0;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .footerAddressSec {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 479px) {}

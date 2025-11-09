@@ -302,8 +302,319 @@
     }
 }
 
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
 
-@media only screen and (max-width: 479px) {}
+    /*common*/
+    .homeCmnHead {
+        font-size: 32px;
+    }
+
+    .homeCmnSubHead {
+        margin: 0 0 10px;
+        font-size: 16px;
+    }
+
+    .exploreMoreBtn {
+        padding: 12px 14px;
+        font-size: 16px;
+    }
+
+    .exploreMoreBtn .arrow {
+        width: 16px;
+        height: 16px;
+        margin-left: 8px;
+    }
+
+    /*banner*/
+    .bannerContent {
+        padding-bottom: 40px;
+    }
+
+    .bannerContentLft>h1 {
+        padding-bottom: 15px;
+        font-size: 48px;
+    }
+
+    .bannerContentLft>p {
+        padding-top: 30px;
+        font-size: 18px;
+    }
+
+    .bannerGridItem {
+        padding: 20px 15px;
+    }
+
+    .bannerGridItem>h2 {
+        font-size: 18px;
+        padding: 20px 0 10px;
+    }
+
+    .bannerGridItem>h2>em {
+        display: inline-block;
+    }
+
+    .bannerGridItem>p {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    .bannerGridItem>em {
+        font-size: 22px;
+        padding-bottom: 10px;
+    }
+
+    /*area of applications*/
+    .areaOfApplicationsWrap {
+        padding: 60px 0 210px;
+    }
+
+    .areaOfApplicationsHead {
+        padding-bottom: 40px;
+    }
+
+    .areaOfApplicationsSliderNav {
+        bottom: -60px;
+    }
+
+    .slideTitle>img {
+        max-width: 55px;
+    }
+
+    .areaOfApplicationsSlider .slideSec {
+        gap: 20px;
+    }
+
+    .areaOfApplicationsSliderBtn {
+        width: 32px;
+        height: 32px;
+    }
+
+    /*At glance*/
+    .atGlanceWrap {
+        padding: 60px 0 150px;
+    }
+
+    .atGlanceTopContLft>p {
+        font-size: 18px;
+        margin-top: 25px;
+    }
+
+    .atGlanceTopContRght>span {
+        font-size: 360px;
+    }
+
+    .atGlanceTopContRght>em {
+        max-width: 220px;
+    }
+
+    .atGlanceGrid {
+        gap: 45px 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .atGlanceMarquee {
+        padding: 30px 20px 0;
+    }
+
+    .atGlanceMarquee .marqueeText {
+        font-size: 45px;
+    }
+
+    .areaOfApplicationsSliderNav {
+        gap: 10px;
+    }
+
+    /*our specialities*/
+    .ourSpecialitiesWrap {
+        padding: 60px 0 150px;
+    }
+
+    .ourSpecialitiesSliderBtn {
+        width: 32px;
+        height: 32px;
+    }
+
+    .ourSpecialitiesSliderNav {
+        gap: 10px;
+        top: -80px;
+    }
+
+    .specialitySlide {
+        padding: 25px;
+    }
+
+    .specialitySlideTitle {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .specialityContent h4 {
+        font-size: 20px;
+    }
+
+    .specialityImageWrap {
+        flex: 0 0 100px;
+    }
+
+    .specialityCard {
+        gap: 15px;
+    }
+
+    .ourSpecialitiesMarquee {
+        padding: 30px 20px 0;
+    }
+
+    .ourSpecialitiesMarquee .marqueeText {
+        font-size: 45px;
+    }
+
+    /**/
+    .ourAssociatesWrap {
+        padding: 60px 0 230px;
+    }
+
+    .ourAssociatesSliderNavBtn {
+        width: 32px;
+        height: 32px;
+    }
+
+    .ourAssociatesSliderNav {
+        gap: 10px;
+        bottom: -80px;
+    }
+
+    .associateImg {
+        max-width: 150px;
+    }
+
+    .associateSlide .associateDesc {
+        font-size: 18px;
+    }
+
+    /*certifications*/
+    .ourCertificationWrap {
+        padding: 40px 0 230px;
+    }
+
+    .ourCertificationHead {
+        padding-bottom: 30px;
+    }
+
+    .ourCertificationNav {
+        gap: 10px;
+        bottom: -70px;
+    }
+
+    .ourCertificationSlierNavBtn {
+        width: 32px;
+        height: 32px;
+    }
+
+    .certificationImg {
+        max-width: 150px;
+    }
+
+    /*our products*/
+    .ourProductsWrap {
+        padding: 60px 0 0;
+    }
+
+    .ourProductsSlierNavBtn {
+        width: 32px;
+        height: 32px;
+    }
+
+    .ourProductsSliderNav {
+        top: 40px;
+        right: 25px;
+        gap: 10px;
+    }
+
+    .productName {
+        margin: 5px 0 10px;
+        font-size: 28px;
+    }
+
+    .productContent {
+        top: 40px;
+        left: 20px;
+    }
+
+    .productContent>a {
+        font-size: 16px;
+    }
+
+    /*testimonials*/
+    .tesimonialsWrap {
+        padding: 60px 0 160px;
+    }
+
+    .testimonialsSlierNavBtn {
+        width: 32px;
+        height: 32px;
+    }
+
+    .testimonialsSliderNav {
+        gap: 10px;
+        top: -30px;
+    }
+
+    .testimonialItem {
+        padding: 30px 25px;
+    }
+
+    /*insights*/
+    .insightsUpdatesWrap {
+        padding: 60px 0 180px;
+    }
+
+    .insightsUpdateGrid {
+        margin: 40px 0 0;
+        gap: 45px 30px;
+    }
+
+    .insightsUpdateGridItem h4 {
+        font-size: 18px;
+    }
+
+    .insightsUpdateGridItem span {
+        margin: 25px 0 10px;
+    }
+
+    .insightsUpdateGridItem p {
+        color: #111;
+        margin: 15px 0 20px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+
+    /*banner*/
+    .bannerContentLft>h1 {
+        padding-bottom: 15px;
+        font-size: 38px;
+    }
+
+    .bannerGrid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 12px;
+    }
+
+    /*at glance*/
+    .atGlanceTopContRght>span {
+        font-size: 250px;
+    }
+
+    .atGlanceTopContRght>em {
+        max-width: 160px;
+        bottom: 35px;
+    }
+
+    .atGlanceGrid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+    }
+}
 
 @media only screen and (max-width: 320px) {}

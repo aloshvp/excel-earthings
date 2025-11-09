@@ -57,9 +57,9 @@ export default function Home() {
         <InsightsUpdates />
       </Suspense>
 
-      <Suspense>
+      {/* <Suspense>
         <Events />
-      </Suspense>
+      </Suspense> */}
 
       <Suspense>
         <Footer />

@@ -56,7 +56,7 @@ const OurCertifications = () => {
                             }}
                             breakpoints={{
                                 320: { slidesPerView: 1 },
-                                768: { slidesPerView: 2 },
+                                480: { slidesPerView: 2 },
                                 1024: { slidesPerView: 5 },
                             }}
                         >
@@ -82,7 +82,7 @@ const OurCertifications = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 };
 
