@@ -12,15 +12,12 @@ const Footer = dynamic(() => import("./Footer"), {
 export default function ClientLayoutWrapper({ children }) {
     const pathname = usePathname();
 
-    // Define routes where you DON'T want header/footer
     const isAdmin = pathname.startsWith("/admin");
-    const isLogin = pathname === "/login";
 
-    // Pages where we DON'T want to apply margnTop
-    const noMarginPages = ["/login", "/contact", "/some-other-page"]; // add your pages here
+    const noMarginPages = ["/login", "/contact", "/some-other-page"];
 
     // Only show header/footer on non-admin, non-login pages
-    const showLayout = !isAdmin && !isLogin;
+    const showLayout = !isAdmin;
 
     // Detect home page
     const isHome = pathname === "/";
