@@ -684,6 +684,10 @@ p>em {
     padding-right: 15px;
   }
 
+    :root {
+    --border-home: 35px 35px 0 0;
+  }
+
   /*footer*/
   .footerWrap {
     padding: 60px 0 40px;
