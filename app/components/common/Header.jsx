@@ -114,10 +114,10 @@ const Header = () => {
 
             <div className="fixedLinks">
                 <Link href="" scroll={false}>
-                    <Image src="/images/phone.svg" alt="phone" width={44} height={44} className="phone" />
+                    <Image src="/images/phone.svg" alt="phone" width={44} height={44} className="phone" priority />
                 </Link>
                 <Link href="" scroll={false}>
-                    <Image src="/images/whatsapp.svg" alt="whatsapp" width={44} height={44} className="phone" />
+                    <Image src="/images/whatsapp.svg" alt="whatsapp" width={44} height={44} className="whatsapp" priority />
                 </Link>
             </div>
         </>
