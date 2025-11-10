@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,53 +8,47 @@ import useWindowSize from "@functions/useWindowSize";
 const menuItems = [
     { title: "Home", href: "/" },
     { title: "Corporates", href: "" },
-    {
-        title: "Products",
-        href: "/products",
-    },
-    {
-        title: "Applications",
-        href: "",
-        // submenu: [
-        //     { title: "App 1", href: "" },
-        //     { title: "App 2", href: "" },
-        //     { title: "App 3", href: "" },
-        // ]
-    },
+    { title: "Products", href: "/products" },
+    { title: "Applications", href: "" },
     { title: "Dealership", href: "" },
     { title: "Design", href: "" },
     { title: "E-Learning", href: "" },
     { title: "Contact Us", href: "" },
 ];
 
-// Pages where header should NOT be scrolled initially, scroll dynamically like home
+// Pages where header should scroll dynamically like home
 const dynamicScrollPages = ["/"];
 
 const Header = () => {
     const pathname = usePathname();
-    const [scrolled, setScrolled] = useState(!dynamicScrollPages.includes(pathname));
+    const { width } = useWindowSize();
+    const isMobile = width <= 991;
+
+    // Initial scrolled state: mobile = true, desktop = depends on page
+    const [scrolled, setScrolled] = useState(isMobile || !dynamicScrollPages.includes(pathname));
     const [menuOpen, setMenuOpen] = useState(false);
     const [submenuOpen, setSubmenuOpen] = useState({});
-    const { width } = useWindowSize();
 
     useEffect(() => {
+        // Mobile: always scrolled
+        if (isMobile) {
+            setScrolled(true);
+            return;
+        }
+
+        // Desktop: dynamic scroll only for specific pages
         if (dynamicScrollPages.includes(pathname)) {
-            setScrolled(window.scrollY > 0); // Home-like behavior
+            setScrolled(window.scrollY > 0);
             const handleScroll = () => setScrolled(window.scrollY > 0);
             window.addEventListener("scroll", handleScroll);
             return () => window.removeEventListener("scroll", handleScroll);
         } else {
-            setScrolled(true); // Always scrolled on other pages
+            setScrolled(true); // always scrolled on other desktop pages
         }
-    }, [pathname]);
-
-    const isMobile = width <= 991;
+    }, [pathname, isMobile]);
 
     const toggleSubmenu = (index) => {
-        setSubmenuOpen((prev) => ({
-            ...prev,
-            [index]: !prev[index],
-        }));
+        setSubmenuOpen((prev) => ({ ...prev, [index]: !prev[index] }));
     };
 
     return (
