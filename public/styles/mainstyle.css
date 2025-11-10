@@ -134,7 +134,7 @@
     border-radius: 10px;
     background: #22345A;
     padding: 30px 25px;
-    min-width: 450px;
+    min-width: 100%;
 }
 
 .bannerGridItem>em {

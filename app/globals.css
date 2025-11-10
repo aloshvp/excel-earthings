@@ -533,7 +533,6 @@ p>em {
 }
 
 
-@media screen and (min-width: 2100px) {}
 
 @media screen and (min-width: 1800px) {
 
@@ -543,6 +542,10 @@ p>em {
     height: auto !important;
   }
 
+  .headerWrap.scrolled .headerLogoSec img {
+    width: 620px !important;
+  }
+
   .headerRghtSec {
     gap: 60px;
   }
@@ -550,12 +553,21 @@ p>em {
   .headerBadgeSec img {
     width: 100px;
   }
+
+  .headerWrap.scrolled .headerBadgeSec img {
+    width: 100px !important;
+    height: 100px !important;
+  }
 }
 
 @media screen and (min-width: 1600px) {
   .headerLogoSec img {
     width: 480px !important;
     height: auto !important;
+  }
+
+  .headerWrap.scrolled .headerLogoSec img {
+    width: 480px !important;
   }
 }
 
@@ -565,6 +577,7 @@ p>em {
   .headerLogoSec img {
     width: 380px;
   }
+
 
   .headerNavSec>ul {
     gap: 25px;
@@ -580,6 +593,12 @@ p>em {
   /*header*/
   .headerNavSec>ul>li a {
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .headerRghtSec {
+    flex-direction: row-reverse;
   }
 }
 
@@ -724,6 +743,16 @@ p>em {
 
   .footerAddressSec {
     flex-direction: column;
+  }
+
+  /*header*/
+  .headerWrap.scrolled .headerLogoSec img {
+    width: 260px !important;
+  }
+
+  .headerWrap.scrolled .headerBadgeSec img {
+    width: 45px !important;
+    height: 45px !important;
   }
 }
 
