@@ -1,4 +1,4 @@
-
+/*products main*/
 .productsMainItem { position: relative; width: 100%; display: flex; flex-direction: column; }
 .productsMainItemBg { position: relative; width: 100%; height: calc(100vh - 100px); }
 .productsMainItemImg { object-fit: cover; width: 100%; height: 100%; }

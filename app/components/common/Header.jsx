@@ -154,7 +154,7 @@ import useWindowSize from "@functions/useWindowSize";
 const menuItems = [
     { title: "Home", href: "/" },
     { title: "Corporates", href: "" },
-    { title: "Products", href: "" },
+    { title: "Products", href: "/products" },
     { title: "Applications", href: "" },
     { title: "Dealership", href: "" },
     { title: "Design", href: "" },

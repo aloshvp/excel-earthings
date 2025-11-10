@@ -1,16 +1,13 @@
-import "@styles/productsbundle.scss";
+import "@styles/staticbundles.scss";
 import Image from "next/image";
 import Link from "next/link";
 import { productsData } from "@utils/homeData";
 
 const page = () => {
-
-    console.log(productsData);
-
     return (
         <section className='productsMainWrap'>
             {productsData?.map((product) =>
-                <div className="productsMainItem" key={product. number}>
+                <div className="productsMainItem" key={product.number}>
                     <div className="productsMainItemBg">
                         <Image src={product.bgImage} alt={product.name} fill className="productsMainItemImg" priority />
                     </div>
