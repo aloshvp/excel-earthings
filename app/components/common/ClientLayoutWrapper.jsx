@@ -14,7 +14,7 @@ export default function ClientLayoutWrapper({ children }) {
 
     const isAdmin = pathname.startsWith("/admin");
 
-    const noMarginPages = ["/login", "/contact", "/some-other-page"];
+    const noMarginPages = ["/login", "/applications", "/some-other-page"];
 
     // Only show header/footer on non-admin, non-login pages
     const showLayout = !isAdmin;
@@ -25,7 +25,7 @@ export default function ClientLayoutWrapper({ children }) {
     // Conditionally apply staticWrapper + margnTop
     const wrapperClass =
         !isHome && !noMarginPages.includes(pathname)
-            ? "staticWrapper margnTop"
+            ? "staticWrapper paddngTop"
             : "staticWrapper";
 
     return (

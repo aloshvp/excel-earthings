@@ -17,7 +17,7 @@ const menuItems = [
 ];
 
 // Pages where header should scroll dynamically like home
-const dynamicScrollPages = ["/"];
+const dynamicScrollPages = ["/","/applications"];
 
 const Header = () => {
     const pathname = usePathname();
