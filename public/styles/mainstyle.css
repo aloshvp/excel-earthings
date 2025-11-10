@@ -55,97 +55,6 @@
     transform: translateX(5px);
 }
 
-/*Banner*/
-/* .bannerWrap {
-    height: 100vh;
-    background: linear-gradient(rgba(7, 22, 55, 0.85), rgba(7, 22, 55, 0.85)), url('/images/home/banner-home-bg.jpg') no-repeat center center;
-    background-size: cover;
-    color: #fff;
-    position: relative;
-}
-
-.bannerWrap .container {
-    height: 100%;
-}
-
-.bannerContent {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    height: 100%;
-    padding-bottom: 100px;
-}
-
-.bannerContentLft>h1 {
-    font-size: 60px;
-    line-height: 1em;
-    margin: 0;
-    position: relative;
-    padding-bottom: 20px;
-}
-
-.bannerContentLft>h1::after {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    width: 50px;
-    height: 3px;
-    background-color: #919191;
-}
-
-.bannerContentLft>h1>em,
-.bannerContentLft>p>em {
-    display: block;
-}
-
-.bannerContentLft>p {
-    font-size: 20px;
-    line-height: 1.5em;
-    padding-top: 30px;
-}
-
-.bannerGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.bannerGridItem {
-    border-radius: 10px;
-    background: #22345A;
-    padding: 30px 25px;
-    min-width: 450px;
-}
-
-.bannerGridItem>em {
-    display: block;
-    color: #808EAB;
-    font-style: normal;
-    font-size: 30px;
-    line-height: 1em;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #808EAB;
-    font-family: var(--light);
-}
-
-.bannerGridItem>h2 {
-    padding: 70px 0 15px;
-    font-family: var(--medium);
-    line-height: 1.2em;
-}
-
-.bannerGridItem>h2>em {
-    display: block;
-}
-
-.bannerGridItem>p {
-    font-size: 18px;
-    max-width: 350px;
-    line-height: 1.4em;
-} */
-
-
 .bannerWrap {
     position: relative;
     height: 100vh;
@@ -176,7 +85,6 @@
     height: 100%;
     position: relative;
     z-index: 2;
-    /* above background */
 }
 
 .bannerContent {
@@ -226,7 +134,7 @@
     border-radius: 10px;
     background: #22345A;
     padding: 30px 25px;
-    min-width: 450px;
+    min-width: 100%;
 }
 
 .bannerGridItem>em {

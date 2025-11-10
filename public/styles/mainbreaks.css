@@ -4,7 +4,13 @@
 
 @media screen and (min-width: 1600px) {}
 
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+
+    /*banner*/
+    .bannerGridItem {
+        min-width: 450px;
+    }
+}
 
 @media screen and (min-width: 1300px) {}
 

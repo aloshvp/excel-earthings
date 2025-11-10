@@ -17,12 +17,12 @@ const menuItems = [
 ];
 
 // Pages where header should scroll dynamically like home
-const dynamicScrollPages = ["/"];
+const dynamicScrollPages = ["/","/applications"];
 
 const Header = () => {
     const pathname = usePathname();
     const { width } = useWindowSize();
-    const isMobile = width <= 991;
+    const isMobile = width <= 1200;
 
     // Initial scrolled state: mobile = true, desktop = depends on page
     const [scrolled, setScrolled] = useState(isMobile || !dynamicScrollPages.includes(pathname));

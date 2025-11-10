@@ -1,0 +1,45 @@
+"use client";
+import React from "react";
+import Image from "next/image";
+
+const CommonBanner = ({ pageName }) => {
+  const bannerData = {
+    applications: {
+      title: "Applications",
+      image: "/images/banners/applications-bg.png",
+    },
+  };
+
+  const normalizedPageName = pageName?.toLowerCase() || "default";
+
+  const { title, image } = bannerData[normalizedPageName] || {
+    title: "Welcome",
+    image: "/images/banners/default-banner.png",
+  };
+
+  return (
+    <section className={`commonBanner ${normalizedPageName}`}>
+      <div className="commonBannerWrap">
+        <div className="commonBannerImageWrap">
+          <Image
+            src={image}
+            alt={title}
+            fill
+            priority
+            quality={90}
+            sizes="100vw"
+            style={{ objectFit: "cover", objectPosition: "center" }}
+          />
+          {/* Overlay Layer */}
+          <div className="commonBannerOverlay"></div>
+        </div>
+
+        <div className="commonBannerContent">
+          <h1>{title}</h1>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default CommonBanner;
