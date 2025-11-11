@@ -1,6 +1,17 @@
 @media screen and (min-width: 2100px) {}
 
-@media screen and (min-width: 1800px) {}
+@media screen and (min-width: 1800px) {
+
+    /*at glance*/
+    /* .atGlanceTopCont {
+        display: flex;
+        gap: 180px;
+    } */
+
+    /* .atGlanceTopContRght>span {
+        font-size: 700px;
+    } */
+}
 
 @media screen and (min-width: 1600px) {}
 

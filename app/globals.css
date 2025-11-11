@@ -601,6 +601,10 @@ p>em {
   .headerRghtSec {
     flex-direction: row-reverse;
   }
+
+  .staticWrapper.paddngTop {
+    padding: 80px 0 0;
+  }
 }
 
 @media only screen and (min-width : 1200px) {
