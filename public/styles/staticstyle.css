@@ -63,3 +63,14 @@
 .approvalsAndAsscociatesBodyGridItem > em{border-radius: 20px;border: 1px solid #c8c8c8;}
 .approvalsAndAsscociatesBodyGridItem > em > img{border-radius: 20px;}
 
+
+/*faq*/
+.faqWrapper{margin-bottom: 160px;}
+.faqBody{padding: 100px 0;}
+.faqList { display: flex; flex-direction: column; }
+.faqItem { border-bottom: 1px solid #ddd;overflow: hidden; }
+.faqHeading { display: flex; justify-content: space-between; align-items: center; padding: 20px; cursor: pointer;  }
+.faqHeading h3 { margin: 0; font-size: 22px;line-height: 1.5em;font-family: var(--medium);color: #444444; }
+.faqToggle { font-size: 20px; font-weight: bold; }
+.faqContent { padding: 0 20px; }
+.faqContent p { margin: 0 0 25px;font-size: 18px;line-height: 1.6em; }

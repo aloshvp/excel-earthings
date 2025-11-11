@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import useWindowSize from "@functions/useWindowSize";
-import { dynamicScrollPages } from "@utils/homeData";
+import { dynamicScrollPages } from "@utils/CommonData";
 
 const menuItems = [
     { title: "Home", href: "/" },
@@ -17,8 +17,6 @@ const menuItems = [
     { title: "Contact Us", href: "" },
 ];
 
-// Pages where header should scroll dynamically like home
-// const dynamicScrollPages = ["/","/applications","/products/category","/approvals-and-associates"];
 
 const Header = () => {
     const pathname = usePathname();

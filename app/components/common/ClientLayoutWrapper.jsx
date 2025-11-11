@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 import dynamic from "next/dynamic";
 import Header from "./Header";
-import { dynamicScrollPages } from "@utils/homeData";
+import { dynamicScrollPages } from "@utils/CommonData";
 const Footer = dynamic(() => import("./Footer"), {
     ssr: false,
 });

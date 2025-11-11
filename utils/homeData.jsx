@@ -1,11 +1,3 @@
-export const dynamicScrollPages = [
-    "/",
-    "/applications",
-    "/products/category",
-    "/approvals-and-associates"
-];
-
-
 export const slidesData = [
     {
         img: '/images/home/industrial-installations.jpg',
@@ -350,3 +342,4 @@ export const specialitiesSlides = [
         ],
     },
 ];
+

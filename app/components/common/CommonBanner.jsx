@@ -1,22 +1,10 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { bannerData } from "@utils/CommonData";
 
 const CommonBanner = ({ pageName }) => {
-  const bannerData = {
-    applications: {
-      title: "Applications",
-      image: "/images/banners/applications-bg.png",
-    },
-    category: {
-      title: "Products",
-      image: "/images/banners/applications-bg.png",
-    },
-    "approvals-and-associates": {
-      title: "Approvals & Associates",
-      image: "/images/banners/approvals-and-associates-bg.png",
-    },
-  };
+ 
 
   const normalizedPageName = pageName?.toLowerCase() || "default";
 
