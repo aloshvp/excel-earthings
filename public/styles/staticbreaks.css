@@ -40,8 +40,8 @@
 
     /*products main*/        
     .productsMainItemName { margin: 5px 0 10px; font-size: 28px; }
-    .productContent { top: 40px; left: 20px; }
-    .productContent > a { font-size: 16px; } 
+    .productsMainItemContent { top: 40px; left: 20px; }
+    .productsMainItemContent > a { font-size: 16px; } 
 
     
 }
