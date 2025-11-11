@@ -28,7 +28,8 @@
 .productLeftMenuSec{min-width: 200px;}
 .productLeftMenu>span{display: block;padding: 0 0 10px 0;font-family: var(--medium);font-size: 20px;line-height: 32px;color:var(--blue);position: relative;border-bottom: 1px solid var(--sred);cursor: pointer;}
 .productLeftMenu>span:after{content:'';display: inline-block;width: 11px;height:11px;background-image: url('../images/icons/arrow-down.svg');background-repeat: no-repeat;background-size: contain;position: absolute;top:10px;right:0;}
-.productLeftMenu>ul{font-size: 16px;line-height: 25px;padding: 10px 0;}
+.productLeftMenu>ul{font-size: 16px;line-height: 25px;padding: 10px 0 15px;opacity: 0;max-height: 0;overflow: hidden;transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;}
+.productLeftMenu>ul.active{opacity: 1;max-height: 500px;}
 .productLeftMenu>ul>li{padding: 8px 0 8px;border-bottom: 1px solid #d8d8d8;}
 .productLeftMenu>ul>li>a{color:var(--stext)}
 .productLeftMenu>ul>li>a:hover{color:var(--sred)}
