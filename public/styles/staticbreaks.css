@@ -21,6 +21,10 @@
     .productSections {flex-direction: column;}
 
     .productContent {top: 60px;left: 25px;}
+
+    /*products main*/
+    .productsMainItemContent { left: 25px; top: 60px; }
+    .productsMainItemName { font-size: 40px; margin: 5px 0px 12px; }
 }
 
 @media only screen and (max-width: 767px) {
@@ -33,6 +37,13 @@
     /*common banner*/
     .commonBanner .commonBannerWrap {height: 250px;}
     .commonBanner .commonBannerContent h1 {font-size: 28px; }
+
+    /*products main*/        
+    .productsMainItemName { margin: 5px 0 10px; font-size: 28px; }
+    .productsMainItemContent { top: 40px; left: 20px; }
+    .productsMainItemContent > a { font-size: 16px; } 
+
+    
 }
 
 @media only screen and (max-width: 479px) {

@@ -9,7 +9,7 @@ const menuItems = [
     { title: "Home", href: "/" },
     { title: "Corporates", href: "" },
     { title: "Products", href: "/products" },
-    { title: "Applications", href: "" },
+    { title: "Applications", href: "/applications" },
     { title: "Dealership", href: "" },
     { title: "Design", href: "" },
     { title: "E-Learning", href: "" },
