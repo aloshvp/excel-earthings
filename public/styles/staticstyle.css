@@ -57,7 +57,7 @@
 /*approvals-and-associates page*/
 .approvalsAndAsscociatesWrap{margin-bottom: 160px;}
 .approvalsAndAsscociatesBody{padding: 100px 0;}
-.approvalsAndAsscociatesBodyGrid{ display: grid;grid-template-columns: repeat(6, 1fr); gap: 80px; }
+.approvalsAndAsscociatesBodyGrid{ display: grid;grid-template-columns: repeat(4, 1fr); gap: 80px; }
 .approvalsAndAsscociatesBodyGridItem{display: flex;flex-direction: column;align-items: center;justify-content: center;text-align: center;gap: 15px;}
 .approvalsAndAsscociatesBodyGridItem > h3 { font-size: 20px; line-height: 1.5em; color: #444444; }
 .approvalsAndAsscociatesBodyGridItem > em{border-radius: 20px;border: 1px solid #c8c8c8;}

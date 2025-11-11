@@ -4,7 +4,11 @@
 
 @media screen and (min-width: 1600px) {}
 
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+
+    /*approvals-and-associates page*/
+    .approvalsAndAsscociatesBodyGrid{grid-template-columns: repeat(6, 1fr);}
+}
 
 
 @media screen and (min-width: 1300px) {
@@ -36,6 +40,9 @@
     .applicationsInnerGridItemTitle > h3 { font-size: 22px; }
     .applicationsInnerGridItemTitle > img { max-width: 60px; }
     .applicationsInnerGridItemContent a { margin-top: 25px; }
+
+    /*approvals-and-associates page*/
+    .approvalsAndAsscociatesBodyGrid{grid-template-columns: repeat(3, 1fr);gap: 40px;}
      
 }
 
@@ -60,14 +67,16 @@
     .applicationsInnerGridItemTitle > img { max-width: 55px; }    
     .applicationsInnerGridItem {gap: 25px;}
     
-
+    /*approvals-and-associates page*/
+    .approvalsAndAsscociatesBodyGrid{grid-template-columns: repeat(2, 1fr);gap: 30px;}
     
 }
 
 @media only screen and (max-width: 479px) {
     .productList {grid-template-columns: 1fr;}
 
-    /*application page*/
+    /*approvals-and-associates page*/
+    .approvalsAndAsscociatesBodyGrid{grid-template-columns: repeat(1, 1fr);gap: 30px;}
 
 }
 
