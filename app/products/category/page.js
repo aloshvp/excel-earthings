@@ -7,6 +7,15 @@ import { useState } from "react";
 const page = () => {
     const[active,setActive]=useState("Electrical Earthing");
 
+    const handleItemClick = (newValue) => {
+    setActive(prevActive => {
+      if (prevActive === newValue) {
+        return null; 
+      }
+      return newValue;
+    });
+  };
+
     const productMenus = [
     {
         label: "Electrical Earthing",
@@ -59,7 +68,7 @@ const page = () => {
                    
                     {productMenus.map((item,index)=>(
                         <div className='productLeftMenu' key={index*2}>
-                            <span className={(active===item.label)?"active":""} onClick={()=>setActive(item.label)}>{item.label}</span>
+                            <span className={(active===item.label)?"active":""} onClick={()=>handleItemClick(item.label)}>{item.label}</span>
                             <ul className={(active===item.label)?"active":""}>
                                 {item?.subMenu?.map((item,index)=>(
                                      <li key={index}><Link href={""} scroll={false}>{item.label}</Link></li>
