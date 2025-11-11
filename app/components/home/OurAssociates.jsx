@@ -22,7 +22,7 @@ const OurAssociates = () => {
                     </div>
                     <div className="ourAssociatesHeadCont">
                         <p>
-                            Our Products are widely accepted and approved by Leading PSUs, State Government <em></em>
+                            Our Products are widely accepted and approved by Leading PSUs, State Government
                             Organizations and Private Companies, with its inherent quality and standards.
                         </p>
                     </div>

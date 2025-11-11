@@ -32,6 +32,7 @@
     color: var(--blue);
     font-family: var(--medium);
     transition: all 0.5s ease;
+    min-width: 210px;
 }
 
 .exploreMoreBtn .arrow {
@@ -93,6 +94,7 @@
     align-items: center;
     height: 100%;
     padding-top: 100px;
+    gap: 60px;
 }
 
 .bannerContentLft>h1 {
@@ -113,8 +115,11 @@
     background-color: #919191;
 }
 
-.bannerContentLft>h1>em,
+/* .bannerContentLft>h1>em,
 .bannerContentLft>p>em {
+    display: block;
+} */
+.bannerContentLft>h1>em {
     display: block;
 }
 
@@ -122,6 +127,7 @@
     font-size: 20px;
     line-height: 1.5em;
     padding-top: 30px;
+    max-width: 455px;
 }
 
 .bannerGrid {
@@ -167,7 +173,7 @@
 
 /*area of applications*/
 .areaOfApplicationsWrap {
-    padding: 150px 0 300px;
+    padding: 100px 0 280px;
 }
 
 .areaOfApplicationsHead {
@@ -296,12 +302,11 @@
 
 /*our associate*/
 .ourAssociatesWrap {
-    padding: 120px 0 300px;
+    padding: 100px 0 280px;
     background: linear-gradient(rgba(255, 255, 255, 0.9)), url('/images/home/bg-approvals-and-associates.jpg') no-repeat center center;
     background-size: cover;
     color: #fff;
     position: relative;
-    /* border-radius: 100px 100px 0 0; */
     border-radius: var(--border-home);
     margin-top: -100px;
     z-index: 1;
@@ -312,12 +317,14 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    gap: 60px;
 }
 
 .ourAssociatesHeadCont>p {
     font-size: 18px;
     line-height: 1.5em;
     color: #111111;
+    max-width: 640px;
 }
 
 .ourAssociatesSlider {
@@ -371,7 +378,7 @@
 
 /*our certification*/
 .ourCertificationWrap {
-    padding: 120px 0 300px;
+    padding: 100px 0 280px;
     background: #fff;
     position: relative;
     /* border-radius: 100px 100px 0 0; */
@@ -385,12 +392,14 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    gap: 60px;
 }
 
 .ourCertificationHeadCont>p {
     font-size: 18px;
     line-height: 1.5em;
     color: #111111;
+    max-width: 625px;
 }
 
 .ourCertificationSlider {
@@ -451,7 +460,7 @@
 
 /*tesimonials*/
 .tesimonialsWrap {
-    padding: 150px 0 250px;
+    padding: 120px 0 200px;
     background: linear-gradient(rgba(17, 17, 17, 0.8)), url('/images/home/bg-testimonials.jpg') no-repeat center center;
     background-size: cover;
     color: #fff;
@@ -623,10 +632,9 @@
 
 /*our products*/
 .ourProductsWrap {
-    padding: 150px 0 0;
+    padding: 100px 0 0;
     background: #333333;
     position: relative;
-    /* border-radius: 100px 100px 0 0; */
     border-radius: var(--border-home);
     margin-top: -100px;
     z-index: 1;
@@ -834,7 +842,7 @@
 
 /*Insights Updates*/
 .insightsUpdatesWrap {
-    padding: 150px 0 250px;
+    padding: 100px 0 220px;
     background: #ECECEC;
     position: relative;
     /* border-radius: 100px 100px 0 0; */
@@ -896,10 +904,9 @@
 
 /*our Specialities*/
 .ourSpecialitiesWrap {
-    padding: 150px 0 200px;
+    padding: 100px 0 180px;
     background: #848484;
     position: relative;
-    /* border-radius: 100px 100px 0 0; */
     border-radius: var(--border-home);
     margin-top: -100px;
     z-index: 1;
@@ -1040,7 +1047,7 @@
 
 /*at glance*/
 .atGlanceWrap {
-    padding: 120px 0 200px;
+    padding: 100px 0 180px;
     background: #ECECEC;
     position: relative;
     /* border-radius: 100px 100px 0 0; */
@@ -1051,7 +1058,7 @@
 
 .atGlanceTopCont {
     display: flex;
-    gap: 140px;
+    gap: 100px;
 }
 
 .atGlanceTopContLft>p {
@@ -1059,6 +1066,7 @@
     line-height: 1.5em;
     margin-top: 50px;
     color: #111111;
+    max-width: 820px;
 }
 
 .atGlanceTopContLft a {
@@ -1096,7 +1104,7 @@
 }
 
 .atGlanceTopContRght>span {
-    font-size: 620px;
+    font-size: 380px;
     line-height: 1em;
     font-family: var(--medium);
     color: #E5E5E5;
@@ -1104,8 +1112,9 @@
 
 .atGlanceTopContRght>em {
     position: absolute;
-    bottom: 100px;
+    bottom: 120px;
     right: 0;
+    max-width: 60%;
 }
 
 .atGlanceMarquee {

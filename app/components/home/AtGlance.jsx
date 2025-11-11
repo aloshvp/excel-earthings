@@ -13,13 +13,9 @@ const AtGlance = () => {
                             <h2 className="homeCmnHead">At a Glance</h2>
                             <p>
                                 We are one of the leading manufacturer and Technical Solution
-                                <em></em>
                                 Provider in the field of Electrical Earthing and Lightning Protection.
-                                <em></em>
                                 By providing suitable design, awareness & customized products,
-                                <em></em>
                                 we ensure Electrical Safety and power quality improvement in the
-                                <em></em>
                                 electrical network.
                             </p>
                             <Link href="">Learn More</Link>

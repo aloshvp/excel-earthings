@@ -3,24 +3,78 @@
 @media screen and (min-width: 1800px) {
 
     /*at glance*/
-    /* .atGlanceTopCont {
-        display: flex;
-        gap: 180px;
-    } */
+    .atGlanceTopContRght>span {
+        font-size: 620px;
+    }
 
-    /* .atGlanceTopContRght>span {
-        font-size: 700px;
-    } */
+    .atGlanceTopContRght>em {
+        bottom: 100px;
+        right: 0;
+        max-width: 100%;
+    }
+
 }
 
-@media screen and (min-width: 1600px) {}
+@media screen and (min-width: 1600px) {
+    .atGlanceTopCont {
+        gap: 140px;
+    }
+}
 
 @media screen and (min-width: 1440px) {
 
     /*banner*/
+
     .bannerGridItem {
         min-width: 450px;
     }
+
+    /*area of applications*/
+    .areaOfApplicationsWrap {
+        padding: 150px 0 300px;
+    }
+
+    /*at glance*/
+    .atGlanceWrap {
+        padding: 120px 0 200px;
+    }
+
+    .atGlanceTopContRght>span {
+        font-size: 500px;
+    }
+
+    .atGlanceTopContRght>em {
+        bottom: 100px;
+        right: 0;
+        max-width: 55%;
+    }
+
+    .ourSpecialitiesWrap {
+        padding: 150px 0 200px;
+    }
+
+    .ourAssociatesWrap {
+        padding: 120px 0 300px;
+    }
+
+    .ourCertificationWrap {
+        padding: 120px 0 300px;
+    }
+
+    .ourProductsWrap {
+        padding: 150px 0 0;
+    }
+
+    .tesimonialsWrap {
+        padding: 150px 0 250px;
+    }
+
+    /*Insights Updates*/
+    .insightsUpdatesWrap {
+        padding: 150px 0 250px;
+    }
+
+
 }
 
 @media screen and (min-width: 1300px) {}
@@ -40,6 +94,7 @@
     .exploreMoreBtn {
         font-size: 16px;
         padding: 16px 22px 16px 22px;
+        min-width: 168px;
     }
 
     /*banner*/
@@ -54,6 +109,10 @@
         gap: 25px;
     }
 
+    .bannerContentLft>p {
+        max-width: 100%;
+    }
+
     .bannerGridItem>h2 {
         padding: 30px 0 10px;
     }
@@ -63,6 +122,9 @@
         display: inline-block;
     }
 
+    .bannerContentRght {
+        width: 100%;
+    }
 
     .bannerGridItem {
         min-width: 100%;

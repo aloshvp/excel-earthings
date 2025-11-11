@@ -24,7 +24,7 @@ const OurCertifications = () => {
                     </div>
                     <div className="ourCertificationHeadCont">
                         <p>
-                            Our Products are Tested and Certified in accordance with International and National<em></em>
+                            Our Products are Tested and Certified in accordance with International and National
                             Standards from well established NABL Accredited Laboratories.
                         </p>
                     </div>

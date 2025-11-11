@@ -24,9 +24,9 @@ const Banner = () => {
                             Our <em></em> Business <em></em> Lines
                         </h1>
                         <p>
-                            We are one of the Leading Manufacturer and Technical <em></em>{" "}
-                            Solution Provider in the field of Electrical Earthing and{" "}
-                            <em></em> Lightning Protection.
+                            We are one of the Leading Manufacturer and Technical
+                            Solution Provider in the field of Electrical Earthing and
+                            Lightning Protection.
                         </p>
                     </div>
 
