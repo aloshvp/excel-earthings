@@ -1,124 +1,26 @@
 
 :root{--sred:#b55865;--sgrey:#f6f6f6;--stext:#474747}
 /*common banner*/
-.commonBanner .commonBannerWrap {
-    position: relative;
-    width: 100%;
-    height: 600px;
-    overflow: hidden;
-}
-
-.commonBanner .commonBannerImageWrap {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-}
-
-.commonBanner .commonBannerOverlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 2;
-    transition: background 0.3s ease;
-}
-
-.commonBanner .commonBannerContent {
-    position: relative;
-    z-index: 3;
-    display: flex;
-    align-items: flex-end;
-    height: 100%;
-    padding: 0 5% 40px;
-    color: #fff;
-}
-
-.commonBanner .commonBannerContent h1 {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 0;
-    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);
-}
-
-@media (max-width: 768px) {
-    .commonBanner .commonBannerWrap {
-        height: 250px;
-    }
-
-    .commonBanner .commonBannerContent h1 {
-        font-size: 28px;
-    }
-}
+.commonBanner .commonBannerWrap { position: relative; width: 100%; height: 600px; overflow: hidden; }
+.commonBanner .commonBannerImageWrap { position: absolute; inset: 0; z-index: 1; }
+.commonBanner .commonBannerOverlay { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.4); z-index: 2; transition: background 0.3s ease; }
+.commonBanner .commonBannerContent { position: relative; z-index: 3; display: flex; align-items: flex-end; height: 100%; padding: 0 5% 40px; color: #fff; }
+.commonBanner .commonBannerContent h1 { font-size: 48px; font-weight: 700; line-height: 1.2; margin: 0; text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6); }
 
 
 /*products main*/
-.productsMainItem {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.productsMainItemBg {
-    position: relative;
-    width: 100%;
-    height: calc(100vh - 100px);
-}
-
-.productsMainItemImg {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.productsMainItemContent {
-    position: absolute;
-    top: 80px;
-    left: 100px;
-    color: #fff;
-    z-index: 2;
-}
-
-.productsMainItemNumber {
-    font-size: 26px;
-    line-height: 1em;
-    color: #ABABAB;
-}
-
-.productsMainItemName {
-    font-size: 60px;
-    margin: 5px 0 15px;
-}
-
-.productsMainItemContent>a {
-    font-size: 18px;
-    line-height: 1em;
-    position: relative;
-    display: flex;
-    transition: all 0.5s ease;
-    align-items: center;
-}
-
-.productsMainItemContent>a .arrow {
-    display: block;
-    width: 16px;
-    height: 16px;
-    margin-left: 10px;
-    background-image: url('/images/icons/right-arrow-white.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: transform 0.3s ease;
-}
-
-.productsMainItemContent>a:hover .arrow {
-    transform: translateX(3px);
-}
+.productsMainItem { position: relative; width: 100%; display: flex; flex-direction: column; }
+.productsMainItemBg { position: relative; width: 100%; height: calc(100vh - 100px); }
+.productsMainItemImg { object-fit: cover; width: 100%; height: 100%; }
+.productsMainItemContent { position: absolute; top: 80px; left: 100px; color: #fff; z-index: 2; }
+.productsMainItemNumber { font-size: 26px; line-height: 1em; color: #ABABAB; }
+.productsMainItemName { font-size: 60px; margin: 5px 0 15px; }
+.productsMainItemContent > a { font-size: 18px; line-height: 1em; position: relative; display: flex; transition: all 0.5s ease; align-items: center; }
+.productsMainItemContent > a .arrow { display: block; width: 16px; height: 16px; margin-left: 10px; background-image: url('/images/icons/right-arrow-white.svg'); background-size: contain; background-repeat: no-repeat; background-position: center; transition: transform 0.3s ease; }
+.productsMainItemContent > a:hover .arrow {transform: translateX(3px);}
 
 /*applications*/
-.applicationsInnerWrap {
-    margin-bottom: 160px;
-}
+.applicationsInnerWrap {margin-bottom: 160px;}
 
 .img-fluid{max-width: 100%;height:auto;}
 .productsWrapper{background-color: var(--sgrey);min-height: 1000px;}
