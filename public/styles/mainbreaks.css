@@ -155,10 +155,6 @@
     .exploreMoreBtn { padding: 12px 14px; font-size: 16px; }
     .exploreMoreBtn .arrow { width: 16px; height: 16px; margin-left: 8px; }
     
-    /*our products*/
-    .ourProductsSliderNav {top: 40px;right: 25px;}
-    .productName { font-size: 32px; margin: 5px 0 10px; }
-
     /*banner*/
     .bannerContent { padding-bottom: 40px; }
     .bannerContentLft > h1 { padding-bottom: 15px; font-size: 48px; }
@@ -224,7 +220,7 @@
     .ourProductsSliderNav { top: 40px; right: 25px; gap: 10px; }
     .productName { margin: 5px 0 10px; font-size: 28px; }
     .productContent { top: 40px; left: 20px; }
-    .productContent > a { font-size: 16px; }
+    .productContent > a { font-size: 16px; }        
     
 
     /*testimonials*/

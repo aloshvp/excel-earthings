@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 { font-weight: normal; margin: 0; }
 p { margin: 0; }
 p>em { display: block; }
 
-.staticWrapper.paddngTop {padding: 100px 0 0;}
+.staticWrapper.paddngTop {padding: 80px 0 0;}
 
 
 /*header*/
@@ -82,7 +82,8 @@ p>em { display: block; }
 .mobileSubmenu { display: flex; flex-direction: column; margin-top: 5px; padding-left: 15px; }
 .arrow { font-size: 12px; margin-left: 5px; }
 .fixedLinks { position: fixed; bottom: 30px; right: 30px; display: flex; flex-direction: column; gap: 10px; z-index: 999; }
-
+.fixedLinks > a { transition: transform 0.3s ease; }
+.fixedLinks > a:hover { transform: scale(1.1); }
 
 /*Footer*/
 .footerWrap { padding: 100px 0; background: linear-gradient(rgba(20, 33, 61, 0.93), rgba(20, 33, 61, 0.93)), url('/images/footer-bg.jpg') no-repeat center center; background-size: cover; border-radius: var(--border-home); color: #fff; position: relative; margin-top: -100px; z-index: 1; }
@@ -122,6 +123,9 @@ p>em { display: block; }
 
 @media screen and (min-width: 1800px) {
 
+  /*common*/
+  .staticWrapper.paddngTop { padding: 120px 0 0; }
+
   /*header*/
   .headerLogoSec img { width: 620px !important; height: auto !important; }
   .headerWrap.scrolled .headerLogoSec img { width: 620px !important; }
@@ -132,6 +136,10 @@ p>em { display: block; }
 }
 
 @media screen and (min-width: 1600px) {
+
+  /*common*/
+  .staticWrapper.paddngTop { padding: 90px 0 0; }
+
   /*header*/
   .headerLogoSec img { width: 480px !important; height: auto !important; }
   .headerWrap.scrolled .headerLogoSec img { width: 480px !important; }
@@ -160,7 +168,7 @@ p>em { display: block; }
   
   /*common*/
   .container {padding-left: 50px;padding-right: 50px;}
-  .staticWrapper.paddngTop {padding: 80px 0 0;}
+  .staticWrapper.paddngTop {padding: 75px 0 0;}
 
   /*header*/
   .headerRghtSec {flex-direction: row-reverse;}
@@ -210,6 +218,7 @@ p>em { display: block; }
   /*common*/
   :root { --border-home: 35px 35px 0 0; }
   .container {padding-left: 15px;padding-right: 15px;}
+  .staticWrapper.paddngTop { padding: 65px 0 0; }
 
   /*footer*/
   .footerWrap { padding: 60px 0 40px; }
