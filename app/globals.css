@@ -57,7 +57,7 @@ p>em { display: block; }
 
 
 /*header*/
-.headerWrap { position: fixed; top: 0; left: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; padding: 20px 60px; width: 100%; transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1); background: transparent; will-change: padding, background, box-shadow; }
+.headerWrap { position: fixed; top: 0; left: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; padding: 20px 60px; width: 100%; transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1); background: transparent; will-change: padding, background, box-shadow;gap: 25px; }
 .headerWrap.scrolled { background: #333; backdrop-filter: blur(8px); padding: 10px 40px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); }
 .headerLogoSec img { transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1); will-change: width, height; width: 300px; }
 .headerWrap.scrolled .headerLogoSec img { width: 300px !important; height: auto !important; }
@@ -232,6 +232,11 @@ p>em { display: block; }
   .headerWrap.scrolled .headerBadgeSec img { width: 45px !important; height: 45px !important; }
 }
 
-@media only screen and (max-width: 479px) {}
+@media only screen and (max-width: 479px) {
+
+  /*footer*/
+  .footerLogoImg > img { max-width: 120px; }
+  
+}
 
 @media only screen and (max-width: 320px) {}

@@ -42,7 +42,7 @@ const page = () => {
                                 </div>
                                 <div className="applicationsInnerGridItemContent">
                                     <p>{slide.content}</p>
-                                    <Link href={slide.link}>Learn More</Link>
+                                    <Link href={slide.link} scroll={false}>Learn More</Link>
                                 </div>
                             </div>
                         ))}
