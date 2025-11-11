@@ -14,7 +14,7 @@ export default function ClientLayoutWrapper({ children }) {
 
     const isAdmin = pathname.startsWith("/admin");
 
-    const noMarginPages = ["/login", "/applications", "/some-other-page"];
+    const noMarginPages = ["/login", "/applications","/products/category"];
 
     // Only show header/footer on non-admin, non-login pages
     const showLayout = !isAdmin;
