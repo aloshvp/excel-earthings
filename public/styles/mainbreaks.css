@@ -152,7 +152,7 @@
     /*common*/
     .homeCmnHead { font-size: 32px; }
     .homeCmnSubHead { margin: 0 0 10px; font-size: 16px; }
-    .exploreMoreBtn { padding: 12px 14px; font-size: 16px; }
+    .exploreMoreBtn { padding: 12px 14px; font-size: 16px;min-width: 148px; }
     .exploreMoreBtn .arrow { width: 16px; height: 16px; margin-left: 8px; }
     
     /*banner*/
@@ -254,4 +254,8 @@
 
 }
 
-@media only screen and (max-width: 320px) {}
+@media only screen and (max-width: 320px) {
+
+    /*area of applications*/
+    .areaOfApplicationsHead { flex-direction: column; align-items: flex-start; gap: 25px; }
+}

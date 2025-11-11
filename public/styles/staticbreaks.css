@@ -18,20 +18,31 @@
 
 
 @media only screen and (max-width: 991px) {
-    .productSections {flex-direction: column;}
+    
+    /*common banner*/
+    .commonBanner .commonBannerWrap{height: 450px;}
 
+    .productSections {flex-direction: column;}
     .productContent {top: 60px;left: 25px;}
 
     /*products main*/
     .productsMainItemContent { left: 25px; top: 60px; }
     .productsMainItemName { font-size: 40px; margin: 5px 0px 12px; }
+
+
+    /*application page*/
+    .applicationsInnerBody { padding: 80px 0; }    
+    .applicationsInnerGrid { gap: 60px 30px;grid-template-columns: repeat(2, 1fr); }
+    .applicationsInnerGridItemTitle > h3 { font-size: 22px; }
+    .applicationsInnerGridItemTitle > img { max-width: 60px; }
+    .applicationsInnerGridItemContent a { margin-top: 25px; }
+     
 }
 
 @media only screen and (max-width: 767px) {
+    
     .prdtDesc>em {font-size: 16px; line-height: 25px; margin-bottom: 5px;}
-
     .prdtDesc {padding: 0 0 20px;}
-
     .productLeftMenuSec {min-width: auto;}
 
     /*common banner*/
@@ -43,11 +54,21 @@
     .productsMainItemContent { top: 40px; left: 20px; }
     .productsMainItemContent > a { font-size: 16px; } 
 
+    /*application page*/
+    .applicationsInnerBody { padding: 60px 0 15px; }
+    .applicationsInnerGrid {grid-template-columns: repeat(1, 1fr); gap: 40px; }
+    .applicationsInnerGridItemTitle > img { max-width: 55px; }    
+    .applicationsInnerGridItem {gap: 25px;}
+    
+
     
 }
 
 @media only screen and (max-width: 479px) {
     .productList {grid-template-columns: 1fr;}
+
+    /*application page*/
+
 }
 
 
