@@ -12,10 +12,10 @@ const page = () => {
 
             <div className="approvalsAndAsscociatesBody">
                 <div className="container">
-                    <div className="approvalsAndAsscociatesBodyTitle">
+                    {/* <div className="approvalsAndAsscociatesBodyTitle">
                         <h2>Approvals & Associates</h2>
                         <p></p>
-                    </div>
+                    </div> */}
 
                     <div className="approvalsAndAsscociatesBodyGrid">
                         {associatesData?.map((item, idx) => (
@@ -24,12 +24,12 @@ const page = () => {
                                     <Image
                                         src={item.img}
                                         alt={item.title}
-                                        width={200}
-                                        height={200}
+                                        width={250}
+                                        height={250}
                                         loading="eager"
                                     />
                                 </em>
-                                <h3>{item.title}</h3>
+                                <h3>{item.name}</h3>
                             </div>
                         ))}
                     </div>
