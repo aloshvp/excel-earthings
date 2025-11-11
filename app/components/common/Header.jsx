@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import useWindowSize from "@functions/useWindowSize";
+import { dynamicScrollPages } from "@utils/homeData";
 
 const menuItems = [
     { title: "Home", href: "/" },
@@ -17,7 +18,7 @@ const menuItems = [
 ];
 
 // Pages where header should scroll dynamically like home
-const dynamicScrollPages = ["/","/applications","/products/category"];
+// const dynamicScrollPages = ["/","/applications","/products/category","/approvals-and-associates"];
 
 const Header = () => {
     const pathname = usePathname();
@@ -25,7 +26,7 @@ const Header = () => {
     const isMobile = width <= 1200;
 
     // Initial scrolled state: mobile = true, desktop = depends on page
-    const [scrolled, setScrolled] = useState(isMobile || !dynamicScrollPages.includes(pathname));
+    const [scrolled, setScrolled] = useState(isMobile || !dynamicScrollPages?.includes(pathname));
     const [menuOpen, setMenuOpen] = useState(false);
     const [submenuOpen, setSubmenuOpen] = useState({});
 

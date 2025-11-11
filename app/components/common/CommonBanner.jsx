@@ -12,6 +12,10 @@ const CommonBanner = ({ pageName }) => {
       title: "Products",
       image: "/images/banners/applications-bg.png",
     },
+    "approvals-and-associates": {
+      title: "Approvals & Associates",
+      image: "/images/banners/approvals-and-associates-bg.png",
+    },
   };
 
   const normalizedPageName = pageName?.toLowerCase() || "default";
