@@ -14,7 +14,7 @@ const page = () => {
                     <div className="productsMainItemContent">
                         <span className="productsMainItemNumber">{product.number}</span>
                         <h3 className="productsMainItemName">{product.name}</h3>
-                        <Link href="" scroll={false}>
+                        <Link href={product?.link?product?.link:""} scroll={false}>
                             Explore More <span className="arrow"></span>
                         </Link>
                     </div>

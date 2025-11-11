@@ -1,10 +1,12 @@
 import "@styles/staticbundles.scss";
 import Link from 'next/link'
 import Image from 'next/image'
-import React from 'react'
+import CommonBanner from "@common/CommonBanner";
 
 const page = () => {
   return (
+    <>
+    <CommonBanner pageName={"category"}/>
     <div className="productsWrapper">
         <div className='container'>
             <div className='productSections'>
@@ -110,6 +112,7 @@ const page = () => {
             </div>
         </div>
     </div>
+    </>
   )
 }
 

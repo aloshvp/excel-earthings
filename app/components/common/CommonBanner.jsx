@@ -8,6 +8,10 @@ const CommonBanner = ({ pageName }) => {
       title: "Applications",
       image: "/images/banners/applications-bg.png",
     },
+    category: {
+      title: "Products",
+      image: "/images/banners/applications-bg.png",
+    },
   };
 
   const normalizedPageName = pageName?.toLowerCase() || "default";
