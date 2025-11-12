@@ -15,6 +15,10 @@
 
     /*faq*/
     .faqBody{padding: 150px 0;}
+
+    /* insights And Updates page */
+    .insightsAndUpdatesInnerWrap{padding: 150px 0;}
+    .insightsAndUpdatesInnerBody{max-width: 90%;margin: 0 auto;}
 }
 
 
@@ -65,6 +69,13 @@
     .faqBody{padding: 60px 0;}
     .faqHead > h2 {margin-bottom: 15px;}
     .faqContent{ padding: 0; }
+
+    /* insights And Updates page */
+    .insightsAndUpdatesInnerWrap{padding: 60px 0;}
+    .insightsAndUpdatesInnerGridItem span { margin: 30px 0 15px;  }
+    .insightsAndUpdatesInnerGridItem h4 { font-size: 20px;}
+    .insightsAndUpdatesInnerGridItem p{ margin: 20px 0 35px;}
+
      
 }
 
@@ -104,6 +115,11 @@
     .faqContent p {margin: 0 0 15px;font-size: 16px;}
     .faqToggle{font-size: 15px;}
     .faqToggle >img{max-width: 13px;}
+
+    /* insights And Updates page */
+    .insightsAndUpdatesInnerWrap { padding: 40px 0 60px; }
+    .insightsAndUpdatesInnerGrid{grid-template-columns: repeat(2, 1fr);gap: 45px 20px;}
+
     
 }
 
@@ -116,8 +132,9 @@
     .approvalsAndAsscociatesBodyGridItem > h3 {font-size: 16px;}
     .approvalsAndAsscociatesBodyGrid { margin-top: 30px;}
 
-        /*application page*/
-        /* .applicationsInnerBody { padding: 40px 0; } */
+    /* insights And Updates page */
+    .insightsAndUpdatesInnerGrid{grid-template-columns: repeat(1, 1fr);}
+    .insightsAndUpdatesInnerGridItem p {margin: 15px 0px 20px;}
 
 }
 

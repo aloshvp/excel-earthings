@@ -76,10 +76,10 @@ const Footer = () => {
                                 <ul>
                                     <li><Link href="/">Home</Link></li>
                                     <li><Link href="" scroll={false}>About Us</Link></li>
-                                    <li><Link href="" scroll={false}>Products</Link></li>
+                                    <li><Link href="/products">Products</Link></li>
                                     <li><Link href="" scroll={false}>Certifications & Quality Assurance</Link></li>
                                     <li><Link href="/approvals-and-associates">Approvals & Associates</Link></li>
-                                    <li><Link href="" scroll={false}>Applications</Link></li>
+                                    <li><Link href="/applications">Applications</Link></li>
                                     <li><Link href="" scroll={false}>Dealership</Link></li>
                                 </ul>
                                 <ul>
@@ -87,7 +87,7 @@ const Footer = () => {
                                     <li><Link href="" scroll={false}>Transformer Earthing Design</Link></li>
                                     <li><Link href="/faq" >Faq</Link></li>
                                     <li><Link href="" scroll={false}>Careers</Link></li>
-                                    <li><Link href="" scroll={false}>Insights & Updates</Link></li>
+                                    <li><Link href="/insights-and-updates">Insights & Updates</Link></li>
                                     <li><Link href="" scroll={false}>Contact Us</Link></li>
                                 </ul>
                             </div>

@@ -75,12 +75,13 @@
 .faqHead > h2{font-size: 36px;line-height: 1.4em;font-family: var(--medium);margin-bottom: 30px;}
 
 /* insights And Updates page */
-.insightsAndUpdatesInnerWrap{padding: 120px 0  220px;}
-.insightsAndUpdatesInnerBody{max-width: 80%;margin: 0 auto;}
-.insightsAndUpdatesInnerGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 80px 40px; margin: 45px 0 0; }
+.insightsAndUpdatesInnerWrap{padding: 100px 0;}
+.insightsAndUpdatesInnerGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 80px 20px; margin: 45px 0 0; }
 .insightsAndUpdatesInnerGridItem { border-bottom: 1px solid #c4c4c4; padding-bottom: 22px; }
 .insightsAndUpdatesInnerGridItem img { width: 100%; border-radius: 20px; object-fit: cover; }
 .insightsAndUpdatesInnerGridItem span { display: block; font-size: 16px; color: #666666; margin: 40px 0 20px; }
-.insightsAndUpdatesInnerGridItem h4 { font-size: 24px; margin: 0; color: #333333; font-family: var(--medium); }
+.insightsAndUpdatesInnerGridItem h4 { font-size: 24px;line-height: 1.3em; margin: 0; color: #333333; font-family: var(--medium); }
 .insightsAndUpdatesInnerGridItem p { font-size: 18px; line-height: 1.5em; color: #111111; margin: 25px 0 50px; }
-.insightsAndUpdatesInnerGridItem a { font-size: 18px; font-family: var(--medium); color: var(--blue); cursor: pointer; }
+.insightsAndUpdatesInnerGridItem a { font-size: 18px; font-family: var(--medium); color: var(--blue); cursor: pointer;position: relative;padding-right: 30px; transition: color 0.3s ease; }
+.insightsAndUpdatesInnerGridItem a:after { content: ""; position: absolute; right: 0; top: 6px; width: 20px; height: 20px; background-image: url("/images/icons/right-arrow-red.svg"); background-size: contain; background-repeat: no-repeat; cursor: pointer; transition: transform 0.3s ease; }
+.insightsAndUpdatesInnerGridItem a:hover:after { transform: translateX(3px); }
