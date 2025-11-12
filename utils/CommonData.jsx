@@ -21,6 +21,6 @@ export const bannerData = {
     },
     faq: {
         title: "Faq",
-        image: "/images/banners/approvals-and-associates-bg.png",
+        image: "/images/banners/faq-bg.png",
     },
 };

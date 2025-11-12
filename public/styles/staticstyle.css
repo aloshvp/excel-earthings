@@ -4,8 +4,8 @@
 .commonBanner .commonBannerWrap { position: relative; width: 100%; height: 600px; overflow: hidden; }
 .commonBanner .commonBannerImageWrap { position: absolute; inset: 0; z-index: 1; }
 .commonBanner .commonBannerOverlay { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.4); z-index: 2; transition: background 0.3s ease; }
-.commonBanner .commonBannerContent { position: relative; z-index: 3; display: flex; align-items: flex-end; height: 100%; padding: 0 5% 40px; color: #fff; }
-.commonBanner .commonBannerContent h1 { font-size: 48px; font-weight: 700; line-height: 1.2; margin: 0; text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6); }
+.commonBanner .commonBannerContent { position: relative; z-index: 3; display: flex; align-items: flex-end; height: 100%; padding: 0 100px 70px; color: #fff; }
+.commonBanner .commonBannerContent h1 { font-size: 48px; line-height: 1.2; margin: 0; text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);font-family: var(--medium); }
 
 
 /*products main*/
@@ -67,11 +67,11 @@
 .faqWrapper{margin-bottom: 160px;}
 .faqBody{padding: 100px 0;}
 .faqList { display: flex; flex-direction: column; }
-.faqItem { border-bottom: 1px solid #ddd;overflow: hidden; }
-.faqHeading { display: flex; justify-content: space-between; align-items: center; padding: 20px; cursor: pointer;  }
+.faqItem { border-bottom: 1px solid #A8A8A8;overflow: hidden; }
+.faqHeading { display: flex; justify-content: space-between; align-items: center; padding: 20px; cursor: pointer;padding-left: 0;  }
 .faqHeading h3 { margin: 0; font-size: 22px;line-height: 1.5em;font-family: var(--medium);color: #444444; }
 .faqToggle { font-size: 20px; font-weight: bold; }
-.faqContent { padding: 0 20px; }
+.faqContent { padding: 0 80px 0 0; }
 .faqContent p { margin: 0 0 25px;font-size: 18px;line-height: 1.6em; }
 
 /* insights And Updates page */
@@ -81,6 +81,6 @@
 .insightsAndUpdatesInnerGridItem { border-bottom: 1px solid #c4c4c4; padding-bottom: 22px; }
 .insightsAndUpdatesInnerGridItem img { width: 100%; border-radius: 20px; object-fit: cover; }
 .insightsAndUpdatesInnerGridItem span { display: block; font-size: 16px; color: #666666; margin: 40px 0 20px; }
-.insightsAndUpdatesInnerGridItem h4 { font-size: 26px; margin: 0; color: #333333; font-family: var(--bold); }
+.insightsAndUpdatesInnerGridItem h4 { font-size: 24px; margin: 0; color: #333333; font-family: var(--medium); }
 .insightsAndUpdatesInnerGridItem p { font-size: 18px; line-height: 1.5em; color: #111111; margin: 25px 0 50px; }
 .insightsAndUpdatesInnerGridItem a { font-size: 18px; font-family: var(--medium); color: var(--blue); cursor: pointer; }

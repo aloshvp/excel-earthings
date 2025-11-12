@@ -4,7 +4,7 @@ import Image from "next/image";
 import { bannerData } from "@utils/CommonData";
 
 const CommonBanner = ({ pageName }) => {
- 
+
 
   const normalizedPageName = pageName?.toLowerCase() || "default";
 
