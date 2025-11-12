@@ -78,7 +78,7 @@ const Footer = () => {
                                     <li><Link href="" scroll={false}>About Us</Link></li>
                                     <li><Link href="" scroll={false}>Products</Link></li>
                                     <li><Link href="" scroll={false}>Certifications & Quality Assurance</Link></li>
-                                    <li><Link href="" scroll={false}>Approvals & Associates</Link></li>
+                                    <li><Link href="/approvals-and-associates">Approvals & Associates</Link></li>
                                     <li><Link href="" scroll={false}>Applications</Link></li>
                                     <li><Link href="" scroll={false}>Dealership</Link></li>
                                 </ul>

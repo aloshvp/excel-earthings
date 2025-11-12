@@ -12,10 +12,10 @@ const page = () => {
 
             <div className="approvalsAndAsscociatesBody">
                 <div className="container">
-                    {/* <div className="approvalsAndAsscociatesBodyTitle">
+                    <div className="approvalsAndAsscociatesBodyTitle">
                         <h2>Approvals & Associates</h2>
-                        <p></p>
-                    </div> */}
+                        <p>Our Products are widely accepted and approved by Leading PSUs, State Government Organizations and Private Companies, with its inherent quality and standards.</p>
+                    </div>
 
                     <div className="approvalsAndAsscociatesBodyGrid">
                         {associatesData?.map((item, idx) => (
@@ -23,9 +23,9 @@ const page = () => {
                                 <em>
                                     <Image
                                         src={item.img}
-                                        alt={item.title}
-                                        width={250}
-                                        height={250}
+                                        alt={item.name}
+                                        width={200}
+                                        height={200}
                                         loading="eager"
                                     />
                                 </em>
