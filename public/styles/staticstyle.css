@@ -4,7 +4,7 @@
 .commonBanner .commonBannerWrap { position: relative; width: 100%; height: 600px; overflow: hidden; }
 .commonBanner .commonBannerImageWrap { position: absolute; inset: 0; z-index: 1; }
 .commonBanner .commonBannerOverlay { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.4); z-index: 2; transition: background 0.3s ease; }
-.commonBanner .commonBannerContent { position: relative; z-index: 3; display: flex; align-items: flex-end; height: 100%; padding: 0 50px 30px; color: #fff; }
+.commonBanner .commonBannerContent { position: relative; z-index: 3; display: flex; align-items: flex-end; height: 100%; padding: 0 50px 40px; color: #fff; }
 .commonBanner .commonBannerContent h1 { font-size: 48px; line-height: 1.2; margin: 0; text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);font-family: var(--medium); }
 
 
@@ -42,7 +42,7 @@
 .prdtDesc>a{font-family: var(--regular);padding-bottom: 5px;font-size: 18px;line-height: 25px;color:var(--blue);border-bottom: 1px solid var(--sred);}
 
 /*application page*/
-.applicationsInnerWrap {margin-bottom: 160px;}
+/* .applicationsInnerWrap {margin-bottom: 160px;} */
 .applicationsInnerBody{padding: 100px 0;}
 .applicationsInnerGrid { display: grid;grid-template-columns: repeat(3, 1fr); gap: 80px; }
 .applicationsInnerGridItem { display: flex; flex-direction: column; gap: 30px; }
@@ -64,7 +64,7 @@
 .approvalsAndAsscociatesBodyGridItem > em > img{border-radius: 20px;}
 
 /*faq*/
-.faqWrapper{margin-bottom: 160px;}
+/* .faqWrapper{margin-bottom: 160px;} */
 .faqBody{padding: 100px 0;}
 .faqList { display: flex; flex-direction: column; }
 .faqItem { border-bottom: 1px solid #A8A8A8;overflow: hidden; }
