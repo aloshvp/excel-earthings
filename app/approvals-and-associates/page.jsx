@@ -2,7 +2,6 @@
 import "@styles/staticbundles.scss";
 import CommonBanner from '@common/CommonBanner'
 import Image from 'next/image'
-import Link from "next/link";
 import { associatesData } from '@utils/homeData'
 
 const page = () => {
