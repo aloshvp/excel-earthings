@@ -254,6 +254,22 @@ export const insightsData = [
         description: 'Easy tips to reduce shocks, protect appliances, and stay prepared for storms. Power cuts, tiny shocks from taps or appliances, bulbs blowing often, or ',
         link: ''
     },
+    {
+        id: 5,
+        image: '/images/home/categ-pro-01.jpg',
+        date: 'Sep  20, 2025',
+        title: 'Safer Homes: A Simple Guide to Earthing, Surges & Lightning',
+        description: 'Easy tips to reduce shocks, protect appliances, and stay prepared for storms. Power cuts, tiny shocks from taps or appliances, bulbs blowing often, or ',
+        link: ''
+    },
+    {
+        id: 6,
+        image: '/images/home/categ-pro-01.jpg',
+        date: 'Sep  20, 2025',
+        title: 'Safer Homes: A Simple Guide to Earthing, Surges & Lightning',
+        description: 'Easy tips to reduce shocks, protect appliances, and stay prepared for storms. Power cuts, tiny shocks from taps or appliances, bulbs blowing often, or ',
+        link: ''
+    },
 ];
 
 export const specialitiesSlides = [

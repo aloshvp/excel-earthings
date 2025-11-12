@@ -19,7 +19,7 @@ const InsightsUpdates = () => {
 
                 <div className="insightsUpdateBody">
                     <div className="insightsUpdateGrid">
-                        {insightsData.map((item) => (
+                        {insightsData?.slice(0,4)?.map((item) => (
                             <div key={item.id} className="insightsUpdateGridItem">
                                 <Image
                                     src={item.image}

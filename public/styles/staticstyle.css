@@ -63,7 +63,6 @@
 .approvalsAndAsscociatesBodyGridItem > em{border-radius: 20px;border: 1px solid #c8c8c8;}
 .approvalsAndAsscociatesBodyGridItem > em > img{border-radius: 20px;}
 
-
 /*faq*/
 .faqWrapper{margin-bottom: 160px;}
 .faqBody{padding: 100px 0;}
@@ -74,3 +73,14 @@
 .faqToggle { font-size: 20px; font-weight: bold; }
 .faqContent { padding: 0 20px; }
 .faqContent p { margin: 0 0 25px;font-size: 18px;line-height: 1.6em; }
+
+/* insights And Updates page */
+.insightsAndUpdatesInnerWrap{padding: 80px 0  220px;}
+.insightsAndUpdatesInnerBody{max-width: 80%;margin: 0 auto;}
+.insightsAndUpdatesInnerGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 80px 40px; margin: 45px 0 0; }
+.insightsAndUpdatesInnerGridItem { border-bottom: 1px solid #c4c4c4; padding-bottom: 22px; }
+.insightsAndUpdatesInnerGridItem img { width: 100%; border-radius: 20px; object-fit: cover; }
+.insightsAndUpdatesInnerGridItem span { display: block; font-size: 16px; color: #666666; margin: 40px 0 20px; }
+.insightsAndUpdatesInnerGridItem h4 { font-size: 26px; margin: 0; color: #333333; font-family: var(--bold); }
+.insightsAndUpdatesInnerGridItem p { font-size: 18px; line-height: 1.5em; color: #111111; margin: 25px 0 50px; }
+.insightsAndUpdatesInnerGridItem a { font-size: 18px; font-family: var(--medium); color: var(--blue); cursor: pointer; }
