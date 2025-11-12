@@ -13,7 +13,7 @@ const InsightsUpdates = () => {
                         <h2 className="homeCmnHead">Insights & Updates</h2>
                     </div>
                     <div className="insightsUpdateHeadRght">
-                        <Link href="" className='exploreMoreBtn' scroll={false}>Explore More <span className="arrow"></span></Link>
+                        <Link href="/insights-and-updates" className='exploreMoreBtn'>Explore More <span className="arrow"></span></Link>
                     </div>
                 </div>
 

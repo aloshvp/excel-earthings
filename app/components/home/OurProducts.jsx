@@ -22,7 +22,7 @@ const OurProducts = () => {
                         <h2 className="homeCmnHead">Our Products</h2>
                     </div>
                     <div className="ourProductsHeadRght">
-                        <Link href="" className="exploreMoreBtn" scroll={false}>
+                        <Link href="/products" className="exploreMoreBtn">
                             View All
                         </Link>
                     </div>

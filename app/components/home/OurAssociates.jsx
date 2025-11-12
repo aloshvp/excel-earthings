@@ -27,7 +27,7 @@ const OurAssociates = () => {
                         </p>
                     </div>
                     <div className="ourAssociatesHeadBtn">
-                        <Link href="" className='exploreMoreBtn' scroll={false}>Explore More <span className="arrow"></span></Link>
+                        <Link href="/approvals-and-associates" className='exploreMoreBtn'>Explore More <span className="arrow"></span></Link>
                     </div>
                 </div>
                 <div className="ourAssociatesBody">

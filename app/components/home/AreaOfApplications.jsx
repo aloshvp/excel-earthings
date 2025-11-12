@@ -32,7 +32,7 @@ const AreaOfApplications = () => {
                         <h2 className="homeCmnHead">Applications</h2>
                     </div>
                     <div className="areaOfApplicationsHeadBtn">
-                        <Link href="" className='exploreMoreBtn' scroll={false}>Explore More <span className="arrow"></span></Link>
+                        <Link href="/applications" className='exploreMoreBtn'>Explore More <span className="arrow"></span></Link>
                     </div>
                 </div>
 
