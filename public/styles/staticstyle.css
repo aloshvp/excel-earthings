@@ -42,9 +42,8 @@
 .prdtDesc>a{font-family: var(--regular);padding-bottom: 5px;font-size: 18px;line-height: 25px;color:var(--blue);border-bottom: 1px solid var(--sred);}
 
 /*application page*/
-/* .applicationsInnerWrap {margin-bottom: 160px;} */
 .applicationsInnerBody{padding: 100px 0;}
-.applicationsInnerGrid { display: grid;grid-template-columns: repeat(3, 1fr); gap: 80px; }
+.applicationsInnerGrid { display: grid;grid-template-columns: repeat(3, 1fr); gap: 60px 30px; }
 .applicationsInnerGridItem { display: flex; flex-direction: column; gap: 30px; }
 .applicationsInnerGridItemImg > img { border-radius: 20px; }
 .applicationsInnerGridItemTitle { display: flex; align-items: center; gap: 20px; }
@@ -55,16 +54,17 @@
 .applicationsInnerGridItemContent a:hover:after { transform: translateX(3px); }
 
 /*approvals-and-associates page*/
-.approvalsAndAsscociatesWrap{margin-bottom: 160px;}
 .approvalsAndAsscociatesBody{padding: 100px 0;}
-.approvalsAndAsscociatesBodyGrid{ display: grid;grid-template-columns: repeat(4, 1fr); gap: 80px; }
-.approvalsAndAsscociatesBodyGridItem{display: flex;flex-direction: column;align-items: center;justify-content: center;text-align: center;gap: 15px;}
-.approvalsAndAsscociatesBodyGridItem > h3 { font-size: 20px; line-height: 1.5em; color: #444444; }
-.approvalsAndAsscociatesBodyGridItem > em{border-radius: 20px;border: 1px solid #c8c8c8;}
-.approvalsAndAsscociatesBodyGridItem > em > img{border-radius: 20px;}
+.approvalsAndAsscociatesBodyGrid{ display: grid;grid-template-columns: repeat(4, 1fr); gap: 60px 45px;margin-top: 60px; }
+.approvalsAndAsscociatesBodyGridItem{display: flex;flex-direction: column;align-items: center;text-align: center;gap: 20px;}
+.approvalsAndAsscociatesBodyGridItem > h3 { font-size: 18px; line-height: 1.4em; color: #444444;max-width: 190px; }
+.approvalsAndAsscociatesBodyGridItem > em{border-radius: 20px;border: 1px solid #c8c8c8;display: flex;justify-content: center;align-items: center;overflow: hidden;}
+.approvalsAndAsscociatesBodyGridItem > em > img{border-radius: 20px; transition: transform 0.5s ease; }
+.approvalsAndAsscociatesBodyGridItem > em:hover > img {transform: scale(1.04);}
+.approvalsAndAsscociatesBodyTitle > h2{font-size: 36px;line-height: 1.4em;font-family: var(--medium);margin-bottom: 15px;}
+.approvalsAndAsscociatesBodyTitle > p{font-size: 18px;line-height: 1.5em;max-width: 650px;}
 
 /*faq*/
-/* .faqWrapper{margin-bottom: 160px;} */
 .faqBody{padding: 100px 0;}
 .faqList { display: flex; flex-direction: column; }
 .faqItem { border-bottom: 1px solid #A8A8A8;overflow: hidden; }

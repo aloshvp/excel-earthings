@@ -6,7 +6,11 @@
 
 @media screen and (min-width: 1440px) {
 
+    /*application page*/
+    .applicationsInnerBody{padding: 150px 0;gap: 90px 45px;}
+
     /*approvals-and-associates page*/
+    .approvalsAndAsscociatesBody{padding: 100px 0;}
     .approvalsAndAsscociatesBodyGrid{grid-template-columns: repeat(6, 1fr);}
 }
 
@@ -50,7 +54,9 @@
     .applicationsInnerGridItemContent a { margin-top: 25px; }
 
     /*approvals-and-associates page*/
-    .approvalsAndAsscociatesBodyGrid{grid-template-columns: repeat(3, 1fr);gap: 40px;}
+    .approvalsAndAsscociatesBody{padding: 60px 0;}
+    .approvalsAndAsscociatesBodyGrid{grid-template-columns: repeat(3, 1fr);gap: 30px;margin-top: 40px;} 
+    .approvalsAndAsscociatesBodyTitle > p{max-width: 100%;}       
      
 }
 
@@ -61,7 +67,7 @@
     .productLeftMenuSec {min-width: auto;}
 
     /*common banner*/
-    .commonBanner .commonBannerWrap {height: 250px;}
+    .commonBanner .commonBannerWrap {height: 400px;}
     .commonBanner .commonBannerContent h1 {font-size: 28px; }
 
     /*products main*/        
@@ -70,13 +76,16 @@
     .productsMainItemContent > a { font-size: 16px; } 
 
     /*application page*/
-    .applicationsInnerBody { padding: 60px 0 15px; }
+    .applicationsInnerBody { padding: 60px 0; }
     .applicationsInnerGrid {grid-template-columns: repeat(1, 1fr); gap: 40px; }
     .applicationsInnerGridItemTitle > img { max-width: 55px; }    
     .applicationsInnerGridItem {gap: 25px;}
     
     /*approvals-and-associates page*/
-    .approvalsAndAsscociatesBodyGrid{grid-template-columns: repeat(2, 1fr);gap: 30px;}
+    .approvalsAndAsscociatesBody { padding: 40px 0 60px; }
+    .approvalsAndAsscociatesBodyGrid{grid-template-columns: repeat(2, 1fr);gap: 25px;}
+    .approvalsAndAsscociatesBodyTitle > h2 {font-size: 25px; margin-bottom: 12px; }
+    .approvalsAndAsscociatesBodyTitle > p {font-size: 16px;}
     
 }
 
@@ -84,7 +93,13 @@
     .productList {grid-template-columns: 1fr;}
 
     /*approvals-and-associates page*/
-    .approvalsAndAsscociatesBodyGrid{grid-template-columns: repeat(1, 1fr);gap: 30px;}
+    .approvalsAndAsscociatesBodyGrid{gap: 30px 20px;}
+    .approvalsAndAsscociatesBodyGridItem { gap: 15px;}
+    .approvalsAndAsscociatesBodyGridItem > h3 {font-size: 16px;}
+    .approvalsAndAsscociatesBodyGrid { margin-top: 30px;}
+
+        /*application page*/
+        /* .applicationsInnerBody { padding: 40px 0; } */
 
 }
 

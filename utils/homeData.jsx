@@ -46,59 +46,107 @@ export const slidesData = [
 export const associatesData = [
     {
         name: 'Kerala State Electricity Board Limited',
-        img: '/images/approvals/central-pwd.jpg',
+        img: '/images/approvals-and-associates/kseb.png',
     },
     {
-        name: 'Kerala State Electricity Board Limited',
-        img: '/images/approvals/cochinshipyard.jpg',
+        name: 'National Test House',
+        img: '/images/approvals-and-associates/national-test-house.png',
     },
     {
-        name: 'Kerala State Electricity Board Limited',
-        img: '/images/approvals/cochin-smart-city-ltd.jpg',
+        name: 'Central PWD',
+        img: '/images/approvals-and-associates/central-pwd.png',
     },
     {
-        name: 'Kerala State Electricity Board Limited',
-        img: '/images/approvals/dharamshala-smart-city-ltd.jpg',
+        name: 'Military Engineering Service',
+        img: '/images/approvals-and-associates/military-engineering-service.png',
     },
     {
-        name: 'Kerala State Electricity Board Limited',
-        img: '/images/approvals/e-health-kerala.jpg',
+        name: 'KSEBL Soura',
+        img: '/images/approvals-and-associates/ksebl-soura.png',
     },
     {
-        name: 'Kerala State Electricity Board Limited',
-        img: '/images/approvals/inkel-ltd.jpg',
+        name: 'Kochi Metro Rail Ltd.',
+        img: '/images/approvals-and-associates/kochi-metro-rail-ltd.png',
     },
     {
-        name: 'Kerala State Electricity Board Limited',
-        img: '/images/approvals/kfon.jpg',
+        name: 'Inkel Ltd.',
+        img: '/images/approvals-and-associates/inkel-ltd.png',
     },
     {
-        name: 'Kerala State Electricity Board Limited',
-        img: '/images/approvals/kochi-metro-rail-ltd.jpg',
+        name: 'Cochin Smart City Ltd.',
+        img: '/images/approvals-and-associates/cochin-smart-city-ltd.png',
     },
     {
-        name: 'Kerala State Electricity Board Limited',
-        img: '/images/approvals/kseb.jpg',
+        name: 'NIT Calicut',
+        img: '/images/approvals-and-associates/nit-calicut.png',
     },
     {
-        name: 'Kerala State Electricity Board Limited',
-        img: '/images/approvals/ksebl-soura.jpg',
+        name: 'Trivandrum Smart City Ltd.',
+        img: '/images/approvals-and-associates/trivandrum-smart-city-ltd.png',
     },
     {
-        name: 'Kerala State Electricity Board Limited',
-        img: '/images/approvals/military-engineering-service.jpg',
+        name: 'eHealth Kerala',
+        img: '/images/approvals-and-associates/e-health-kerala.png',
     },
     {
-        name: 'Kerala State Electricity Board Limited',
-        img: '/images/approvals/national-test-house.jpg',
+        name: 'Dharamshala Smart City Ltd.',
+        img: '/images/approvals-and-associates/dharamshala-smart-city-ltd.png',
     },
     {
-        name: 'Kerala State Electricity Board Limited',
-        img: '/images/approvals/nit-calicut.jpg',
+        name: 'Cochin Shipyard Limited',
+        img: '/images/approvals-and-associates/cochinshipyard.png',
     },
     {
-        name: 'Kerala State Electricity Board Limited',
-        img: '/images/approvals/trivandrum-smart-city-ltd.jpg',
+        name: 'Kerala Fibre Optic Network',
+        img: '/images/approvals-and-associates/kfon.png',
+    },
+    {
+        name: 'Southern Railway',
+        img: '/images/approvals-and-associates/southern-railway.png',
+    },
+    {
+        name: 'GAIL (India) Limited',
+        img: '/images/approvals-and-associates/gail.png',
+    },
+    {
+        name: 'Hindalco Industries Ltd.',
+        img: '/images/approvals-and-associates/hindalco-ltd.png',
+    },
+    {
+        name: 'Bharat Petroleum Corporation Limited',
+        img: '/images/approvals-and-associates/bharath-petroleum.png',
+    },
+    {
+        name: 'Siemens',
+        img: '/images/approvals-and-associates/siemens.png',
+    },
+    {
+        name: 'Carborundum Universal Limited',
+        img: '/images/approvals-and-associates/carbordum-universal-limited.png',
+    },
+    {
+        name: 'Polycab India Limited',
+        img: '/images/approvals-and-associates/polycab.png',
+    },
+    {
+        name: 'Malayala Manorama',
+        img: '/images/approvals-and-associates/malayala-manorama.png',
+    },
+    {
+        name: 'ESAF Small Finance Bank',
+        img: '/images/approvals-and-associates/esaf.png',
+    },
+    {
+        name: 'MBH Power Ltd.',
+        img: '/images/approvals-and-associates/mbh-power.png',
+    },
+    {
+        name: 'The Travancore Cochin Chemicals Limited',
+        img: '/images/approvals-and-associates/travancore-cochin-chemicals-ltd.png',
+    },
+    {
+        name: 'Aries',
+        img: '/images/approvals-and-associates/aries.png',
     },
 ];
 
