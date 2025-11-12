@@ -3,7 +3,8 @@ export const dynamicScrollPages = [
     "/applications",
     "/products/category",
     "/approvals-and-associates",
-    "/faq"
+    "/faq",
+    "/careers",
 ];
 
 export const bannerData = {
@@ -22,5 +23,9 @@ export const bannerData = {
     faq: {
         title: "Faq",
         image: "/images/banners/faq-bg.png",
+    },
+    careers: {
+        title: "Careers",
+        image: "/images/banners/careers-bg.png",
     },
 };
