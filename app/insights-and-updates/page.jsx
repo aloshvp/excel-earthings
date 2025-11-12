@@ -1,8 +1,7 @@
 import "@styles/staticbundles.scss";
-import { insightsData } from '@utils/homeData'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import { insightsData } from '@utils/homeData'
 
 const page = () => {
     return (
