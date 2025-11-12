@@ -1,6 +1,7 @@
 "use client"
 import "@styles/staticbundles.scss";
 import CommonBanner from '@common/CommonBanner';
+import Image from "next/image";
 import { useState } from "react";
 import { faqData } from '@utils/staticData';
 
@@ -16,6 +17,9 @@ const page = () => {
             <CommonBanner pageName={"faq"} />
             <div className="faqBody">
                 <div className="container">
+                    <div className="faqHead">
+                        <h2>Faq</h2>
+                    </div>
                     <div className="faqList">
                         {faqData.map((item, idx) => (
                             <div key={idx} className={`faqItem ${openIndex === idx ? 'open' : ''}`}>
@@ -29,10 +33,12 @@ const page = () => {
                                             transform: openIndex === idx ? 'rotate(180deg)' : 'rotate(0deg)'
                                         }}
                                     >
-                                        {/* Down arrow SVG */}
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                            <polyline points="6 9 12 15 18 9" />
-                                        </svg>
+                                        <Image
+                                            src="/images/icons/faq-arrow.svg"
+                                            alt="toggle arrow"
+                                            width={16}
+                                            height={16}
+                                        />
                                     </span>
                                 </div>
                                 <div

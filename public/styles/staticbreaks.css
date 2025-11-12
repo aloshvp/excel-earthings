@@ -12,6 +12,9 @@
     /*approvals-and-associates page*/
     .approvalsAndAsscociatesBody{padding: 100px 0;}
     .approvalsAndAsscociatesBodyGrid{grid-template-columns: repeat(6, 1fr);}
+
+    /*faq*/
+    .faqBody{padding: 150px 0;}
 }
 
 
@@ -56,7 +59,12 @@
     /*approvals-and-associates page*/
     .approvalsAndAsscociatesBody{padding: 60px 0;}
     .approvalsAndAsscociatesBodyGrid{grid-template-columns: repeat(3, 1fr);gap: 30px;margin-top: 40px;} 
-    .approvalsAndAsscociatesBodyTitle > p{max-width: 100%;}       
+    .approvalsAndAsscociatesBodyTitle > p{max-width: 100%;}    
+    
+    /*faq*/
+    .faqBody{padding: 60px 0;}
+    .faqHead > h2 {margin-bottom: 15px;}
+    .faqContent{ padding: 0; }
      
 }
 
@@ -66,8 +74,9 @@
     .prdtDesc {padding: 0 0 20px;}
     .productLeftMenuSec {min-width: auto;}
 
-    /*common banner*/
+    /*common banner*/    
     .commonBanner .commonBannerWrap {height: 400px;}
+    .commonBanner .commonBannerContent{padding: 0 15px 30px;}
     .commonBanner .commonBannerContent h1 {font-size: 28px; }
 
     /*products main*/        
@@ -86,6 +95,15 @@
     .approvalsAndAsscociatesBodyGrid{grid-template-columns: repeat(2, 1fr);gap: 25px;}
     .approvalsAndAsscociatesBodyTitle > h2 {font-size: 25px; margin-bottom: 12px; }
     .approvalsAndAsscociatesBodyTitle > p {font-size: 16px;}
+
+    /*faq*/
+    .faqBody{padding: 40px 0 60px;}
+    .faqHeading{padding: 15px 15px 15px 0;}
+    .faqHead > h2 {margin-bottom: 0px;font-size: 26px;}
+    .faqHeading h3 {font-size: 18px;}
+    .faqContent p {margin: 0 0 15px;font-size: 16px;}
+    .faqToggle{font-size: 15px;}
+    .faqToggle >img{max-width: 13px;}
     
 }
 
