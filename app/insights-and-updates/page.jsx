@@ -8,8 +8,10 @@ const page = () => {
     return (
         <section className='insightsAndUpdatesInnerWrap'>
             <div className="container">
-                <div className="insightsAndUpdatesInnerTitle"></div>
                 <div className="insightsAndUpdatesInnerBody">
+                    <div className="insightsAndUpdatesInnerTitle">
+                        <h1 className="homeCmnHead">Insights & Updates</h1>
+                    </div>
                     <div className="insightsAndUpdatesInnerGrid">
                         {insightsData?.map((item) => (
                             <div key={item.id} className="insightsAndUpdatesInnerGridItem">
