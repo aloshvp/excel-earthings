@@ -74,7 +74,7 @@ const Footer = () => {
                             <b>Quick Links</b>
                             <div className='footerLinkNav'>
                                 <ul>
-                                    <li><Link href="" scroll={false}>Home</Link></li>
+                                    <li><Link href="/">Home</Link></li>
                                     <li><Link href="" scroll={false}>About Us</Link></li>
                                     <li><Link href="" scroll={false}>Products</Link></li>
                                     <li><Link href="" scroll={false}>Certifications & Quality Assurance</Link></li>
