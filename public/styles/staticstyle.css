@@ -70,9 +70,9 @@
 .faqItem { border-bottom: 1px solid #A8A8A8;overflow: hidden; }
 .faqHeading { display: flex; justify-content: space-between; align-items: center; padding: 20px; cursor: pointer;padding-left: 0;  }
 .faqHeading h3 { margin: 0; font-size: 22px;line-height: 1.5em;font-family: var(--medium);color: #444444; }
-.faqToggle { font-size: 20px; font-weight: bold; }
 .faqContent { padding: 0 80px 0 0; }
 .faqContent p { margin: 0 0 25px;font-size: 18px;line-height: 1.6em; }
+.faqHead > h2{font-size: 36px;line-height: 1.4em;font-family: var(--medium);margin-bottom: 30px;}
 
 /* insights And Updates page */
 .insightsAndUpdatesInnerWrap{padding: 120px 0  220px;}
