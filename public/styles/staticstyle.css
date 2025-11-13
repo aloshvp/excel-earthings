@@ -88,9 +88,21 @@
 
 /*careeers*/
 .careersBodyWrap{padding: 100px 0;}
-.careersBody{display: flex;gap: 60px;}
+.careersBody{display: flex;gap: 75px;}
 .careersFormSec{flex: 1;}
 .careersImgSec{flex:1}
-.careersFormSec form{display: flex;flex-direction: column;gap:20px;}
-.careersFormSec form input{width: 100%;padding: 22px 20px;border-radius: 5px;height: 45px;border: 1px solid #C8C8C8;}
+.careersFormSec form{display: flex;flex-direction: column;gap:25px;}
+.careerFormHead{padding-right: 160px;}
+.careerFormHead > h2{font-size:36px;line-height:1.3em;font-family:var(--medium);}
+.careerFormHead > p{font-size:18px;line-height:1.5em;margin:10px 0 20px;}
+.careersFormSec form input{width: 100%;padding: 22px 20px;border-radius: 5px;height: 55px;border: 1px solid #C8C8C8;}
 .careersFormSec form input::placeholder{font-size: 18px;line-height: 1em;color: #111111;}
+.careersFormSec form button{display: block;width: 100%;text-align: center;background: #444444;color: #fff;font-size: 20px;line-height: 1em;font-family: var(--medium);padding: 20px;border-radius: 10px;}
+.careersFormSec .fileUpload > i { display: block; font-style: normal; font-size: 15px; line-height: 1em; margin-bottom: 8px; } 
+.fileUpload { position: relative; display: inline-flex; flex-direction: column; gap: 6px; font-family: inherit; } 
+.fileUpload input[type="file"] { display: none; } 
+.fileUpload >div{border-radius: 5px;height: 55px;border: 1px solid #C8C8C8;display: flex;padding: 4px;align-items: center;gap:15px;}
+.customFileLabel { display: flex; background-color: #E8E8E8; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 18px; transition: background-color 0.2s ease;height: 100%;justify-content: center;align-items: center; } 
+.customFileLabel:hover { background-color: #d0d0d0; } 
+.fileName { font-size: 18px;  }
+
