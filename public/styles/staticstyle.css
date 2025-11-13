@@ -9,8 +9,10 @@
 
 
 /*products main*/
+.productsMainWrap{margin-bottom: -200px;}
 .productsMainItem { position: relative; width: 100%; display: flex; flex-direction: column; }
 .productsMainItemBg { position: relative; width: 100%; height: calc(100vh - 100px); }
+.productsMainItemBg.productsMainItemBgLast { height: calc(100vh); }
 .productsMainItemImg { object-fit: cover; width: 100%; height: 100%; }
 .productsMainItemContent { position: absolute; top: 80px; left: 100px; color: #fff; z-index: 2; }
 .productsMainItemNumber { font-size: 26px; line-height: 1em; color: #ABABAB; }
@@ -34,7 +36,6 @@
 .productLeftMenu>ul>li.active>a{color:var(--sred)}
 
 .productList{display: grid;grid-template-columns: 1fr 1fr;gap:15px;}
-.prdtBox{}
 .prdtImg{width: 100%;}
 .prdtDesc{display: block;margin: 0 0 35px;}
 .prdtDesc>i{display: block;font-style: normal;font-size: 16px;line-height: 25px;color:var(--stext);margin: 15px 0 5px;}
@@ -86,16 +87,16 @@
 .insightsAndUpdatesInnerGridItem a:after { content: ""; position: absolute; right: 0; top: 6px; width: 20px; height: 20px; background-image: url("/images/icons/right-arrow-red.svg"); background-size: contain; background-repeat: no-repeat; cursor: pointer; transition: transform 0.3s ease; }
 .insightsAndUpdatesInnerGridItem a:hover:after { transform: translateX(3px); }
 
-/*careeers*/
+/*careers*/
 .careersBodyWrap{padding: 100px 0;}
 .careersBody{display: flex;gap: 75px;}
 .careersFormSec{flex: 1;}
-.careersImgSec{flex:1}
+.careersImgSec{flex:1;}
+.careersImgSec > img{position: sticky;top: 100px;}
 .careersFormSec form{display: flex;flex-direction: column;gap:25px;}
-.careerFormHead{padding-right: 160px;}
 .careerFormHead > h2{font-size:36px;line-height:1.3em;font-family:var(--medium);}
 .careerFormHead > p{font-size:18px;line-height:1.5em;margin:10px 0 20px;}
-.careersFormSec form input{width: 100%;padding: 22px 20px;border-radius: 10px;height: 55px;border: 1px solid #C8C8C8;}
+.careersFormSec form input{width: 100%;padding: 16px 20px;border-radius: 10px;height: 55px;border: 1px solid #C8C8C8;}
 .careersFormSec form input::placeholder{font-size: 18px;line-height: 1em;color: #111111;}
 .careersFormSec form button{display: block;width: 100%;text-align: center;background: #444444;color: #fff;font-size: 20px;line-height: 1em;font-family: var(--medium);padding: 20px;border-radius: 10px;border: 1px solid #444444;transition: all 0.5s ease;}
 .careersFormSec form button:hover{color: #444444;background: #fff;}

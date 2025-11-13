@@ -19,6 +19,9 @@
     /* insights And Updates page */
     .insightsAndUpdatesInnerWrap{padding: 150px 0;}
     .insightsAndUpdatesInnerBody{max-width: 90%;margin: 0 auto;}
+
+    /*careers*/
+    .careerFormHead{padding-right: 160px;}
 }
 
 
@@ -76,6 +79,13 @@
     .insightsAndUpdatesInnerGridItem h4 { font-size: 20px;}
     .insightsAndUpdatesInnerGridItem p{ margin: 20px 0 35px;}
 
+    /*careers*/
+    .careersBodyWrap{padding: 60px 0;}
+    .careersBody{flex-direction: column;gap: 45px;}
+    .careersBodyWrap{gap: 20px;}
+    .careerFormHead > p{margin: 10px 0;}
+
+
      
 }
 
@@ -120,6 +130,16 @@
     .insightsAndUpdatesInnerWrap { padding: 40px 0 60px; }
     .insightsAndUpdatesInnerGrid{grid-template-columns: repeat(2, 1fr);gap: 45px 20px;}
 
+    /*careers*/
+    .careersBodyWrap{padding: 40px 0 60px;}
+    .careerFormHead > h2 {font-size: 26px;}
+    .careersFormSec form{gap: 20px;}
+    .careersFormSec form input{padding: 16px;height: 50px;font-size: 15px;}
+    .careersFormSec form input::placeholder{font-size: 15px;}
+    .careersFormSec form button{ font-size: 16px;padding: 16px;}
+    .careersFormSec .captchaText{font-size: 16px;}
+    .careersFormSec .customFileLabel{font-size: 16px;}
+    .careersFormSec .fileUpload .fileName { font-size: 16px; }
     
 }
 
@@ -135,6 +155,11 @@
     /* insights And Updates page */
     .insightsAndUpdatesInnerGrid{grid-template-columns: repeat(1, 1fr);}
     .insightsAndUpdatesInnerGridItem p {margin: 15px 0px 20px;}
+
+    /*careers*/
+    .careerFormHead > h2 {font-size: 20px;}
+    .careerFormHead > p {font-size: 16px;margin: 10px 0 5px;}
+    .careersFormSec form{gap: 15px;}
 
 }
 
