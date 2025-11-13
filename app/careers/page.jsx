@@ -14,7 +14,7 @@ const page = () => {
     };
 
     const handleSubmit = (e) => {
-        e.preventDefault();        
+        e.preventDefault();
     };
     return (
         <section className='careersWrap'>
@@ -58,6 +58,19 @@ const page = () => {
                                         <span className="fileName">{fileName}</span>
                                     </div>
                                 </span>
+                                <span className="captchaSec">
+                                    <div className="captchaText">ABWI</div>
+                                    <input type="text" className="captchaInput" placeholder="Enter Captcha" />
+                                    <div className="captchaReloadBtn">
+                                        <Image
+                                            src="/images/icons/arrow-rotate-right.svg"
+                                            alt="careers"
+                                            title="reload"
+                                            width={25}
+                                            height={25}
+                                        />
+                                    </div>
+                                </span>
 
                                 <span>
                                     <button>Submit</button>
@@ -70,7 +83,6 @@ const page = () => {
                                 src="/images/static/careers-hero.png"
                                 alt="careers"
                                 title="careers"
-                                priority
                                 width={845}
                                 height={928}
                             />
