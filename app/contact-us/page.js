@@ -71,11 +71,87 @@ const page = () => {
           </div>
         </div>
         <div className="contactIndiaWrap">
-          <div className="contactIndiaSec">
-            <div className="indiaImg">
-              <Image src='/images/contactus/india.png' className="img-fluid" width={800} height={884} alt="india" title="india"/>
+          <div className="container">
+            <div className="contactIndiaSec">
+              <div className="contactIndiaMain">
+                <div className="contactMapHead">
+                  <h3>Locations</h3>
+                  <p>Lorem ipsum - All the facts - Lipsum generator</p>
+                </div>
+                <div className="indiaImg">
+                  <Image src='/images/contactus/india.png' className="img-fluid" width={808} height={884} alt="india" title="india"/>
+                  <span className="indIconSet one">
+                    <em></em>
+                    <div>
+                      <h6>Kerala</h6>
+                      <p>Head Office-Mannuthy</p>
+                      <p>Factory-Thrissur</p>
+                      <p>Marketing Division - Ayyanthole</p>
+                    </div>
+                  </span>
+                   <span className="indIconSet two">
+                    <em></em>
+                  </span>
+                   <span className="indIconSet three">
+                    <em></em>
+                  </span>
+                   <span className="indIconSet four">
+                    <em></em>
+                  </span>
+                     <span className="indIconSet five">
+                    <em></em>
+                  </span>
+                     <span className="indIconSet six">
+                    <em></em>
+                  </span>
+                </div>
+              </div>
             </div>
-
+          </div>
+        </div>
+        <div className="contactEnqFormWrap">
+          <div className="container">
+            <div className="contactEnqSec">
+              <h4>Enquiry</h4>
+              <p>Please feel free to fill out the enquiry form. We will be in touch with you shortly.</p>
+              <form className="formMain">
+                <div className="formGroup">
+                  <div className="formInput">
+                    <input type="text"  name="name" id="name" placeholder="Name" autoComplete="off" maxLength={50}/>
+                  </div>
+                  <div className="formInput">
+                    <input type="text"  name="mobile" id="mobile" placeholder="Mobile" autoComplete="off" maxLength={10}/>
+                  </div>
+                </div>
+                 <div className="formGroup">
+                  <div className="formInput">
+                    <input type="text"  name="email" id="email" placeholder="Email" autoComplete="off" maxLength={300}/>
+                  </div>
+                  <div className="formInput">
+                    <input type="text"  name="subject" id="subject" placeholder="Subject" autoComplete="off" maxLength={500}/>
+                  </div>
+                </div>
+                <div className="formGroup">
+                  <div className="formInput">
+                     <textarea  name="message" id="message" rows="4" cols="50" placeholder="Message"></textarea>
+                  </div>
+                </div>
+                <div className="formGroup">
+                  <div className="formInput">
+                     <div className="frmCaptcha">ABWI</div>
+                  </div>
+                  <div className="formInput">
+                    <input type="text"  name="captcha" id="captcha" placeholder="Captcha" autoComplete="off" maxLength={500}/>
+                  </div>
+                   <div className="formInput">
+                     <a href="" className="refreshIcon"></a>
+                  </div>
+                </div>
+                 <div className="formGroup">
+                      <button className="formBtn">Submit</button>
+                 </div>
+              </form>
+            </div>
           </div>
         </div>
       
