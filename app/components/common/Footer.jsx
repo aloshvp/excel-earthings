@@ -86,7 +86,7 @@ const Footer = () => {
                                     <li><Link href="" scroll={false}>E-Learning</Link></li>
                                     <li><Link href="" scroll={false}>Transformer Earthing Design</Link></li>
                                     <li><Link href="/faq" >Faq</Link></li>
-                                    <li><Link href="" scroll={false}>Careers</Link></li>
+                                    <li><Link href="/careers">Careers</Link></li>
                                     <li><Link href="/insights-and-updates">Insights & Updates</Link></li>
                                     <li><Link href="" scroll={false}>Contact Us</Link></li>
                                 </ul>
