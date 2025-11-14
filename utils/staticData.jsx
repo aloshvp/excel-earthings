@@ -48,3 +48,51 @@ export const faqData = [
         desc: "Yes, there are several alternatives like 'Cupcake Ipsum', 'Bacon Ipsum', or 'Hipster Ipsum', which generate placeholder text with specific themes. You can also create your own custom placeholder text that fits your design or project theme while maintaining the intended layout and visual flow."
     }
 ];
+
+export const videoList = [
+    {
+        img: "/images/e-learning/e-learning1.png",
+        title: "Introduction to Earthing",
+        desc: "Basics of electrical earthing and its importance.",
+    },
+    {
+        img: "/images/e-learning/e-learning2.png",
+        title: "Types of Earthing",
+        desc: "Different types of earthing systems explained.",
+    },
+    {
+        img: "/images/e-learning/e-learning3.png",
+        title: "Lightning Protection",
+        desc: "How lightning protection systems work.",
+    },
+    {
+        img: "/images/e-learning/e-learning4.png",
+        title: "Chemical Earthing",
+        desc: "Understanding chemical earthing components.",
+    },
+    {
+        img: "/images/e-learning/e-learning5.png",
+        title: "Earthing Installation",
+        desc: "Step-by-step earthing installation guide.",
+    },
+    {
+        img: "/images/e-learning/e-learning6.png",
+        title: "Safety Precautions",
+        desc: "Safety guidelines during installation.",
+    },
+];
+
+export const brochures = [
+    {
+        img: "/images/e-learning/Brochures1.png",
+        title: "Safepower",
+    },
+    {
+        img: "/images/e-learning/Brochures2.png",
+        title: "Modular Boxes",
+    },
+    {
+        img: "/images/e-learning/Brochures3.png",
+        title: "Excel Earthings",
+    },
+];
