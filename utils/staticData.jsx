@@ -52,33 +52,33 @@ export const faqData = [
 export const videoList = [
     {
         img: "/images/e-learning/e-learning1.png",
-        title: "Introduction to Earthing",
-        desc: "Basics of electrical earthing and its importance.",
+        title: "Correct Method of Installing Electrical Earthing",
+        desc: "Excel Earthings",
     },
     {
         img: "/images/e-learning/e-learning2.png",
-        title: "Types of Earthing",
-        desc: "Different types of earthing systems explained.",
+        title: "Use effective and quality earthing products to ensure a safe electrical environment",
+        desc: "Excel Earthings",
     },
     {
         img: "/images/e-learning/e-learning3.png",
-        title: "Lightning Protection",
-        desc: "How lightning protection systems work.",
+        title: "Different Types of Earth Pit Chambers",
+        desc: "Excel Earthings",
     },
     {
         img: "/images/e-learning/e-learning4.png",
-        title: "Chemical Earthing",
-        desc: "Understanding chemical earthing components.",
+        title: "Electrical Earthing - Installation Procedure",
+        desc: "Excel Earthings",
     },
     {
         img: "/images/e-learning/e-learning5.png",
-        title: "Earthing Installation",
-        desc: "Step-by-step earthing installation guide.",
+        title: "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+        desc: "Excel Earthings",
     },
     {
         img: "/images/e-learning/e-learning6.png",
-        title: "Safety Precautions",
-        desc: "Safety guidelines during installation.",
+        title: "Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc",
+        desc: "Excel Earthings",
     },
 ];
 

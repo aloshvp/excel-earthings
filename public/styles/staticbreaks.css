@@ -22,6 +22,11 @@
 
     /*careers*/
     .careerFormHead{padding-right: 160px;}
+
+    /*e-learning*/
+    .eLearningVideoWrap{padding: 150px 0 250px;}
+    .eLearningBrochuresWrap{padding: 150px 0 250px;}
+    .eLearningBrochuresHead{margin-bottom: 40px;}
 }
 
 
