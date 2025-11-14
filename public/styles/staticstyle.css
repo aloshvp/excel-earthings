@@ -114,9 +114,9 @@
 
 /*e-learning*/
 .eLearningBodyWrap{padding: 100px 0 0;}
-.eLearningTitle{display: flex;justify-content: space-between;gap: 100px;padding-bottom: 150px;}
-.eLearningTitle h2{font-size: 36px;line-height: 1em;}
-.eLearningTitle p{font-size: 18px;line-height: 1.5em;max-width: 850px;}
+.eLearningTitle{display: flex;justify-content: space-between;gap: 80px;padding-bottom: 150px;}
+.eLearningTitle h2{font-size: 36px;line-height: 1em;min-width: 170px;}
+.eLearningTitle p{font-size: 18px;line-height: 1.5em;}
 .eLearningVideoWrap{ padding: 100px 0 200px; background: #DFDFDF; position: relative;border-radius: var(--border-home); margin-top: -100px; z-index: 1; }
 .eLearningVideoItemWrap{display: grid;grid-template-columns: repeat(3, 1fr); gap: 60px 40px;}
 .eLearningVideoItem{display: flex;flex-direction: column;gap: 25px;}
