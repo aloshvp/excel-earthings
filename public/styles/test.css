@@ -16,7 +16,7 @@
 .getInTouchBox>span.email:after{background-image: url("../images/contactus/email.svg");}
 .getInTouchBox>span>em{display: block;font-style: normal;font-family: var(--regular);font-size: 18px;line-height: 30px;color:#000;margin:0;}
 .getInTouchBox>span>p,.getInTouchBox>span>a{font-family: var(--regular);font-size: 16px;line-height: 25px;color:#333333;margin:0;padding-bottom: 20px;transition: all 0.5s ease;}
-.getInTouchBox>span>p>i{font-style: normal;display: block;}
+.getInTouchBox>span>p>i{font-style: normal;display: inline;}
 .getInTouchBox>span>a:hover{color:var(--sred);}
 
 .contactIndiaWrap{padding: 80px 0 120px;border-radius:var(--border-home) ;position: relative;overflow: hidden;min-height: 800px;}
@@ -42,11 +42,19 @@
 .indIconSet.six{margin-left: -165px;bottom: 50%;left: 50%;}
 
 .contactEnqFormWrap{display: block;border-radius:var(--border-home);padding:80px 0;}
-.contactEnqSec>h4{font-family: var(--medium);font-size: 24px;line-height: 26px;color:#333333;margin: 0;}
-.contactEnqSec>p{font-family: var(--regular);font-size: 17px;line-height: 24px;color:#333;margin: 0;}
+.contactEnqSec>h4{font-family: var(--medium);font-size: 24px;line-height: 26px;color:#333333;margin: 0 0 10px;}
+.contactEnqSec>p{font-family: var(--regular);font-size: 15px;line-height: 24px;color:#333;margin: 0;}
 
 .formGroup{display: flex;gap:20px;}
 .formGroup>div{flex-grow: 1;}
 .formInput{border: 1px solid #d1d1d1;border-radius: 10px;margin-top: 20px;}
 .formInput>input{height: 40px;border-radius: 10px;padding:0 20px;width: 100%;border: none;}
 .formInput>textarea{border-radius: 10px;padding:20px;width: 100%;border: none;}
+.formGroup.nogrow > div{flex-grow: 0;}
+.frmCaptcha{width: 100px;height:40px;border:1px dashed #d1d1d1;border-radius: 10px;display: flex;justify-content: center;align-items: center;}
+.formInput.mxwcap{max-width: 100px;border: none;}
+.formInput.mxwcapinp{max-width: 150px;}
+.formInput.mxrefresh{max-width: 50px;border: none;}
+.refreshIcon{display: inline-block;background-color: #a2a2a2;border-radius: 10px;position: relative;width: 50px;height: 50px;}
+.refreshIcon:after{    content: "";background: url('../images/contactus/arrow-rotate-right.svg') no-repeat 100%;width: 25px;height: 25px;display: inline-block;position: absolute;top: 10px;left: 12px;}
+.formBtn{display: inline-block;background-color: #444444;color:#fff;border-radius: 10px;padding: 15px 45px;margin-top:10px;font-size: 14px;line-height: 15px;}

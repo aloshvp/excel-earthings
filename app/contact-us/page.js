@@ -136,14 +136,14 @@ const page = () => {
                      <textarea  name="message" id="message" rows="4" cols="50" placeholder="Message"></textarea>
                   </div>
                 </div>
-                <div className="formGroup">
-                  <div className="formInput">
+                <div className="formGroup nogrow">
+                  <div className="formInput mxwcap">
                      <div className="frmCaptcha">ABWI</div>
                   </div>
-                  <div className="formInput">
-                    <input type="text"  name="captcha" id="captcha" placeholder="Captcha" autoComplete="off" maxLength={500}/>
+                  <div className="formInput mxwcapinp">
+                    <input type="text"  name="captcha" id="captcha" placeholder="Captcha" autoComplete="off" maxLength={4}/>
                   </div>
-                   <div className="formInput">
+                   <div className="formInput mxrefresh">
                      <a href="" className="refreshIcon"></a>
                   </div>
                 </div>

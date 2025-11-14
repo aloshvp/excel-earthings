@@ -8,6 +8,16 @@
 
 @media screen and (min-width: 1600px) {
 
+    /*cotact us*/
+    .getInTouchBox>span>p>i{display: block;}
+    .contactInfoBx > h2{font-size: 25px;line-height: 35px;}
+    .contactInfoBx > a{font-size: 18px;line-height: 25px;}
+    .contactGetInTouch > h3{font-size: 30px;line-height: 35px;}
+    .getInTouchBox > h4{font-size: 25px;line-height: 30px;}
+    .getInTouchBox > span > em{font-size: 18px;line-height: 30px;}
+    .contactMapHead > h3{font-size: 24px;line-height: 34px;}
+    .contactEnqSec > h4{font-size: 24px;line-height: 26px;}
+
 }
 
 @media screen and (min-width: 1440px) {
