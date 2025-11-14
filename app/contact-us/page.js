@@ -1,9 +1,20 @@
+"use client";
 import "@styles/staticbundles.scss";
 import CommonBanner from "@common/CommonBanner";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 const page = () => {
+
+    
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+
+    }
+
+    const [isEmHovered, setIsEmHovered] = useState(false);
+
   return (
     <section className="contactUsWrapper">
         <CommonBanner pageName={"contact-us"}/>
@@ -11,17 +22,17 @@ const page = () => {
           <div className="container">
               <div className="contactInfoList">
                 <div className="contactInfoBx">
-                    <span><Image src='/images/contactus/email.svg' width={50} height={50} alt="mail" title="mail"/></span>
+                    <span><div><Image src='/images/contactus/email.svg' width={50} height={50} alt="mail" title="mail"/></div></span>
                     <h2>Send Your Mail at</h2>
                     <Link href="mailto:mail@excelearthings.com">mail@excelearthings.com</Link>
                 </div>
                 <div className="contactInfoBx">
-                    <span><Image src='/images/contactus/phone.svg' width={50} height={50} alt="phone" title="phone"/></span>
+                    <span><div><Image src='/images/contactus/phone.svg' width={50} height={50} alt="phone" title="phone"/></div></span>
                     <h2>Customer Care</h2>
                     <Link href="tel:919048744551">+91 90487 44551</Link>
                 </div>
                 <div className="contactInfoBx">
-                    <span><Image src='/images/contactus/whatsapp.svg' width={50} height={50} alt="whatsapp" title="whatsapp"/></span>
+                    <span><div><Image src='/images/contactus/whatsapp.svg' width={50} height={50} alt="whatsapp" title="whatsapp"/></div></span>
                     <h2>Have Any Question</h2>
                     <Link href="mailto:mail@excelearthings.cor">+91 90487 44551</Link>
                 </div>
@@ -81,8 +92,10 @@ const page = () => {
                 <div className="indiaImg">
                   <Image src='/images/contactus/india.png' className="img-fluid" width={808} height={884} alt="india" title="india"/>
                   <span className="indIconSet one">
-                    <em></em>
-                    <div>
+                    <em onMouseEnter={() => setIsEmHovered(true)}
+                      onMouseLeave={() => setIsEmHovered(false)}
+                      ></em>
+                    <div className={isEmHovered?"active":""}>
                       <h6>Kerala</h6>
                       <p>Head Office-Mannuthy</p>
                       <p>Factory-Thrissur</p>
@@ -114,7 +127,7 @@ const page = () => {
             <div className="contactEnqSec">
               <h4>Enquiry</h4>
               <p>Please feel free to fill out the enquiry form. We will be in touch with you shortly.</p>
-              <form className="formMain">
+              <form className="formMain" onSubmit={handleSubmit}>
                 <div className="formGroup">
                   <div className="formInput">
                     <input type="text"  name="name" id="name" placeholder="Name" autoComplete="off" maxLength={50}/>
@@ -148,7 +161,7 @@ const page = () => {
                   </div>
                 </div>
                  <div className="formGroup">
-                      <button className="formBtn">Submit</button>
+                      <button className="formBtn" >Submit</button>
                  </div>
               </form>
             </div>
