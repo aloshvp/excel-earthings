@@ -6,6 +6,7 @@ export const dynamicScrollPages = [
     "/faq",
     "/contact-us",
     "/careers",
+    "/e-learning",
 ];
 
 export const bannerData = {
@@ -33,5 +34,9 @@ export const bannerData = {
     careers: {
         title: "Careers",
         image: "/images/banners/careers-bg.png",
+    },
+    "e-learning": {
+        title: "E-Learning",
+        image: "/images/banners/e-learning-bg.png",
     },
 };
