@@ -16,10 +16,45 @@
 .getInTouchBox>span.email:after{background-image: url("../images/contactus/email.svg");}
 .getInTouchBox>span>em{display: block;font-style: normal;font-family: var(--regular);font-size: 18px;line-height: 30px;color:#000;margin:0;}
 .getInTouchBox>span>p,.getInTouchBox>span>a{font-family: var(--regular);font-size: 16px;line-height: 25px;color:#333333;margin:0;padding-bottom: 20px;transition: all 0.5s ease;}
-.getInTouchBox>span>p>i{font-style: normal;display: block;}
+.getInTouchBox>span>p>i{font-style: normal;display: inline;}
 .getInTouchBox>span>a:hover{color:var(--sred);}
 
-.contactIndiaWrap{padding: 80px;border-radius:var(--border-home) ;position: relative;overflow: hidden;min-height: 800px;}
-/* .contactIndiaWrap:after{content: '';background-image: url("../images/contactus/india-background.png");background-repeat: no-repeat;background-size: contain;position: absolute;top:0;left:0;bottom: 0;right:0;z-index: 1;} */
-.contactIndiaWrap:before{content: '';z-index: 2;background-color: #f3f3f3;position: absolute;top:0;bottom:0;right:0;left:0;opacity: 0.9;}
-.indiaImg{max-width: 884px;margin:0 auto;position: relative;z-index: 3;}
+.contactIndiaWrap{padding: 80px 0 120px;border-radius:var(--border-home) ;position: relative;overflow: hidden;min-height: 800px;}
+.contactIndiaWrap:after{content: '';background-image: url("../images/contactus/india-background.png");background-repeat: no-repeat;background-size: cover;position: absolute;top:0;left:0;bottom: 0;right:0;z-index: 1;} 
+.contactIndiaWrap:before{content: '';z-index: 2;background-color: #f3f3f3;position: absolute;top:0;bottom:0;right:0;left:0;opacity: 0.94;}
+.contactIndiaMain{position: relative;}
+.contactMapHead{display: inline-block;position: absolute;left:0;top:0;z-index: 5;}
+.contactMapHead>h3{font-family: var(--medium);font-size: 28px;line-height: 34px;color:#333333;margin:0 0 10px;}
+.contactMapHead>p{font-family: var(--regular);font-size: 15px;line-height: 25px;color:#333333;}
+.indiaImg{max-width: 808px;margin:0 auto;position: relative;z-index: 3;}
+.indIconSet{display: inline-block;padding-left: 50px;position: absolute;}
+.indIconSet>em{position: absolute;top:0;left:8px;display: inline-block;width: 20px;height:28px;background-image: url(../images/contactus/location-pointer.svg);background-repeat: no-repeat;background-size: cover;cursor: pointer;}
+.indIconSet>div{display: block;padding:15px 20px;background-color:#333333;border-radius: 6px;min-width: 270px;position: absolute;}
+.indIconSet>div:after{content:'';position: absolute;top:10px;left:-12px;width: 0;height: 0;border-top: 6px solid transparent;border-right: 12px solid #333333;border-bottom: 6px solid transparent;}
+.indIconSet>div>h6{font-family: var(--medium);font-size: 18px;line-height: 24px;color:#fff;margin: 0;}
+.indIconSet>div>p{font-family: var(--regular);font-size: 15px;line-height: 24px;color:#fff;margin: 0;}
+
+.indIconSet.one{position: absolute;    margin-left: -194px;position: absolute;bottom: 87px;left: 50%;}
+.indIconSet.two{    margin-left: -124px;bottom: 127px;left: 50%;}
+.indIconSet.three{margin-left: -233px;bottom: 193px;left: 50%;}
+.indIconSet.four{margin-left: -115px;bottom: 242px;left: 50%;}
+.indIconSet.five{margin-left: -267px;bottom: 285px;left: 50%;}
+.indIconSet.six{margin-left: -165px;bottom: 50%;left: 50%;}
+
+.contactEnqFormWrap{display: block;border-radius:var(--border-home);padding:80px 0;}
+.contactEnqSec>h4{font-family: var(--medium);font-size: 24px;line-height: 26px;color:#333333;margin: 0 0 10px;}
+.contactEnqSec>p{font-family: var(--regular);font-size: 15px;line-height: 24px;color:#333;margin: 0;}
+
+.formGroup{display: flex;gap:20px;}
+.formGroup>div{flex-grow: 1;}
+.formInput{border: 1px solid #d1d1d1;border-radius: 10px;margin-top: 20px;}
+.formInput>input{height: 40px;border-radius: 10px;padding:0 20px;width: 100%;border: none;}
+.formInput>textarea{border-radius: 10px;padding:20px;width: 100%;border: none;}
+.formGroup.nogrow > div{flex-grow: 0;}
+.frmCaptcha{width: 100px;height:40px;border:1px dashed #d1d1d1;border-radius: 10px;display: flex;justify-content: center;align-items: center;}
+.formInput.mxwcap{max-width: 100px;border: none;}
+.formInput.mxwcapinp{max-width: 150px;}
+.formInput.mxrefresh{max-width: 50px;border: none;}
+.refreshIcon{display: inline-block;background-color: #a2a2a2;border-radius: 10px;position: relative;width: 50px;height: 50px;}
+.refreshIcon:after{    content: "";background: url('../images/contactus/arrow-rotate-right.svg') no-repeat 100%;width: 25px;height: 25px;display: inline-block;position: absolute;top: 10px;left: 12px;}
+.formBtn{display: inline-block;background-color: #444444;color:#fff;border-radius: 10px;padding: 15px 45px;margin-top:10px;font-size: 14px;line-height: 15px;}
