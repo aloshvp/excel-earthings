@@ -61,7 +61,7 @@
 
 
 /*our certification*/
-.ourCertificationWrap { padding: 100px 0 280px; background: #fff; position: relative; /* border-radius: 100px 100px 0 0; */ border-radius: var(--border-home); margin-top: -100px; z-index: 1; }
+.ourCertificationWrap { padding: 100px 0 280px; background: #fff; position: relative;border-radius: var(--border-home); margin-top: -100px; z-index: 1; }
 .ourCertificationHead { padding-bottom: 60px; display: flex; justify-content: space-between; align-items: flex-end; gap: 60px; }
 .ourCertificationHeadCont > p { font-size: 18px; line-height: 1.5em; color: #111111; max-width: 625px; }
 .ourCertificationSlider { position: relative; }

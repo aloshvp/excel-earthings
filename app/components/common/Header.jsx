@@ -13,8 +13,8 @@ const menuItems = [
     { title: "Applications", href: "/applications" },
     { title: "Dealership", href: "" },
     { title: "Design", href: "" },
-    { title: "E-Learning", href: "" },
-    { title: "Contact Us", href: "" },
+    { title: "E-Learning", href: "/e-learning" },
+    { title: "Contact Us", href: "/contact-us" },
 ];
 
 

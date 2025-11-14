@@ -83,12 +83,12 @@ const Footer = () => {
                                     <li><Link href="" scroll={false}>Dealership</Link></li>
                                 </ul>
                                 <ul>
-                                    <li><Link href="" scroll={false}>E-Learning</Link></li>
+                                    <li><Link href="/e-learning">E-Learning</Link></li>
                                     <li><Link href="" scroll={false}>Transformer Earthing Design</Link></li>
                                     <li><Link href="/faq" >Faq</Link></li>
                                     <li><Link href="/careers">Careers</Link></li>
                                     <li><Link href="/insights-and-updates">Insights & Updates</Link></li>
-                                    <li><Link href="" scroll={false}>Contact Us</Link></li>
+                                    <li><Link href="/contact-us">Contact Us</Link></li>
                                 </ul>
                             </div>
                         </div>
