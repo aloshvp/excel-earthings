@@ -24,6 +24,7 @@
     .careerFormHead{padding-right: 160px;}
 
     /*e-learning*/
+    .eLearningTitle p{max-width: 850px;}
     .eLearningVideoWrap{padding: 150px 0 250px;}
     .eLearningBrochuresWrap{padding: 150px 0 250px;}
     .eLearningBrochuresHead{margin-bottom: 40px;}
@@ -90,6 +91,16 @@
     .careersBodyWrap{gap: 20px;}
     .careerFormHead > p{margin: 10px 0;}
 
+    /*e-learning*/
+    .eLearningBodyWrap{padding: 60px 0 0;}
+    .eLearningTitle{gap: 40px;}
+    .eLearningVideoWrap{padding: 80px 0 180px;}
+    .eLearningVideoItemWrap {gap: 40px 25px;}
+    .eLearningVideoItemText > h4 {font-size: 18px;}
+    .eLearningVideoItemText > p {font-size: 15px;}
+    .eLearningBrochuresWrap{padding: 80px 0 180px;}
+    .eLearningBrochuresItemWrap{gap: 15px;}
+    .eLearningBrochuresItemImg{ padding: 25px 40px;}
 
      
 }
@@ -145,6 +156,16 @@
     .careersFormSec .captchaText{font-size: 16px;}
     .careersFormSec .customFileLabel{font-size: 16px;}
     .careersFormSec .fileUpload .fileName { font-size: 16px; }
+
+    /*e-learning*/
+    .eLearningTitle{flex-direction: column;gap: 25px;}
+    .eLearningVideoWrap { padding: 60px 0 160px; }
+    .eLearningVideoItemWrap {grid-template-columns: repeat(1, 1fr);}
+    .eLearningBrochuresItemWrap{flex-direction: column;gap: 40px;}
+    .eLearningBrochuresWrap{ padding: 60px 0 160px; }
+    .eLearningBrochuresHead > h3 {font-size: 26px;}
+    .eLearningBrochuresItemText > span > b {font-size: 18px;}
+
     
 }
 
@@ -165,6 +186,13 @@
     .careerFormHead > h2 {font-size: 20px;}
     .careerFormHead > p {font-size: 16px;margin: 10px 0 5px;}
     .careersFormSec form{gap: 15px;}
+
+    /*e-learning*/
+    .eLearningBodyWrap {padding: 40px 0 0;}
+    .eLearningTitle h2 {font-size: 24px;}
+    .eLearningTitle p {font-size: 16px;}
+    .eLearningBrochuresHead > h3 {font-size: 24px;}
+
 
 }
 
