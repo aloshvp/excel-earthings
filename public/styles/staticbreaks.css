@@ -28,6 +28,9 @@
     .eLearningVideoWrap{padding: 150px 0 250px;}
     .eLearningBrochuresWrap{padding: 150px 0 250px;}
     .eLearningBrochuresHead{margin-bottom: 40px;}
+
+    /*design*/
+    .transformerEarthingBody{padding: 140px 0 0;}
 }
 
 
@@ -110,6 +113,13 @@
     .eLearningBrochuresItemWrap{gap: 15px;}
     .eLearningBrochuresItemImg{ padding: 25px 40px;}
 
+    /*applications details*/
+    .applicationDetailsBody { padding: 60px 0; }
+    .applicationDetailsHead > h2 {font-size: 36px;}
+    .applicationDetailsContent{flex-direction: column-reverse;padding-top: 30px;gap: 30px;}
+    .applicationDetailsItemswrap{width: 100%;}
+    .applicationDetailsItem > p>em{display: block;}
+
      
 }
 
@@ -176,6 +186,13 @@
     .eLearningBrochuresHead > h3 {font-size: 26px;}
     .eLearningBrochuresItemText > span > b {font-size: 18px;}
 
+    /*application details*/
+    .applicationDetailsBody { padding: 40px 0 60px; }
+    .applicationDetailsHead > h2{font-size: 30px;}
+    .applicationDetailsItem > p {font-size: 18px;}
+    .applicationDetailsItem >img{max-width: 120px;}
+    .applicationDetailsItemImg > em > span{width: 25px;height: 25px;font-size: 14px;}
+
     
 }
 
@@ -206,6 +223,15 @@
     .eLearningTitle h2 {font-size: 24px;}
     .eLearningTitle p {font-size: 16px;}
     .eLearningBrochuresHead > h3 {font-size: 24px;}
+
+    /*application details*/
+    .applicationDetailsBody { padding: 30px 0 50px; }
+    .applicationDetailsHead > h2{font-size: 20px;}
+    .applicationDetailsItem{gap: 15px;gap: 12px;}
+    .applicationDetailsItem > p {font-size: 15px;}
+    .applicationDetailsItem >img{max-width: 80px;}
+    .applicationDetailsItemImg > em > span{width: 20px;height: 20px;font-size: 12px;border-width: 2px;}
+    .applicationDetailsContent{padding-top: 15px;}
 
 
 }
