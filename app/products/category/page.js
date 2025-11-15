@@ -6,6 +6,7 @@ import CommonBanner from "@common/CommonBanner";
 import { useState } from "react";
 const page = () => {
     const[active,setActive]=useState("Electrical Earthing");
+    const[mobActive,setMobActive]=useState(false);
 
     const handleItemClick = (newValue) => {
     setActive(prevActive => {
@@ -65,17 +66,21 @@ const page = () => {
         <div className='container'>
             <div className='productSections'>
                 <div className='productLeftMenuSec'>
-                   
-                    {productMenus.map((item,index)=>(
-                        <div className='productLeftMenu' key={index*2}>
-                            <span className={(active===item.label)?"active":""} onClick={()=>handleItemClick(item.label)}>{item.label}</span>
-                            <ul className={(active===item.label)?"active":""}>
-                                {item?.subMenu?.map((item,index)=>(
-                                     <li key={index}><Link href={""} scroll={false}>{item.label}</Link></li>
-                                ))}
-                            </ul>
-                        </div>
-                    ))}
+                    <div className="prdctMobMenu"><span onClick={()=>setMobActive(!mobActive)}>Products Menu</span>
+                    <div className={mobActive?"active":""}>
+                        {productMenus.map((item,index)=>(
+                        
+                            <div className='productLeftMenu' key={index*2}>
+                                <span className={(active===item.label)?"active":""} onClick={()=>handleItemClick(item.label)}>{item.label}</span>
+                                <ul className={(active===item.label)?"active":""}>
+                                    {item?.subMenu?.map((item,index)=>(
+                                        <li key={index}><Link href={""} scroll={false}>{item.label}</Link></li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
+                    </div>
+                    </div>
                     {/* <div className='productLeftMenu'>
                         <span>Lightning Protection</span>
                         <ul>

@@ -8,15 +8,15 @@
 
 @media screen and (min-width: 1600px) {
 
-    /*cotact us*/
-    .getInTouchBox>span>p>i{display: block;}
-    .contactInfoBx > h2{font-size: 25px;line-height: 35px;}
-    .contactInfoBx > a{font-size: 18px;line-height: 25px;}
-    .contactGetInTouch > h3{font-size: 30px;line-height: 35px;}
-    .getInTouchBox > h4{font-size: 25px;line-height: 30px;}
-    .getInTouchBox > span > em{font-size: 18px;line-height: 30px;}
-    .contactMapHead > h3{font-size: 24px;line-height: 34px;}
-    .contactEnqSec > h4{font-size: 24px;line-height: 26px;}
+/*contact us*/
+.getInTouchBox>span>p>i{display: block;}
+.contactInfoBx > h2{font-size: 25px;line-height: 35px;}
+.contactInfoBx > a{font-size: 18px;line-height: 25px;}
+.contactGetInTouch > h3{font-size: 30px;line-height: 35px;}
+.getInTouchBox > h4{font-size: 25px;line-height: 30px;}
+.getInTouchBox > span > em{font-size: 18px;line-height: 30px;}
+.contactMapHead > h3{font-size: 24px;line-height: 34px;}
+.contactEnqSec > h4{font-size: 24px;line-height: 26px;}
 
 }
 
@@ -27,7 +27,9 @@
 
 @media screen and (min-width: 1300px) {
 
-    .indiaImg{padding-top: 0;}
+/*contact us*/
+.indiaImg{padding-top: 0;}
+
 }
 
 
@@ -42,38 +44,35 @@
 
 @media only screen and (max-width: 991px) {
 
-    .contactInfoList{padding: 50px 0;}
-    .contactInfoBx {padding-left: 56px;}
-    .contactInfoBx>span>div{max-width: 40px;}
-    
-    .contactInfoBx > h2{font-size: 16px;line-height: 26px;margin: 0;}
-    .contactInfoBx > a{font-family: var(--regular);font-size: 14px;line-height: 16px;}
-    .getInBoxSet{gap:15px;flex-wrap: wrap;justify-content: center;}
-    .getInTouchBox {flex-basis: 0;flex-shrink: 0;flex-grow: 1;}
-
-    .contactGetInTouchWrap{padding: 50px 0;}
-    .contactIndiaWrap{background-color: #f3f3f3;}
-    .contactIndiaWrap:before,.contactIndiaWrap:after{display: none;}
-      .contactIndiaWrap{min-height: auto;}
-
-    .indiaImg{max-width: 449px;}
-    .indIconSet{padding-left: 45px;}
-    .indIconSet.one{margin-left: -108px;bottom:49px;}
-    .indIconSet.two{margin-left: -80px;bottom:81px;}
-    .indIconSet.three{margin-left: -132px;bottom: 122px;}
-    .indIconSet.four{margin-left: -72px;bottom: 141px;}
-    .indIconSet.five{margin-left: -150px;bottom: 169px;}
-    .indIconSet.six{margin-left: -91px;bottom: 259px;}
-    .indIconSet > div{padding: 15px;min-width: 200px;}
-    .indIconSet > div > h6{font-size: 15px;line-height: 20px;}
-    .indIconSet > div > p{font-size: 14px;line-height: 24px;}
+/*contact us*/
+.contactInfoList{padding: 50px 0;}
+.contactInfoBx {padding-left: 56px;}
+.contactInfoBx>span>div{max-width: 40px;}
+.contactInfoBx > h2{font-size: 16px;line-height: 26px;margin: 0;}
+.contactInfoBx > a{font-family: var(--regular);font-size: 14px;line-height: 16px;}
+.getInBoxSet{gap:15px;flex-wrap: wrap;justify-content: center;}
+.getInTouchBox {flex-basis: 0;flex-shrink: 0;flex-grow: 1;}
+.contactGetInTouchWrap{padding: 50px 0;}
+.contactIndiaWrap{background-color: #f3f3f3;}
+.contactIndiaWrap:before,.contactIndiaWrap:after{display: none;}
+.contactIndiaWrap{min-height: auto;}
+.indiaImg{max-width: 449px;}
+.indIconSet{padding-left: 45px;}
+.indIconSet.one{margin-left: -108px;bottom:49px;}
+.indIconSet.two{margin-left: -80px;bottom:81px;}
+.indIconSet.three{margin-left: -132px;bottom: 122px;}
+.indIconSet.four{margin-left: -72px;bottom: 141px;}
+.indIconSet.five{margin-left: -150px;bottom: 169px;}
+.indIconSet.six{margin-left: -91px;bottom: 259px;}
+.indIconSet > div{padding: 15px;min-width: 200px;}
+.indIconSet > div > h6{font-size: 15px;line-height: 20px;}
+.indIconSet > div > p{font-size: 14px;line-height: 24px;}
   
-
-
 }
 
 @media only screen and (max-width: 767px) {
 
+ /*contact us*/
 .contactInfoList{flex-direction: column;padding: 30px 0 10px;}
 .contactInfoBx{padding:0 0 20px 65px ;}
 .contactGetInTouchWrap{padding: 30px 0;}
@@ -86,12 +85,12 @@
 .contactEnqSec > h4{font-size: 18px;line-height: 24px;margin: 0 0 10px;}
 .contactEnqSec > p{font-size: 15px;line-height: 24px;margin: 0 0 10px;}
 
-  
+
 }
 
 @media only screen and (max-width: 479px) {
  
-    
+/*contact us*/  
 .contactIndiaWrap{padding: 30px 0 175px;}
 .contactInfoBx > span > div{max-width: 20px;}
 .contactInfoBx {padding: 0 0 20px 30px;}
@@ -112,8 +111,6 @@
 .indIconSet > div:after{top:81px}
 .formGroup {flex-direction: column;gap:0;}
 .formGroup.nogrow{flex-direction: row;gap:10px;}
-
-
 
 }
 
