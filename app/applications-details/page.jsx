@@ -11,7 +11,7 @@ const Page = () => {
 
     return (
         <section className="applicationDetailsWrap">
-            <CommonBanner pageName={"applications-details"} />
+            <CommonBanner pageName={"applications-details"} />                    
 
             <div className="applicationDetailsBody">
                 <div className="container">
