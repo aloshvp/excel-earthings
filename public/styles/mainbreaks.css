@@ -19,6 +19,7 @@
 
     /*banner*/
     .bannerGridItem {min-width: 450px;}
+    .bannerGridItem > h2 { padding: 70px 0 15px;}
 
     /*area of applications*/
     .areaOfApplicationsWrap {padding: 150px 0 300px;}

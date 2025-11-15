@@ -20,7 +20,7 @@
 .bannerGrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
 .bannerGridItem { border-radius: 10px; background: #22345a; padding: 30px 25px; min-width: 100%; }
 .bannerGridItem > em { display: block; color: #808eab; font-style: normal; font-size: 30px; line-height: 1em; padding-bottom: 15px; border-bottom: 1px solid #808eab; font-family: var(--light); }
-.bannerGridItem > h2 { padding: 70px 0 15px; font-family: var(--medium); line-height: 1.2em; }
+.bannerGridItem > h2 { padding: 40px 0 15px; font-family: var(--medium); line-height: 1.2em; }
 .bannerGridItem > h2 > em { display: block; }
 .bannerGridItem > p { font-size: 18px; max-width: 350px; line-height: 1.4em; }
 
