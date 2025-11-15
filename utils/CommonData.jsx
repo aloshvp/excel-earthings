@@ -9,6 +9,7 @@ export const dynamicScrollPages = [
     "/e-learning",
     "/applications-details",
     "/dealership",
+    "/transformer-earthing-design",
 ];
 
 export const bannerData = {
@@ -47,5 +48,9 @@ export const bannerData = {
     dealership: {
         title: "Dealership",
         image: "/images/banners/dealership-bg.png",
+    },
+    "transformer-earthing-design": {
+        title: "Transformer Earthing Design",
+        image: "/images/banners/design-bg.png",
     },
 };

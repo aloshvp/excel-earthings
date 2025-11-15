@@ -155,4 +155,21 @@
 .applicationDetailsItemImg > em > span.num6{bottom:8%;left: 5%;}
 .applicationDetailsItemImg > em > span.num7{bottom:40%;left: 35%;}
 
-
+/*design*/
+h2.designCommonHead{font-size: 30px;line-height: 1em;font-family: var(--medium);}
+.transformerEarthingWrap .commonBanner .commonBannerWrap{height: 350px;}
+.transformerEarthingBody{padding: 100px 0 0;}
+.transformerEarthingHead{padding-bottom: 40px;}
+.transformerEarthingHead h2{font-size: 30px;line-height: 1em;font-family: var(--medium);color: #333333;}
+.transformerEarthingHead p{font-size: 16px;line-height: 1.6em;max-width: 50%;color: #111111;margin-top: 25px;}
+.transformerEarthingForm { padding: 100px 0 220px; background: #DFDFDF; position: relative; border-radius: var(--border-home); z-index: 1; }
+.transformerEarthingForm form{display: grid;grid-template-columns: repeat(2, 1fr); gap: 30px;margin: 40px 0 0;}
+.transformerEarthingFormSec label{display: block;font-size: 18px;line-height: 1em;margin-bottom: 10px;}
+.transformerEarthingFormSec input{background: #fff;border-radius: 10px;height: 55px;width: 100%;padding: 16px 20px;border: 1px solid #C8C8C8;font-size: 16px;}
+.transformerEarthingDsgnCalc { padding: 100px 0 220px; background: #F5F5F5; position: relative; border-radius: var(--border-home); z-index: 1;margin-top: -100px;margin-bottom: -180px }
+.transformerEarthingDsgnCalc form{display: grid;grid-template-columns: repeat(2, 1fr); gap: 40px 120px;margin: 40px 0 0;}
+.DesignCalcFormSec label{display: block;font-size: 18px;line-height: 1em;margin-bottom: 10px;}
+.DesignCalcFormSec input{background: #fff;border-radius: 10px;height: 55px;width: 100%;padding: 16px 20px;border: 1px solid #C8C8C8;font-size: 16px;}
+.DesignCalcFormSec > div{display: flex;gap: 20px;align-items: center;justify-content: center;}
+.DesignCalcFormSec.fullRow { grid-column: 1 / 3;  } 
+.DesignCalcFormSec.fullRow button { width: 100%; height: 55px;color: #fff; border-radius: 10px; font-size: 18px;border: 1px solid #707070;background: #444444; }
