@@ -62,3 +62,10 @@
 .refreshIcon{display: inline-block;background-color: #a2a2a2;border-radius: 10px;position: relative;width: 40px;height: 40px;}
 .refreshIcon:after{    content: "";background-image: url(../images/contactus/arrow-rotate-right.svg);background-repeat: no-repeat;background-size: contain;width: 15px;height: 15px;display: inline-block;position: absolute;top: 12px;left: 13px;}
 .formBtn{display: inline-block;background-color: #444444;color:#fff;border-radius: 10px;padding: 15px 45px;margin-top:25px;font-size: 14px;line-height: 15px;}
+
+/*dealership*/
+.dealerShipWraper{padding: 80px 0;}
+.dealerShipCntSec{display: flex;}
+.dealerLeftSide{}
+
+.delarContainer{display: flex;}
