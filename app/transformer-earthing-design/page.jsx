@@ -98,14 +98,22 @@ const page = () => {
                             <div className="DesignCalcFormSec">
                                 <label htmlFor="">Earth Electrode - Nickel Sealed Copper Bonded Rod</label>
                                 <div>
-                                    <input type="text" />
+                                    <select name="" id="">
+                                        <option value="">Diameter</option>
+                                        <option value="">Diameter</option>
+                                        <option value="">Diameter</option>
+                                    </select>
                                     <span>mm</span>
-                                    <input type="text" />
+                                    <select name="" id="">
+                                        <option value="">Length</option>
+                                        <option value="">Length</option>
+                                        <option value="">Length</option>
+                                    </select>
                                     <span>m</span>
                                 </div>
                             </div>
-                            <div className="DesignCalcFormSec fullRow">                                
-                                <button onClick={(e)=>e.preventDefault()}>Calculate</button>
+                            <div className="DesignCalcFormSec fullRow">
+                                <button onClick={(e) => e.preventDefault()}>Calculate</button>
                             </div>
                         </form>
                     </div>

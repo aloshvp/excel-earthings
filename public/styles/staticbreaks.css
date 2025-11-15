@@ -120,6 +120,17 @@
     .applicationDetailsItemswrap{width: 100%;}
     .applicationDetailsItem > p>em{display: block;}
 
+     /*design*/
+     .transformerEarthingBody{padding: 60px 0 0;}
+     .transformerEarthingHead p{max-width: 100%;}
+     .transformerEarthingForm{padding: 60px 0 180px;}
+     .transformerEarthingDsgnCalc{padding: 60px 0 160px;}
+     .transformerEarthingDsgnCalc form{gap: 40px 30px;}
+     .DesignCalcFormSec > div{gap: 10px;}
+     .transformerEarthingDsgnCalc form{grid-template-columns: repeat(1, 1fr);}
+     .DesignCalcFormSec.fullRow {grid-column: auto;}
+     .DesignCalcFormSec > div > span{min-width: 40px;text-align: center;}
+
      
 }
 
@@ -192,6 +203,23 @@
     .applicationDetailsItem > p {font-size: 18px;}
     .applicationDetailsItem >img{max-width: 120px;}
     .applicationDetailsItemImg > em > span{width: 25px;height: 25px;font-size: 14px;}
+
+    /*design*/
+    h2.designCommonHead{font-size: 20px;}
+    .transformerEarthingBody{padding: 40px 0 0;}
+    .transformerEarthingHead h2{font-size: 24px;}
+    .transformerEarthingHead p{margin-top: 15px;}
+    .transformerEarthingHead{padding-bottom: 30px;}
+    .transformerEarthingForm{padding: 40px 0 160px;}
+    .transformerEarthingForm form{grid-template-columns: repeat(1, 1fr);gap: 20px;margin: 30px 0 0;}
+    .transformerEarthingFormSec label,.DesignCalcFormSec label{font-size: 16px;}
+    .transformerEarthingFormSec input,.DesignCalcFormSec input,.DesignCalcFormSec.fullRow button{height: 45px;}
+    .transformerEarthingDsgnCalc{padding: 40px 0 140px;}
+    .transformerEarthingDsgnCalc form{margin: 30px 0 0;gap: 20px;}
+    .DesignCalcFormSec > div{gap: 5px;}
+    
+
+
 
     
 }
