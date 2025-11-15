@@ -59,8 +59,8 @@
     /*product listing*/
     .prdctMobMenu{position: relative;}
     .prdctMobMenu>span{display: block;padding: 10px ;margin-bottom: 10px;background-color: var(--blue);color:#fff;font-size: 18px;line-height: 20px; position: absolute;left:0;right:0;cursor: pointer;}
-    .prdctMobMenu>div{display: none;position: absolute;top:40px;left:0;right:0;background-color: #fdfafaf2;max-height: 250px;overflow-y: scroll;transition: all 0.5s ease;}
-    .prdctMobMenu>div.active{display: block;padding-top: 15px;}
+    .prdctMobMenu>div{display: none;position: absolute;top:40px;left:0;right:0;background-color: #fdfafaf2;max-height: 250px;overflow-y: scroll;transition: all 0.5s ease;z-index: 99;}
+    .prdctMobMenu>div.active{display: block;padding: 15px;}
     .productSections {flex-direction: column;}
     .productContent {top: 60px;left: 25px;}
     .productList{padding-top:30px ;}
