@@ -127,7 +127,7 @@ const page = () => {
             <div className="contactEnqSec">
               <h4>Enquiry</h4>
               <p>Please feel free to fill out the enquiry form. We will be in touch with you shortly.</p>
-              <form className="formMain" onSubmit={handleSubmit}>
+              <form className="formMain" onSubmit={handleSubmit} method="POST" enctype="multipart/form-data">
                 <div className="formGroup">
                   <div className="formInput">
                     <input type="text"  name="name" id="name" placeholder="Name" autoComplete="off" maxLength={50}/>

@@ -51,21 +51,65 @@
 .formGroup{display: flex;gap:20px;}
 .formGroup>div{flex-grow: 1;}
 .formInput{border: 1px solid #d1d1d1;border-radius: 10px;margin-top: 20px;}
+.formInput.noborder{border:none}
 .formInput>input{height: 40px;border-radius: 10px;padding:0 20px;width: 100%;border: none;}
 .formInput > textarea:focus-visible,.formInput>input:focus-visible{outline: none;}
-.formInput>textarea{border-radius: 10px;padding:20px;width: 100%;border: none;font-family: var(--regular);}
+.formInput>textarea{border-radius: 10px;padding:20px;width: 100%;border: none;font-family: var(--regular);height: 100%;}
 .formGroup.nogrow > div{flex-grow: 0;}
-.frmCaptcha{width: 100px;height:40px;border-radius: 10px;display: flex;justify-content: center;align-items: center;}
+.frmCaptcha{width: 100%;padding: 0 40px;height:40px;border-radius: 10px;display: flex;justify-content: center;align-items: center;}
 .formInput.mxwcap{max-width: 100px;border:1px dashed #d1d1d1;}
 .formInput.mxwcapinp{max-width: 150px;}
 .formInput.mxrefresh{max-width: 50px;border: none;}
-.refreshIcon{display: inline-block;background-color: #a2a2a2;border-radius: 10px;position: relative;width: 40px;height: 40px;}
+.refreshIcon{display: inline-block;background-color: #a2a2a2;border-radius: 10px;position: relative;width: 40px;height: 100%}
 .refreshIcon:after{    content: "";background-image: url(../images/contactus/arrow-rotate-right.svg);background-repeat: no-repeat;background-size: contain;width: 15px;height: 15px;display: inline-block;position: absolute;top: 12px;left: 13px;}
 .formBtn{display: inline-block;background-color: #444444;color:#fff;border-radius: 10px;padding: 15px 45px;margin-top:25px;font-size: 14px;line-height: 15px;}
 
 /*dealership*/
-.dealerShipWraper{padding: 80px 0;}
-.dealerShipCntSec{display: flex;}
-.dealerLeftSide{}
+.dealerShipCntSec{display: flex;gap:90px;padding:  80px 0 230px;}
+.dealerLeftSide >h2{font-family: var(--medium);font-size: 26px;line-height: 28px;color:#333333;margin: 0 0 10px;}
+.dealerLeftSide >h3{font-family: var(--medium);font-size: 20px;line-height: 26px;color:#656565;margin: 0 0 10px;}
+.dealerRightSide>p{font-family: var(--regular);font-size: 20px;line-height: 25px;color:#2a2a2a;margin: 0 0 30px;}
+.dealerRightSide>p>i{display: block;font-style: normal;}
+.delarContainer>div>h3{font-family: var(--medium);font-size: 18px;line-height: 25px;color:#333333;margin:0 0 8px}
+.delarContainer>div>ul>li{font-family: var(--regular);font-size: 16px;line-height: 28px;color:#2a2a2a;text-decoration: underline #666666;text-underline-offset: 8px;padding-bottom: 8px;}
+.dealerRightSide>p.outside{font-family: var(--regular);font-size: 16px;line-height: 28px;padding: 20px 0 0;color:#2a2a2a;}
+.delarContainer{display: flex;gap:80px}
+.dealerShipFormSec .contactEnqFormWrap{background-color: #f5f5f5;}
+.dealerShipFormSec .frmCaptcha{background-color: #fff;}
+.file-upload-group {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            padding: 0;
+            height: 42px; 
+            overflow: hidden;
+        }
 
-.delarContainer{display: flex;}
+        .file-label-text {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #686868;
+        }
+
+        .browse-button {
+            background-color: #e0e0e0;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin: 0 10px 0 4px;;
+            white-space: nowrap;
+            font-size: 13px;line-height: 14px;color:#545454;
+        }
+
+        .file-selected-text {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .hidden-file-input {
+            display: none;
+        }
