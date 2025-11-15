@@ -137,5 +137,22 @@
 .eLearningBrochuresItemImg img { transition: transform 0.4s ease, filter 0.4s ease; } 
 .eLearningBrochuresItemImg:hover img { transform: scale(1.03); filter: brightness(1.1); }
 
+/*applications details*/
+.applicationDetailsBody{padding: 100px 0;}
+.applicationDetailsContent{display: flex;gap: 70px;padding-top:60px ;}
+.applicationDetailsHead > h2{font-size: 48px;line-height: 1.5em;font-family: var(--medium);}
+.applicationDetailsItemswrap{width: 420px;}
+.applicationDetailsItem{display: flex;align-items: center;gap: 20px;border: 1px solid #C9C9C9;border-radius: 10px;padding: 15px;margin-bottom: 20px;}
+.applicationDetailsItem > p{font-size: 20px;line-height: 1.5em;font-family: var(--medium);}
+.applicationDetailsItemImg > em{position: relative;font-style:normal;}
+.applicationDetailsItemImg > em > span{position:absolute;color: #fff;font-size: 16px;line-height: 1em;border-radius: 50%;border: 3px solid #fff;display: block;width: 30px;height: 30px;background: #000;display: flex;align-items: center;justify-content: center;cursor: pointer;}
+.applicationDetailsItemImg > em > span.active{background: #E30008;}
+.applicationDetailsItemImg > em > span.num1{bottom:22%;left: 58%;}
+.applicationDetailsItemImg > em > span.num2{bottom:20%;left: 65%;}
+.applicationDetailsItemImg > em > span.num3{top:10%;left: 63%;}
+.applicationDetailsItemImg > em > span.num4{bottom:15%;right:25%;}
+.applicationDetailsItemImg > em > span.num5{bottom:15%;left: 60%;}
+.applicationDetailsItemImg > em > span.num6{bottom:8%;left: 5%;}
+.applicationDetailsItemImg > em > span.num7{bottom:15%;left: 80%;}
 
 

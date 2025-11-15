@@ -96,3 +96,132 @@ export const brochures = [
         title: "Excel Earthings",
     },
 ];
+
+export const applicationDetailsData = {
+    1: [
+        {
+            img: "/images/applications/installation1.png",
+            title: "Surge Protection Device Type 1+2",
+            desc: "3 Phase – 25kA"
+        },
+        {
+            img: "/images/applications/installation2.png",
+            title: "Surge Protection Device Type 1+2",
+            desc: "3 Phase – 25kA"
+        },
+        {
+            img: "/images/applications/installation3.png",
+            title: "Surge Protection Device Type 1+2",
+            desc: "1 Phase – 12.5kA"
+        }
+    ],
+
+    2: [
+        {
+            img: "/images/applications/installation2.png",
+            title: "Type 2 SPD",
+            desc: "Distribution Panel Protection (20kA)"
+        },
+        {
+            img: "/images/applications/installation1.png",
+            title: "Type 1 SPD",
+            desc: "Main Incoming Panel Protection"
+        },
+        {
+            img: "/images/applications/installation3.png",
+            title: "Single Phase SPD",
+            desc: "Lighting Load Protection"
+        }
+    ],
+
+    3: [
+        {
+            img: "/images/applications/installation3.png",
+            title: "Type 3 SPD",
+            desc: "Sensitive Electronics Protection"
+        },
+        {
+            img: "/images/applications/installation2.png",
+            title: "Control Panel SPD",
+            desc: "Medium Voltage – 15kA"
+        },
+        {
+            img: "/images/applications/installation1.png",
+            title: "UPS Panel SPD",
+            desc: "10kA Protection"
+        }
+    ],
+
+    4: [
+        {
+            img: "/images/applications/installation1.png",
+            title: "Motor Control SPD",
+            desc: "Type 2 – 25kA"
+        },
+        {
+            img: "/images/applications/installation2.png",
+            title: "VFD Protection SPD",
+            desc: "Type 3"
+        },
+        {
+            img: "/images/applications/installation3.png",
+            title: "PLC Panel SPD",
+            desc: "Sensitive Circuit Protection"
+        }
+    ],
+
+    5: [
+        {
+            img: "/images/applications/installation2.png",
+            title: "Server Room SPD",
+            desc: "IT Equipment Protection"
+        },
+        {
+            img: "/images/applications/installation1.png",
+            title: "Networking Panel SPD",
+            desc: "5kA Surge Protection"
+        },
+        {
+            img: "/images/applications/installation3.png",
+            title: "Rack Power SPD",
+            desc: "Type 3"
+        }
+    ],
+
+    6: [
+        {
+            img: "/images/applications/installation3.png",
+            title: "Outdoor Lightning Arrestor",
+            desc: "Type 1 SPD"
+        },
+        {
+            img: "/images/applications/installation2.png",
+            title: "Solar PV SPD",
+            desc: "DC Side Protection"
+        },
+        {
+            img: "/images/applications/installation1.png",
+            title: "Solar Inverter SPD",
+            desc: "AC Side Protection"
+        }
+    ],
+
+    7: [
+        {
+            img: "/images/applications/installation1.png",
+            title: "HVAC System SPD",
+            desc: "Compressor Protection"
+        },
+        {
+            img: "/images/applications/installation2.png",
+            title: "Fire Alarm SPD",
+            desc: "Low Voltage Protection"
+        },
+        {
+            img: "/images/applications/installation3.png",
+            title: "CCTV & Security SPD",
+            desc: "Type 3 Surge Protection"
+        }
+    ]
+};
+
