@@ -28,7 +28,7 @@ export default function Home() {
       <Tesimonials />
       <ViewOurProfile />
       <InsightsUpdates />
-      {/* <Events /> */}
+      <Events />
     </>
   );
 }
