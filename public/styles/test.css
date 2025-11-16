@@ -85,4 +85,37 @@
 .hidden-file-input {display: none;}
 
 /*certifications*/
-.certificationSec{}
+.certificationSec{padding: 100px 0 60px;border-bottom: 1px solid #d8d8d8;}
+.certifiHeader{display: block;text-align: center;}
+.certifiHeader>h2{font-family: var(--medium);font-size: 26px;line-height: 32px;color:#333333;margin: 0 0 15px;}
+.certifiHeader>p{font-family: var(--thin);font-size: 16px;line-height: 25px;color:#2a2a2a;margin: 0 0 30px;}
+.certifiHeader>p>i{display: block;font-style: normal;}
+
+.cardsContainer{display: grid;grid-template-columns: 1fr 1fr 1fr 1fr 1fr;gap:30px}
+.cardImg{border: 1px solid #d8d8d8;border-radius: 10px;}
+.cardImg>img{border-radius: 10px;}
+
+.cardContent{text-align: center;}
+.cardContent>h3{font-family: var(--medium);font-size: 16px;line-height: 24px;color:#333333;margin: 15px 0 0;}
+.cardContent>p{font-family: var(--thin);font-size: 15px;line-height: 24px;color:#2a2a2a;margin: 0 0 30px;}
+.qualityAssuranceWrap{padding: 80px 0;}
+.qualityRoundWrap{padding: 80px 0 180px;border-radius: var(--border-home);background-color: #dfdfdf;position: relative;margin-bottom: -110px;}
+.qualityRoundWrap.white{background-color: #fff;}
+.qualityRoundWrap.darker{background-color: #8a8a8a;margin-bottom: -180px;}
+.qualityAssureSec{display: flex;}
+.qualityLeftColumn{flex-basis: 50%;flex-shrink: 0;}
+.qualityLeftColumn>h2{font-family: var(--medium);font-size: 24px;line-height: 26px;color:#333333;margin: 15px 0 0;}
+.qualityLeftColumn>h2>i{display: block;font-style: normal;}
+.qualityLeftColumn>p{font-family: var(--medium);font-size: 16px;line-height: 25px;color:#2a2a2a;margin: 0 0 30px;}
+.qalityDesc>p{font-family: var(--regular);font-size: 16px;line-height: 25px;color:#2a2a2a;margin: 0 0 30px;}
+.qualityGallry{display: grid;grid-template-columns: 1fr 1fr;gap:20px;}
+.qualityImgBx{border-radius: 16px;border:1px solid #bdbdc1}
+.qualityImgBx>img{border-radius: 16px;}
+.qualityGallryNew{display: grid;grid-template-columns: 1fr 1fr 1fr 1fr;}
+.qualityImgCard{display: flex;flex-direction: column;}
+.qualityImgCard>img{border-radius: 16px;margin: 0 0 15px}
+.qualityImgCard>span{display: block;text-align: center;}
+.qualityImgCard>span>p{font-family: var(--medium);font-size: 16px;line-height: 25px;color:#2a2a2a;}
+.qualityAssureDownHead{text-align: center;}
+.qualityAssureDownHead>h3{font-family: var(--medium);font-size: 20px;line-height: 24px;color:#fff;margin: 15px 0 0;}
+.qualityAssureDownHead>h3>i{display: block;font-style: normal;}
