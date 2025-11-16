@@ -6,7 +6,7 @@
 .commonBanner .commonBannerOverlay { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.4); z-index: 2; transition: background 0.3s ease; }
 .commonBanner .commonBannerContent { position: relative; z-index: 3; display: flex; align-items: flex-end; height: 100%; padding: 0 50px 40px; color: #fff; }
 .commonBanner .commonBannerContent h1 { font-size: 48px; line-height: 1.2; margin: 0; text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);font-family: var(--medium); }
-
+.commonBanner .commonBannerContent h1>i{display: block;font-style: normal;}
 
 /*products main*/
 .productsMainWrap{margin-bottom: -200px;}

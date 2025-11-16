@@ -31,7 +31,7 @@ const CommonBanner = ({ pageName }) => {
         </div>
 
         <div className="commonBannerContent">
-          <h1>{title}</h1>
+          <h1 dangerouslySetInnerHTML={{ __html: title }}/>
         </div>
       </div>
     </section>
