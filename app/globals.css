@@ -97,7 +97,7 @@ select:focus, select:active, select:focus-visible { outline: none; box-shadow: n
 .fixedLinks > a:hover { transform: scale(1.1); }
 
 /*Footer*/
-.footerWrap { padding: 100px 0; background: linear-gradient(rgba(20, 33, 61, 0.93), rgba(20, 33, 61, 0.93)), url('/images/footer-bg.jpg') no-repeat center center; background-size: cover; border-radius: var(--border-home); color: #fff; position: relative; margin-top: -100px; z-index: 1; }
+.footerWrap { padding: 100px 0; background: linear-gradient(rgba(20, 33, 61, 0.93), rgba(20, 33, 61, 0.93)), url('/images/footer-bg.jpg') no-repeat center center; background-size: cover; border-radius: var(--border-home); color: #fff; position: relative; margin-top: -100px; z-index: 5; }
 .footerLogoSec { display: flex; justify-content: space-between; padding: 0 0 60px; align-items: flex-start; gap: 40px; }
 .footerLogoImg { display: flex; align-items: center; gap: 30px; }
 .footerLogoImg .dividerVertical { height: 80px; }
