@@ -59,6 +59,7 @@
 .contactIndiaWrap{background-color: #f3f3f3;}
 .contactIndiaWrap:before,.contactIndiaWrap:after{display: none;}
 .contactIndiaWrap{min-height: auto;}
+.contactEnqFormWrap {padding:70px 0 50px;}
 .indiaImg{max-width: 449px;}
 .indIconSet{padding-left: 45px;}
 .indIconSet.one{margin-left: -108px;bottom:49px;}
@@ -72,8 +73,8 @@
 .indIconSet > div > p{font-size: 14px;line-height: 24px;}
 
 /*dealership*/
-.dealerShipCntSec{flex-direction: column;gap:30px;padding: 50px 0 125px;}
-.dealerShipFormSec .contactEnqFormWrap{padding: 50px 0;}
+.dealerShipCntSec{flex-direction: column;gap:30px;padding: 50px 0 143px;}
+.dealerShipFormSec .contactEnqFormWrap{padding: 50px 0 150px;}
 .delarContainer{gap:50px}
   
 }
@@ -129,7 +130,7 @@
 .dealerRightSide > p{font-size: 16px;line-height: 22px;margin:0 0 15px}
 .delarContainer > div > ul > li{font-size: 15px;line-height: 22px;}
 .dealerRightSide > p.outside{font-size: 15px;line-height: 22px;margin: 0 0 25px;}
-.dealerShipFormSec .contactEnqFormWrap{padding: 30px 0;}
+.dealerShipFormSec .contactEnqFormWrap{padding: 30px 0 120px;}
 }
 
 

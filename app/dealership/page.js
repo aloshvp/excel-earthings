@@ -1,11 +1,69 @@
 "use client"
 import "@styles/staticbundles.scss";
 import CommonBanner from "@common/CommonBanner";
+import { useState } from "react";
 const page = () => {
+    
+    const [businessCardName, setBusinessCardName] = useState('No File Selected');
+    const [businessCardFile, setBusinessCardFile] = useState(null);
+
+    const [companyProfileName, setCompanyProfileName] = useState('No File Selected');
+    const [companyProfileFile, setCompanyProfileFile] = useState(null);
+
+    const handleFileChange = (e) => {
+        const file = e.target.files ? e.target.files[0] : null;
+        const name = e.target.name;
+
+        const shortenFileName = (fullName) => {
+            if (!fullName) return 'No File Selected';
+            
+            const lastDotIndex = fullName.lastIndexOf('.');
+            
+            if (lastDotIndex <= 0) {
+                if (fullName.length > 10) {
+                    return fullName.substring(0, 10) + '...';
+                }
+                return fullName;
+            }
+
+            const name = fullName.substring(0, lastDotIndex);
+            const extension = fullName.substring(lastDotIndex); 
+            
+            if (name.length > 10) {
+                return name.substring(0, 10) + '...' + extension;
+            }
+            
+            return fullName;
+        };
+
+        if (file) {
+            const fileName = shortenFileName(file.name);
+            if (name === 'businessCard') {
+                setBusinessCardName(fileName);
+                setBusinessCardFile(file);
+            } else if (name === 'companyProfile') {
+                setCompanyProfileName(fileName);
+                setCompanyProfileFile(file);
+            }
+        } else {
+            if (name === 'businessCard') {
+                setBusinessCardName('No File Selected');
+                setBusinessCardFile(null);
+            } else if (name === 'companyProfile') {
+                setCompanyProfileName('No File Selected');
+                setCompanyProfileFile(null);
+            }
+        }
+    };
+
+    const triggerFileSelect = (id) => {
+        document.getElementById(id).click();
+    };
+
     const handleSubmit = async (event) => {
         event.preventDefault();
-
     }
+   
   return (
     <>
     <section className="dealerShipMainWrapper">
@@ -67,17 +125,17 @@ const page = () => {
                                 <div className="formInput noborder">
                                     <label htmlFor="businessCard" className="file-label-text">Business Card</label>
                                     <div className="file-upload-group">
-                                        <button type="button" className="browse-button" >Browse</button>
-                                        <span id="businessCardFileName" className="file-selected-text">No File Selected</span>
-                                        <input type="file" id="businessCard" name="businessCard" className="hidden-file-input" accept=".jpg, .jpeg, .png, .pdf"/>
+                                        <button type="button" className="browse-button" onClick={() => triggerFileSelect('businessCard')}>Browse</button>
+                                        <span id="businessCardFileName" className="file-selected-text">{businessCardName}</span>
+                                        <input type="file" onChange={handleFileChange} id="businessCard" name="businessCard" className="hidden-file-input" accept=".jpg, .jpeg, .png, .pdf"/>
                                     </div>
                                 </div>
                                 <div className="formInput noborder">
                                     <label htmlFor="companyProfile" className="file-label-text">Company Profile</label>
                                     <div className="file-upload-group">
-                                        <button type="button" className="browse-button" >Browse</button>
-                                        <span id="companyProfileFileName" className="file-selected-text">No File Selected</span>
-                                        <input type="file" id="companyProfile" name="companyProfile" className="hidden-file-input" accept=".pdf, .doc, .docx"/>
+                                        <button type="button" className="browse-button" onClick={() => triggerFileSelect('companyProfile')}>Browse</button>
+                                        <span id="companyProfileFileName" className="file-selected-text">{companyProfileName}</span>
+                                        <input type="file" onChange={handleFileChange} id="companyProfile" name="companyProfile" className="hidden-file-input" accept=".pdf, .doc, .docx"/>
                                     </div>
                                 </div>
                             </div>
