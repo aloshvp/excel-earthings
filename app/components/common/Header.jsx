@@ -17,7 +17,6 @@ const menuItems = [
   { title: "Contact Us", href: "/contact-us" },
 ];
 
-
 const Header = () => {
   const pathname = usePathname();
   const { width } = useWindowSize();
