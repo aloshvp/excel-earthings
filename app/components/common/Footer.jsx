@@ -80,7 +80,7 @@ const Footer = () => {
                                     <li><Link href="" scroll={false}>Certifications & Quality Assurance</Link></li>
                                     <li><Link href="/approvals-and-associates">Approvals & Associates</Link></li>
                                     <li><Link href="/applications">Applications</Link></li>
-                                    <li><Link href="" scroll={false}>Dealership</Link></li>
+                                    <li><Link href="/dealership" >Dealership</Link></li>
                                 </ul>
                                 <ul>
                                     <li><Link href="/e-learning">E-Learning</Link></li>
