@@ -56,6 +56,6 @@ export const bannerData = {
     },
     "certifications-and-quality-assurance": {
         title: "<i>Certifications &</i> Quality Assurance",
-        image: "/images/banners/applications-bg.png",
+        image: "/images/banners/certifications-and-quality-assurance-bg.png",
     },
 };

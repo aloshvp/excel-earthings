@@ -110,9 +110,9 @@ const page = () => {
                             <p>A length of the rod shall be rigidly held in a clamp or vise. A force shall be applied normal to the free end of the rod at a distance from the clamping device equal to 40 times the rod diameter. The application of force shall be such that the rod is permanently bent through a 30 degree angle.</p>
                         </div>
                         <div className="qualityGallry">
-                            <div className="qualityImgBx"> <Image src="/images/qualityassurance/bend-test.jpg" className="img-fluid" alt="item" title="item" width={450} height={250}/></div>
-                            <div className="qualityImgBx"> <Image src="/images/qualityassurance/bend-test.jpg" className="img-fluid" alt="item" title="item" width={450} height={250}/></div>
-                            <div className="qualityImgBx fullWidth"> <Image src="/images/qualityassurance/bend-test.jpg" className="img-fluid" alt="item" title="item" width={450} height={250}/></div>
+                            <div className="qualityImgBx"> <Image src="/images/qualityassurance/bend-test-1.png" className="img-fluid" alt="item" title="item" width={450} height={250}/></div>
+                            <div className="qualityImgBx"> <Image src="/images/qualityassurance/bend-test-2.png" className="img-fluid" alt="item" title="item" width={450} height={250}/></div>
+                            <div className="qualityImgBx fullWidth"> <Image src="/images/qualityassurance/bend-test-3.png" className="img-fluid" alt="item" title="item" width={450} height={250}/></div>
                         </div>
                     </div>
                     </div>
@@ -130,8 +130,8 @@ const page = () => {
                             <p>A 457 mm (18 in) length of the rod with one end cut to a 45° point shall be driven between two steel clamping plates or the jaws of a vise set 1.02 mm (0.04 in) less than the diameter of the rod, so as to shear off sufficient metal to expose the bond between the coating and rod.</p>
                         </div>
                         <div className="qualityGallry">
-                            <div className="qualityImgBx"> <Image src="/images/qualityassurance/bend-test.jpg" className="img-fluid" alt="item" title="item" width={450} height={250}/></div>
-                            <div className="qualityImgBx"> <Image src="/images/qualityassurance/bend-test.jpg" className="img-fluid" alt="item" title="item" width={450} height={250}/></div>
+                            <div className="qualityImgBx"> <Image src="/images/qualityassurance/adherence-test-2.png" className="img-fluid" alt="item" title="item" width={450} height={250}/></div>
+                            <div className="qualityImgBx"> <Image src="/images/qualityassurance/adherence-test-1.png" className="img-fluid" alt="item" title="item" width={450} height={250}/></div>
                         </div>
                     </div>
                     </div>
@@ -149,9 +149,8 @@ const page = () => {
                             <p>The thickness of a protective coating shall be determined by a reliable electronic or magnetic method, or by an electrochemical method.</p>
                         </div>
                         <div className="qualityGallry">
-                            <div className="qualityImgBx"> <Image src="/images/qualityassurance/bend-test.jpg" className="img-fluid" alt="item" title="item" width={450} height={250}/></div>
-                            <div className="qualityImgBx"> <Image src="/images/qualityassurance/bend-test.jpg" className="img-fluid" alt="item" title="item" width={450} height={250}/></div>
-                            <div className="qualityImgBx fullWidth"> <Image src="/images/qualityassurance/bend-test.jpg" className="img-fluid" alt="item" title="item" width={450} height={250}/></div>
+                            <div className="qualityImgBx"> <Image src="/images/qualityassurance/coating-thickness-test-1.png" className="img-fluid" alt="item" title="item" width={450} height={250}/></div>
+                            <div className="qualityImgBx"> <Image src="/images/qualityassurance/coating-thickness-test-2.png" className="img-fluid" alt="item" title="item" width={450} height={250}/></div>
                         </div>
                     </div>
                     </div>
@@ -169,9 +168,8 @@ const page = () => {
                             <p>The four Electrode method is used to determine the resistivity of Earth Enhancing Compound as per ASTM G57-06 it is done with the aid of Standard Soil Box.</p>
                         </div>
                         <div className="qualityGallry">
-                            <div className="qualityImgBx"> <Image src="/images/qualityassurance/bend-test.jpg" className="img-fluid" alt="item" title="item" width={450} height={250}/></div>
-                            <div className="qualityImgBx"> <Image src="/images/qualityassurance/bend-test.jpg" className="img-fluid" alt="item" title="item" width={450} height={250}/></div>
-                            <div className="qualityImgBx fullWidth"> <Image src="/images/qualityassurance/bend-test.jpg" className="img-fluid" alt="item" title="item" width={450} height={250}/></div>
+                            <div className="qualityImgBx"> <Image src="/images/qualityassurance/resistivity-2.png" className="img-fluid" alt="item" title="item" width={450} height={250}/></div>
+                            <div className="qualityImgBx"> <Image src="/images/qualityassurance/resistivity-1.png" className="img-fluid" alt="item" title="item" width={450} height={250}/></div>
                         </div>
                     </div>
                     </div>
@@ -189,10 +187,10 @@ const page = () => {
                             <p>This method of non-destructive test is used to detect the cracks or pores that are developed in welded area. Surface is cleaned and liquid penetrant is sprayed over the welded area. After 15 minutes, excess penetrant is removed and developer is applied on the surface which will show any discontinuities in the surface including cracks or pores.</p>
                         </div>
                         <div className="qualityGallry">
-                            <div className="qualityImgCard"><Image src="/images/qualityassurance/bend-test.jpg" className="img-fluid" alt="item" title="item" width={450} height={250}/><span><p>Applying Penetrant</p></span></div>
-                            <div className="qualityImgCard"><Image src="/images/qualityassurance/bend-test.jpg" className="img-fluid" alt="item" title="item" width={450} height={250}/><span><p>Removing Penetrant</p></span></div>
-                            <div className="qualityImgCard"> <Image src="/images/qualityassurance/bend-test.jpg" className="img-fluid" alt="item" title="item" width={450} height={250}/><span><p>Applying Developer</p></span></div>
-                            <div className="qualityImgCard"> <Image src="/images/qualityassurance/bend-test.jpg" className="img-fluid" alt="item" title="item" width={450} height={250}/><span><p>Evaluating Indications</p></span></div>
+                            <div className="qualityImgCard"><Image src="/images/qualityassurance/dye-penetration-test-1.png" className="img-fluid" alt="item" title="item" width={450} height={250}/><span><p>Applying Penetrant</p></span></div>
+                            <div className="qualityImgCard"><Image src="/images/qualityassurance/dye-penetration-test-2.png" className="img-fluid" alt="item" title="item" width={450} height={250}/><span><p>Removing Penetrant</p></span></div>
+                            <div className="qualityImgCard"> <Image src="/images/qualityassurance/dye-penetration-test-3.png" className="img-fluid" alt="item" title="item" width={450} height={250}/><span><p>Applying Developer</p></span></div>
+                            <div className="qualityImgCard"> <Image src="/images/qualityassurance/dye-penetration-test-4.png" className="img-fluid" alt="item" title="item" width={450} height={250}/><span><p>Evaluating Indications</p></span></div>
                         </div>
                     </div>
                     </div>

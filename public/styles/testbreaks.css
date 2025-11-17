@@ -76,7 +76,16 @@
 .dealerShipCntSec{flex-direction: column;gap:30px;padding: 50px 0 143px;}
 .dealerShipFormSec .contactEnqFormWrap{padding: 50px 0 150px;}
 .delarContainer{gap:50px}
-  
+
+/*certifications*/
+.certificationSec{padding:50px 0 40px;}
+.cardsContainer{grid-template-columns: 1fr 1fr 1fr 1fr;gap:15px}
+.qualityAssuranceWrap{padding: 50px 0;}
+.qualityLeftColumn{flex-basis: 45%;}  
+.qualityLeftColumn > h2{font-size: 22px;line-height: 25px;}
+.qualityAssureDownHead>h3{font-size: 18px;line-height: 25px;}
+.qualityAssureDownHead>h3>i{display: inline;}
+.qualityRoundWrap{padding: 50px 0 150px;}
 }
 
 @media only screen and (max-width: 767px) {
@@ -97,6 +106,15 @@
 /*dealership*/
 .dealerShipCntSec{gap:25px}
 .delarContainer{flex-direction: column;gap:25px}
+
+/*certifications*/
+.cardsContainer{grid-template-columns: 1fr 1fr 1fr;}
+.qualityAssureSec{flex-direction: column;}
+.certifiHeader > p > i{display: inline;}
+.qualityRoundWrap.darker{padding:30px 0 170px}
+.qualityLeftColumn > h2 {font-size: 20px;line-height: 25px;}
+.qualityAssureDownHead > h3{font-size: 16px;line-height: 22px;}
+
 }
 
 @media only screen and (max-width: 479px) {
@@ -131,6 +149,15 @@
 .delarContainer > div > ul > li{font-size: 15px;line-height: 22px;}
 .dealerRightSide > p.outside{font-size: 15px;line-height: 22px;margin: 0 0 25px;}
 .dealerShipFormSec .contactEnqFormWrap{padding: 30px 0 120px;}
+
+.certificationSec{padding:30px 0 20px;}
+.certifiHeader > h2{font-size: 22px;line-height: 25px;}
+.cardsContainer{grid-template-columns: 1fr;}
+.qualityAssuranceWrap{padding: 30px 0;}
+.qualityRoundWrap{padding: 30px 0 140px;}
+.qualityLeftColumn > p{margin-bottom: 15px;}
+.qualityGallry{grid-template-columns: 1fr;}
+.cardContent > p{margin-bottom: 15px;}
 }
 
 
