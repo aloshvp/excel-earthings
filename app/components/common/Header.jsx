@@ -11,7 +11,7 @@ const menuItems = [
   { title: "Corporates", href: "" },
   { title: "Products", href: "/products" },
   { title: "Applications", href: "/applications" },
-  { title: "Dealership", href: "" },
+  { title: "Dealership", href: "/dealership" },
   { title: "Design", href: "/transformer-earthing-design" },
   { title: "E-Learning", href: "/e-learning" },
   { title: "Contact Us", href: "/contact-us" },
