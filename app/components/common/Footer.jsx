@@ -84,7 +84,7 @@ const Footer = () => {
                                 </ul>
                                 <ul>
                                     <li><Link href="/e-learning">E-Learning</Link></li>
-                                    <li><Link href="" scroll={false}>Transformer Earthing Design</Link></li>
+                                    <li><Link href="/transformer-earthing-design">Transformer Earthing Design</Link></li>
                                     <li><Link href="/faq" >Faq</Link></li>
                                     <li><Link href="/careers">Careers</Link></li>
                                     <li><Link href="/insights-and-updates">Insights & Updates</Link></li>
