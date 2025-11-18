@@ -72,13 +72,23 @@ const page = () => {
                                     <li>Breaker trips often for no clear reason.</li>
                                     <li>Recent renovation or new rooftop solar added.</li>
                                 </ul>
-                                <Image
-                                    src="/images/insights-and-updates-details/insights-and-updates-details3.png"
-                                    alt=""
-                                    width={925}
-                                    height={571}
+                                <Link href="" className="blogVideowWap" scroll={false}>
+                                    <Image
+                                        src="/images/insights-and-updates-details/insights-and-updates-details3.png"
+                                        alt=""
+                                        width={925}
+                                        height={571}
 
-                                />
+                                    />
+                                    <div className="blogVideoOverlay"></div>
+                                    <em className="blogVideoPlayBtn">
+                                        <Image
+                                            src="/images/e-learning/play-button.svg"
+                                            width={65}
+                                            height={65}
+                                            alt="play"
+                                        /></em>
+                                </Link>
                                 <h2>Monsoon‑ready in 15 minutes</h2>
                                 <ul>
                                     <li>Open the earthing cover; check for loose or corroded parts.</li>
@@ -93,8 +103,8 @@ const page = () => {
                                     <li>Guidance on surge protection for main boards and sensitive points.</li>
                                     <li>Simple Home Safety Review—clear actions.</li>
                                 </ul>
-                                <p>Planning a new home or upgrade? Request a Home Safety Review. </p>
-                                <p>Be Safe with Excel Earthings</p>
+                                <p><b>Planning a new home or upgrade? Request a Home Safety Review. </b></p>
+                                <p><b>Be Safe with Excel Earthings</b></p>
                             </div>
                             <div className="blogPostShareSec">
                                 <Link href="" className="shareButton facebook" scroll={false}>
@@ -181,7 +191,7 @@ const page = () => {
 
                 </div>
             </div>
-        </section>
+        </section >
     );
 };
 
