@@ -131,6 +131,17 @@
      .DesignCalcFormSec.fullRow {grid-column: auto;}
      .DesignCalcFormSec > div > span{min-width: 40px;text-align: center;}
 
+    /*insights-and-updates-details*/
+    .insightsUpdatesDetailsWrap{padding: 60px 0;}
+    .insightsUpdatesDetailsBody{flex-direction: column;}
+    .insightsUpdatesDetailsLftCont{border-right: none;padding-right: 0;}
+    .insightsUpdatesDetailsRghtCont{padding-left: 0;}
+    .blogPostContentHead > h1{max-width: 100%;}
+    .blogPostShareSec{margin: 40px 0;}
+    .recentPostsWrap{gap: 20px;}
+    .recentPostsitem{padding-bottom: 20px;}
+
+
      
 }
 
@@ -218,9 +229,23 @@
     .transformerEarthingDsgnCalc form{margin: 30px 0 0;gap: 20px;}
     .DesignCalcFormSec > div{gap: 5px;}
     
-
-
-
+    /*insights-and-updates-details*/
+    .insightsUpdatesDetailsWrap{padding: 40px 0 60px;}
+    .blogPostContentHead > h1{font-size: 24px;margin: 15px 0 5px;}
+    .blogPostContentHead > h3{font-size: 16px;}
+    .blogPostContentHead > span{font-size: 14px;}
+    .blogPostContent img{ margin: 20px 0;}
+    .blogPostContent p{font-size: 16px;}
+    .blogPostContent h2{font-size: 20px;margin: 15px 0;}
+    .blogPostContent ul > li{font-size: 16px;padding: 0 0 8px 20px;}
+    .blogPostContent ul > li:before{width: 6px;height: 6px;}
+    .blogVideowWap img{margin: 0;}
+    .blogPostShareSec{flex-wrap: wrap;}
+    .blogPostShareSec .shareButton{font-size: 14px;min-width: 90px;}
+    .insightsUpdatesDetailsRghtCont > h3{font-size: 20px;}
+    .recentPostsitem{gap: 15px;}
+    .recentPostsitem > p{font-size: 16px;}
+    .blogVideoPlayBtn{width: 50px;height: 50px;}
     
 }
 
@@ -260,6 +285,9 @@
     .applicationDetailsItem >img{max-width: 80px;}
     .applicationDetailsItemImg > em > span{width: 20px;height: 20px;font-size: 12px;border-width: 2px;}
     .applicationDetailsContent{padding-top: 15px;}
+
+    /*insights-and-updates-details*/
+    .insightsUpdatesDetailsWrap{padding: 30px 0 40px;}
 
 
 }

@@ -182,6 +182,7 @@ h2.designCommonHead{font-size: 30px;line-height: 1em;font-family: var(--medium);
 .insightsUpdatesDetailsBody{display: flex;}
 .insightsUpdatesDetailsLftCont{border-right: 1px solid #D7D9DD;padding-right: 40px;flex: 80%;}
 .insightsUpdatesDetailsRghtCont{padding-left: 40px;}
+.insightsUpdatesDetailsRghtCont >h3{font-size: 22px;line-height: 1em;margin-bottom: 30px;font-family: var(--medium);color: #333333;}
 .recentPostsWrap{display: flex;flex-direction: column;gap: 30px;position: sticky;top: 150px;}
 .recentPostsitem{display: flex;gap: 20px;border-bottom: 1px solid #D7D9DD;padding-bottom: 30px;align-items: center;cursor: pointer;}
 .recentPostsitem>p{font-size: 18px;line-height: 1.4em;font-family: var(--medium);transition: all 0.3s ease;}
