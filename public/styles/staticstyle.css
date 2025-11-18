@@ -211,3 +211,9 @@ h2.designCommonHead{font-size: 30px;line-height: 1em;font-family: var(--medium);
 .blogPostShareSec .whatsapp { background: linear-gradient(to right, #25D366, #34AF23); color: white; } 
 .blogPostShareSec .generic-share { background: linear-gradient(to right, #8BC34A, #C6FF00); color: white; } 
 .blogPostShareSec .share-button:hover { opacity: 0.9; }
+
+/*about-us*/
+.aboutUsBannerWrap{}
+.aboutUsBannerContent{display: flex;justify-content: space-between;}
+.aboutUsBannerContentLft{}
+.aboutUsBannerContentRght{}
