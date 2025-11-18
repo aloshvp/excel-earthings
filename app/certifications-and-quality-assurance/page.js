@@ -3,12 +3,12 @@ import CommonBanner from "@common/CommonBanner";
 import Image from "next/image";
 const page = () => {
    const certificationsData = [
-    // {
-    //     img: '/images/Certifications/isi-marked.jpg',
-    //     name: 'isi',
-    //     head: 'ISI Marked',
-    //     desc: 'For Electroplated Coatings of Copper',
-    // },
+    {
+        img: '/images/Certifications/isi-marked.jpg',
+        name: 'isi',
+        head: 'ISI Marked',
+        desc: 'For Electroplated Coatings of Copper',
+    },
     {
         img: '/images/Certifications/ul.jpg',
         name: 'ul',
@@ -68,15 +68,6 @@ const page = () => {
                         <p><i>Our Products are Tested and Certified in accordance with International and National</i> Standards from well established NABL Accredited Laboratories.</p>
                     </div>
                     <div className="cardsContainer">
-                        <div className="certificationCard">
-                            <div className="cardImg"> 
-                                <Image src="/images/Certifications/isi-marked.jpg" width={300} height={200} className="img-fluid" alt="isi" title="isi"/>
-                            </div>
-                            <div className="cardContent">
-                                <h3>ISI Marked</h3>
-                                <p>For Electroplated Coatings of Copper</p>
-                            </div>
-                        </div>
                         {certificationsData.map((item,index)=>(
                             <div className="certificationCard" key={index*0.1}>
                                 <div className="cardImg"> 
