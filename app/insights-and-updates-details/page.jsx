@@ -167,6 +167,7 @@ const page = () => {
                     </div>
 
                     <div className="insightsUpdatesDetailsRghtCont">
+                        <h3>Recent Posts</h3>
                         <div className="recentPostsWrap">
 
                             {insightsData?.map((item, index) => (
