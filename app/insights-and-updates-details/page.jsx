@@ -160,7 +160,7 @@ const page = () => {
                         <div className="recentPostsWrap">
 
                             {insightsData?.map((item, index) => (
-                                <div key={index} className="recentPostsitem">
+                                <Link href="" scroll={false} key={index} className="recentPostsitem">
 
                                     <em className="recentPostImg">
                                         <Image
@@ -173,7 +173,7 @@ const page = () => {
 
                                     <p>{item.title}</p>
 
-                                </div>
+                                </Link>
                             ))}
 
                         </div>
