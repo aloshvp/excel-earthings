@@ -268,3 +268,36 @@ export const AboutUsMissionData = [
         list: ["Integrity", "Quality", "Customer Centric"]
     }
 ];
+
+export const milestones = [
+    {
+        year: "2006",
+        title: "Lorem Ipsum is simply dummy text of the printing",
+        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since"
+    },
+    {
+        year: "2007",
+        title: "Lorem Ipsum is simply dummy text of the printing",
+        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since"
+    },
+    {
+        year: "2008",
+        title: "Lorem Ipsum is simply dummy text of the printing",
+        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since"
+    },
+    {
+        year: "2010",
+        title: "Lorem Ipsum is simply dummy text of the printing",
+        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since"
+    },
+    {
+        year: "2012",
+        title: "Lorem Ipsum is simply dummy text of the printing",
+        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since"
+    },
+    {
+        year: "2015",
+        title: "Lorem Ipsum is simply dummy text of the printing",
+        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since"
+    }
+];

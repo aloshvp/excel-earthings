@@ -221,6 +221,7 @@ h2.designCommonHead{font-size: 30px;line-height: 1em;font-family: var(--medium);
 .aboutUsBannerContentRght { position: relative; flex: 1; }
 .aboutUsBannerContentRght > span { font-size: 380px; line-height: 1em; font-family: var(--medium); color: #e5e5e5; }
 .aboutUsBannerContentRght > em { position: absolute; bottom: 120px; right: 0; max-width: 60%; }
+
 .aboutUsUniqueWrap{height: 95vh; background: linear-gradient(rgba(0, 0 , 0, 0.5)), url("/images/static/aboutus_unique-bg.png") no-repeat center center; background-size: cover; color: #fff; position: relative; border-radius: var(--border-home); z-index: 1;}
 .aboutUsUniqueWrap > .container{height: 100%;}
 .aboutUsUniqueContent{color: #fff;display: flex;justify-content: center;align-items: center;flex-direction: column;height: 100%;}
@@ -229,6 +230,7 @@ h2.designCommonHead{font-size: 30px;line-height: 1em;font-family: var(--medium);
 .aboutUsUniqueGridItem{display: flex;justify-content: center;align-items: center;gap: 40px;}
 .aboutUsUniqueGridItem > em{width: 120px;height: 120px;display: flex;justify-content: center;align-items: center;background: #fff;border-radius: 10px;}
 .aboutUsUniqueGridItem > p{font-size: 32px;line-height: 1.3em;max-width: 560px;}
+
 .aboutUsGlanceWrap{padding: 100px 0 200px; background: #FFFFFF; position: relative;border-radius: var(--border-home); margin-top: -100px; z-index: 1;}
 .aboutUsGlanceHead > h2{font-size: 90px;line-height: 1em;}
 .aboutUsGlanceHead{padding-bottom: 30px;}
@@ -237,12 +239,14 @@ h2.designCommonHead{font-size: 30px;line-height: 1em;font-family: var(--medium);
 .aboutUsGlanceContentLft > p{font-size: 18px;line-height: 1.5em;margin-bottom: 25px;}
 .aboutUsGlanceContentRghtBox{border-radius: 30px;background: #F5F5F5;padding: 40px 60px;}
 .aboutUsGlanceContentRghtBox ul > li{font-size: 24px;line-height: 1.5em;font-family: var(--medium);border-bottom: 1px solid #111111;color: #111111;padding:15px 0 8px;}
+
 .aboutUsAwardsWrap{padding: 100px 0 150px; background: #ECECEC; position: relative;border-radius: var(--border-home); margin-top: -100px; z-index: 1;}
 .aboutUsAwardsHead{display: flex;gap: 60px;justify-content: space-between;padding-bottom: 60px;}
 .aboutUsAwardsHead > h2{font-size: 90px;line-height: 1em;}
 .aboutUsAwardsHead > p{font-size: 18px;line-height: 1.5em;max-width: 800px;}
 .aboutUsAwardsGrid{display: flex;justify-content: space-between;gap: 30px;}
 .aboutUsAwardsGridItem > p{font-size: 22px;line-height: 1.5em;font-family: var(--medium);text-align: center;margin:25px 25px 0;}
+
 .aboutUsCeoWrap{padding: 100px 0 200px; background: #333333; position: relative;border-radius: var(--border-home); margin-top: -100px; z-index: 1;}
 .aboutUsCeoContent{display: flex;justify-content: space-between;gap: 80px;}
 .aboutUsCeoContentLft > em{display:block;min-width: 600px;}
@@ -250,6 +254,7 @@ h2.designCommonHead{font-size: 30px;line-height: 1em;font-family: var(--medium);
 .aboutUsCeoContentLft > i{font-size: 32px;line-height: 1em;color: #C9C9C9;display: block;font-style: normal;}
 .aboutUsCeoContentRght > span{font-size: 40px;line-height: 1em;font-family: var(--medium);color: #fff;margin: 50px 0;display: block;}
 .aboutUsCeoContentRght > p{font-size: 18px;line-height: 1.5em;margin-bottom: 30px;color: #fff;}
+
 .aboutUsInfraStructureWrap{padding: 100px 0 200px; background: #ECECEC; position: relative;border-radius: var(--border-home); margin-top: -100px; z-index: 1;}
 .aboutUsInfraStructureTopCont{display: flex;align-items: center;justify-content: center;gap: 80px;}
 .aboutUsInfraStructureTopCont > *{flex: 1;}
@@ -259,6 +264,7 @@ h2.designCommonHead{font-size: 30px;line-height: 1em;font-family: var(--medium);
 .aboutUsInfraStructureBtmCont > h3{font-size: 40px;line-height: 1em;margin-bottom: 10px;font-family: var(--medium);color: #333333;}
 .infrastructureHighlightsSec{display: flex;gap: 80px;}
 .infrastructureHighlightsSec > ul >li{border-bottom: 1px solid #111111;padding: 12px 0;color: #111111;font-size: 18px;line-height: 1.5em;}
+
 .aboutUsMissionWrap{padding: 100px 0 200px; background: #333333; position: relative;border-radius: var(--border-home); margin-top: -100px; z-index: 1;color: #ffff;}
 .aboutUsMissionHead > h2{font-size: 90px;line-height: 1.1em;}
 .aboutUsMissionHead > h2 > em{display: block;}
@@ -268,3 +274,47 @@ h2.designCommonHead{font-size: 30px;line-height: 1em;font-family: var(--medium);
 .aboutUsMissionGridItem > h3{font-size: 48px;line-height: 1em;font-family: var(--medium);margin: 30px 0;}
 .aboutUsMissionGridItem > p{font-size: 18px;line-height: 1.5em;max-width: 430px;}
 .aboutUsMissionGridItem > ul > li{font-size: 18px;line-height: 1.5em;}
+
+.aboutUsMilestonesWrap{padding: 100px 0 200px; background:#E2E2E2; position: relative;border-radius: var(--border-home); margin-top: -100px; z-index: 1;}
+.aboutUsMilestonesHead > h2{font-size: 90px;line-height: 1em;}
+.aboutUsMilestonesSlider{position:relative;margin:40px 0 120px;border-top: 1px solid #828282;padding: 60px 0 0;}
+.timelineSwiper{padding-bottom:40px;}
+.timelineItem{text-align:center;cursor:pointer;position:relative;}
+.timelineItem .year{font-size:20px;font-weight:600;display:block;margin-bottom:20px;transition:.3s;}
+.timelineItem .bubble{width:16px;height:16px;background:#828282;border-radius:50%;display:inline-block;transition:.3s;position: relative;top: -10px;}
+.timelineItem .bubble:hover{background:#B11116;}
+.timelineItem.active .bubble{background:#B11116;}
+.timelineLine{width:100%;height:1px;background:#828282;position:absolute;bottom:20px;left:0;z-index:-1;}
+.aboutUsMilestonesContent{display: flex;justify-content: center;align-items: center;}
+.aboutUsMilestonesContentLft {padding-right: 60px;}
+.aboutUsMilestonesContentLft > span{font-size: 150px;line-height: 1em;font-family: var(--light);}
+.aboutUsMilestonesContentRght{padding-left: 60px;max-width: 400px;border-left: 1px solid #828282;}
+.aboutUsMilestonesContentRght > h3{font-size:30px;line-height: 1.5em;font-family: var(--medium);margin-bottom:10px;}
+.aboutUsMilestonesContentRght > p{font-size:18px;max-width:600px;margin:0 auto;line-height:1.6em;}
+
+.year {
+    display: inline-flex;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  
+  .year span {
+    display: inline-block;
+    animation: rotateDigit 0.6s ease-out forwards;
+    transform-origin: center bottom;
+  }
+  
+  @keyframes rotateDigit {
+    0% {
+      transform: rotateX(90deg);
+      opacity: 0;
+    }
+    100% {
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+  }
+  
+
+
+
