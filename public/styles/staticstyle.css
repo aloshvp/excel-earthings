@@ -229,10 +229,17 @@ h2.designCommonHead{font-size: 30px;line-height: 1em;font-family: var(--medium);
 .aboutUsUniqueGridItem{display: flex;justify-content: center;align-items: center;gap: 40px;}
 .aboutUsUniqueGridItem > em{width: 120px;height: 120px;display: flex;justify-content: center;align-items: center;background: #fff;border-radius: 10px;}
 .aboutUsUniqueGridItem > p{font-size: 32px;line-height: 1.3em;max-width: 560px;}
-.aboutUsGlanceWrap{padding: 100px 0 200px; background: #DFDFDF; position: relative;border-radius: var(--border-home); margin-top: -100px; z-index: 1;}
+.aboutUsGlanceWrap{padding: 100px 0 200px; background: #FFFFFF; position: relative;border-radius: var(--border-home); margin-top: -100px; z-index: 1;}
 .aboutUsGlanceHead > h2{font-size: 90px;line-height: 1em;}
-.aboutUsGlanceHead{padding-bottom: 30vh;}
-.aboutUsGlanceContent{display: flex;justify-content: space-between;align-items: center;gap: 60px;}
+.aboutUsGlanceHead{padding-bottom: 30px;}
+.aboutUsGlanceContent{display: flex;justify-content: space-between;gap: 80px;}
 .aboutUsGlanceContentLft,.aboutUsGlanceContentRght{flex: 1;}
 .aboutUsGlanceContentLft > p{font-size: 18px;line-height: 1.5em;margin-bottom: 25px;}
-
+.aboutUsGlanceContentRghtBox{border-radius: 30px;background: #F5F5F5;padding: 40px 60px;}
+.aboutUsGlanceContentRghtBox ul > li{font-size: 24px;line-height: 1.5em;font-family: var(--medium);border-bottom: 1px solid #111111;color: #111111;padding:15px 0 8px;}
+.aboutUsAwardsWrap{padding: 100px 0 150px; background: #ECECEC; position: relative;border-radius: var(--border-home); margin-top: -100px; z-index: 1;}
+.aboutUsAwardsHead{display: flex;gap: 60px;justify-content: space-between;padding-bottom: 60px;}
+.aboutUsAwardsHead > h2{font-size: 90px;line-height: 1em;}
+.aboutUsAwardsHead > p{font-size: 18px;line-height: 1.5em;max-width: 800px;}
+.aboutUsAwardsGrid{display: flex;justify-content: space-between;gap: 30px;}
+.aboutUsAwardsGridItem > p{font-size: 22px;line-height: 1.5em;font-family: var(--medium);text-align: center;margin:25px 25px 0;}

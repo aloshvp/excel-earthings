@@ -225,3 +225,21 @@ export const applicationDetailsData = {
     ]
 };
 
+export const awards = [
+    {
+        img: "/images/static/aw_1.png",
+        text: "Lorem Ipsum is simply dummy text of the printing and typesetting"
+    },
+    {
+        img: "/images/static/aw_2.png",
+        text: "Lorem Ipsum is simply dummy text of the printing and typesetting"
+    },
+    {
+        img: "/images/static/aw_3.png",
+        text: "Lorem Ipsum is simply dummy text of the printing and typesetting"
+    },
+    {
+        img: "/images/static/aw_4.png",
+        text: "Lorem Ipsum is simply dummy text of the printing and typesetting"
+    }
+];
