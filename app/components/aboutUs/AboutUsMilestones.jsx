@@ -45,15 +45,8 @@ const AboutUsMilestones = () => {
                 {/* Content Section */}
                 <div className="aboutUsMilestonesContent">
                     <div className="aboutUsMilestonesContentLft">
-                        <div className="digitWrapper">
-                            {milestones[activeIndex]?.year.split("").map((digit, i) => (
-                                <span key={activeIndex + "-" + i} className="yearDigit">
-                                    {digit}
-                                </span>
-                            ))}
-                        </div>
+                        <span>{milestones[activeIndex]?.year}</span>
                     </div>
-
 
                     <div className="aboutUsMilestonesContentRght">
                         <h3>{milestones[activeIndex]?.title}</h3>
