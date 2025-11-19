@@ -9,6 +9,7 @@
       "@styles/*": ["public/styles/*"],
       "@public/*": ["public/*"],
       "@utils/*": ["utils/*"],
+      "@components/*": ["app/components/*"],
     }
   }
 }
