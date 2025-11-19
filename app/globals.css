@@ -135,7 +135,7 @@ select:focus, select:active, select:focus-visible { outline: none; box-shadow: n
 @media screen and (min-width: 1800px) {
 
   /*common*/
-  .staticWrapper.paddngTop { padding: 120px 0 0; }
+  .staticWrapper.paddngTop { padding: 120px 0 0 !important; }
 
   /*header*/
   .headerLogoSec img { width: 620px !important; height: auto !important; }

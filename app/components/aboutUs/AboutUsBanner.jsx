@@ -1,3 +1,4 @@
+import Image from "next/image"
 
 
 const AboutUsBanner = () => {
@@ -18,8 +19,9 @@ const AboutUsBanner = () => {
                         </p>
                     </div>
                     <div className="aboutUsBannerContentRght">
+                        <span>19</span>
                         <em>
-
+                            <Image src="/images/home/year.svg" width={380} height={320} alt="year" title="year" />
                         </em>
                     </div>
                 </div>

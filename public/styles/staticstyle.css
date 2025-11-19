@@ -213,7 +213,26 @@ h2.designCommonHead{font-size: 30px;line-height: 1em;font-family: var(--medium);
 .blogPostShareSec .share-button:hover { opacity: 0.9; }
 
 /*about-us*/
-.aboutUsBannerWrap{}
-.aboutUsBannerContent{display: flex;justify-content: space-between;}
-.aboutUsBannerContentLft{}
-.aboutUsBannerContentRght{}
+.aboutUsBannerWrap{padding: 200px 0 ;}
+.aboutUsBannerContent{display: flex;justify-content: space-between;gap: 80px;}
+.aboutUsBannerContentLft{ flex: 1;}
+.aboutUsBannerContentLft > h1{font-size: 60px;line-height: 1.1em;}
+.aboutUsBannerContentLft > p{font-size: 18px;line-height: 1.5em;margin-top: 60px;}
+.aboutUsBannerContentRght { position: relative; flex: 1; }
+.aboutUsBannerContentRght > span { font-size: 380px; line-height: 1em; font-family: var(--medium); color: #e5e5e5; }
+.aboutUsBannerContentRght > em { position: absolute; bottom: 120px; right: 0; max-width: 60%; }
+.aboutUsUniqueWrap{height: 95vh; background: linear-gradient(rgba(0, 0 , 0, 0.5)), url("/images/static/aboutus_unique-bg.png") no-repeat center center; background-size: cover; color: #fff; position: relative; border-radius: var(--border-home); z-index: 1;}
+.aboutUsUniqueWrap > .container{height: 100%;}
+.aboutUsUniqueContent{color: #fff;display: flex;justify-content: center;align-items: center;flex-direction: column;height: 100%;}
+.aboutUsUniqueContent > h2{font-size: 48px;line-height: 1em;font-family: var(--medium);margin-bottom: 45px;}
+.aboutUsUniqueGrid{display: flex;justify-content: center;align-items: center;flex-direction: column;gap: 45px;}
+.aboutUsUniqueGridItem{display: flex;justify-content: center;align-items: center;gap: 40px;}
+.aboutUsUniqueGridItem > em{width: 120px;height: 120px;display: flex;justify-content: center;align-items: center;background: #fff;border-radius: 10px;}
+.aboutUsUniqueGridItem > p{font-size: 32px;line-height: 1.3em;max-width: 560px;}
+.aboutUsGlanceWrap{padding: 100px 0 200px; background: #DFDFDF; position: relative;border-radius: var(--border-home); margin-top: -100px; z-index: 1;}
+.aboutUsGlanceHead > h2{font-size: 90px;line-height: 1em;}
+.aboutUsGlanceHead{padding-bottom: 30vh;}
+.aboutUsGlanceContent{display: flex;justify-content: space-between;align-items: center;gap: 60px;}
+.aboutUsGlanceContentLft,.aboutUsGlanceContentRght{flex: 1;}
+.aboutUsGlanceContentLft > p{font-size: 18px;line-height: 1.5em;margin-bottom: 25px;}
+

@@ -1,6 +1,11 @@
 @media screen and (min-width: 2100px) {}
 
-@media screen and (min-width: 1800px) {}
+@media screen and (min-width: 1800px) {
+
+    /*about-us*/
+    .aboutUsBannerContentRght > span { font-size: 620px; }
+    .aboutUsBannerContentRght > em { bottom: 100px; right: 0; max-width: 100%; }
+}
 
 @media screen and (min-width: 1600px) {}
 
@@ -31,6 +36,10 @@
 
     /*design*/
     .transformerEarthingBody{padding: 140px 0 0;}
+
+    /*about-us*/
+    .aboutUsBannerContentRght>span {font-size: 500px;}
+    .aboutUsBannerContentRght>em {bottom: 100px;right: 0;max-width: 55%;}
 }
 
 
@@ -141,6 +150,13 @@
     .recentPostsWrap{gap: 20px;}
     .recentPostsitem{padding-bottom: 20px;}
 
+    /*about-us*/
+    .aboutUsBannerContentRght { display: flex; justify-content: center; align-items: center; }
+    .aboutUsBannerContentRght > span { font-size: 420px; }
+    .aboutUsBannerContentRght > em { bottom: 50px; max-width: 300px; }    .atGlanceTopContRght { display: flex; justify-content: center; align-items: center; }
+    .aboutUsBannerContentRght > span { font-size: 420px; }
+    .aboutUsBannerContentRght > em { bottom: 50px; max-width: 300px; }
+
 
      
 }
@@ -246,6 +262,10 @@
     .recentPostsitem{gap: 15px;}
     .recentPostsitem > p{font-size: 16px;}
     .blogVideoPlayBtn{width: 50px;height: 50px;}
+
+    /*about-us*/
+    .aboutUsBannerContentRght>span {font-size: 360px;}
+    .aboutUsBannerContentRght>em {max-width: 220px;}
     
 }
 
@@ -288,6 +308,10 @@
 
     /*insights-and-updates-details*/
     .insightsUpdatesDetailsWrap{padding: 30px 0 40px;}
+
+    /*about-us*/
+    .aboutUsBannerContentRght > span { font-size: 250px; }
+    .aboutUsBannerContentRght > em { max-width: 160px; bottom: 35px; }
 
 
 }
