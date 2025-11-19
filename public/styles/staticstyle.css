@@ -243,3 +243,10 @@ h2.designCommonHead{font-size: 30px;line-height: 1em;font-family: var(--medium);
 .aboutUsAwardsHead > p{font-size: 18px;line-height: 1.5em;max-width: 800px;}
 .aboutUsAwardsGrid{display: flex;justify-content: space-between;gap: 30px;}
 .aboutUsAwardsGridItem > p{font-size: 22px;line-height: 1.5em;font-family: var(--medium);text-align: center;margin:25px 25px 0;}
+.aboutUsCeoWrap{padding: 100px 0 200px; background: #333333; position: relative;border-radius: var(--border-home); margin-top: -100px; z-index: 1;}
+.aboutUsCeoContent{display: flex;justify-content: space-between;gap: 80px;}
+.aboutUsCeoContentLft > em{display:block;min-width: 600px;}
+.aboutUsCeoContentLft > Span{font-size: 60px;line-height: 1em;font-family: var(--medium);color: #C9C9C9;margin: 40px 0 15px;display: block; }
+.aboutUsCeoContentLft > i{font-size: 32px;line-height: 1em;color: #C9C9C9;display: block;font-style: normal;}
+.aboutUsCeoContentRght > span{font-size: 40px;line-height: 1em;font-family: var(--medium);color: #fff;margin: 50px 0;display: block;}
+.aboutUsCeoContentRght > p{font-size: 18px;line-height: 1.5em;margin-bottom: 30px;color: #fff;}

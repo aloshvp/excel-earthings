@@ -5,6 +5,7 @@
     /*about-us*/
     .aboutUsBannerContentRght > span { font-size: 620px; }
     .aboutUsBannerContentRght > em { bottom: 100px; right: 0; max-width: 100%; }
+    .aboutUsBannerContentRght{max-width: 680px;}
 }
 
 @media screen and (min-width: 1600px) {}
