@@ -1,10 +1,15 @@
+"use client";
+import { useState } from "react";
 import "@styles/staticbundles.scss";
 import Image from "next/image";
-import ProductGallery from "app/components/product-details/ProductGallery";
+import ProductGallery from "@components/product-details/ProductGallery";
+import RelatedProductsSlider from "@components/product-details/RelatedProductsSlider";
 const page = () => {
+  const[activeTab,setActiveTab]=useState(null);
   return (
-    <section className="productDetailsWrapper">
-        <main className="productPageContainer">
+    <main className="productDetailsWrapper">
+        <section className="container">
+        <div className="productDetailsMainWrap">
             <ProductGallery/>
             <section className="productDetails">
                 <header className="productHeader">
@@ -35,8 +40,55 @@ const page = () => {
                     </div>
                 </div>
             </section>
-        </main>
-    </section>
+        </div>
+        </section>
+        <section className="prdtRoundWrap">
+                <div className="container">
+                    <div className="prdtSpecsWrap">
+                        <div className="productInfoContainer">
+                            <ul className="SpecTabs">
+                                <li className="active">Features</li>
+                                <li>Technical Specifications</li>
+                                <li>Certifications</li>
+                                <li>In House Test</li>
+                                <li>Type</li>
+                            </ul>
+                            <div className="productTabContentWrapper">
+                                <div id="Features" className="PrdtTabContent active">
+                                    <ul>
+                                        <li>Superior Electrical, Mechanical and Thermal Properties (IEEE 837).</li>
+                                        <li>Fast Dissipation of Fault Current.</li>
+                                        <li>No joints beneath the soil as in Plate Electrodes.</li>
+                                        <li>Good Corrosion Resistance than Cast Iron / Hot Dip GI Electrodes</li>
+                                    </ul>
+                                </div>
+
+                                <div id="TechnicalSpecs" className="PrdtTabContent">
+                                    <p>Technical specifications will be listed here.</p>
+                                </div>
+
+                                <div id="Certifications" className="PrdtTabContent">
+                                    <p>Details about certifications will be listed here.</p>
+                                </div>
+
+                                <div id="InHouseTest" className="PrdtTabContent">
+                                    <p>Information about in-house testing will be listed here.</p>
+                                </div>
+
+                                <div id="Type" className="PrdtTabContent">
+                                    <p>Information about product type will be listed here.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section className="prdtRoundWrap gray">
+            <div className="container">
+                <RelatedProductsSlider/>
+            </div>
+        </section>
+    </main>
   )
 }
 
