@@ -21,6 +21,7 @@
 .productsMainItemContent > a .arrow { display: block; width: 16px; height: 16px; margin-left: 10px; background-image: url('/images/icons/right-arrow-white.svg'); background-size: contain; background-repeat: no-repeat; background-position: center; transition: transform 0.3s ease; }
 .productsMainItemContent > a:hover .arrow {transform: translateX(3px);}
 
+
 /*product listing*/
 .img-fluid{max-width: 100%;height:auto;}
 .productsWrapper{background-color: var(--sgrey);min-height: 1000px;}
@@ -286,12 +287,16 @@ h2.designCommonHead{font-size: 30px;line-height: 1em;font-family: var(--medium);
 .timelineItem.active .bubble{background:#B11116;}
 .timelineLine{width:100%;height:1px;background:#828282;position:absolute;bottom:20px;left:0;z-index:-1;}
 .aboutUsMilestonesContent{display: flex;justify-content: center;align-items: center;}
-.aboutUsMilestonesContentLft {padding-right: 60px;}
-.aboutUsMilestonesContentLft > span{font-size: 150px;line-height: 1em;font-family: var(--light);width: 330px;display: block;}
+.aboutUsMilestonesContentLft {display: flex; justify-content: space-between; width: 350px; font-size: 150px;line-height: 1em;font-family: var(--light);margin-right: 60px;}
+.aboutUsMilestonesContentLft .digit { display: inline-block;transform-style: preserve-3d;backface-visibility: hidden;opacity: 0;}
+.aboutUsMilestonesContentLft > span{font-size: 150px;line-height: 1em;font-family: var(--light);width: 350px;display: block;}
 .aboutUsMilestonesContentRght{padding-left: 60px;max-width: 400px;border-left: 1px solid #828282;}
 .aboutUsMilestonesContentRght > h3{font-size:30px;line-height: 1.5em;font-family: var(--medium);margin-bottom:10px;}
 .aboutUsMilestonesContentRght > p{font-size:18px;max-width:600px;margin:0 auto;line-height:1.6em;}
 
+  
+
+  
   
 
 

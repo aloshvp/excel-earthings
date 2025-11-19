@@ -1,49 +1,69 @@
-import Image from "next/image"
+"use client";
+import { useEffect } from "react";
+import Image from "next/image";
 import { AboutUsMissionData } from "@utils/staticData";
 
 const AboutUsMission = () => {
-    return (
-        <section className="aboutUsMissionWrap">
-            <div className="container">
-                <div className="aboutUsMissionBody">
-                    <div className="aboutUsMissionHead">
-                        <h2>Our Mission, <em></em> Vision & Values</h2>
-                    </div>
+  useEffect(() => {
+    import("@motionone/dom").then(({ animate }) => {
+      const icons = document.querySelectorAll(".missionIcon");
 
-                    <div className="aboutUsMissionGrid">
-                        {AboutUsMissionData?.map((item, index) => (
-                            <div className="aboutUsMissionGridItem" key={index}>
-                                <span>{item.no}</span>
+      icons.forEach((icon, index) => {
+        // Pop-in with smooth scale and fade
+        animate(
+          icon,
+          { opacity: [0, 1], scale: [0.4, 1.05, 1] },
+          { duration: 0.9, easing: "ease-in-out", delay: index * 0.25 }
+        );
 
-                                <em>
-                                    <Image
-                                        src={item.img}
-                                        alt={item.title}
-                                        title={item.title}
-                                        width={70}
-                                        height={70}
-                                        className="img"
-                                    />
-                                </em>
+        // Subtle floating bounce
+        animate(
+          icon,
+          { y: [0, -6, 0] },
+          { duration: 1.5, repeat: Infinity, easing: "ease-in-out", delay: 0.9 + index * 0.25 }
+        );
+      });
+    });
+  }, []);
 
-                                <h3>{item.title}</h3>
+  return (
+    <section className="aboutUsMissionWrap">
+      <div className="container">
+        <div className="aboutUsMissionHead">
+          <h2>Our Mission, Vision & Values</h2>
+        </div>
 
-                                {item.desc && <p>{item.desc}</p>}
+        <div className="aboutUsMissionGrid">
+          {AboutUsMissionData.map((item, index) => (
+            <div className="aboutUsMissionGridItem" key={index}>
+              <span>{item.no}</span>
 
-                                {item.list && (
-                                    <ul>
-                                        {item.list.map((value, i) => (
-                                            <li key={i}>{value}</li>
-                                        ))}
-                                    </ul>
-                                )}
-                            </div>
-                        ))}
-                    </div>
-                </div>
+              <Image
+                src={item.img}
+                alt={item.title}
+                title={item.title}
+                width={70}
+                height={70}
+                className="missionIcon"
+              />
+
+              <h3>{item.title}</h3>
+
+              {item.desc && <p>{item.desc}</p>}
+
+              {item.list && (
+                <ul>
+                  {item.list.map((val, i) => (
+                    <li key={i}>{val}</li>
+                  ))}
+                </ul>
+              )}
             </div>
-        </section>
-    )
-}
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
 
-export default AboutUsMission
+export default AboutUsMission;
