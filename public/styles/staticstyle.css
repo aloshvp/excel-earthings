@@ -250,3 +250,12 @@ h2.designCommonHead{font-size: 30px;line-height: 1em;font-family: var(--medium);
 .aboutUsCeoContentLft > i{font-size: 32px;line-height: 1em;color: #C9C9C9;display: block;font-style: normal;}
 .aboutUsCeoContentRght > span{font-size: 40px;line-height: 1em;font-family: var(--medium);color: #fff;margin: 50px 0;display: block;}
 .aboutUsCeoContentRght > p{font-size: 18px;line-height: 1.5em;margin-bottom: 30px;color: #fff;}
+.aboutUsInfraStructureWrap{padding: 100px 0 200px; background: #ECECEC; position: relative;border-radius: var(--border-home); margin-top: -100px; z-index: 1;}
+.aboutUsInfraStructureTopCont{display: flex;align-items: center;justify-content: center;gap: 80px;}
+.aboutUsInfraStructureTopCont > *{flex: 1;}
+.aboutUsInfraStructureTopContLft > h2{font-size: 90px;line-height: 1em;margin-bottom: 30px;color: #333333;}
+.aboutUsInfraStructureTopContLft > p{font-size: 18px;line-height: 1.5em;margin-bottom: 30px;color: #111111;}
+.aboutUsInfraStructureBtmCont{margin-top: 30px;}
+.aboutUsInfraStructureBtmCont > h3{font-size: 40px;line-height: 1em;margin-bottom: 10px;font-family: var(--medium);color: #333333;}
+.infrastructureHighlightsSec{display: flex;gap: 80px;}
+.infrastructureHighlightsSec > ul >li{border-bottom: 1px solid #111111;padding: 12px 0;color: #111111;font-size: 18px;line-height: 1.5em;}
