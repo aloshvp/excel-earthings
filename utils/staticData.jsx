@@ -243,3 +243,28 @@ export const awards = [
         text: "Lorem Ipsum is simply dummy text of the printing and typesetting"
     }
 ];
+
+
+export const AboutUsMissionData = [
+    {
+        no: "01",
+        img: "/images/static/mission.svg",
+        title: "Our Mission",
+        desc: "To provide comprehensive solutions that deliver operational excellence and to create a safe electrical environment.",
+        list: null
+    },
+    {
+        no: "02",
+        img: "/images/static/vision.svg",
+        title: "Our Vision",
+        desc: "To become a smart production house to meet the challenging needs of the Electrical Industry.",
+        list: null
+    },
+    {
+        no: "03",
+        img: "/images/static/values.svg",
+        title: "Our Values",
+        desc: null,
+        list: ["Integrity", "Quality", "Customer Centric"]
+    }
+];
