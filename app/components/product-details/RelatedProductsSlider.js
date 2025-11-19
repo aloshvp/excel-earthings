@@ -26,7 +26,7 @@ const RelatedProductsSlider = () => {
                     <Link href={""}>View Details</Link>
                 </div>
             </div>
-              <div className='prdtBox'>
+              {/* <div className='prdtBox'>
                 <div className='PrdtImg'>
                     <Image src="/files/products/product1.jpeg" className="img-fluid" alt="product" title="product" width={620} height={425}/>
                 </div>
@@ -35,7 +35,7 @@ const RelatedProductsSlider = () => {
                     <em>Copper Bonded Rod</em>
                     <Link href={""}>View Details</Link>
                 </div>
-            </div>
+            </div> */}
         </div>
      </div>  
   )
