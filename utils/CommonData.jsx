@@ -1,3 +1,12 @@
+import applicationsBg from "@public/images/banners/applications-bg.png";
+import approvalsBg from "@public/images/banners/approvals-and-associates-bg.png";
+import faqBg from "@public/images/banners/faq-bg.png";
+import contactBanner from "@public/images/banners/contact-banner.png";
+import careersBg from "@public/images/banners/careers-bg.png";
+import eLearningBg from "@public/images/banners/e-learning-bg.png";
+import designBg from "@public/images/banners/design-bg.png";
+import certificationsBg from "@public/images/banners/certifications-and-quality-assurance-bg.png";
+
 export const dynamicScrollPages = [
     "/",
     "/applications",
@@ -16,46 +25,50 @@ export const dynamicScrollPages = [
 export const bannerData = {
     applications: {
         title: "Applications",
-        image: "/images/banners/applications-bg.png",
+        image: applicationsBg,
     },
     category: {
         title: "Products",
-        image: "/images/banners/applications-bg.png",
+        image: applicationsBg,
     },
     "approvals-and-associates": {
         title: "Approvals & Associates",
-        image: "/images/banners/approvals-and-associates-bg.png",
+        image: approvalsBg,
     },
     faq: {
         title: "Faq",
-        image: "/images/banners/faq-bg.png",
+        image: faqBg,
     },
     "contact-us": {
         title: "Contact Us",
-        image: "/images/banners/contact-banner.png",
+        image: contactBanner,
     },
     careers: {
         title: "Careers",
-        image: "/images/banners/careers-bg.png",
+        image: careersBg,
     },
     "e-learning": {
         title: "E-Learning",
-        image: "/images/banners/e-learning-bg.png",
+        image: eLearningBg,
     },
     dealership: {
         title: "Dealership",
-        image: "/images/banners/applications-bg.png",
+        image: applicationsBg,
     },
     "transformer-earthing-design": {
         title: "Transformer Earthing Design",
-        image: "/images/banners/design-bg.png",
+        image: designBg,
     },
     "applications-details": {
         title: "Applications",
-        image: "/images/banners/applications-bg.png",
+        image: applicationsBg,
     },
     "certifications-and-quality-assurance": {
         title: "<i>Certifications &</i> Quality Assurance",
-        image: "/images/banners/certifications-and-quality-assurance-bg.png",
+        image: certificationsBg,
     },
+    default: {
+        title: "Welcome",
+        image: applicationsBg,
+    }
 };

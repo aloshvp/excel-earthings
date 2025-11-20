@@ -8,10 +8,7 @@ const CommonBanner = ({ pageName }) => {
 
   const normalizedPageName = pageName?.toLowerCase() || "default";
 
-  const { title, image } = bannerData[normalizedPageName] || {
-    title: "Welcome",
-    image: "/images/banners/default-banner.png",
-  };
+  const { title, image } = bannerData[normalizedPageName] || bannerData.default;
 
   return (
     <section className={`commonBanner ${normalizedPageName}`}>
@@ -24,6 +21,7 @@ const CommonBanner = ({ pageName }) => {
             priority
             loading="eager"
             fetchPriority="high"
+            placeholder="blur"
             quality={90}
             sizes="100vw"
             style={{ objectFit: "cover", objectPosition: "center" }}
