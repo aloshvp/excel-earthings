@@ -56,9 +56,8 @@ const [activeTabId, setActiveTabId] = useState(tabsData[0].id);
                     <h1>Copper Bonded Rod</h1>
                     <p className="category">Category: Earth Electrodes</p>
                 </header>
-
                 <div className="productDescription">
-                    <p>99.9% pure Electrolytic Grade Copper is **Molecularly Bonded to Nickel-Sealed Low Carbon Steel Core** having High Tensile Strength. Nickel Sealing is done for good Adhesion and Copper Coating will not crack when bent or driven. No part of steel is Exposed since Copper Coating is done after all Fabrication. The standard copper coating thickness is **250/100 microns**.</p>
+                    <p>99.9% pure Electrolytic Grade Copper is Molecularly Bonded to Nickel-Sealed Low Carbon Steel Core having High Tensile Strength. Nickel Sealing is done for good Adhesion and Copper Coating will not crack when bent or driven. No part of steel is Exposed since Copper Coating is done after all Fabrication. The standard copper coating thickness is 250/100 microns.</p>
                 </div>
                 <div className="productNoteBox">
                     <p><b>NB:</b> Customised Products are also available at Customer Request. Please be in touch with us for more information.</p>

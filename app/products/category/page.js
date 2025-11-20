@@ -59,7 +59,8 @@ const page = () => {
     {
         image:'/files/products/product1.jpeg',
         subHead:'Earth Electodes',
-        mainHead:'Copper Bonded Rod'
+        mainHead:'Copper Bonded Rod',
+        href:"/products/details"
     },
     {
         image:'/files/products/product2.png',
