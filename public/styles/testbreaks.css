@@ -21,6 +21,21 @@
 /*dealership*/
 .dealerShipCntSec{gap:150px;}
 .delarContainer{gap:160px;}
+
+/*product details*/
+.productGallery{padding-right: 60px;}
+.productGallery>div{max-width: 760px;}
+.productDetails{max-width: 800px;}
+.productHeader h1{font-size: 40px;line-height: 45px;margin: 0 0 20px;}
+.productHeader .category{font-size: 18px;line-height: 25px;margin: 0 0 30px;}
+.productDescription p{font-size: 18px;line-height: 25px;}
+.productNoteBox{font-size: 18px;line-height: 25px;margin:30px 0;}
+.optionTag{font-size: 18px;line-height: 25px;}
+.productOptions{padding: 30px 0;}
+.SpecTabs > li{font-size: 20px;line-height: 25px;}
+.PrdtTabContent li{font-size: 18px;line-height: 25px;}
+.relatedProductsSlider .prdtDesc > em{font-size: 18px;line-height: 25px;}
+
 }
 
 @media screen and (min-width: 1440px) {

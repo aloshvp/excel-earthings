@@ -32,30 +32,26 @@ const page = () => {
         label: "Lightning Protection",
         subMenu: [
             { label: "All", link: "" },
-            { label: "Earth Electodes", link: "" },
-            { label: "Earth Enhancing Compounds", link: "" },
-            { label: "Terminal Strip / Earth Bench", link: "" },
-            { label: "Earth Bit Chamber", link: "" }
+            { label: "Surge Protection", link: "" },
+            { label: "Air Termination Rod / Lightning Arresters", link: "" },
+            { label: "Down Conductors", link: "" },
+            { label: "Accessories", link: "" }
         ]
     },
     {
         label: "Electrical Enclosures",
         subMenu: [
             { label: "All", link: "" },
-            { label: "Earth Electodes", link: "" },
-            { label: "Earth Enhancing Compounds", link: "" },
-            { label: "Terminal Strip / Earth Bench", link: "" },
-            { label: "Earth Bit Chamber", link: "" }
+            { label: "Meter Boxes", link: "" },
+            { label: "Distribution Boxes", link: "" }
         ]
     },
     {
         label: "Cable Management",
         subMenu: [
             { label: "All", link: "" },
-            { label: "Earth Electodes", link: "" },
-            { label: "Earth Enhancing Compounds", link: "" },
-            { label: "Terminal Strip / Earth Bench", link: "" },
-            { label: "Earth Bit Chamber", link: "" }
+            { label: "Perforated Cable Tray", link: "" },
+            { label: "Raceway Cable Tray", link: "" }
         ]
     },
   ]
@@ -66,37 +62,37 @@ const page = () => {
         mainHead:'Copper Bonded Rod'
     },
     {
-        image:'/files/products/product1.jpeg',
+        image:'/files/products/product2.png',
         subHead:'UL Listed Copper Bonded Plain Rod',
         mainHead:'CopperBonded Rod'
     },
     {
-        image:'/files/products/product1.jpeg',
+        image:'/files/products/product3.png',
         subHead:'EarthElectodes',
         mainHead:'Extendable Copper Bonded Rod'
     },
     {
-        image:'/files/products/product1.jpeg',
+        image:'/files/products/product4.png',
         subHead:'EarthElectodes',
         mainHead:'Copper Bonded Plate'
     },
     {
-        image:'/files/products/product1.jpeg',
+        image:'/files/products/product5.png',
         subHead:'EarthElectodes',
         mainHead:'Hot Dip Galvanized Steel Pipe'
     },
     {
-        image:'/files/products/product1.jpeg',
+        image:'/files/products/product6.png',
         subHead:'EarthElectodes',
         mainHead:'Hot Dip Galvanized Steel Plate'
     },
     {
-        image:'/files/products/product1.jpeg',
+        image:'/files/products/product7.png',
         subHead:'EarthElectodes',
         mainHead:'Conductive Concrete - A Permanent Earthing Solution'
     },
     {
-        image:'/files/products/product1.jpeg',
+        image:'/files/products/product8.png',
         subHead:'Excel Electrafill Plus Compound',
         mainHead:'CopperBondedRod'
     }

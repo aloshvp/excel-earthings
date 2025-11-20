@@ -6,6 +6,46 @@ import ProductGallery from "@components/product-details/ProductGallery";
 import RelatedProductsSlider from "@components/product-details/RelatedProductsSlider";
 const page = () => {
   const[activeTab,setActiveTab]=useState(null);
+
+  const tabsData = [
+  {
+    id: 'Features',
+    title: 'Features',
+    content: (
+      <ul>
+        <li>Superior Electrical, Mechanical and Thermal Properties (IEEE 837).</li>
+        <li>Fast Dissipation of Fault Current.</li>
+        <li>No joints beneath the soil** as in Plate Electrodes.</li>
+        <li>Good Corrosion Resistance** than Cast Iron / Hot Dip GI Electrodes.</li>
+      </ul>
+    ),
+  },
+  {
+    id: 'TechnicalSpecs',
+    title: 'Technical Specifications',
+    content: <div className="testdesc">Technical specifications will be listed here.</div>,
+  },
+  {
+    id: 'Certifications',
+    title: 'Certifications',
+    content: <div className="testdesc">Details about certifications will be listed here.</div>,
+  },
+  {
+    id: 'InHouseTest',
+    title: 'In House Test',
+    content: <div className="testdesc">Information about in-house testing will be listed here.</div>,
+  },
+  {
+    id: 'Type',
+    title: 'Type',
+    content: <div className="testdesc">Information about product type will be listed here.</div>,
+  },
+];
+const [activeTabId, setActiveTabId] = useState(tabsData[0].id);
+
+
+  const activeTabContent = tabsData.find(tab => tab.id === activeTabId)?.content;
+
   return (
     <main className="productDetailsWrapper">
         <section className="container">
@@ -46,37 +86,20 @@ const page = () => {
                 <div className="container">
                     <div className="prdtSpecsWrap">
                         <div className="productInfoContainer">
-                            <ul className="SpecTabs">
-                                <li className="active">Features</li>
-                                <li>Technical Specifications</li>
-                                <li>Certifications</li>
-                                <li>In House Test</li>
-                                <li>Type</li>
+                           <ul className="SpecTabs">
+                                {tabsData.map((tab) => (
+                                <li
+                                    key={tab.id}
+                                    className={activeTabId === tab.id ? 'active' : ''} 
+                                    onClick={() => setActiveTabId(tab.id)} 
+                                >
+                                    {tab.title}
+                                </li>
+                                ))}
                             </ul>
                             <div className="productTabContentWrapper">
-                                <div id="Features" className="PrdtTabContent active">
-                                    <ul>
-                                        <li>Superior Electrical, Mechanical and Thermal Properties (IEEE 837).</li>
-                                        <li>Fast Dissipation of Fault Current.</li>
-                                        <li>No joints beneath the soil as in Plate Electrodes.</li>
-                                        <li>Good Corrosion Resistance than Cast Iron / Hot Dip GI Electrodes</li>
-                                    </ul>
-                                </div>
-
-                                <div id="TechnicalSpecs" className="PrdtTabContent">
-                                    <p>Technical specifications will be listed here.</p>
-                                </div>
-
-                                <div id="Certifications" className="PrdtTabContent">
-                                    <p>Details about certifications will be listed here.</p>
-                                </div>
-
-                                <div id="InHouseTest" className="PrdtTabContent">
-                                    <p>Information about in-house testing will be listed here.</p>
-                                </div>
-
-                                <div id="Type" className="PrdtTabContent">
-                                    <p>Information about product type will be listed here.</p>
+                                <div id={activeTabId} className="PrdtTabContent active">
+                                {activeTabContent}
                                 </div>
                             </div>
                         </div>
