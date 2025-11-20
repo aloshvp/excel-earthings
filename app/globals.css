@@ -135,14 +135,14 @@ select:focus, select:active, select:focus-visible { outline: none; box-shadow: n
 @media screen and (min-width: 1800px) {
 
   /*common*/
-  .staticWrapper.paddngTop { padding: 120px 0 0 !important; }
+  .staticWrapper.paddngTop { padding: 100px 0 0 !important; }
 
   /*header*/
   .headerLogoSec img { width: 620px !important; height: auto !important; }
-  .headerWrap.scrolled .headerLogoSec img { width: 620px !important; }
+  /* .headerWrap.scrolled .headerLogoSec img { width: 620px !important; } */
   .headerRghtSec { gap: 60px; }
   .headerBadgeSec img { width: 100px; }
-  .headerWrap.scrolled .headerBadgeSec img { width: 100px !important; height: 100px !important; }
+  /* .headerWrap.scrolled .headerBadgeSec img { width: 100px !important; height: 100px !important; } */
 
 }
 
@@ -153,7 +153,8 @@ select:focus, select:active, select:focus-visible { outline: none; box-shadow: n
 
   /*header*/
   .headerLogoSec img { width: 480px !important; height: auto !important; }
-  .headerWrap.scrolled .headerLogoSec img { width: 480px !important; }
+  .headerWrap.scrolled .headerLogoSec img { width: 380px !important; }
+  .headerWrap.scrolled .headerBadgeSec img { width: 80px !important; height: 80px !important; }
 
 
 }
