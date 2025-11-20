@@ -22,6 +22,8 @@ const CommonBanner = ({ pageName }) => {
             alt={title}
             fill
             priority
+            loading="eager"
+            fetchPriority="high"
             quality={90}
             sizes="100vw"
             style={{ objectFit: "cover", objectPosition: "center" }}
@@ -31,7 +33,7 @@ const CommonBanner = ({ pageName }) => {
         </div>
 
         <div className="commonBannerContent">
-          <h1 dangerouslySetInnerHTML={{ __html: title }}/>
+          <h1 dangerouslySetInnerHTML={{ __html: title }} />
         </div>
       </div>
     </section>
