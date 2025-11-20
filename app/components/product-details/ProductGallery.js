@@ -37,22 +37,22 @@ const ProductGallery = () => {
                     className="mySwiper2"
                 >
                     <SwiperSlide>
-                        <Image src="/images/product-details/Related_Products1.png" width={400} height={300} title="product" alt="product" />
+                        <Image src="/images/product-details/shrafiya-fmcg-trading.png" width={760} height={570} title="product" alt="product" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src="/images/product-details/Related_Products2.png" width={400} height={300} title="product" alt="product"/>
+                        <Image src="/images/product-details/shrafiya-fmcg-trading.png" width={760} height={570} title="product" alt="product"/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src="/images/product-details/Related_Products3.png" width={400} height={300} title="product" alt="product"/>
+                        <Image src="/images/product-details/shrafiya-fmcg-trading.png" width={760} height={570} title="product" alt="product"/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src="/images/product-details/Related_Products4.png" width={400} height={300} title="product" alt="product"/>
+                        <Image src="/images/product-details/shrafiya-fmcg-trading.png" width={760} height={570} title="product" alt="product"/>
                     </SwiperSlide>
                      <SwiperSlide>
-                        <Image src="/images/product-details/Related_Products1.png" width={400} height={300} title="product" alt="product"/>
+                        <Image src="/images/product-details/shrafiya-fmcg-trading.png" width={760} height={570} title="product" alt="product"/>
                     </SwiperSlide>
                      <SwiperSlide>
-                        <Image src="/images/product-details/Related_Products2.png" width={400} height={300} title="product" alt="product"/>
+                        <Image src="/images/product-details/shrafiya-fmcg-trading.png" width={760} height={570} title="product" alt="product"/>
                     </SwiperSlide>
                 </Swiper>
                 <Swiper
@@ -66,22 +66,22 @@ const ProductGallery = () => {
                     className="mySwiper"
                 >
                     <SwiperSlide>
-                        <Image src="/images/product-details/Related_Products1.png" width={150} height={150} title="product" alt="product"/>
+                        <Image src="/images/product-details/shrafiya-fmcg-trading.png" width={137} height={103} title="product" alt="product"/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src="/images/product-details/Related_Products2.png" width={150} height={150} title="product" alt="product"/>
+                        <Image src="/images/product-details/shrafiya-fmcg-trading.png" width={137} height={103} title="product" alt="product"/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src="/images/product-details/Related_Products3.png" width={150} height={150} title="product" alt="product"/>
+                        <Image src="/images/product-details/shrafiya-fmcg-trading.png" width={137} height={103} title="product" alt="product"/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src="/images/product-details/Related_Products4.png" width={150} height={150} title="product" alt="product"/>
+                        <Image src="/images/product-details/shrafiya-fmcg-trading.png" width={137} height={103} title="product" alt="product"/>
                     </SwiperSlide>
                       <SwiperSlide>
-                        <Image src="/images/product-details/Related_Products1.png" width={150} height={150} title="product" alt="product"/>
+                        <Image src="/images/product-details/shrafiya-fmcg-trading.png" width={137} height={103} title="product" alt="product"/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Image src="/images/product-details/Related_Products2.png" width={150} height={150} title="product" alt="product"/>
+                        <Image src="/images/product-details/shrafiya-fmcg-trading.png" width={137} height={103} title="product" alt="product"/>
                     </SwiperSlide>
                 </Swiper>
     </section>
