@@ -50,9 +50,9 @@
 }
 
 /*products main*/
-.productsMainWrap {
+/* .productsMainWrap {
     margin-bottom: -200px;
-}
+} */
 
 .productsMainItem {
     position: relative;
@@ -735,13 +735,13 @@
 }
 
 .eLearningBrochuresWrap {
-    padding: 100px 0 200px;
+    padding: 100px 0;
     background: #F5F5F5;
     position: relative;
     border-radius: var(--border-home);
     margin-top: -100px;
     z-index: 1;
-    margin-bottom: -200px;
+    /* margin-bottom: -200px; */
 }
 
 .eLearningBrochuresHead {
@@ -958,13 +958,12 @@ h2.designCommonHead {
 }
 
 .transformerEarthingDsgnCalc {
-    padding: 100px 0 220px;
+    padding: 100px 0;
     background: #F5F5F5;
     position: relative;
     border-radius: var(--border-home);
     z-index: 1;
     margin-top: -100px;
-    margin-bottom: -180px
 }
 
 .transformerEarthingDsgnCalc form {
