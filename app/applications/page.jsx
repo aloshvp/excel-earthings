@@ -4,12 +4,21 @@ import CommonBanner from "@common/CommonBanner"
 import { slidesData } from "@utils/homeData";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
+import { animate, inView } from "@motionone/dom";
 
 const page = () => {
 
-    const handleImageLoad = () => {
-        // your image load handler if needed
-    };
+    useEffect(() => {
+        inView(".applicationsInnerGridItem", ({ target }) => {
+            const delay = (Number(target.dataset.id) % 3) * 0.1;
+            animate(
+                target,
+                { opacity: [0, 1], transform: ["translateY(50px)", "none"] },
+                { duration: 0.5, delay, easing: "ease-out" }
+            );
+        });
+    }, []);
 
     return (
         <section className="applicationsInnerWrap">
@@ -18,7 +27,7 @@ const page = () => {
                 <div className="container">
                     <div className="applicationsInnerGrid">
                         {slidesData?.map((slide, idx) => (
-                            <div className="applicationsInnerGridItem" key={idx}>
+                            <div className="applicationsInnerGridItem" key={idx} data-id={idx} style={{ opacity: 0 }}>
                                 <div className="applicationsInnerGridItemImg">
                                     <Image
                                         src={slide.img}
@@ -26,7 +35,6 @@ const page = () => {
                                         height={533}
                                         alt={slide.title}
                                         loading="eager"
-                                        onLoadingComplete={handleImageLoad}
                                     />
                                 </div>
                                 <div className="applicationsInnerGridItemTitle">
@@ -36,7 +44,6 @@ const page = () => {
                                         height={70}
                                         alt={slide.title}
                                         loading="eager"
-                                        onLoadingComplete={handleImageLoad}
                                     />
                                     <h3>{slide.title}</h3>
                                 </div>
