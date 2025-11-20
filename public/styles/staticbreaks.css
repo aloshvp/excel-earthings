@@ -1,14 +1,16 @@
-@media screen and (min-width: 2100px) {}
 
-@media screen and (min-width: 1800px) {
 
-    /*about-us*/
-    .aboutUsBannerContentRght > span { font-size: 620px; }
-    .aboutUsBannerContentRght > em { bottom: 100px; right: 0; max-width: 100%; }
-    .aboutUsBannerContentRght{max-width: 680px;}
+
+@media only screen and (min-width : 1200px) {}
+
+@media screen and (min-width: 1300px) {
+
+    /*common*/
+    .commonBanner .commonBannerContent { padding: 0 100px 70px; }
+
+    /*product listing*/
+    .productLeftMenuSec {min-width: 350px;}
 }
-
-@media screen and (min-width: 1600px) {}
 
 @media screen and (min-width: 1440px) {
 
@@ -43,24 +45,22 @@
     .aboutUsBannerContentRght>em {bottom: 100px;right: 0;max-width: 55%;}
 }
 
+@media screen and (min-width: 1600px) {}
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1800px) {
 
-    /*common*/
-    .commonBanner .commonBannerContent { padding: 0 100px 70px; }
-
-    /*product listing*/
-    .productLeftMenuSec {min-width: 350px;}
+    /*about-us*/
+    .aboutUsBannerContentRght > span { font-size: 620px; }
+    .aboutUsBannerContentRght > em { bottom: 100px; right: 0; max-width: 100%; }
+    .aboutUsBannerContentRght{max-width: 680px;}
 }
-
-
-@media only screen and (min-width : 1200px) {}
 
 @media screen and (max-width: 1200px) {
 }
 
 @media only screen and (max-width: 1100px) {}
 
+@media screen and (min-width: 2100px) {}
 
 @media only screen and (max-width: 991px) {
     
