@@ -17,7 +17,7 @@ const page = () => {
     });
   };
 
-    const productMenus = [
+  const productMenus = [
     {
         label: "Electrical Earthing",
         subMenu: [
@@ -59,6 +59,48 @@ const page = () => {
         ]
     },
   ]
+  const productList=[
+    {
+        image:'/files/products/product1.jpeg',
+        subHead:'Earth Electodes',
+        mainHead:'Copper Bonded Rod'
+    },
+    {
+        image:'/files/products/product1.jpeg',
+        subHead:'UL Listed Copper Bonded Plain Rod',
+        mainHead:'CopperBonded Rod'
+    },
+    {
+        image:'/files/products/product1.jpeg',
+        subHead:'EarthElectodes',
+        mainHead:'Extendable Copper Bonded Rod'
+    },
+    {
+        image:'/files/products/product1.jpeg',
+        subHead:'EarthElectodes',
+        mainHead:'Copper Bonded Plate'
+    },
+    {
+        image:'/files/products/product1.jpeg',
+        subHead:'EarthElectodes',
+        mainHead:'Hot Dip Galvanized Steel Pipe'
+    },
+    {
+        image:'/files/products/product1.jpeg',
+        subHead:'EarthElectodes',
+        mainHead:'Hot Dip Galvanized Steel Plate'
+    },
+    {
+        image:'/files/products/product1.jpeg',
+        subHead:'EarthElectodes',
+        mainHead:'Conductive Concrete - A Permanent Earthing Solution'
+    },
+    {
+        image:'/files/products/product1.jpeg',
+        subHead:'Excel Electrafill Plus Compound',
+        mainHead:'CopperBondedRod'
+    }
+  ]
   return (
     <>
     <CommonBanner pageName={"category"}/>
@@ -74,100 +116,28 @@ const page = () => {
                                 <span className={(active===item.label)?"active":""} onClick={()=>handleItemClick(item.label)}>{item.label}</span>
                                 <ul className={(active===item.label)?"active":""}>
                                     {item?.subMenu?.map((item,index)=>(
-                                        <li key={index}><Link href={""} scroll={false}>{item.label}</Link></li>
+                                        <li key={index}  className={item.label==="All"?'active':''}><Link  href={""} scroll={false}>{item.label}</Link></li>
                                     ))}
                                 </ul>
                             </div>
                         ))}
                     </div>
                     </div>
-                    {/* <div className='productLeftMenu'>
-                        <span>Lightning Protection</span>
-                        <ul>
-                            <li><Link href={""}>All</Link></li>
-                            <li><Link href={""}>Earth Electodes</Link></li>
-                            <li><Link href={""}>Earth Enhancing Compounds</Link></li>
-                            <li><Link href={""}>Terminal Strip / Earth Bench</Link></li>
-                            <li><Link href={""}>Earth Bit Chamber</Link></li>
-                        </ul>
-                    </div>
-                    <div className='productLeftMenu'>
-                        <span>Electrical Enclosures</span>
-                        <ul>
-                            <li><Link href={""}>All</Link></li>
-                            <li><Link href={""}>Earth Electodes</Link></li>
-                            <li><Link href={""}>Earth Enhancing Compounds</Link></li>
-                            <li><Link href={""}>Terminal Strip / Earth Bench</Link></li>
-                            <li><Link href={""}>Earth Bit Chamber</Link></li>
-                        </ul>
-                    </div>
-                    <div className='productLeftMenu'>
-                        <span>Cable Management</span>
-                        <ul>
-                            <li><Link href={""}>All</Link></li>
-                            <li><Link href={""}>Earth Electodes</Link></li>
-                            <li><Link href={""}>Earth Enhancing Compounds</Link></li>
-                            <li><Link href={""}>Terminal Strip / Earth Bench</Link></li>
-                            <li><Link href={""}>Earth Bit Chamber</Link></li>
-                        </ul>
-                    </div> */}
                 </div>
                 <div className='productList'>
-                    <div className='prdtBox'>
-                        <div className='PrdtImg'>
-                            <Image src="/files/products/product1.jpeg" className="img-fluid" alt="product" title="product" width={620} height={425}/>
+                    {productList.map((item,index)=>(
+                        <div className='prdtBox' key={index*0.3}>
+                            <div className='PrdtImg'>
+                                <Image src={item.image} className="img-fluid" alt="product" title="product" width={620} height={425}/>
+                            </div>
+                            <div className="prdtDesc">
+                                <i>{item.subHead}</i>
+                                <em>{item.mainHead}</em>
+                                <Link href={(item?.href)?item?.href:''}>View Details</Link>
+                            </div>
                         </div>
-                        <div className="prdtDesc">
-                            <i>Earth Electodes</i>
-                            <em>Copper Bonded Rod</em>
-                            <Link href={""}>View Details</Link>
-                        </div>
-                    </div>
-                    <div className='prdtBox'>
-                        <div className='PrdtImg'>
-                            <Image src="/files/products/product1.jpeg" className="img-fluid" alt="product" title="product" width={620} height={425}/>
-                        </div>
-                        <div className="prdtDesc">
-                            <i>Earth Electodes</i>
-                            <em>Copper Bonded Rod</em>
-                            <Link href={""}>View Details</Link>
-                        </div>
-                    </div>
-
-                    <div className='prdtBox'>
-                        <div className='PrdtImg'>
-                            <Image src="/files/products/product1.jpeg" className="img-fluid" alt="product" title="product" width={620} height={425}/>
-                        </div>
-                        <div className="prdtDesc">
-                            <i>Earth Electodes</i>
-                            <em>Copper Bonded Rod</em>
-                            <Link href={""}>View Details</Link>
-                        </div>
-                    </div>
-
-                    <div className='prdtBox'>
-                        <div className='PrdtImg'>
-                            <Image src="/files/products/product1.jpeg" className="img-fluid" alt="product" title="product" width={620} height={425}/>
-                        </div>
-                        <div className="prdtDesc">
-                            <i>Earth Electodes</i>
-                            <em>Copper Bonded Rod</em>
-                            <Link href={""}>View Details</Link>
-                        </div>
-                    </div>
-
-                    <div className='prdtBox'>
-                        <div className='PrdtImg'>
-                            <Image src="/files/products/product1.jpeg" className="img-fluid" alt="product" title="product" width={620} height={425}/>
-                        </div>
-                        <div className="prdtDesc">
-                            <i>Earth Electodes</i>
-                            <em>Copper Bonded Rod</em>
-                            <Link href={""}>View Details</Link>
-                        </div>
-                    </div>
-
-
+                    ))
+                    }
                 </div>
             </div>
         </div>
