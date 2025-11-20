@@ -7,10 +7,11 @@ const Footer = () => {
 
     const pathname = usePathname();
 
-    // Convert pathname → slug for className
-    const pageClass = pathname === "/"
-        ? "home"
-        : pathname.replace("/", "").toLowerCase(); // /contact-us → contact-us
+    const segments = pathname.replace(/^\/+/, "").split("/");
+    const pageClass =
+        pathname === "/"
+            ? "home"
+            : segments[segments.length - 1].toLowerCase();
 
     return (
         <footer className={`footerParentWrap ${pageClass}`}>

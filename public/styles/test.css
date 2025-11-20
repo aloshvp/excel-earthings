@@ -76,7 +76,7 @@
 .dealerRightSide>p.outside{font-family: var(--regular);font-size: 16px;line-height: 28px;padding: 20px 0 0;color:#2a2a2a;}
 .dealerRightSide>p.outside>a{transition: all 0.5s ease;}
 .dealerRightSide>p.outside>a:hover{color: var(--sred);}
-.dealerShipFormSec .contactEnqFormWrap{background-color: #f5f5f5;padding: 100px 0 170px;position: relative;margin-bottom: -180px;}
+.dealerShipFormSec .contactEnqFormWrap{background-color: #f5f5f5;padding: 100px 0 100px;position: relative;}
 .dealerShipFormSec .contactEnqSec{position: relative;z-index: 2;}
 .dealerShipFormSec .frmCaptcha{background-color: #fff;}
 .file-upload-group {display: flex;align-items: center;border: 1px solid #ccc;border-radius: 10px;background-color: #fff;padding: 0;height: 42px; overflow: hidden;}   
@@ -102,7 +102,8 @@
 .qualityAssuranceWrap{padding: 80px 0;}
 .qualityRoundWrap{padding: 80px 0 180px;border-radius: var(--border-home);background-color: #dfdfdf;position: relative;margin-bottom: -110px;}
 .qualityRoundWrap.white{background-color: #fff;}
-.qualityRoundWrap.darker{background-color: #8a8a8a;margin-bottom: -180px;}
+/* .qualityRoundWrap.darker{background-color: #8a8a8a;margin-bottom: -180px;} */
+.qualityRoundWrap.darker{background-color: #8a8a8a;}
 .qualityAssureSec{display: flex;}
 .qualityLeftColumn{flex-basis: 50%;flex-shrink: 0;}
 .qualityLeftColumn>h2{font-family: var(--medium);font-size: 24px;line-height: 26px;color:#333333;margin: 15px 0 0;}
@@ -150,7 +151,8 @@
 .optionTag.selected {background-color: #ddd; border-color: #333;font-weight: bold;}
 .productOptions{padding: 20px 0;border-top:1px solid #c2c2c2;border-bottom:1px solid #c2c2c2;}
 .prdtRoundWrap{background-color:#ebebeb;border-radius: var(--border-home);padding: 65px 0 150px;position: relative;margin-bottom: -110px;}
-.prdtRoundWrap.gray{background-color: #dfdfdf;position: relative;margin-bottom: -200px;}
+/* .prdtRoundWrap.gray{background-color: #dfdfdf;position: relative;margin-bottom: -200px;} */
+.prdtRoundWrap.gray{background-color: #dfdfdf;position: relative;}
 
 
 .productInfoContainer {}
