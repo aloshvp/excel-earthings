@@ -1508,9 +1508,9 @@ h2.designCommonHead {
     background-size: cover;
     color: #fff;
     position: sticky;
-    top: 0;
+    top: 120px;
     border-radius: var(--border-home);
-    z-index: 0;
+    z-index: 10px;
 }
 
 .aboutUsUniqueWrap>.container {
