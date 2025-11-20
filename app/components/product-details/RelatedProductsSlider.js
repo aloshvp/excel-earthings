@@ -15,6 +15,8 @@ const relatedProducts = [
   { id: 4, name: 'Hot Dip Galvanized Steel Pipe', type: 'Earth Electrodes', imageUrl: '/images/product-details/Related_Products4.png' },
   { id: 5, name: 'UL Listed Copper Bonded Plain Rod', type: 'Earth Electrodes', imageUrl: '/images/product-details/Related_Products1.png' },
   { id: 6, name: 'Extendable Copper Bonded Rod', type: 'Earth Electrodes', imageUrl: '/images/product-details/Related_Products2.png' },
+  { id: 7, name: 'Copper Bonded Plate', type: 'Earth Electrodes', imageUrl: '/images/product-details/Related_Products3.png' },
+  { id: 8, name: 'Hot Dip Galvanized Steel Pipe', type: 'Earth Electrodes', imageUrl: '/images/product-details/Related_Products4.png' },
 ];
 
 
