@@ -1347,7 +1347,7 @@ h2.designCommonHead {
     justify-content: center;
     overflow: hidden;
     border-radius: 10px;
-    margin: 30px 0;
+    /* margin: 30px 0; */
     display: block;
 }
 
@@ -1517,7 +1517,7 @@ h2.designCommonHead {
     font-size: 48px;
     line-height: 1em;
     font-family: var(--medium);
-    margin-bottom: 45px;
+    margin-bottom: 60px;
 }
 
 .aboutUsUniqueGrid {
@@ -1819,11 +1819,14 @@ h2.designCommonHead {
     color: #111111;
 }
 
-.aboutUsInfraStructureTopContRght{display: flex;justify-content: center;}
+.aboutUsInfraStructureTopContRght {
+    display: flex;
+    justify-content: center;
+}
 
-.aboutUsInfraStructureTopContRght > em{
+.aboutUsInfraStructureTopContRght>em {
     max-width: 80%;
-    display:block;    
+    display: block;
 }
 
 .aboutUsInfraStructureBtmCont {
