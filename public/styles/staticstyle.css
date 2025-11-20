@@ -285,8 +285,21 @@
     gap: 30px;
 }
 
+.applicationsInnerGridItemImg {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
 .applicationsInnerGridItemImg>img {
     border-radius: 20px;
+    transition: transform .5s;
+}
+
+.applicationsInnerGridItem:hover .applicationsInnerGridItemImg>img {
+    transform: scale(1.03);
 }
 
 .applicationsInnerGridItemTitle {
