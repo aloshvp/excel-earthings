@@ -22,17 +22,93 @@ const page = () => {
   {
     id: 'Technical_Specifications',
     title: 'Technical Specifications',
-    content: <div className="testdesc">Technical specifications will be listed here.</div>,
+    content: <div className='responsive-table'><div className="productTabTbl">
+      <table>
+        <thead>
+            <tr>
+                <th>Specifications</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Base Material</td>
+                <td>Low Carbon Steel (Tata/Jindal/Vizag)</td>
+            </tr>
+            <tr>
+                <td>Base Coating Material</td>
+                <td>Nickel</td>
+            </tr>
+            <tr>
+                <td>Coating Material</td>
+                <td>99.9% Pure Electrolytic Grade Copper Anode (Mitsubishi Luvata Japan)</td>
+            </tr>
+            <tr>
+                <td>Available Coating Thickness</td>
+                <td>250/100 Microns (avg.)</td>
+            </tr>
+            <tr>
+                <td>Available Diameter(mm)</td>
+                <td>14.2, 16, 17.2, 20, 25, 32, 40, 50</td>
+            </tr>
+            <tr>
+                <td>Available Length(m)</td>
+                <td>1.2 to 3.0</td>
+            </tr>
+            <tr>
+                <td>V Strip Dimension (optional)</td>
+                <td>50mm x 5mm x 150mm Long</td>
+            </tr>
+            <tr>
+                <td>T-Strip Dimension (optional)</td>
+                <td>32mm x 5mm x 150mm Long</td>
+            </tr>
+            <tr>
+                <td>Connectors</td>
+                <td>SS 304 Grade Nut Bolts</td>
+            </tr>
+        </tbody>
+      </table>
+</div></div>,
   },
   {
     id: 'Certifications',
     title: 'Certifications',
-    content: <div className="testdesc">Details about certifications will be listed here.</div>,
+    content: 
+    <ul>
+      <li>IEC 62561-2:2018 Lightning Protection System Components- Part2: Requirements for Conductors and Earth Electrodes (TC No.:C2/0000032498, D211105006/D211105006-10)
+         <ul>
+          <li>Adhesion Test</li>
+          <li>Bend Test</li>
+          <li>Electrical Resistivity Test</li>
+          <li>Tensile Strength</li>
+          <li>Yield/Tensile Ratio</li>
+          <li>Coating Thickness Test</li>
+          <li>Environmental Test</li>
+        </ul>
+      </li>
+      <li>ISI Marked [IS 1772]: Electroplated Coatings of Copper (CM/L: 6400125807)
+          <ul>
+          <li>Thickness of Copper Coating</li>
+          <li>Corrosion Resistance Test- Copper Accelerated Acetic Acid Salt Spray</li>
+          <li>Adhesion Test</li>
+        </ul>
+      </li>
+      <li>Short Circuit Current Tested from Central Power Research Institute Bangalore (TC No.: SC15357B, SC15357A)</li>
+      <li>ASTM B499:2014- Measurement of Copper Coating Thickness (TC No.: ML/23835/4/20-21)</li>
+    </ul>
+    ,
   },
   {
     id: 'In_House_Test',
     title: 'In House Test',
-    content: <div className="testdesc">Information about in-house testing will be listed here.</div>,
+    content: <ul>
+        <li>Coating Thickness Test as per Clause 9.6.1 UL 467</li>
+        <li>Adhesion Test as per Clause 9.7.1 UL 467</li>
+        <li>Bend Test as per Clause 9.7.2 UL 467</li>
+        <li>Corrosion Resistance Test- Copper Accelerated Acetic Acid Salt Spray Test as per Clause 4.5 IS 1772:1973</li>
+        <li>Environmental Test as per Clause 5.3.5 IEC 62561-2:2018</li>
+      </ul>,
   },
   {
     id: 'Type',

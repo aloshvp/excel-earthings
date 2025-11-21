@@ -193,6 +193,7 @@
     padding: 5px 0 5px 15px;
     position: relative;
     font-size: 14px;
+    line-height: 20px;
     color: #333;
 }
 
@@ -203,6 +204,21 @@
     height: 5px;
     border-radius: 50%;
     border: 1px solid #a00;
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+.PrdtTabContent li ul{padding:  10px 0;}
+.PrdtTabContent li ul>li::before {
+    border-radius: 0;
+    border: none;
+    content: '';
+    display: inline-block;
+    width: 0;
+	height: 0;
+	border-top: 3px solid transparent;
+	border-left: 6px solid #0b2e85;
+	border-bottom: 3px solid transparent;
     position: absolute;
     top: 10px;
     left: 0;
@@ -217,4 +233,13 @@
 .relatedProductsSlider .prdtDesc > em{font-size: 16px;line-height: 25px;}
 
 .customClck .swiper-button-disabled{opacity: 0.6;cursor: default;}
+.productTabTbl{}
+.responsive-table{overflow-x: auto;  max-width: 100%; }
+
+.productTabTbl table {width: 100%;border-collapse: collapse;box-shadow: 0 2px 5px rgba(0,0,0,0.1);font-size: 14px;line-height: 16px;}
+.productTabTbl th,.productTabTbl td {padding: 12px 15px;text-align: left;border-bottom: 1px solid #ddd;}
+.productTabTbl th {background-color: #444; color: white;font-weight: bold;border-right: 1px solid #002244;}
+.productTabTbl tr:nth-child(even) {background-color: #f2f2f2; }
+.productTabTbl tr:hover {background-color: #e9e9e9;}
+.productTabTbl th:first-child {border-right: none;}
 

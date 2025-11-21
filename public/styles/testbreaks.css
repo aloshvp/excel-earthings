@@ -35,6 +35,8 @@
 .SpecTabs > li{font-size: 20px;line-height: 25px;}
 .PrdtTabContent li{font-size: 18px;line-height: 25px;}
 .relatedProductsSlider .prdtDesc > em{font-size: 18px;line-height: 25px;}
+.PrdtTabContent li::before{top:14px;}
+.PrdtTabContent li ul > li::before{top:16px;}
 
 }
 
@@ -107,6 +109,17 @@
 .productGallery{padding-right: 0;}
 .productDetails{padding: 30px 0;}
 
+/*mobile scroll menu*/
+.specMobTab{position: relative;}
+.specMobTab>span{display: block;padding: 10px 20px;color: #fff;background-color: #444;font-size: 16px;line-height: 24px;border-radius: 4px 4px 0 0;margin-bottom: 0;position: relative;cursor: pointer;}
+.specMobTab>span:after{content:'';background-image: url('../images/icons/arrow-down.svg');background-repeat: no-repeat;background-size: contain;position: absolute;top:12px;right: 14px;display: inline-block;width: 15px;height: 15px;transition: all 0.5s ease;}
+.specMobTab.active>span:after{transform: rotate(180deg);}
+.specMobTab.active .SpecTabs{display: block;}
+.SpecTabs{display: none;gap:0;position: absolute;top:44px;left:0;right:0;background-color:#a9a9a9 ;z-index: 2;}
+.SpecTabs >li{border-radius: 0;display: block;}
+.SpecTabs > li.active:before{display: none;}
+/**/
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -138,7 +151,6 @@
 
 /*product listing*/
 .SpecTabs{flex-direction: column;}
-.SpecTabs>li{display: inline-flex;}
 }
 
 @media only screen and (max-width: 479px) {
@@ -183,16 +195,7 @@
 .qualityGallry{grid-template-columns: 1fr;}
 .cardContent > p{margin-bottom: 15px;}
 
-/*mobile scroll menu*/
-.specMobTab{position: relative;}
-.specMobTab>span{display: block;padding: 10px 20px;color: #fff;background-color: #444;font-size: 16px;line-height: 24px;border-radius: 4px 4px 0 0;margin-bottom: 0;position: relative;cursor: pointer;}
-.specMobTab>span:after{content:'';background-image: url('../images/icons/arrow-down.svg');background-repeat: no-repeat;background-size: contain;position: absolute;top:12px;right: 14px;display: inline-block;width: 15px;height: 15px;transition: all 0.5s ease;}
-.specMobTab.active>span:after{transform: rotate(180deg);}
-.specMobTab.active .SpecTabs{display: block;}
-.SpecTabs{display: none;gap:0;position: absolute;top:44px;left:0;right:0;background-color:#a9a9a9 ;z-index: 2;}
-.SpecTabs >li{border-radius: 0;display: block;}
-.SpecTabs > li.active:before{display: none;}
-/**/
+
 
 .productDetailsMainWrap{padding: 30px 0 0;}
 .prdtRoundWrap{padding: 30px 0 130px;}
