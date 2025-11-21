@@ -25,11 +25,11 @@ const ProductCard = ({ product }) => (
         <div className='PrdtImg'>
             <Image src={product.imageUrl} className="img-fluid" alt="product" title="product" width={400} height={300}/>
         </div>
-        <div className="prdtDesc">
+        <Link className="prdtDesc" href={""}>
             <i>{product.type}</i>
             <em>{product.name}</em>
-            <Link href={""}>View Details</Link>
-        </div>
+            <span>View Details</span>
+        </Link>
     </div>
 );
   return (

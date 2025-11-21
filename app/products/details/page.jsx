@@ -5,7 +5,6 @@ import Image from "next/image";
 import ProductGallery from "@components/product-details/ProductGallery";
 import RelatedProductsSlider from "@components/product-details/RelatedProductsSlider";
 const page = () => {
-  const[activeTab,setActiveTab]=useState(null);
 
   const tabsData = [
   {
@@ -21,7 +20,7 @@ const page = () => {
     ),
   },
   {
-    id: 'TechnicalSpecs',
+    id: 'Technical_Specifications',
     title: 'Technical Specifications',
     content: <div className="testdesc">Technical specifications will be listed here.</div>,
   },
@@ -31,7 +30,7 @@ const page = () => {
     content: <div className="testdesc">Details about certifications will be listed here.</div>,
   },
   {
-    id: 'InHouseTest',
+    id: 'In_House_Test',
     title: 'In House Test',
     content: <div className="testdesc">Information about in-house testing will be listed here.</div>,
   },
@@ -41,10 +40,14 @@ const page = () => {
     content: <div className="testdesc">Information about product type will be listed here.</div>,
   },
 ];
-const [activeTabId, setActiveTabId] = useState(tabsData[0].id);
-
-
+  const [mobActive,setMobActive]=useState(false);
+  const [activeTabId, setActiveTabId] = useState(tabsData[0].id);
   const activeTabContent = tabsData.find(tab => tab.id === activeTabId)?.content;
+
+  const menuClick=(id)=>{
+    setActiveTabId(id);
+    setMobActive(false);
+  }
 
   return (
     <main className="productDetailsWrapper">
@@ -85,17 +88,20 @@ const [activeTabId, setActiveTabId] = useState(tabsData[0].id);
                 <div className="container">
                     <div className="prdtSpecsWrap">
                         <div className="productInfoContainer">
-                           <ul className="SpecTabs">
-                                {tabsData.map((tab) => (
-                                <li
-                                    key={tab.id}
-                                    className={activeTabId === tab.id ? 'active' : ''} 
-                                    onClick={() => setActiveTabId(tab.id)} 
-                                >
-                                    {tab.title}
-                                </li>
-                                ))}
-                            </ul>
+                           <div className={mobActive?'specMobTab active':'specMobTab'}>
+                             <span onClick={()=>setMobActive(!mobActive)}>{activeTabId.replaceAll('_',' ')}</span>
+                             <ul className="SpecTabs">
+                                  {tabsData.map((tab) => (
+                                  <li
+                                      key={tab.id}
+                                      className={activeTabId === tab.id ? 'active' : ''} 
+                                      onClick={() => menuClick(tab.id)} 
+                                  >
+                                      {tab.title}
+                                  </li>
+                                  ))}
+                              </ul>
+                            </div>
                             <div className="productTabContentWrapper">
                                 <div id={activeTabId} className="PrdtTabContent active">
                                 {activeTabContent}
