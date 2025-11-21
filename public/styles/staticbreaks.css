@@ -93,6 +93,27 @@
     .productsMainItemBg {
         height: calc(100vh - 100px);
     }
+
+    /*about-us*/
+    .aboutUsUniqueWrap {
+        top: 100px;
+    }
+
+    .aboutUsGlanceWrap {
+        top: 100px;
+    }
+
+    .aboutUsMilestonesWrap {
+        top: 100px;
+    }
+
+    .aboutUsMissionWrap {
+        top: 100px;
+    }
+
+    .aboutUsCeoWrap {
+        top: 100px;
+    }
 }
 
 @media screen and (min-width: 1800px) {
@@ -449,7 +470,254 @@
         max-width: 300px;
     }
 
+    /*about-us*/
+    .aboutUsBannerWrap {
+        padding: 60px 0;
+    }
 
+    .aboutUsBannerContent {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .aboutUsBannerContentLft>h1 {
+        font-size: 34px;
+    }
+
+    .aboutUsBannerContentLft>p {
+        margin-top: 30px;
+    }
+
+    .aboutUsUniqueWrap {
+        /* top: 75px; */
+        position: static;
+        height: auto;
+    }
+
+    .aboutUsUniqueGridItem>p {
+        max-width: 100%;
+        font-size: 22px;
+        font-size: 20px;
+    }
+
+    .aboutUsUniqueContent {
+        padding: 60px 0;
+    }
+
+    .aboutUsUniqueContent>h2 {
+        font-size: 40px;
+    }
+
+    .aboutUsUniqueGrid {
+        align-items: flex-start;
+    }
+
+    .aboutUsUniqueGridItem>em {
+        width: 90px;
+        height: 90px;
+        padding: 15px;
+    }
+
+    .aboutUsUniqueGridItem {
+        gap: 30px;
+    }
+
+    .aboutUsGlanceContent {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .aboutUsGlanceWrap {
+        position: static;
+        padding: 60px 0;
+    }
+
+    .aboutUsGlanceHead {
+        padding-bottom: 25px;
+    }
+
+    .aboutUsGlanceHead>h2 {
+        font-size: 40px;
+    }
+
+    .aboutUsGlanceContentLft>p {
+        margin-bottom: 20px;
+    }
+
+    .aboutUsGlanceContentRghtBox {
+        padding: 30px 50px;
+    }
+
+    .aboutUsGlanceContentRghtBox ul>li {
+        font-size: 20px;
+    }
+
+    .aboutUsMilestonesWrap {
+        position: static;
+        padding: 60px 0;
+        height: auto;
+        padding-bottom: 150px;
+    }
+
+    .aboutUsMilestonesHead>h2 {
+        font-size: 40px;
+    }
+
+    .aboutUsMilestonesSlider {
+        padding: 40px 0 0;
+        margin: 30px 0 60px;
+    }
+
+    .aboutUsMilestonesContentLft {
+        max-width: 200px;
+        margin-right: 40px;
+    }
+
+    .aboutUsMilestonesContentLft>span {
+        font-size: 100px;
+    }
+
+    .aboutUsMilestonesContentRght {
+        max-width: 100%;
+        padding-left: 40px;
+    }
+
+    .aboutUsMilestonesContentRght>h3 {
+        font-size: 24px;
+    }
+
+    .aboutUsMissionWrap {
+        padding: 60px 0;
+        margin-top: -100px;
+        position: static;
+        height: auto;
+        padding-bottom: 150px;
+    }
+
+    .aboutUsMissionHead>h2 {
+        font-size: 40px;
+    }
+
+    .aboutUsMissionGrid {
+        margin-top: 40px;
+    }
+
+    .aboutUsMissionGridItem>h3 {
+        font-size: 25px;
+        /* margin: 20px 0; */
+    }
+
+    .aboutUsMissionGridItem>img {
+        max-width: 60px;
+    }
+
+    .aboutUsInfraStructureWrap {
+        padding: 60px 0;
+        position: static;
+        height: auto;
+        padding-bottom: 150px;
+        margin-top: -100px;
+    }
+
+    .aboutUsInfraStructureTopContLft>h2 {
+        font-size: 40px;
+    }
+
+    .aboutUsInfraStructureTopCont {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .aboutUsInfraStructureTopContRght>em {
+        max-width: 60%;
+    }
+
+    .aboutUsInfraStructureBtmCont {
+        margin-top: 45px;
+    }
+
+    .infrastructureHighlightsSec {
+        gap: 40px;
+    }
+
+    .aboutUsInfraStructureBtmCont>h3 {
+        font-size: 30px;
+    }
+
+    .aboutUsCeoWrap {
+        padding: 60px 0 150px;
+        position: static;
+        margin-top: -100px;
+        height: auto;
+    }
+
+    .aboutUsCeoContent {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .aboutUsCeoContentLft {
+        text-align: center;
+    }
+
+    .aboutUsCeoContentLft>em {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutUsCeoContentLft>em>img {
+        max-width: 350px;
+    }
+
+    .aboutUsCeoContentRght {
+        text-align: center;
+    }
+
+    .aboutUsCeoContentRght>em {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutUsCeoContentRght>span {
+        font-size: 30px;
+        margin: 30px 0;
+    }
+
+    .aboutUsCeoContentRght>p {
+        margin-bottom: 25px;
+    }
+
+    .aboutUsAwardsWrap {
+        padding: 60px 0;
+        position: static;
+        height: auto;
+        margin-top: -100px;
+    }
+
+    .aboutUsAwardsHead {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .aboutUsAwardsHead>h2 {
+        font-size: 40px;
+    }
+
+    .aboutUsAwardsGrid {
+        flex-wrap: wrap;
+        gap: 40px 20px;
+    }
+
+    .aboutUsAwardsGridItem {
+        width: calc(50% - 20px);
+    }
+
+    .aboutUsAwardsGridItem>p {
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -816,6 +1084,30 @@
         max-width: 220px;
     }
 
+    /*about-us*/
+    .aboutUsMilestonesContent {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .aboutUsMilestonesContentLft {
+        margin: 0;
+    }
+
+    .aboutUsMilestonesContentRght {
+        padding: 0;
+        border: 0;
+    }
+
+    .aboutUsCeoContentLft>em {
+        min-width: auto;
+    }
+
+    .aboutUsMissionGrid {
+        flex-direction: column;
+    }
+
 }
 
 @media only screen and (max-width: 479px) {
@@ -943,6 +1235,8 @@
         max-width: 160px;
         bottom: 35px;
     }
+
+
 
 
 }
