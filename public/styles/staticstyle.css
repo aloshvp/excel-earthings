@@ -223,7 +223,7 @@
     transform: scale(1);
 }
 
-.prdtBox:hover .prdtDesc>a {
+.prdtBox:hover .prdtDesc>span {
     border-bottom: 1px solid var(--sred);
 }
 
@@ -254,7 +254,7 @@
     margin-bottom: 5px;
 }
 
-.prdtDesc>a {
+.prdtDesc>span {
     font-family: var(--regular);
     padding-bottom: 5px;
     font-size: 14px;

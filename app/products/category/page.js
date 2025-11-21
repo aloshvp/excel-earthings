@@ -123,16 +123,16 @@ const page = () => {
                 </div>
                 <div className='productList'>
                     {productList.map((item,index)=>(
-                        <div className='prdtBox' key={index*0.3}>
+                        <Link className='prdtBox' key={index*0.3} href={(item?.href)?item?.href:''}>
                             <div className='PrdtImg'>
                                 <Image src={item.image} className="img-fluid" alt="product" title="product" width={620} height={425}/>
                             </div>
                             <div className="prdtDesc">
                                 <i>{item.subHead}</i>
                                 <em>{item.mainHead}</em>
-                                <Link href={(item?.href)?item?.href:''}>View Details</Link>
+                                <span>View Details</span>
                             </div>
-                        </div>
+                        </Link>
                     ))
                     }
                 </div>
