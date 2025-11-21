@@ -426,7 +426,10 @@ select:focus-visible {
 .footerParentWrap.certifications-and-quality-assurance .footerBgWrap {
   background: #8a8a8a;
 }
-.footerParentWrap.category .footerBgWrap{background:#f6f6f6;}
+
+.footerParentWrap.category .footerBgWrap {
+  background: #f6f6f6;
+}
 
 
 .footerLogoSec {
@@ -637,7 +640,7 @@ select:focus-visible {
 
   /*common*/
   .staticWrapper.paddngTop {
-    padding: 90px 0 0;
+    padding: 100px 0 0;
   }
 
   /*header*/
@@ -695,9 +698,9 @@ select:focus-visible {
     padding-right: 50px;
   }
 
-  .staticWrapper.paddngTop {
+  /* .staticWrapper.paddngTop {
     padding: 75px 0 0;
-  }
+  } */
 
   /*header*/
   .headerRghtSec {
@@ -733,6 +736,10 @@ select:focus-visible {
   .container {
     padding-left: 25px;
     padding-right: 25px;
+  }
+
+  .staticWrapper.paddngTop {
+    padding: 75px 0 0;
   }
 
   /*footer*/
