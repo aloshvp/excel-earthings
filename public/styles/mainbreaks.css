@@ -30,6 +30,11 @@
 
     /* .bannerGridItem > h2 { padding: 70px 0 15px;} */
 
+    /*view our profile*/
+    .videoPopupContent {
+        max-width: 1200px;
+    }
+
 }
 
 @media screen and (min-width: 1440px) {

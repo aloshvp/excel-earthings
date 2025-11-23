@@ -193,7 +193,6 @@
 .areaOfApplicationsSlider .slideImg {
     border-radius: 20px;
     overflow: hidden;
-    /* transition: transform .5s; */
     display: flex;
     justify-content: center;
     align-items: center;
