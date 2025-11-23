@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -8,20 +8,40 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { slidesData } from '@utils/homeData';
 
-const AreaOfApplications = () => {
-    const [allLoaded, setAllLoaded] = useState(false);
-    const [loadedImages, setLoadedImages] = useState(0);
+const SlideItem = ({ slide }) => {
+    const [isLoaded, setIsLoaded] = useState(false);
 
+    return (
+        <div className="slideSec">
+            <div className="slideImg">
+                <Image
+                    src={slide.img}
+                    width={800}
+                    height={533}
+                    alt={slide.title}
+                    loading="eager"
+                    onLoadingComplete={() => setIsLoaded(true)}
+                    style={{
+                        transition: 'filter 0.5s ease-in-out',
+                        filter: isLoaded ? 'blur(0)' : 'blur(10px)',
+                    }}
+                />
+            </div>
+            <div className="slideTitle">
+                <Image src={slide.icon} width={70} height={70} alt={slide.title} />
+                <h3>{slide.title}</h3>
+            </div>
+            <div className="slideContent">
+                <p>{slide.content}</p>
+                <Link href={slide.link}>Learn More</Link>
+            </div>
+        </div>
+    );
+};
+
+const AreaOfApplications = () => {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
-
-    const totalImages = slidesData.length * 2; // main + icon
-
-    const handleImageLoad = () => setLoadedImages(prev => prev + 1);
-
-    useEffect(() => {
-        if (loadedImages >= totalImages) setAllLoaded(true);
-    }, [loadedImages]);
 
     return (
         <section className="areaOfApplicationsWrap">
@@ -38,20 +58,6 @@ const AreaOfApplications = () => {
 
                 <div className="areaOfApplicationsSlider">
 
-                    {/* Skeleton Loader */}
-                    {!allLoaded && (
-                        <div className="skeleton-wrapper">
-                            {Array(3).fill(0).map((_, i) => (
-                                <div className="skeleton-slide" key={i}>
-                                    <div className="skeleton-img"></div>
-                                    <div className="skeleton-title"></div>
-                                    <div className="skeleton-text"></div>
-                                    <div className="skeleton-text"></div>
-                                </div>
-                            ))}
-                        </div>
-                    )}
-
                     {/* Custom Nav Buttons */}
                     <div className="areaOfApplicationsSliderNav">
                         <div ref={prevRef} className="areaOfApplicationsSliderBtn areaOfApplicationsPrevBtn"></div>
@@ -60,7 +66,6 @@ const AreaOfApplications = () => {
 
                     {/* Swiper Slider */}
                     <Swiper
-                        style={{ display: allLoaded ? 'block' : 'none' }}
                         modules={[Navigation]}
                         spaceBetween={45}
                         slidesPerView={3}
@@ -75,19 +80,7 @@ const AreaOfApplications = () => {
                     >
                         {slidesData?.map((slide, idx) => (
                             <SwiperSlide key={idx}>
-                                <div className="slideSec">
-                                    <div className="slideImg">
-                                        <Image src={slide.img} width={800} height={533} alt={slide.title} loading="eager" onLoadingComplete={handleImageLoad} />
-                                    </div>
-                                    <div className="slideTitle">
-                                        <Image src={slide.icon} width={70} height={70} alt={slide.title} loading="eager" onLoadingComplete={handleImageLoad} />
-                                        <h3>{slide.title}</h3>
-                                    </div>
-                                    <div className="slideContent">
-                                        <p>{slide.content}</p>
-                                        <Link href={slide.link}>Learn More</Link>
-                                    </div>
-                                </div>
+                                <SlideItem slide={slide} />
                             </SwiperSlide>
                         ))}
                     </Swiper>
