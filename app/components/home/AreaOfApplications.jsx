@@ -22,6 +22,8 @@ const SlideItem = ({ slide }) => {
                     loading="eager"
                     onLoadingComplete={() => setIsLoaded(true)}
                     style={{
+                        width: '100%',
+                        height: 'auto',
                         transition: 'filter 0.5s ease-in-out',
                         filter: isLoaded ? 'blur(0)' : 'blur(10px)',
                     }}
@@ -75,7 +77,11 @@ const AreaOfApplications = () => {
                             swiper.params.navigation.prevEl = prevRef.current;
                             swiper.params.navigation.nextEl = nextRef.current;
                         }}
-                        breakpoints={{ 320: { slidesPerView: 1 }, 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }}
+                        breakpoints={{
+                            320: { slidesPerView: 1 },
+                            768: { slidesPerView: 2 },
+                            1024: { slidesPerView: 3, spaceBetween: 45 }
+                        }}
                         allowTouchMove={false}
                     >
                         {slidesData?.map((slide, idx) => (
