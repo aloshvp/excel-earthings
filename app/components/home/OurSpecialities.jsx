@@ -52,6 +52,7 @@ const OurSpecialities = () => {
                                             backgroundImage: `url(${slide.bg})`,
                                         }}
                                     >
+                                        <div className="specialityOverlay"></div>
                                         <div className="specialityItems">
                                             {slide.items.map((item, index) => (
                                                 <div className="specialityCard" key={index}>
@@ -67,7 +68,7 @@ const OurSpecialities = () => {
 
                                                     <div className="specialityContent">
                                                         <h4>{item.title}</h4>
-                                                        {/* <p>{item.description}</p> */}
+                                                        <p>{item.description}</p>
                                                     </div>
                                                 </div>
 

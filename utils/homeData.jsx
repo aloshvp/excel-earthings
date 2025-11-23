@@ -322,8 +322,8 @@ export const insightsData = [
 
 export const specialitiesSlides = [
     {
-        title: "Fire Protection Systems",
-        bg: "/images/home/bg-earth-enhancing-compound.jpg",
+        title: "Copper Bonded Rod",
+        bg: "/images/home/bg-copper-bonded-rod.jpg",
         items: [
             {
                 image: "/images/home/nickel-sealing.jpg",
@@ -343,29 +343,29 @@ export const specialitiesSlides = [
         ],
     },
     {
-        title: "Security Systems",
+        title: "Earth Enhancing Compound",
         bg: "/images/home/bg-earth-enhancing-compound.jpg",
         items: [
             {
                 image: "/images/home/nickel-sealing.jpg",
-                title: "CCTV",
-                description: "High-definition surveillance and analytics."
+                title: "IEC 62561-7:2018 Tested & Certified",
+                // description: "High-definition surveillance and analytics."
             },
             {
                 image: "/images/home/nickel-sealing.jpg",
-                title: "Access Control",
-                description: "Seamless, secure entry management systems."
+                title: "Eco-Friendly",
+                // description: "Seamless, secure entry management systems."
             },
             {
                 image: "/images/home/nickel-sealing.jpg",
-                title: "Alarm Systems",
-                description: "Instant alerts for maximum safety."
+                title: "Resistance to Corrosion",
+                // description: "Instant alerts for maximum safety."
             },
         ],
     },
     {
-        title: "Fire Protection Systems",
-        bg: "/images/home/bg-earth-enhancing-compound.jpg",
+        title: "Copper Bonded Rod",
+        bg: "/images/home/bg-copper-bonded-rod.jpg",
         items: [
             {
                 image: "/images/home/nickel-sealing.jpg",
@@ -385,23 +385,23 @@ export const specialitiesSlides = [
         ],
     },
     {
-        title: "Security Systems",
+        title: "Earth Enhancing Compound",
         bg: "/images/home/bg-earth-enhancing-compound.jpg",
         items: [
             {
                 image: "/images/home/nickel-sealing.jpg",
-                title: "CCTV",
-                description: "High-definition surveillance and analytics."
+                title: "IEC 62561-7:2018 Tested & Certified",
+                // description: "High-definition surveillance and analytics."
             },
             {
                 image: "/images/home/nickel-sealing.jpg",
-                title: "Access Control",
-                description: "Seamless, secure entry management systems."
+                title: "Eco-Friendly",
+                // description: "Seamless, secure entry management systems."
             },
             {
                 image: "/images/home/nickel-sealing.jpg",
-                title: "Alarm Systems",
-                description: "Instant alerts for maximum safety."
+                title: "Resistance to Corrosion",
+                // description: "Instant alerts for maximum safety."
             },
         ],
     },
