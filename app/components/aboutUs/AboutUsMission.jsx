@@ -30,7 +30,7 @@ const AboutUsMission = () => {
     <section className="aboutUsMissionWrap">
       <div className="container">
         <div className="aboutUsMissionHead">
-          <h2>Our Mission, Vision & Values</h2>
+          <h2>Our Mission, <em></em> Vision & Values</h2>
         </div>
 
         <div className="aboutUsMissionGrid">

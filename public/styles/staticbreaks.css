@@ -114,6 +114,10 @@
     .aboutUsCeoWrap {
         top: 100px;
     }
+
+    .aboutUsBannerContentLft>p {
+        max-width: 760px;
+    }
 }
 
 @media screen and (min-width: 1800px) {
