@@ -122,7 +122,7 @@ const Header = () => {
       </header>
 
       <div className="fixedLinks">
-        <Link href="" scroll={false}>
+        <Link href="tel:+919048744551" scroll={false}>
           <Image
             src="/images/phone.svg"
             alt="phone"
@@ -132,7 +132,10 @@ const Header = () => {
             priority
           />
         </Link>
-        <Link href="" scroll={false}>
+        <Link href="https://api.whatsapp.com/send/?phone=919497804983&text=Hi.+We%E2%80%99d+like+to+hear+from+you.&type=phone_number&app_absent=0"
+          scroll={false}
+          target="_blank"
+          rel="noopener noreferrer">
           <Image
             src="/images/whatsapp.svg"
             alt="whatsapp"
