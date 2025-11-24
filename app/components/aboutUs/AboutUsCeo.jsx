@@ -22,7 +22,7 @@ const AboutUsCeo = () => {
                         <i>CEO -  M/S. Excel Earthings</i>
                     </div>
                     <div className="aboutUsCeoContentRght">
-                        <em>
+                        {/* <em>
                             <Image
                                 src="/images/static/doulbe-arrow.svg"
                                 alt="arrow"
@@ -30,6 +30,15 @@ const AboutUsCeo = () => {
                                 height={100}
                                 className='img'
                             />
+                        </em> */}
+                        <em>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="doubleArrowIcon">
+                                {/* First Arrow (Left) */}
+                                <path d="M11 19L4 12L11 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="arrowFirst" />
+
+                                {/* Second Arrow (Right - follows the first) */}
+                                <path d="M19 19L12 12L19 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="arrowSecond" />
+                            </svg>
                         </em>
                         <span>CEO’s Message</span>
                         <p>

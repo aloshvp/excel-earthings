@@ -658,6 +658,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        min-width: auto;
     }
 
     .aboutUsCeoContentLft>em>img {
@@ -672,6 +673,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        max-width: 75px;
+        margin: 0 auto;
+    }
+
+    .doubleArrowIcon {
+        rotate: 90deg;
     }
 
     .aboutUsCeoContentRght>span {

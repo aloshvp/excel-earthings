@@ -1974,6 +1974,66 @@ h2.designCommonHead {
     color: #fff;
 }
 
+/* .aboutUsCeoContentRght>em {
+    display: block;
+}
+
+.aboutUsCeoContentRght>em>img {
+    will-change: transform;
+    animation: arrowMoveLeft 2s ease-in-out infinite alternate;
+}
+
+@keyframes arrowMoveLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-10px);
+    }
+} */
+
+.aboutUsCeoContentRght>em {
+    display: block;
+    color: #fff;
+}
+
+.doubleArrowIcon {
+    display: block;
+    width: 120px;
+    height: 120px;
+    overflow: visible;
+}
+
+.arrowFirst,
+.arrowSecond {
+    animation: arrowWave 2s ease-in-out infinite;
+    will-change: transform;
+}
+
+.arrowSecond {
+    animation-delay: 0.2s;
+    opacity: 0.4;
+}
+
+@keyframes arrowWave {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(-2px);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
 .aboutUsAwardsWrap {
     padding: 100px 0 150px;
     background: #ECECEC;
