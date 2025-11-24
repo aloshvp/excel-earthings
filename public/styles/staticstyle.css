@@ -1304,6 +1304,9 @@ h2.designCommonHead {
 
 .aboutUsBannerContentLft {
     flex: 1;
+    opacity: 0;
+    transform: translateY(8px);
+    will-change: opacity, transform;
 }
 
 .aboutUsBannerContentLft>h1 {
@@ -1367,6 +1370,9 @@ h2.designCommonHead {
     justify-content: center;
     align-items: center;
     gap: 40px;
+    opacity: 0;
+    transform: translateY(30px);
+    will-change: opacity, transform;
 }
 
 .aboutUsUniqueGridItem>em {
@@ -1518,6 +1524,36 @@ h2.designCommonHead {
     max-width: 60%;
 }
 
+/* .aboutYearNumber,
+.aboutYearImg {
+    opacity: 0;
+}
+
+.aboutYearNumber {
+    transform: scale(0.3);
+}
+
+.aboutYearImg {
+    transform: translateY(20px);
+} */
+
+.aboutYearNumber {
+    opacity: 0;
+    transform: scale(0.4);
+    display: inline-block;
+    font-size: 130px;
+    font-weight: 800;
+    line-height: 1;
+    color: #111;
+    will-change: transform, opacity, content;
+}
+
+.aboutYearImg {
+    opacity: 0;
+    transform: translateY(25px);
+    will-change: transform, opacity;
+}
+
 .aboutUsUniqueWrap {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5)), url("/images/static/aboutus_unique-bg.png") no-repeat center center;
@@ -1547,6 +1583,9 @@ h2.designCommonHead {
     line-height: 1em;
     font-family: var(--medium);
     margin-bottom: 60px;
+    opacity: 0;
+    transform: translateY(20px);
+    will-change: opacity, transform;
 }
 
 .aboutUsUniqueGrid {
@@ -1588,6 +1627,14 @@ h2.designCommonHead {
     border-radius: var(--border-home);
     /* margin-top: -100px; */
     z-index: 2;
+}
+
+.aboutUsGlanceHead h2,
+.aboutUsGlanceContentLft p,
+.aboutUsGlanceContentRghtBox li {
+    opacity: 0;
+    transform: translateY(20px);
+    will-change: opacity, transform;
 }
 
 .aboutUsGlanceHead>h2 {
@@ -1644,6 +1691,9 @@ h2.designCommonHead {
 .aboutUsMilestonesHead>h2 {
     font-size: 90px;
     line-height: 1em;
+    opacity: 0;
+    transform: translateY(20px);
+    will-change: opacity, transform;
 }
 
 .aboutUsMilestonesSlider {
@@ -1742,6 +1792,9 @@ h2.designCommonHead {
     line-height: 1.5em;
     font-family: var(--medium);
     margin-bottom: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    will-change: opacity, transform;
 }
 
 .aboutUsMilestonesContentRght>p {
@@ -1749,6 +1802,9 @@ h2.designCommonHead {
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.6em;
+    opacity: 0;
+    transform: translateY(20px);
+    will-change: opacity, transform;
 }
 
 .aboutUsMissionWrap {
