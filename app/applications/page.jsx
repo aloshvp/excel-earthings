@@ -15,7 +15,7 @@ const page = () => {
             animate(
                 target,
                 { opacity: [0, 1], transform: ["translateY(50px)", "none"] },
-                { duration: 0.5, delay, easing: "ease-out" }
+                { duration: 0.8, delay, easing: "ease-out" }
             );
         });
     }, []);

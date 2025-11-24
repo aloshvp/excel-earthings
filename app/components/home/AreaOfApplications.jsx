@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -7,12 +7,13 @@ import { Navigation } from 'swiper/modules';
 import Link from 'next/link';
 import Image from 'next/image';
 import { slidesData } from '@utils/homeData';
+import { animate, inView } from "@motionone/dom";
 
-const SlideItem = ({ slide }) => {
+const SlideItem = ({ slide, index }) => {
     const [isLoaded, setIsLoaded] = useState(false);
 
     return (
-        <div className="slideSec">
+        <div className="slideSec areaOfApplicationsSlideItem" data-id={index} style={{ opacity: 0 }}>
             <div className="slideImg">
                 <Image
                     src={slide.img}
@@ -44,6 +45,17 @@ const SlideItem = ({ slide }) => {
 const AreaOfApplications = () => {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
+
+    useEffect(() => {
+        inView(".areaOfApplicationsSlideItem", ({ target }) => {
+            const delay = (Number(target.dataset.id) % 3) * 0.1;
+            animate(
+                target,
+                { opacity: [0, 1], transform: ["translateY(50px)", "none"] },
+                { duration: 0.8, delay, easing: "ease-out" }
+            );
+        });
+    }, []);
 
     return (
         <section className="areaOfApplicationsWrap">
@@ -86,7 +98,7 @@ const AreaOfApplications = () => {
                     >
                         {slidesData?.map((slide, idx) => (
                             <SwiperSlide key={idx}>
-                                <SlideItem slide={slide} />
+                                <SlideItem slide={slide} index={idx} />
                             </SwiperSlide>
                         ))}
                     </Swiper>
