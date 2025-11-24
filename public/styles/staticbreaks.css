@@ -95,25 +95,14 @@
     }
 
     /*about-us*/
-    .aboutUsUniqueWrap {
-        top: 100px;
-    }
-
-    .aboutUsGlanceWrap {
-        top: 100px;
-    }
-
-    .aboutUsMilestonesWrap {
-        top: 100px;
-    }
-
-    .aboutUsMissionWrap {
-        top: 100px;
-    }
-
+    .aboutUsUniqueWrap,
+    .aboutUsGlanceWrap,
+    .aboutUsMilestonesWrap,
+    .aboutUsMissionWrap,
     .aboutUsCeoWrap {
         top: 100px;
     }
+
 
     .aboutUsBannerContentLft>p {
         max-width: 760px;
