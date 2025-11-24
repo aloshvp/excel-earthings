@@ -1759,7 +1759,7 @@ h2.designCommonHead {
 .aboutUsMilestonesContentLft {
     display: flex;
     justify-content: space-between;
-    width: 350px;
+    width: 300px;
     font-size: 150px;
     line-height: 1em;
     font-family: var(--light);
