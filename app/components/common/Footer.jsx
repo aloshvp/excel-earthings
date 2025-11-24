@@ -87,7 +87,7 @@ const Footer = () => {
                                 <div className='footerLinkNav'>
                                     <ul>
                                         <li><Link href="/">Home</Link></li>
-                                        <li><Link href="" scroll={false}>About Us</Link></li>
+                                        <li><Link href="/about-us">About Us</Link></li>
                                         <li><Link href="/products">Products</Link></li>
                                         <li><Link href="/certifications-and-quality-assurance" >Certifications & Quality Assurance</Link></li>
                                         <li><Link href="/approvals-and-associates">Approvals & Associates</Link></li>
