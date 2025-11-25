@@ -102,12 +102,7 @@ const AdminLeftMenu = () => {
   };
 
 
-  const handleLogoutClick = async (e) => {
-    e.preventDefault();
-    await logout();
-    alert('Logged Out!');
-    router.push('/admin/login');
-  };
+
 
   return (
     // <>
