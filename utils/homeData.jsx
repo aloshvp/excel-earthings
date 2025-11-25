@@ -404,17 +404,17 @@ export const specialitiesSlides = [
         bg: "/images/home/bg-earth-enhancing-compound.jpg",
         items: [
             {
-                image: "/images/home/nickel-sealing.jpg",
+                image: "/images/home/icon-iec-certified.png",
                 title: "IEC 62561-7:2018 Tested & Certified",
                 // description: "High-definition surveillance and analytics."
             },
             {
-                image: "/images/home/nickel-sealing.jpg",
+                image: "/images/home/icon-eco-friendly.png",
                 title: "Eco-Friendly",
                 // description: "Seamless, secure entry management systems."
             },
             {
-                image: "/images/home/nickel-sealing.jpg",
+                image: "/images/home/icon-resistance-to-corrosion.png",
                 title: "Resistance to Corrosion",
                 // description: "Instant alerts for maximum safety."
             },
