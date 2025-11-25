@@ -29,19 +29,19 @@ const AtGlance = () => {
                     </div>
                     <div className="atGlanceGrid">
                         <div className="atGlanceGridItem">
-                            <Image src="/images/home/logo-iso.svg" width={100} height={80} alt='ISI'></Image>
+                            <Image src="/images/home/logo-iso.svg" width={100} height={100} alt='ISI'></Image>
                             <div className='horizontalLIne'></div>
                             <p>India's First ISI Certified Copper Bonded Earth Electrode Manufacturer`</p>
                         </div>
                         <div className="atGlanceGridItem">
-                            <Image src="/images/home/logo-iso.svg" width={100} height={80} alt='ISI'></Image>
+                            <Image src="/images/home/logo-iec.svg" width={100} height={100} alt='ISI'></Image>
                             <div className='horizontalLIne'></div>
-                            <p>India's First ISI Certified Copper Bonded Earth Electrode Manufacturer</p>
+                            <p>IEC Certified for Earth Enhancing Compounds & Copper Bonded Rods</p>
                         </div>
                         <div className="atGlanceGridItem">
-                            <Image src="/images/home/logo-iso.svg" width={100} height={80} alt='ISI'></Image>
+                            <Image src="/images/home/logo-ul.svg" width={100} height={100} alt='ISI'></Image>
                             <div className='horizontalLIne'></div>
-                            <p>India's First ISI Certified Copper Bonded Earth Electrode Manufacturer</p>
+                            <p>UL Listed Manufacturer for Copper Bonded Earth Electrode</p>
                         </div>
                     </div>
                 </div>

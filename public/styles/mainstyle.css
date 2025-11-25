@@ -1156,7 +1156,7 @@
 }
 
 .atGlanceGridItem>img {
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .atGlanceGridItem>.horizontalLIne {
