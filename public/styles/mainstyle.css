@@ -147,7 +147,7 @@
     font-size: 30px;
     line-height: 1em;
     padding-bottom: 15px;
-    border-bottom: 1px solid #808eab;
+    border-bottom: 1px solid #435782;
     font-family: var(--light);
 }
 
@@ -235,6 +235,7 @@
     position: relative;
     padding-right: 30px;
     transition: color 0.3s ease;
+    font-family: var(--medium);
 }
 
 .slideContent a:after {
@@ -1351,7 +1352,7 @@
 }
 
 .atGlanceGridItem>img {
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .atGlanceGridItem>.horizontalLIne {
@@ -1481,6 +1482,7 @@
     position: relative;
     padding-right: 30px;
     transition: color 0.3s ease;
+    font-family: var(--medium);
 }
 
 .atGlanceTopContLft a:after {
@@ -1546,7 +1548,9 @@
 }
 
 .atGlanceGridItem>img {
-    object-fit: cover;
+    object-fit: contain;
+    height: 100px;
+    width: 100px;
 }
 
 .atGlanceGridItem>.horizontalLIne {
