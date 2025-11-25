@@ -72,7 +72,7 @@ const OurCertifications = () => {
                                             />
                                         </div>
                                         <div className="certificationContent">
-                                            <h3>{cert.name}</h3>
+                                            <h3>{cert.head}</h3>
                                             <p>{cert.desc}</p>
                                         </div>
                                     </div>

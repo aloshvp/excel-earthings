@@ -51,7 +51,7 @@ const Testimonials = () => {
                                     </div>
                                     <p className="testimonialDescription">{testimonial.description}</p>
                                     <div className='testimonialUserImg'>
-                                        <Image src='/images/home/icon-user-testimony.png' width={60} height={60} alt="user" title="user" />
+                                        <Image src='/images/home/icon-user-testimony.svg' width={100} height={100} alt="user" title="user" />
                                     </div>
                                     <h3>{testimonial.name}</h3>
                                     <span className="testimonialDesignation">{testimonial.designation}</span>

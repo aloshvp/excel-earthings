@@ -1,813 +1,219 @@
-@media screen and (min-width: 2100px) {}
-
-@media screen and (min-width: 1800px) {
-
-    /*at glance*/
-    .atGlanceTopContRght>span {
-        font-size: 620px;
-    }
-
-    .atGlanceTopContRght>em {
-        bottom: 100px;
-        right: 0;
-        max-width: 100%;
-    }
-
-
-}
-
-@media screen and (min-width: 1600px) {
-
-    /*at glance*/
-    .atGlanceTopCont {
-        gap: 140px;
-    }
-
-    /*banner*/
-    .bannerGridItem {
-        min-width: 450px;
-    }
-
-    /* .bannerGridItem > h2 { padding: 70px 0 15px;} */
-
-    /*view our profile*/
-    .videoPopupContent {
-        max-width: 1200px;
-    }
-
-}
-
-@media screen and (min-width: 1440px) {
-
-    /*banner*/
-    /* .bannerGridItem {
-        min-width: 450px;
-    } */
-
-    /* .bannerGridItem > h2 { padding: 70px 0 15px;} */
-
-    /*area of applications*/
-    .areaOfApplicationsWrap {
-        padding: 150px 0 300px;
-    }
-
-    /*at glance*/
-    .atGlanceWrap {
-        padding: 120px 0 200px;
-    }
-
-    .atGlanceTopContRght>span {
-        font-size: 500px;
-    }
-
-    .atGlanceTopContRght>em {
-        bottom: 100px;
-        right: 0;
-        max-width: 55%;
-    }
-
-    .ourSpecialitiesWrap {
-        padding: 150px 0 200px;
-    }
-
-    .ourAssociatesWrap {
-        padding: 120px 0 300px;
-    }
-
-    .ourCertificationWrap {
-        padding: 120px 0 300px;
-    }
-
-    .ourProductsWrap {
-        padding: 150px 0 0;
-    }
-
-    .tesimonialsWrap {
-        padding: 150px 0 250px;
-    }
-
-    /*Insights Updates*/
-    .insightsUpdatesWrap {
-        padding: 150px 0 250px;
-    }
-
-
-}
-
-@media screen and (min-width: 1300px) {}
-
-@media only screen and (min-width : 1200px) {}
-
-@media only screen and (max-width: 1100px) {}
-
-@media only screen and (max-width: 991px) {
-
-    /*common*/
-    .homeCmnHead {
-        font-size: 42px;
-    }
-
-    .exploreMoreBtn {
-        font-size: 16px;
-        padding: 16px 22px 16px 22px;
-        min-width: 168px;
-    }
-
-    /*banner*/
-    .bannerWrap {
-        height: 100%;
-    }
-
-    .bannerContent {
-        align-items: flex-start;
-        padding-bottom: 60px;
-        flex-direction: column;
-        gap: 25px;
-    }
-
-    .bannerContentLft>p {
-        max-width: 100%;
-    }
-
-    .bannerGridItem>h2 {
-        padding: 30px 0 10px;
-    }
-
-    .bannerContentLft>h1>em,
-    .bannerContentLft>p>em {
-        display: inline-block;
-    }
-
-    .bannerContentRght {
-        width: 100%;
-    }
-
-    .bannerGridItem {
-        min-width: 100%;
-    }
-
-
-    /*area of applications*/
-    .areaOfApplicationsWrap {
-        padding: 80px 0 280px;
-    }
-
-    .areaOfApplicationsSlider .slideSec {
-        gap: 25px;
-    }
-
-    .areaOfApplicationsSlider .slideTitle>h3 {
-        font-size: 22px;
-    }
-
-    .slideTitle>img {
-        max-width: 60px;
-    }
-
-    .slideContent a {
-        margin-top: 25px;
-    }
-
-    .areaOfApplicationsSliderNav {
-        bottom: -100px;
-    }
-
-
-    /*at glance*/
-    .atGlanceWrap {
-        padding: 80px 0 150px;
-    }
-
-    .atGlanceTopCont {
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .atGlanceTopContLft>p {
-        margin-top: 30px;
-        font-size: 22px;
-    }
-
-    .atGlanceTopContRght {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .atGlanceTopContRght>span {
-        font-size: 420px;
-    }
-
-    .atGlanceTopContRght>em {
-        bottom: 50px;
-        max-width: 300px;
-    }
-
-    .atGlanceGrid {
-        gap: 30px;
-    }
-
-    .atGlanceGridItem {
-        gap: 20px;
-    }
-
-    .atGlanceGridItem>p {
-        font-size: 18px;
-    }
-
-    .atGlanceTopContLft a {
-        margin-top: 25px;
-    }
-
-    .atGlanceMarquee .marqueeText {
-        font-size: 60px;
-    }
-
-    .atGlanceMarquee {
-        padding: 40px 25px 0;
-    }
-
-
-    /*our Specialities*/
-    .ourSpecialitiesWrap {
-        padding: 80px 0 150px;
-    }
-
-    .ourSpecialitiesMarquee .marqueeText {
-        font-size: 60px;
-    }
-
-    .ourSpecialitiesMarquee {
-        padding: 40px 25px 0;
-    }
-
-
-    /*our associate*/
-    .ourAssociatesWrap {
-        padding: 80px 0 280px;
-    }
-
-    .ourAssociatesHead {
-        flex-direction: column;
-        gap: 20px;
-        align-items: flex-start;
-        padding-bottom: 40px;
-    }
-
-    .associateSlide .associateDesc {
-        font-size: 20px;
-    }
-
-    /*our certifications*/
-    .ourCertificationWrap {
-        padding: 80px 0 280px;
-    }
-
-    .ourCertificationHead {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-        padding-bottom: 40px;
-    }
-
-    .certificationContent>h3 {
-        font-size: 20px;
-    }
-
-    /*our products*/
-    .ourProductsWrap {
-        padding: 80px 0 0;
-    }
-
-    .productContent {
-        left: 25px;
-        top: 60px;
-    }
-
-    .productName {
-        font-size: 40px;
-        margin: 5px 0px 12px;
-    }
-
-    .ourProductsSliderNav {
-        top: 60px;
-        right: 25px;
-    }
-
-    /*testimonials*/
-    .tesimonialsWrap {
-        padding: 80px 0 200px;
-    }
-
-    .testimonialItem {
-        padding: 40px 30px;
-    }
-
-    .testimonialDescription {
-        margin: 25px 0 35px;
-        font-size: 18px;
-        line-height: 1.5em;
-    }
-
-    .testimonialItem>h3 {
-        font-size: 20px;
-    }
-
-    .testimonialDesignation {
-        font-size: 16px;
-    }
-
-    /*view our profile*/
-    .viewOurProfileBody {
-        gap: 15px;
-    }
-
-    .viewOurProfileBody>h2 {
-        margin-bottom: 0;
-    }
-
-    .playButtonWrap {
-        margin: 10px;
-    }
-
-    /*Insights Updates*/
-    .insightsUpdatesWrap {
-        padding: 80px 0 200px;
-    }
-
-    .insightsUpdateGrid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 60px 30px;
-    }
-
-    .insightsUpdateGridItem h4 {
-        font-size: 22px;
-    }
-
-    .insightsUpdateGridItem span {
-        margin: 30px 0 15px;
-    }
-
-    .insightsUpdateGridItem p {
-        margin: 15px 0 30px;
-    }
-
-
-    /*event*/
-    .eventsWrap {
-        padding: 80px 0 180px;
-    }
-
-    .eventsBody {
-        flex-direction: column;
-    }
-
-    .eventsBodyLft {
-        min-width: 100%;
-    }
-
-    .eventSliderWrap {
-        max-width: 720px;
-    }
-
-    .eventItem {
-        gap: 30px;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .eventsSliderNav {
-        gap: 15px;
-        top: 80px;
-        right: 30px;
-    }
-
-    .eventsBodyLft>h2>em {
-        display: inline-block;
-    }
-
-    .eventImg {
-        max-width: 300px;
-    }
-
-    .eventInfo {
-        width: 100%;
-    }
-
-    .eventInfo>p {
-        max-width: 100%;
-        font-size: 18px;
-    }
-
-    .eventInfo>h3 {
-        font-size: 24px;
-        margin-bottom: 15px;
-    }
-
-    .eventInfo>p {
-        font-size: 16px;
-        padding-top: 10px;
-    }
-
-    .eventInfo>span {
-        font-size: 18px;
-        margin-bottom: 15px;
-    }
-
-}
-
-@media only screen and (max-width: 767px) {
-
-    /*common*/
-    .homeCmnHead {
-        font-size: 32px;
-    }
-
-    .homeCmnSubHead {
-        margin: 0 0 10px;
-        font-size: 16px;
-    }
-
-    .exploreMoreBtn {
-        padding: 12px 14px;
-        font-size: 16px;
-        min-width: 148px;
-    }
-
-    .exploreMoreBtn .arrow {
-        width: 16px;
-        height: 16px;
-        margin-left: 8px;
-    }
-
-    /*banner*/
-    .bannerContent {
-        padding-bottom: 40px;
-    }
-
-    .bannerContentLft>h1 {
-        padding-bottom: 15px;
-        font-size: 48px;
-    }
-
-    .bannerContentLft>p {
-        padding-top: 30px;
-        font-size: 18px;
-    }
-
-    .bannerGridItem {
-        padding: 20px 15px;
-    }
-
-    .bannerGridItem>h2 {
-        font-size: 18px;
-        padding: 20px 0 10px;
-    }
-
-    .bannerGridItem>h2>em {
-        display: inline-block;
-    }
-
-    .bannerGridItem>p {
-        max-width: 100%;
-        font-size: 16px;
-    }
-
-    .bannerGridItem>em {
-        font-size: 22px;
-        padding-bottom: 10px;
-    }
-
-
-    /*area of applications*/
-    .areaOfApplicationsWrap {
-        padding: 60px 0 210px;
-    }
-
-    .areaOfApplicationsHead {
-        padding-bottom: 40px;
-    }
-
-    .areaOfApplicationsSliderNav {
-        bottom: -60px;
-    }
-
-    .slideTitle>img {
-        max-width: 55px;
-    }
-
-    .areaOfApplicationsSlider .slideSec {
-        gap: 20px;
-    }
-
-    .areaOfApplicationsSliderBtn {
-        width: 32px;
-        height: 32px;
-    }
-
-
-    /*At glance*/
-    .atGlanceWrap {
-        padding: 60px 0 150px;
-    }
-
-    .atGlanceTopContLft>p {
-        font-size: 18px;
-        margin-top: 25px;
-    }
-
-    .atGlanceTopContRght>span {
-        font-size: 360px;
-    }
-
-    .atGlanceTopContRght>em {
-        max-width: 220px;
-    }
-
-    .atGlanceGrid {
-        gap: 45px 30px;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .atGlanceMarquee {
-        padding: 30px 20px 0;
-    }
-
-    .atGlanceMarquee .marqueeText {
-        font-size: 45px;
-    }
-
-    .areaOfApplicationsSliderNav {
-        gap: 10px;
-    }
-
-    /*our specialities*/
-    .ourSpecialitiesWrap {
-        padding: 60px 0 150px;
-    }
-
-    .ourSpecialitiesSliderBtn {
-        width: 32px;
-        height: 32px;
-    }
-
-    .ourSpecialitiesSliderNav {
-        gap: 10px;
-        top: -80px;
-    }
-
-    .specialitySlide {
-        padding: 25px;
-    }
-
-    .specialitySlideTitle {
-        font-size: 24px;
-        margin-top: 20px;
-    }
-
-    .specialityContent h4 {
-        font-size: 20px;
-    }
-
-    .specialityImageWrap {
-        flex: 0 0 100px;
-    }
-
-    .specialityCard {
-        gap: 15px;
-    }
-
-    .ourSpecialitiesMarquee {
-        padding: 30px 20px 0;
-    }
-
-    .ourSpecialitiesMarquee .marqueeText {
-        font-size: 45px;
-    }
-
-
-    /*our associates*/
-    .ourAssociatesWrap {
-        padding: 60px 0 230px;
-    }
-
-    .ourAssociatesSliderNavBtn {
-        width: 32px;
-        height: 32px;
-    }
-
-    .ourAssociatesSliderNav {
-        gap: 10px;
-        bottom: -80px;
-    }
-
-    .associateImg {
-        max-width: 150px;
-    }
-
-    .associateSlide .associateDesc {
-        font-size: 18px;
-    }
-
-
-    /*certifications*/
-    .ourCertificationWrap {
-        padding: 40px 0 230px;
-    }
-
-    .ourCertificationHead {
-        padding-bottom: 30px;
-    }
-
-    .ourCertificationNav {
-        gap: 10px;
-        bottom: -70px;
-    }
-
-    .ourCertificationSlierNavBtn {
-        width: 32px;
-        height: 32px;
-    }
-
-    .certificationImg {
-        max-width: 150px;
-    }
-
-
-    /*our products*/
-    .ourProductsWrap {
-        padding: 60px 0 0;
-    }
-
-    .ourProductsSlierNavBtn {
-        width: 32px;
-        height: 32px;
-    }
-
-    .ourProductsSliderNav {
-        top: 40px;
-        right: 25px;
-        gap: 10px;
-    }
-
-    .productName {
-        margin: 5px 0 10px;
-        font-size: 28px;
-    }
-
-    .productContent {
-        top: 40px;
-        left: 20px;
-    }
-
-    .productContent>a {
-        font-size: 16px;
-    }
-
-
-    /*testimonials*/
-    .tesimonialsWrap {
-        padding: 60px 0 160px;
-    }
-
-    .testimonialsSlierNavBtn {
-        width: 32px;
-        height: 32px;
-    }
-
-    .testimonialsSliderNav {
-        gap: 10px;
-        top: -30px;
-    }
-
-    .testimonialItem {
-        padding: 30px 25px;
-    }
-
-
-    /*insights*/
-    .insightsUpdatesWrap {
-        padding: 60px 0 180px;
-    }
-
-    .insightsUpdateGrid {
-        margin: 40px 0 0;
-        gap: 45px 30px;
-    }
-
-    .insightsUpdateGridItem h4 {
-        font-size: 18px;
-    }
-
-    .insightsUpdateGridItem span {
-        margin: 25px 0 10px;
-    }
-
-    .insightsUpdateGridItem p {
-        color: #111;
-        margin: 15px 0 20px;
-        font-size: 16px;
-    }
-
-    /*event*/
-    .eventsWrap {
-        padding: 60px 0 220px;
-    }
-
-    .eventsBodyLft {
-        justify-content: center;
-    }
-
-    .eventSliderWrap {
-        max-width: 100%;
-    }
-
-    .eventItem {
-        flex-direction: column;
-    }
-
-    .eventInfo>h3,
-    .eventInfo>p {
-        text-align: center;
-    }
-
-    .eventInfo>span {
-        justify-content: center;
-    }
-
-    .eventsSliderNav {
-        top: unset;
-        bottom: 160px;
-        left: 50%;
-        gap: 10px;
-        transform: translateX(-50%);
-        right: unset;
-    }
-
-    .eventNavBtn {
-        height: 35px;
-        width: 35px;
-    }
-}
-
-@media only screen and (max-width: 479px) {
-
-    /*common*/
-    .homeCmnHead {
-        font-size: 24px;
-    }
-
-    /*banner*/
-    .bannerContentLft>h1 {
-        padding-bottom: 15px;
-        font-size: 38px;
-    }
-
-    .bannerGrid {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 12px;
-    }
-
-    /*at glance*/
-    .atGlanceTopContRght>span {
-        font-size: 250px;
-    }
-
-    .atGlanceTopContRght>em {
-        max-width: 160px;
-        bottom: 35px;
-    }
-
-    .atGlanceGrid {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 25px;
-    }
-
-    /*event*/
-    .eventsBody {
-        gap: 30px;
-    }
-
-    .eventInfo>h3 {
-        font-size: 20px;
-    }
-
-    .eventInfo>p {
-        padding-top: 0;
-    }
-
-    .eventItem {
-        gap: 25px;
-    }
-
-}
-
-@media only screen and (max-width: 320px) {
-
-    /*area of applications*/
-    .areaOfApplicationsHead {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 25px;
-    }
-}
+    
+    @media only screen and (max-width: 320px) {
+        .areaOfApplicationsHead{flex-direction:column;align-items:flex-start;gap:25px}
+    }
+
+    @media only screen and (max-width: 479px) {
+        .homeCmnHead{font-size:24px}
+        .bannerContentLft>h1{padding-bottom:15px;font-size:38px}
+        .bannerGrid{grid-template-columns:repeat(1,1fr);gap:12px}
+        .atGlanceTopContRght>span{font-size:250px}
+        .atGlanceTopContRght>em{max-width:160px;bottom:35px}
+        .atGlanceGrid{grid-template-columns:repeat(1,1fr);gap:25px}
+        .eventsBody{gap:30px}
+        .eventInfo>h3{font-size:20px}
+        .eventInfo>p{padding-top:0}
+        .eventItem{gap:25px}
+    }
+
+    @media only screen and (max-width: 767px) {
+        .homeCmnHead{font-size:32px}
+        .homeCmnSubHead{margin:0 0 10px;font-size:16px}
+        .exploreMoreBtn{padding:12px 14px;font-size:16px;min-width:148px}
+        .exploreMoreBtn .arrow{width:16px;height:16px;margin-left:8px}
+            
+        .bannerContent{padding-bottom:40px}
+        .bannerContentLft>h1{padding-bottom:15px;font-size:48px}
+        .bannerContentLft>p{padding-top:30px;font-size:18px}
+        .bannerGridItem{padding:20px 15px}
+        .bannerGridItem>h2{font-size:18px;padding:20px 0 10px}
+        .bannerGridItem>h2>em{display:inline-block}
+        .bannerGridItem>p{max-width:100%;font-size:16px}
+        .bannerGridItem>em{font-size:22px;padding-bottom:10px}
+            
+        .areaOfApplicationsWrap{padding:60px 0 210px}
+        .areaOfApplicationsHead{padding-bottom:40px}
+        .areaOfApplicationsSliderNav{bottom:-60px}
+        .slideTitle>img{max-width:55px}
+        .areaOfApplicationsSlider .slideSec{gap:20px}
+        .areaOfApplicationsSliderBtn{width:32px;height:32px}
+        .areaOfApplicationsSliderNav{gap:10px}
+
+        .atGlanceWrap{padding:60px 0 150px}
+        .atGlanceTopContLft>p{font-size:18px;margin-top:25px}
+        .atGlanceTopContRght>span{font-size:360px}
+        .atGlanceTopContRght>em{max-width:220px}
+        .atGlanceGrid{gap:45px 30px;grid-template-columns:repeat(2,1fr)}
+        .atGlanceMarquee{padding:30px 20px 0}
+        .atGlanceMarquee .marqueeText{font-size:45px}
+            
+            
+        .ourSpecialitiesWrap{padding:60px 0 150px}
+        .ourSpecialitiesSliderBtn{width:32px;height:32px}
+        .ourSpecialitiesSliderNav{gap:10px;top:-80px}
+        .specialitySlide{padding:25px}
+        .specialitySlideTitle{font-size:24px;margin-top:20px}
+        .specialityContent h4{font-size:20px}
+        .specialityImageWrap{flex:0 0 100px}
+        .specialityCard{gap:15px}
+        .ourSpecialitiesMarquee{padding:30px 20px 0}
+        .ourSpecialitiesMarquee .marqueeText{font-size:45px}
+            
+        .ourAssociatesWrap{padding:60px 0 230px}
+        .ourAssociatesSliderNavBtn{width:32px;height:32px}
+        .ourAssociatesSliderNav{gap:10px;bottom:-80px}
+        .associateImg{max-width:150px}
+        .associateSlide .associateDesc{font-size:18px}
+            
+        .ourCertificationWrap{padding:40px 0 230px}
+        .ourCertificationHead{padding-bottom:30px}
+        .ourCertificationNav{gap:10px;bottom:-70px}
+        .ourCertificationSlierNavBtn{width:32px;height:32px}
+        .certificationImg{max-width:150px}
+            
+        .ourProductsWrap{padding:60px 0 0}
+        .ourProductsSlierNavBtn{width:32px;height:32px}
+        .ourProductsSliderNav{top:40px;right:25px;gap:10px}
+        .productName{margin:5px 0 10px;font-size:28px}
+        .productContent{top:40px;left:20px}
+        .productContent>a{font-size:16px}
+            
+        .tesimonialsWrap{padding:60px 0 160px}
+        .testimonialsSlierNavBtn{width:32px;height:32px}
+        .testimonialsSliderNav{gap:10px;top:-30px}
+        .testimonialItem{padding:30px 25px}
+            
+        .insightsUpdatesWrap{padding:60px 0 180px}
+        .insightsUpdateGrid{margin:40px 0 0;gap:45px 30px}
+        .insightsUpdateGridItem h4{font-size:18px}
+        .insightsUpdateGridItem span{margin:25px 0 10px}
+        .insightsUpdateGridItem p{color:#111;margin:15px 0 20px;font-size:16px}
+            
+        .eventsWrap{padding:60px 0 220px}
+        .eventsBodyLft{justify-content:center}
+        .eventSliderWrap{max-width:100%}
+        .eventItem{flex-direction:column}
+        .eventInfo>h3,.eventInfo>p{text-align:center}
+        .eventInfo>span{justify-content:center}
+        .eventsSliderNav{top:unset;bottom:160px;left:50%;gap:10px;transform:translateX(-50%);right:unset}
+        .eventNavBtn{height:35px;width:35px}
+    }
+
+    @media only screen and (max-width: 991px) {
+        .homeCmnHead{font-size:42px}
+        .exploreMoreBtn{font-size:16px;padding:16px 22px;min-width:168px}
+        
+        .bannerWrap{height:100%}
+        .bannerContent{align-items:flex-start;padding-bottom:60px;flex-direction:column;gap:25px}
+        .bannerContentLft>p{max-width:100%}
+        .bannerGridItem>h2{padding:30px 0 10px}
+        .bannerContentLft>h1>em,.bannerContentLft>p>em{display:inline-block}
+        .bannerContentRght{width:100%}
+        .bannerGridItem{min-width:100%}
+        
+        .areaOfApplicationsWrap{padding:80px 0 280px}
+        .areaOfApplicationsSlider .slideSec{gap:25px}
+        .areaOfApplicationsSlider .slideTitle>h3{font-size:22px}
+        .slideTitle>img{max-width:60px}
+        .slideContent a{margin-top:25px}
+        .areaOfApplicationsSliderNav{bottom:-100px}
+        
+        .atGlanceWrap{padding:80px 0 150px}
+        .atGlanceTopCont{flex-direction:column;gap:0}
+        .atGlanceTopContLft>p{margin-top:30px;font-size:22px}
+        .atGlanceTopContRght{display:flex;justify-content:center;align-items:center}
+        .atGlanceTopContRght>span{font-size:420px}
+        .atGlanceTopContRght>em{bottom:50px;max-width:300px}
+        .atGlanceGrid{gap:30px}
+        .atGlanceGridItem{gap:20px}
+        .atGlanceGridItem>p{font-size:18px}
+        .atGlanceTopContLft a{margin-top:25px}
+        .atGlanceMarquee .marqueeText{font-size:60px}
+        .atGlanceMarquee{padding:40px 25px 0}
+        
+        .ourSpecialitiesWrap{padding:80px 0 150px}
+        .ourSpecialitiesMarquee .marqueeText{font-size:60px}
+        .ourSpecialitiesMarquee{padding:40px 25px 0}
+        
+        .ourAssociatesWrap{padding:80px 0 280px}
+        .ourAssociatesHead{flex-direction:column;gap:20px;align-items:flex-start;padding-bottom:40px}
+        .associateSlide .associateDesc{font-size:20px}
+        
+        .ourCertificationWrap{padding:80px 0 280px}
+        .ourCertificationHead{flex-direction:column;align-items:flex-start;gap:20px;padding-bottom:40px}
+        .certificationContent>h3{font-size:20px}
+        
+        .ourProductsWrap{padding:80px 0 0}
+        .productContent{left:25px;top:60px}
+        .productName{font-size:40px;margin:5px 0 12px}
+        .ourProductsSliderNav{top:60px;right:25px}
+        
+        .tesimonialsWrap{padding:80px 0 200px}
+        .testimonialItem{padding:40px 30px}
+        .testimonialDescription{margin:25px 0 35px;font-size:18px;line-height:1.5em}
+        .testimonialItem>h3{font-size:20px}
+        .testimonialDesignation{font-size:16px}
+        
+        .viewOurProfileBody{gap:15px}
+        .viewOurProfileBody>h2{margin-bottom:0}
+        .playButtonWrap{margin:10px}
+        
+        .insightsUpdatesWrap{padding:80px 0 200px}
+        .insightsUpdateGrid{grid-template-columns:repeat(2,1fr);gap:60px 30px}
+        .insightsUpdateGridItem h4{font-size:22px}
+        .insightsUpdateGridItem span{margin:30px 0 15px}
+        .insightsUpdateGridItem p{margin:15px 0 30px}
+        
+        .eventsWrap{padding:80px 0 180px}
+        .eventsBody{flex-direction:column}
+        .eventsBodyLft{min-width:100%}
+        .eventSliderWrap{max-width:720px}
+        .eventItem{gap:30px;justify-content:flex-start;align-items:center}
+        .eventsSliderNav{gap:15px;top:80px;right:30px}
+        .eventsBodyLft>h2>em{display:inline-block}
+        .eventImg{max-width:300px}
+        .eventInfo{width:100%}
+        .eventInfo>p{max-width:100%;font-size:18px}
+        .eventInfo>h3{font-size:24px;margin-bottom:15px}
+        .eventInfo>p{font-size:16px;padding-top:10px}
+        .eventInfo>span{font-size:18px;margin-bottom:15px}
+    }
+
+    @media screen and (min-width: 1440px) {
+        .areaOfApplicationsWrap{padding:150px 0 300px}
+        
+        .atGlanceWrap{padding:120px 0 200px}
+        .atGlanceTopContRght>span{font-size:500px}
+        .atGlanceTopContRght>em{bottom:100px;right:0;max-width:55%}
+        
+        .ourSpecialitiesWrap{padding:150px 0 200px}
+        .ourAssociatesWrap{padding:120px 0 300px}
+        
+        .ourCertificationWrap{padding:120px 0 300px}
+        
+        .ourProductsWrap{padding:150px 0 0}
+        
+        .tesimonialsWrap{padding:150px 0 250px}
+        
+        .insightsUpdatesWrap{padding:150px 0 250px}
+    }
+
+    @media screen and (min-width: 1600px) {
+        .atGlanceTopCont{gap:140px}
+
+        .bannerGridItem{min-width:450px}
+        
+        .videoPopupContent{max-width:1200px}
+        
+        .associateSlide .associateDesc{font-size:22px;}
+    }
+
+    @media screen and (min-width: 1800px) {
+        .atGlanceTopContRght>span{font-size:620px}
+        .atGlanceTopContRght>em{bottom:100px;right:0;max-width:100%}
+    }
+   
+    
+    
+   
+   

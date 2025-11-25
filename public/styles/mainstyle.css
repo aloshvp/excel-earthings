@@ -55,7 +55,7 @@
 .ourAssociatesSlider{position:relative}
 .associateSlide{position:relative;display:flex;justify-content:center;align-items:center;flex-direction:column;gap:15px}
 .associateSlide .associateImg>img{border-radius:20px}
-.associateSlide .associateDesc{font-size:22px;line-height:1.3em;color:#444444;font-family:var(--medium);text-align:center}
+.associateSlide .associateDesc{font-size:18px;line-height:1.3em;color:#444444;font-family:var(--medium);text-align:center}
 .ourAssociatesSliderNav{position:absolute;bottom:-100px;left:50%;transform:translateX(-50%);display:flex;gap:15px;z-index:10}
 .ourAssociatesSliderNavBtn{width:40px;height:40px;background-image:url(/images/home/right-arrow.svg);background-size:contain;background-repeat:no-repeat;cursor:pointer}
 .ourAssociatesSliderNavBtn.ourAssociatesSliderPrevBtn{rotate:180deg}

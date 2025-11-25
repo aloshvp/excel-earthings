@@ -150,51 +150,108 @@ export const associatesData = [
     },
 ];
 
+// export const certificationsData = [
+//     {
+//         name: 'CPRI',
+//         img: '/images/Certifications/astm.jpg',
+//         desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
+//     },
+//     {
+//         name: 'CPRI',
+//         img: '/images/Certifications/cipet.jpg',
+//         desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
+//     },
+//     {
+//         name: 'CPRI',
+//         img: '/images/Certifications/cpri.jpg',
+//         desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
+//     },
+//     {
+//         name: 'CPRI',
+//         img: '/images/Certifications/iec.jpg',
+//         desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
+//     },
+//     {
+//         name: 'CPRI',
+//         img: '/images/Certifications/isi-marked.jpg',
+//         desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
+//     },
+//     {
+//         name: 'CPRI',
+//         img: '/images/Certifications/sgs.jpg',
+//         desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
+//     },
+//     {
+//         name: 'CPRI',
+//         img: '/images/Certifications/tuv-rheinland.jpg',
+//         desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
+//     },
+//     {
+//         name: 'CPRI',
+//         img: '/images/Certifications/ul.jpg',
+//         desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
+//     },
+//     {
+//         name: 'CPRI',
+//         img: '/images/Certifications/zed.jpg',
+//         desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
+//     },
+// ];
+
 export const certificationsData = [
     {
-        name: 'CPRI',
-        img: '/images/Certifications/astm.jpg',
-        desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
-    },
-    {
-        name: 'CPRI',
-        img: '/images/Certifications/cipet.jpg',
-        desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
-    },
-    {
-        name: 'CPRI',
-        img: '/images/Certifications/cpri.jpg',
-        desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
-    },
-    {
-        name: 'CPRI',
-        img: '/images/Certifications/iec.jpg',
-        desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
-    },
-    {
-        name: 'CPRI',
         img: '/images/Certifications/isi-marked.jpg',
-        desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
+        name: 'isi',
+        head: 'ISI Marked',
+        desc: 'For Electroplated Coatings of Copper',
     },
     {
-        name: 'CPRI',
-        img: '/images/Certifications/sgs.jpg',
-        desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
-    },
-    {
-        name: 'CPRI',
-        img: '/images/Certifications/tuv-rheinland.jpg',
-        desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
-    },
-    {
-        name: 'CPRI',
         img: '/images/Certifications/ul.jpg',
+        name: 'ul',
+        head: 'UL Listed',
+        desc: 'For Electroplated Coatings of Copper',
+    },
+    {
+        img: '/images/Certifications/iec.jpg',
+        name: 'iec-7',
+        head: 'IEC 62561-7:2018',
+        desc: 'For Earth Enhancing Compounds',
+    },
+    {
+        img: '/images/Certifications/cpri.jpg',
+        name: 'cpri',
+        head: 'CPRI',
         desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
     },
     {
-        name: 'CPRI',
-        img: '/images/Certifications/zed.jpg',
-        desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
+        img: '/images/Certifications/astm.jpg',
+        name: 'astm',
+        head: 'ASTM B499:2014',
+        desc: 'For Copper Bonded Rods, Strips',
+    },
+    {
+        img: '/images/Certifications/iec.jpg',
+        name: 'iec-2',
+        head: 'IEC 62561-2:2018',
+        desc: 'For Copper Bonded Rods',
+    },
+    {
+        img: '/images/Certifications/tuv-rheinland.jpg',
+        name: 'tuv',
+        head: 'TUV Rheinland',
+        desc: 'RoHS-2 2011/65/EU for Earth Enhancing Compounds',
+    },
+    {
+        img: '/images/Certifications/ul.jpg',
+        name: 'sgs',
+        head: 'SGS',
+        desc: 'Toxicity Characteristic Leaching Procedure (TCLP) For Earth Enhancing Compounds',
+    },
+    {
+        img: '/images/Certifications/cipet.jpg',
+        name: 'cipet',
+        head: 'CIPET',
+        desc: 'Compression Test for Earth Pit Chambers',
     },
 ];
 
