@@ -134,15 +134,15 @@ const Footer = () => {
                                             height={20}
                                         />
                                     </Link>
-                                    {/* <Link href="" scroll={false}>
-                                    <Image
-                                        src='/images/icons/linkedin.svg'
-                                        alt="linkedin"
-                                        title="linkedin"
-                                        width={15}
-                                        height={15}
-                                    />
-                                </Link> */}
+                                    <Link href="" scroll={false}>
+                                        <Image
+                                            src='/images/icons/linkedin.svg'
+                                            alt="linkedin"
+                                            title="linkedin"
+                                            width={15}
+                                            height={15}
+                                        />
+                                    </Link>
                                     <Link href="" scroll={false}>
                                         <Image
                                             src='/images/icons/twitter.svg'
