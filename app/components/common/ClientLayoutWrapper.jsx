@@ -36,10 +36,11 @@ export default function ClientLayoutWrapper({ children }) {
     const isHome = pathname === "/";
 
     // Conditionally apply staticWrapper + margnTop
-    const wrapperClass =
+    const wrapperClass =(!isAdmin)?
         !isHome && !dynamicScrollPages?.includes(pathname)
             ? "staticWrapper paddngTop"
-            : "staticWrapper";
+            : "staticWrapper"
+            :'';
 
     return (
         <>
