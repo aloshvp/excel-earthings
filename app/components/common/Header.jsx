@@ -5,33 +5,26 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import useWindowSize from "@functions/useWindowSize";
 import { dynamicScrollPages } from "@utils/CommonData";
-
-const menuItems = [
-  { title: "Home", href: "/" },
-  { title: "Corporates", href: "" },
-  { title: "Products", href: "/products" },
-  { title: "Applications", href: "/applications" },
-  { title: "Dealership", href: "/dealership" },
-  { title: "Design", href: "/transformer-earthing-design" },
-  { title: "E-Learning", href: "/e-learning" },
-  { title: "Contact Us", href: "/contact-us" },
-];
+import { menuItems } from "@utils/CommonData";
 
 const Header = () => {
   const pathname = usePathname();
   const { width } = useWindowSize();
   const isMobile = width <= 1200;
 
-  const [scrolled, setScrolled] = useState(isMobile || !dynamicScrollPages?.includes(pathname));
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(
+    isMobile || !dynamicScrollPages?.includes(pathname)
+  );
 
-  // Lock body scroll when menu is open
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpenIndex, setMenuOpenIndex] = useState(null); // for mobile submenu
+
+  // Disable page scroll when mobile menu is open
   useEffect(() => {
-    if (menuOpen) document.body.style.overflow = "hidden";
-    else document.body.style.overflow = "auto";
+    document.body.style.overflow = menuOpen ? "hidden" : "auto";
   }, [menuOpen]);
 
-  // Header scroll behavior
+  // Scroll header behaviour
   useEffect(() => {
     if (isMobile) {
       setScrolled(true);
@@ -40,8 +33,10 @@ const Header = () => {
 
     if (dynamicScrollPages.includes(pathname)) {
       setScrolled(window.scrollY > 0);
+
       const handleScroll = () => setScrolled(window.scrollY > 0);
       window.addEventListener("scroll", handleScroll);
+
       return () => window.removeEventListener("scroll", handleScroll);
     } else {
       setScrolled(true);
@@ -65,6 +60,7 @@ const Header = () => {
         </div>
 
         <div className="headerRghtSec">
+          {/* Mobile */}
           {isMobile ? (
             <>
               {/* Hamburger */}
@@ -83,31 +79,77 @@ const Header = () => {
                 onClick={() => setMenuOpen(false)}
               ></div>
 
-              {/* Mobile Menu */}
+              {/* Mobile Navigation */}
               <nav className={`mobileNav ${menuOpen ? "open" : ""}`}>
                 <ul>
                   {menuItems.map((item, index) => (
                     <li key={index}>
-                      <Link href={item.href} onClick={() => setMenuOpen(false)}>
-                        {item.title}
-                      </Link>
+                      {item.submenu ? (
+                        <>
+                          <div
+                            className="mobileMenuTitle"
+                            onClick={() =>
+                              setMenuOpenIndex(
+                                menuOpenIndex === index ? null : index
+                              )
+                            }
+                          >
+                            {item.title}
+                            <span className="arrow">
+                              {menuOpenIndex === index ? "−" : "+"}
+                            </span>
+                          </div>
+
+                          <ul
+                            className={`mobileSubmenu ${menuOpenIndex === index ? "open" : ""
+                              }`}
+                          >
+                            {item.submenu.map((sub, i) => (
+                              <li key={i}>
+                                <Link
+                                  href={sub.href}
+                                  onClick={() => setMenuOpen(false)}
+                                >
+                                  {sub.title}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </>
+                      ) : (
+                        <Link href={item.href} onClick={() => setMenuOpen(false)}>
+                          {item.title}
+                        </Link>
+                      )}
                     </li>
                   ))}
                 </ul>
               </nav>
             </>
           ) : (
+            /* Desktop Navigation */
             <nav className="headerNavSec">
               <ul>
                 {menuItems.map((item, index) => (
-                  <li key={index}>
+                  <li key={index} className={item.submenu ? "hasSubmenu" : ""}>
                     <Link href={item.href}>{item.title}</Link>
+
+                    {item.submenu && (
+                      <ul className="submenu">
+                        {item.submenu.map((sub, i) => (
+                          <li key={i}>
+                            <Link href={sub.href}  onClick={() => setDesktopOpenIndex(null)}>{sub.title}</Link>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </li>
                 ))}
               </ul>
             </nav>
           )}
 
+          {/* Right Badge */}
           <div className="headerBadgeSec">
             <Image
               src="/images/logo-since2006.svg"
@@ -121,6 +163,7 @@ const Header = () => {
         </div>
       </header>
 
+      {/* Fixed Floating Links */}
       <div className="fixedLinks">
         <Link href="tel:+919048744551" scroll={false}>
           <Image
@@ -132,10 +175,13 @@ const Header = () => {
             priority
           />
         </Link>
-        <Link href="https://api.whatsapp.com/send/?phone=919497804983&text=Hi.+We%E2%80%99d+like+to+hear+from+you.&type=phone_number&app_absent=0"
+
+        <Link
+          href="https://api.whatsapp.com/send/?phone=919497804983&text=Hi.+We%E2%80%99d+like+to+hear+from+you.&type=phone_number&app_absent=0"
           scroll={false}
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           <Image
             src="/images/whatsapp.svg"
             alt="whatsapp"

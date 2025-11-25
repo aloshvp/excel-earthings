@@ -73,3 +73,24 @@ export const bannerData = {
         image: applicationsBg,
     }
 };
+
+export const menuItems = [
+    { title: "Home", href: "/" },
+  
+    {
+      title: "Corporates",
+      href: "",
+      submenu: [
+        { title: "About Us", href: "/about-us" },
+        { title: "Certifications & Quality Assurance", href: "/certifications-and-quality-assurance" },
+        { title: "Approvals & Associates", href: "/approvals-and-associates" },
+      ],
+    },
+  
+    { title: "Products", href: "/products" },
+    { title: "Applications", href: "/applications" },
+    { title: "Dealership", href: "/dealership" },
+    { title: "Design", href: "/transformer-earthing-design" },
+    { title: "E-Learning", href: "/e-learning" },
+    { title: "Contact Us", href: "/contact-us" },
+  ];
