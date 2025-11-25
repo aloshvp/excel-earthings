@@ -7,6 +7,7 @@ import eLearningBg from "@public/images/banners/e-learning-bg.png";
 import designBg from "@public/images/banners/design-bg.png";
 import certificationsBg from "@public/images/banners/certifications-and-quality-assurance-bg.png";
 
+export const websiteName="Excel Earthings";
 export const dynamicScrollPages = [
     "/",
     "/applications",
