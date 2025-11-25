@@ -29,7 +29,7 @@ const OurCertifications = () => {
                         </p>
                     </div>
                     <div className="ourCertificationHeadBtn">
-                        <Link href="" className='exploreMoreBtn' scroll={false}>Explore More <span className="arrow"></span></Link>
+                        <Link href="/certifications-and-quality-assurance" className='exploreMoreBtn'>Explore More <span className="arrow"></span></Link>
                     </div>
                 </div>
 

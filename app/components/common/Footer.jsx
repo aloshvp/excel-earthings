@@ -80,7 +80,7 @@ const Footer = () => {
                                     ensure Electrical Safety and Power Quality Improvements in the
                                     <em></em>
                                     Electrical Network. </p>
-                                <Link href="" scroll={false}>Learn More</Link>
+                                <Link href="/about-us">Learn More</Link>
                             </div>
                             <div className="footerLinks">
                                 <b>Quick Links</b>
@@ -107,7 +107,7 @@ const Footer = () => {
                             <div className="footerSocialMedia">
                                 <b>Follow Us</b>
                                 <div className="footerSocialMediaLinks">
-                                    <Link href="" scroll={false}>
+                                    <Link href="https://www.facebook.com/excelearthings" target='_blank'>
                                         <Image
                                             src='/images/icons/facebook.svg'
                                             alt="facebook"
@@ -116,7 +116,7 @@ const Footer = () => {
                                             height={10}
                                         />
                                     </Link>
-                                    <Link href="" scroll={false}>
+                                    <Link href="https://www.instagram.com/excelearthings" target="_blank">
                                         <Image
                                             src='/images/icons/instagram.svg'
                                             alt="instagram"
@@ -125,7 +125,7 @@ const Footer = () => {
                                             height={20}
                                         />
                                     </Link>
-                                    <Link href="" scroll={false}>
+                                    <Link href="https://www.youtube.com/channel/UCv04R_Wuvx9cv2S5U7eCWxA" target="_blank">
                                         <Image
                                             src='/images/icons/youtube.svg'
                                             alt="youtube"
@@ -134,7 +134,7 @@ const Footer = () => {
                                             height={20}
                                         />
                                     </Link>
-                                    <Link href="" scroll={false}>
+                                    <Link href="https://www.linkedin.com/company/excel-earthings/" target="_blank">
                                         <Image
                                             src='/images/icons/linkedin.svg'
                                             alt="linkedin"
@@ -143,7 +143,7 @@ const Footer = () => {
                                             height={15}
                                         />
                                     </Link>
-                                    <Link href="" scroll={false}>
+                                    <Link href="https://x.com/ExcelErthings" target='_blank'>
                                         <Image
                                             src='/images/icons/twitter.svg'
                                             alt="twitter"

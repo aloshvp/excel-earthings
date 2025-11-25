@@ -18,7 +18,7 @@ const AtGlance = () => {
                                 we ensure Electrical Safety and power quality improvement in the
                                 electrical network.
                             </p>
-                            <Link href="">Explore More</Link>
+                            <Link href="/about-us">Explore More</Link>
                         </div>
                         <div className="atGlanceTopContRght">
                             <span>19</span>
