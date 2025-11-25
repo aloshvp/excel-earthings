@@ -532,6 +532,7 @@ select:focus-visible {
   color: #fff;
   padding-right: 30px;
   transition: color 0.3s ease;
+  font-family: var(--medium);
 }
 
 .footerAboutCont>a::before {
