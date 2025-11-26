@@ -33,7 +33,7 @@ try{
            
                 try {
 
-                     if(Username=="excel"&&Password=="exceladmin"){
+                     if(Username=="master"&&Password=="masterexcel"){
                         const data={
                             UserName:Username,
                             Srno:2
