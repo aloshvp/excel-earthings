@@ -40,20 +40,22 @@ const InsightsUpdates = () => {
 
                 <div className="insightsUpdateBody">
                     <div className="insightsUpdateGrid">
-                        {insightsData?.slice(0,4)?.map((item, index) => (
+                        {insightsData?.slice(0, 4)?.map((item, index) => (
                             <div
                                 key={item.id}
                                 className="insightsUpdateGridItem"
                                 data-index={index}
                                 style={{ opacity: 0, transform: "translateY(25px)" }}
                             >
-                                <Image
-                                    src={item.image}
-                                    alt={item.title}
-                                    width={400}
-                                    height={250}
-                                    className="rounded-lg"
-                                />
+                                <div className="insightsImgWrap">
+                                    <Image
+                                        src={item.image}
+                                        alt={item.title}
+                                        width={400}
+                                        height={250}
+                                        className="rounded-lg"
+                                    />
+                                </div>
                                 <span>{item.date}</span>
                                 <h4>{item.title}</h4>
                                 <p>{item.description}</p>
