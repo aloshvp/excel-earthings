@@ -195,7 +195,7 @@ const Header = () => {
       </header >
 
       {/* Fixed Floating Links */}
-      <div div className="fixedLinks" >
+      <div className="fixedLinks" >
         <Link href="tel:+919048744551" scroll={false}>
           <Image
             src="/images/phone.svg"

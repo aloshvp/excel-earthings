@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React, { useState, useRef, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -7,13 +7,17 @@ import { Navigation } from 'swiper/modules';
 import Link from 'next/link';
 import Image from 'next/image';
 import { slidesData } from '@utils/homeData';
-import { animate, inView } from "@motionone/dom";
+import useInViewFade from '@functions/useInViewFade';
 
 const SlideItem = ({ slide, index }) => {
     const [isLoaded, setIsLoaded] = useState(false);
 
     return (
-        <div className="slideSec areaOfApplicationsSlideItem" data-id={index} style={{ opacity: 0 }}>
+        <div
+            className="slideSec areaOfApplicationsSlideItem"
+            data-id={index}
+            style={{ opacity: 0 }}
+        >
             <div className="slideImg">
                 <Image
                     src={slide.img}
@@ -46,16 +50,14 @@ const AreaOfApplications = () => {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
 
-    useEffect(() => {
-        inView(".areaOfApplicationsSlideItem", ({ target }) => {
-            const delay = (Number(target.dataset.id) % 3) * 0.1;
-            animate(
-                target,
-                { opacity: [0, 1], transform: ["translateY(50px)", "none"] },
-                { duration: 0.8, delay, easing: "ease-out" }
-            );
-        });
-    }, []);
+    // Animate slide items on view using shared hook
+    useInViewFade(".areaOfApplicationsSlideItem", {
+        offset: 50,
+        duration: 0.8,
+        easing: "ease-out",
+        staggerField: "id",      // uses data-id from SlideItem
+        staggerStep: 0.1,
+    });
 
     return (
         <section className="areaOfApplicationsWrap">
@@ -84,7 +86,7 @@ const AreaOfApplications = () => {
                         spaceBetween={45}
                         slidesPerView={3}
                         loop
-                        navigation={{ prevEl: prevRef.current, nextEl: nextRef.current }}
+                        navigation
                         onBeforeInit={(swiper) => {
                             swiper.params.navigation.prevEl = prevRef.current;
                             swiper.params.navigation.nextEl = nextRef.current;

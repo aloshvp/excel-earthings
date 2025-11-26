@@ -1,76 +1,68 @@
+"use client";
+
 import "@styles/staticbundles.scss";
 import CommonBanner from "@common/CommonBanner";
 import Image from "next/image";
 import { certificationsData } from "@utils/homeData";
-const page = () => {
-    // const certificationsData = [
-    //     {
-    //         img: '/images/Certifications/isi-marked.jpg',
-    //         name: 'isi',
-    //         head: 'ISI Marked',
-    //         desc: 'For Electroplated Coatings of Copper',
-    //     },
-    //     {
-    //         img: '/images/Certifications/ul.jpg',
-    //         name: 'ul',
-    //         head: 'UL Listed',
-    //         desc: 'For Electroplated Coatings of Copper',
-    //     },
-    //     {
-    //         img: '/images/Certifications/iec.jpg',
-    //         name: 'iec-7',
-    //         head: 'IEC 62561-7:2018',
-    //         desc: 'For Earth Enhancing Compounds',
-    //     },
-    //     {
-    //         img: '/images/Certifications/cpri.jpg',
-    //         name: 'cpri',
-    //         head: 'CPRI',
-    //         desc: 'Short Circuit Current Test for Copper Bonded Rods, Pipes',
-    //     },
-    //     {
-    //         img: '/images/Certifications/astm.jpg',
-    //         name: 'astm',
-    //         head: 'ASTM B499:2014',
-    //         desc: 'For Copper Bonded Rods, Strips',
-    //     },
-    //     {
-    //         img: '/images/Certifications/iec.jpg',
-    //         name: 'iec-2',
-    //         head: 'IEC 62561-2:2018',
-    //         desc: 'For Copper Bonded Rods',
-    //     },
-    //     {
-    //         img: '/images/Certifications/tuv-rheinland.jpg',
-    //         name: 'tuv',
-    //         head: 'TUV Rheinland',
-    //         desc: 'RoHS-2 2011/65/EU for Earth Enhancing Compounds',
-    //     },
-    //     {
-    //         img: '/images/Certifications/ul.jpg',
-    //         name: 'sgs',
-    //         head: 'SGS',
-    //         desc: 'Toxicity Characteristic Leaching Procedure (TCLP) For Earth Enhancing Compounds',
-    //     },
-    //     {
-    //         img: '/images/Certifications/cipet.jpg',
-    //         name: 'cipet',
-    //         head: 'CIPET',
-    //         desc: 'Compression Test for Earth Pit Chambers',
-    //     },
-    // ];
+import useInViewFade from "@functions/useInViewFade";
+
+const Page = () => {
+
+    // Certifications header
+    useInViewFade(".certificationSec .certifiHeader", {
+        offset: 20,
+        duration: 0.45,
+        easing: "ease-out",
+        rootMargin: "0px 0px -15% 0px",
+        threshold: 0.15,
+    });
+
+    // Certifications cards
+    useInViewFade(".certificationCard", {
+        offset: 25,
+        duration: 0.6,
+        easing: "ease-out",
+        staggerField: "index",
+        staggerStep: 0.04,
+        rootMargin: "0px 0px -15% 0px",
+        threshold: 0.1,
+    });
+
+    // Quality Assurance top header
+    useInViewFade(".qualityAssuranceWrap .certifiHeader", {
+        offset: 20,
+        duration: 0.5,
+        easing: "ease-out",
+        rootMargin: "0px 0px -15% 0px",
+        threshold: 0.15,
+    });
+
+    // Each quality block (Bend Test, Adherence, etc.)
+    useInViewFade(".qualityAssureSec", {
+        offset: 25,
+        duration: 0.65,
+        easing: "ease-out",
+        rootMargin: "0px 0px -15% 0px",
+        threshold: 0.2,
+    });
+
     return (
         <section className="certificationWrap">
             <CommonBanner pageName={"certifications-and-quality-assurance"} />
             <div className="container">
                 <div className="certificationSec">
-                    <div className="certifiHeader">
+                    <div className="certifiHeader" style={{ opacity: 0, transform: "translateY(20px)" }}>
                         <h2>Certifications</h2>
                         <p><i>Our Products are Tested and Certified in accordance with International and National</i> Standards from well established NABL Accredited Laboratories.</p>
                     </div>
                     <div className="cardsContainer">
                         {certificationsData.map((item, index) => (
-                            <div className="certificationCard" key={index * 0.1}>
+                            <div
+                                className="certificationCard"
+                                key={index * 0.1}
+                                data-index={index}
+                                style={{ opacity: 0, transform: "translateY(25px)" }}
+                            >
                                 <div className="cardImg">
                                     <Image src={item.img} width={300} height={200} className="img-fluid" alt={item.name} title={item.name} />
                                 </div>
@@ -85,14 +77,14 @@ const page = () => {
             </div>
             <div className="qualityAssuranceWrap">
                 <div className="container">
-                    <div className="certifiHeader">
+                    <div className="certifiHeader" style={{ opacity: 0, transform: "translateY(20px)" }}>
                         <h2>Quality Assurance</h2>
                         <p><i>A well-established laboratory along with a dedicated quality check professional brings out the</i> standard quality in each product segment. Various In-House Tests carried out are as follows</p>
                     </div>
                 </div>
                 <div className="qualityRoundWrap">
                     <div className="container">
-                        <div className="qualityAssureSec">
+                        <div className="qualityAssureSec" style={{ opacity: 0, transform: "translateY(25px)" }}>
                             <div className="qualityLeftColumn">
                                 <h2>Bend Test</h2>
                                 <p>(As per clause 9.7.2 UL 467)</p>
@@ -112,7 +104,7 @@ const page = () => {
                 </div>
                 <div className="qualityRoundWrap white">
                     <div className="container">
-                        <div className="qualityAssureSec">
+                        <div className="qualityAssureSec" style={{ opacity: 0, transform: "translateY(25px)" }}>
                             <div className="qualityLeftColumn">
                                 <h2>Adherence Test</h2>
                                 <p>(As per clause 9.7.1 UL 467)</p>
@@ -131,7 +123,7 @@ const page = () => {
                 </div>
                 <div className="qualityRoundWrap">
                     <div className="container">
-                        <div className="qualityAssureSec">
+                        <div className="qualityAssureSec" style={{ opacity: 0, transform: "translateY(25px)" }}>
                             <div className="qualityLeftColumn">
                                 <h2>Coating Thickness Test</h2>
                                 <p>(As per clause 9.6.1 UL 467)</p>
@@ -150,7 +142,7 @@ const page = () => {
                 </div>
                 <div className="qualityRoundWrap white">
                     <div className="container">
-                        <div className="qualityAssureSec">
+                        <div className="qualityAssureSec" style={{ opacity: 0, transform: "translateY(25px)" }}>
                             <div className="qualityLeftColumn">
                                 <h2><i>Resistivity of Earth</i>Enhancing Compound</h2>
                                 <p>(As per clause 5.4 of IEC 62561-7:2018)</p>
@@ -169,7 +161,7 @@ const page = () => {
                 </div>
                 <div className="qualityRoundWrap">
                     <div className="container">
-                        <div className="qualityAssureSec">
+                        <div className="qualityAssureSec" style={{ opacity: 0, transform: "translateY(25px)" }}>
                             <div className="qualityLeftColumn">
                                 <h2>Dye Penetration Test</h2>
                                 <p>(As per ISO 3452-1:2013)</p>
@@ -201,4 +193,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
