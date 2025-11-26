@@ -2,8 +2,7 @@
 import '@styles/admin.css';
 import { useRouter } from "next/navigation";
 import { alert } from '@components/functions/alertmessage';
-import { useState } from 'react'; // Removed unused 'useEffect'
-import { websiteName } from '@utils/CommonData';
+import { useState } from 'react';
 
 const LoginComponent = () => {
     const router = useRouter();
