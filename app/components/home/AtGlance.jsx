@@ -25,6 +25,9 @@ const AtGlance = () => {
 
                     hasAnimated = true;
 
+                    // Set initial text content to 0
+                    numberEl.textContent = "0";
+
                     // -------------------------------
                     // SMOOTH COUNT-UP (0 → 19)
                     // -------------------------------
@@ -142,9 +145,9 @@ const AtGlance = () => {
                                 className="atGlanceYearNumber"
                                 style={{ opacity: 0, transform: "scale(0.4)" }}
                             >
-                                0
+                                {/* Initially empty - will be populated by animation */}
                             </span>
-                            <em>
+                            <em style={{ opacity: 0, transform: "translateY(25px)" }}>
                                 <Image src="/images/home/year.svg" width={380} height={320} alt="year" title="year" />
                             </em>
                         </div>
