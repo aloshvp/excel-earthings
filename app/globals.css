@@ -59,7 +59,7 @@ select:focus,select:active,select:focus-visible{outline:none;box-shadow:none}
 .mobileSubmenu.open { max-height: 500px;margin-bottom: 15px;}
 .mobileSubmenu li a { padding: 12px 5px; font-size: 18px; color: #fff; } 
 .mobileSubmenu li a:hover { color: #a8a8a8; }
-
+.hasSubmenu:hover .submenu, .hasSubmenu.menu-open .submenu { display: block;visibility: visible; opacity: 1; }
 
 /*footer*/
 .footerParentWrap{position:relative}

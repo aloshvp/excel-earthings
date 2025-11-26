@@ -18,6 +18,7 @@ const Header = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [menuOpenIndex, setMenuOpenIndex] = useState(null); // for mobile submenu
+  const [desktopOpenIndex, setDesktopOpenIndex] = useState(null);
 
   // Disable page scroll when mobile menu is open
   useEffect(() => {
@@ -127,18 +128,48 @@ const Header = () => {
               </nav>
             </>
           ) : (
+            
             /* Desktop Navigation */
             <nav className="headerNavSec">
               <ul>
                 {menuItems.map((item, index) => (
-                  <li key={index} className={item.submenu ? "hasSubmenu" : ""}>
-                    <Link href={item.href}>{item.title}</Link>
+                  <li
+                    key={index}
+                    className={`${item.submenu ? "hasSubmenu" : ""} ${desktopOpenIndex === index ? "menu-open" : ""}`}
+                    // 1. Open on Hover
+                    onMouseEnter={() => setDesktopOpenIndex(index)}
+                    // 2. Close when mouse leaves the specific list item
+                    onMouseLeave={() => setDesktopOpenIndex(null)}
+                  >
+                    <Link
+                      href={item.href}
+                      // Optional: Close if the main parent link is clicked
+                      onClick={() => setDesktopOpenIndex(null)}
+                    >
+                      {item.title}
+                    </Link>
 
+                    {/* 3. Check State to decide if submenu shows */}
                     {item.submenu && (
-                      <ul className="submenu">
+                      <ul
+                        className="submenu"
+                        // If you use CSS :hover, this inline style ensures React controls visibility.
+                        // If your CSS handles a ".menu-open" class, you can remove this style attribute.
+                        style={{
+                          display: desktopOpenIndex === index ? 'block' : 'none',
+                          opacity: desktopOpenIndex === index ? 1 : 0,
+                          visibility: desktopOpenIndex === index ? 'visible' : 'hidden'
+                        }}
+                      >
                         {item.submenu.map((sub, i) => (
                           <li key={i}>
-                            <Link href={sub.href}  onClick={() => setDesktopOpenIndex(null)}>{sub.title}</Link>
+                            <Link
+                              href={sub.href}
+                              // 4. THIS FIXES YOUR ISSUE: Force menu close on click
+                              onClick={() => setDesktopOpenIndex(null)}
+                            >
+                              {sub.title}
+                            </Link>
                           </li>
                         ))}
                       </ul>
@@ -161,10 +192,10 @@ const Header = () => {
             />
           </div>
         </div>
-      </header>
+      </header >
 
       {/* Fixed Floating Links */}
-      <div className="fixedLinks">
+      <div div className="fixedLinks" >
         <Link href="tel:+919048744551" scroll={false}>
           <Image
             src="/images/phone.svg"
