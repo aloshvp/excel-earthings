@@ -24,7 +24,7 @@ const page = () => {
                                 <span>{item.date}</span>
                                 <h4>{item.title}</h4>
                                 <p>{item.description}</p>
-                                <Link href={item.link} scroll={false}>Learn More</Link>
+                                <Link href={item.link}>Learn More</Link>
                             </div>
                         ))}
                     </div>

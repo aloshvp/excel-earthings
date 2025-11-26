@@ -4,7 +4,10 @@ import { useEffect } from "react";
 import { animate } from "@motionone/dom";
 
 /**
- * Generic fade-up on in-view hook using Motion One + IntersectionObserver.
+ * Generic fade-up hook using Motion One + IntersectionObserver.
+ *
+ * Runs when elements ENTER the viewport (in view), not immediately on page load
+ * if they are below the fold. Each element animates once on first entry.
  *
  * @param {string} selector - CSS selector for elements to animate.
  * @param {Object} options
@@ -46,31 +49,30 @@ const useInViewFade = (
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+
           const target = /** @type {HTMLElement} */ (entry.target);
 
-          if (entry.isIntersecting) {
-            const index = staggerField
-              ? Number(target.dataset && target.dataset[staggerField] || 0)
-              : 0;
+          const index = staggerField
+            ? Number((target.dataset && target.dataset[staggerField]) || 0)
+            : 0;
 
-            // Reset before each enter so it can re‑animate
-            target.style.opacity = "0";
-            target.style.transform = `translateY(${offset}px)`;
+          // Ensure initial state before animating
+          target.style.opacity = "0";
+          target.style.transform = `translateY(${offset}px)`;
 
-            animate(
-              target,
-              { opacity: 1, transform: "translateY(0px)" },
-              {
-                duration,
-                easing,
-                delay: index * staggerStep,
-              }
-            );
-          } else {
-            // Prepare for next time it comes into view
-            target.style.opacity = "0";
-            target.style.transform = `translateY(${offset}px)`;
-          }
+          animate(
+            target,
+            { opacity: 1, transform: "translateY(0px)" },
+            {
+              duration,
+              easing,
+              delay: index * staggerStep,
+            }
+          );
+
+          // Animate only once per element: stop observing after first trigger
+          observer.unobserve(target);
         });
       },
       {
