@@ -157,9 +157,10 @@
 .specialityImageWrap{flex:0 0 150px;border-radius:10px;overflow:hidden}
 .specialityImage{width:100%;height:auto;object-fit:cover;border-radius:10px}
 .specialityContent{flex:1;display:flex;flex-direction:column;justify-content:center;padding:30px 60px 30px 0;position:relative}
-.specialityContent h4{font-size:26px;color:#fff;margin:0;flex-shrink:0;padding-bottom:5px;transition:transform .4s ease,opacity .4s ease}
-.specialityContent p{font-size:18px;line-height:1.5em;color:#fff;position:relative;max-height:0;opacity:0;overflow:hidden;margin-top:0;transform:translateY(10px);transition:max-height .5s cubic-bezier(0.25,1,0.5,1),opacity .5s ease,transform .5s ease}
-.specialityCard:hover .specialityContent p{max-height:300px;opacity:1;transform:translateY(0)}
+.specialityContent h4{font-size:26px;color:#fff;margin:0;flex-shrink:0;padding-bottom:5px;opacity:1;transform:translateY(0);transition:transform .55s cubic-bezier(0.25,1,0.5,1),opacity .55s ease}
+.specialityContent p{font-size:18px;line-height:1.5em;color:#fff;opacity:0;transform:translateY(14px);max-height:0;overflow:hidden;padding-top:0;transition:opacity .55s cubic-bezier(0.25,1,0.5,1),transform .55s cubic-bezier(0.25,1,0.5,1),max-height .55s cubic-bezier(0.25,1,0.5,1),padding-top .55s cubic-bezier(0.25,1,0.5,1)}
+.specialityCard:hover .specialityContent h4{transform:translateY(-8px)}
+.specialityCard:hover .specialityContent p{opacity:1;transform:translateY(0);max-height:150px;}
 .ourSpecialitiesBody{position:relative}
 .ourSpecialitiesSliderNav{z-index:10;gap:15px;display:flex;position:absolute;top:-100px;right:0}
 .ourSpecialitiesSliderBtn{width:45px;height:45px;background-image:url(/images/home/left-arrow.svg);background-size:contain;background-repeat:no-repeat;cursor:pointer}
