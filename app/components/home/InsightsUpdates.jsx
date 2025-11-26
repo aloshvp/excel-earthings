@@ -8,18 +8,18 @@ const InsightsUpdates = () => {
 
     // Fade-up for heading (left block)
     useInViewFade(".insightsUpdateHeadLft", {
-        offset: 20,
-        duration: 0.45,
-        easing: "ease-out",
+        offset: 18,
+        duration: 0.7,
+        easing: "ease-in-out",
     });
 
     // Fade-up for each card in the grid with stagger
     useInViewFade(".insightsUpdateGridItem", {
-        offset: 25,
-        duration: 0.6,
-        easing: "ease-out",
+        offset: 22,
+        duration: 0.8,
+        easing: "ease-in-out",
         staggerField: "index",
-        staggerStep: 0.06,
+        staggerStep: 0.04,
     });
 
     return (
