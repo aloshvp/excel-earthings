@@ -4,42 +4,42 @@ export const slidesData = [
         icon: '/images/home/icon-industrial-installations.svg',
         title: 'Industrial Installations',
         content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
-        link: ''
+        link: '/applications-details'
     },
     {
         img: '/images/home/building-installations.jpg',
         icon: '/images/home/icon-building-installations.svg',
         title: 'Building Installations',
         content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
-        link: ''
+        link: '/applications-details'
     },
     {
         img: '/images/home/sensitive-applications.jpg',
         icon: '/images/home/icon-sensitive-applications.svg',
         title: 'Sensitive Applications',
         content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
-        link: ''
+        link: '/applications-details'
     },
     {
         img: '/images/home/industrial-installations.jpg',
         icon: '/images/home/icon-industrial-installations.svg',
         title: 'Industrial Installations',
         content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
-        link: ''
+        link: '/applications-details'
     },
     {
         img: '/images/home/building-installations.jpg',
         icon: '/images/home/icon-building-installations.svg',
         title: 'Building Installations',
         content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
-        link: ''
+        link: '/applications-details'
     },
     {
         img: '/images/home/sensitive-applications.jpg',
         icon: '/images/home/icon-sensitive-applications.svg',
         title: 'Sensitive Applications',
         content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
-        link: ''
+        link: '/applications-details'
     },
 ];
 
@@ -333,7 +333,7 @@ export const insightsData = [
         date: 'Sep  20, 2025',
         title: 'Safer Homes: A Simple Guide to Earthing, Surges & Lightning',
         description: 'Easy tips to reduce shocks, protect appliances, and stay prepared for storms. Power cuts, tiny shocks from taps or appliances, bulbs blowing often, or ',
-        link: ''
+        link: '/insights-and-updates-details'
     },
     {
         id: 2,
@@ -341,7 +341,7 @@ export const insightsData = [
         date: 'Sep  20, 2025',
         title: 'Safer Homes: A Simple Guide to Earthing, Surges & Lightning',
         description: 'Easy tips to reduce shocks, protect appliances, and stay prepared for storms. Power cuts, tiny shocks from taps or appliances, bulbs blowing often, or ',
-        link: ''
+        link: '/insights-and-updates-details'
     },
     {
         id: 3,
@@ -349,7 +349,7 @@ export const insightsData = [
         date: 'Sep  20, 2025',
         title: 'Safer Homes: A Simple Guide to Earthing, Surges & Lightning',
         description: 'Easy tips to reduce shocks, protect appliances, and stay prepared for storms. Power cuts, tiny shocks from taps or appliances, bulbs blowing often, or ',
-        link: ''
+        link: '/insights-and-updates-details'
     },
     {
         id: 4,
@@ -357,7 +357,7 @@ export const insightsData = [
         date: 'Sep  20, 2025',
         title: 'Safer Homes: A Simple Guide to Earthing, Surges & Lightning',
         description: 'Easy tips to reduce shocks, protect appliances, and stay prepared for storms. Power cuts, tiny shocks from taps or appliances, bulbs blowing often, or ',
-        link: ''
+        link: '/insights-and-updates-details'
     },
     {
         id: 5,
@@ -365,7 +365,7 @@ export const insightsData = [
         date: 'Sep  20, 2025',
         title: 'Safer Homes: A Simple Guide to Earthing, Surges & Lightning',
         description: 'Easy tips to reduce shocks, protect appliances, and stay prepared for storms. Power cuts, tiny shocks from taps or appliances, bulbs blowing often, or ',
-        link: ''
+        link: '/insights-and-updates-details'
     },
     {
         id: 6,
@@ -373,7 +373,7 @@ export const insightsData = [
         date: 'Sep  20, 2025',
         title: 'Safer Homes: A Simple Guide to Earthing, Surges & Lightning',
         description: 'Easy tips to reduce shocks, protect appliances, and stay prepared for storms. Power cuts, tiny shocks from taps or appliances, bulbs blowing often, or ',
-        link: ''
+        link: '/insights-and-updates-details'
     },
 ];
 
