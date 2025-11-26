@@ -68,7 +68,7 @@ const OurSpecialities = () => {
 
                                                     <div className="specialityContent">
                                                         <h4>{item.title}</h4>
-                                                        {/* <p>{item.description}</p> */}
+                                                        <p>{item.description}</p>
                                                     </div>
                                                 </div>
 

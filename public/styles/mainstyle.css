@@ -156,10 +156,10 @@
 .specialityCard:hover{background:rgba(0,0,0,0.75)}
 .specialityImageWrap{flex:0 0 150px;border-radius:10px;overflow:hidden}
 .specialityImage{width:100%;height:auto;object-fit:cover;border-radius:10px}
-.specialityContent{flex:1;display:flex;flex-direction:column;position:relative;padding:30px 60px 30px 0;justify-content:center}
-.specialityContent h4{font-size:26px;color:#fff;margin:0}
-.specialityContent p{font-size:18px;line-height:1.5em;color:#fff;margin:8px 30px 0 0;opacity:0;transform:translateY(10px);pointer-events:none;transition:opacity .4s ease,transform .4s ease;position:absolute;top:35%}
-.specialityCard:hover .specialityContent p{opacity:1;transform:translateY(0);pointer-events:auto}
+.specialityContent{flex:1;display:flex;flex-direction:column;justify-content:center;padding:30px 60px 30px 0;position:relative}
+.specialityContent h4{font-size:26px;color:#fff;margin:0;flex-shrink:0;padding-bottom:5px;transition:transform .4s ease,opacity .4s ease}
+.specialityContent p{font-size:18px;line-height:1.5em;color:#fff;position:relative;max-height:0;opacity:0;overflow:hidden;margin-top:0;transform:translateY(10px);transition:max-height .5s cubic-bezier(0.25,1,0.5,1),opacity .5s ease,transform .5s ease}
+.specialityCard:hover .specialityContent p{max-height:300px;opacity:1;transform:translateY(0)}
 .ourSpecialitiesBody{position:relative}
 .ourSpecialitiesSliderNav{z-index:10;gap:15px;display:flex;position:absolute;top:-100px;right:0}
 .ourSpecialitiesSliderBtn{width:45px;height:45px;background-image:url(/images/home/left-arrow.svg);background-size:contain;background-repeat:no-repeat;cursor:pointer}
