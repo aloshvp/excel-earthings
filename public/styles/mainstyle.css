@@ -137,8 +137,12 @@
 .insightsUpdatesWrap{padding:100px 0 220px;background:#ececec;position:relative;border-radius:var(--border-home);margin-top:-100px;z-index:1}
 .insightsUpdateHead{display:flex;justify-content:space-between}
 .insightsUpdateGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;margin:45px 0 0}
-.insightsUpdateGridItem{border-bottom:1px solid #c4c4c4;padding-bottom:22px}
-.insightsUpdateGridItem img{width:100%;border-radius:20px;object-fit:cover}
+.insightsUpdateGridItem{border-bottom:1px solid #c4c4c4;padding-bottom:22px;position:relative}
+.insightsUpdateGridItem::before{content:'';position:absolute;bottom:-1px;left:0;width:0;height:2px;background:var(--blue);transition:width 0.8s cubic-bezier(0.23, 1, 0.320, 1)}
+.insightsUpdateGridItem:hover::before{width:100%}
+.insightsUpdateGridItem img{width:100%;border-radius:20px;object-fit:cover;transition:transform 0.7s cubic-bezier(0.23, 1, 0.320, 1)!important}
+.insightsImgWrap{border-radius:20px;overflow:hidden}
+.insightsUpdateGridItem:hover .insightsImgWrap img{transform:scale(1.03)}
 .insightsUpdateGridItem span{display:block;font-size:16px;color:#666666;margin:40px 0 20px}
 .insightsUpdateGridItem h4{font-size:26px;margin:0;color:#333333;font-family:var(--bold)}
 .insightsUpdateGridItem p{font-size:18px;line-height:1.5em;color:#111111;margin:25px 0 50px}

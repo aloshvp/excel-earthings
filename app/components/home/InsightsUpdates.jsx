@@ -8,18 +8,18 @@ const InsightsUpdates = () => {
 
     // Fade-up for heading (left block)
     useInViewFade(".insightsUpdateHeadLft", {
-        offset: 20,
-        duration: 0.45,
-        easing: "ease-out",
+        offset: 18,
+        duration: 0.7,
+        easing: "ease-in-out",
     });
 
     // Fade-up for each card in the grid with stagger
     useInViewFade(".insightsUpdateGridItem", {
-        offset: 25,
-        duration: 0.6,
-        easing: "ease-out",
+        offset: 22,
+        duration: 0.8,
+        easing: "ease-in-out",
         staggerField: "index",
-        staggerStep: 0.06,
+        staggerStep: 0.04,
     });
 
     return (
@@ -40,20 +40,22 @@ const InsightsUpdates = () => {
 
                 <div className="insightsUpdateBody">
                     <div className="insightsUpdateGrid">
-                        {insightsData?.slice(0,4)?.map((item, index) => (
+                        {insightsData?.slice(0, 4)?.map((item, index) => (
                             <div
                                 key={item.id}
                                 className="insightsUpdateGridItem"
                                 data-index={index}
                                 style={{ opacity: 0, transform: "translateY(25px)" }}
                             >
-                                <Image
-                                    src={item.image}
-                                    alt={item.title}
-                                    width={400}
-                                    height={250}
-                                    className="rounded-lg"
-                                />
+                                <div className="insightsImgWrap">
+                                    <Image
+                                        src={item.image}
+                                        alt={item.title}
+                                        width={400}
+                                        height={250}
+                                        className="rounded-lg"
+                                    />
+                                </div>
                                 <span>{item.date}</span>
                                 <h4>{item.title}</h4>
                                 <p>{item.description}</p>
