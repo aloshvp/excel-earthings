@@ -414,7 +414,7 @@ export const specialitiesSlides = [
                 description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text"
             },
             {
-                image: "/images/home/icon-resistance-to-corrosion.png",
+                image: "/images/home/icon-resistance-to-corrosion-new.png",
                 title: "Resistance to Corrosion",
                 description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text"
             },
@@ -456,7 +456,7 @@ export const specialitiesSlides = [
                 description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text"
             },
             {
-                image: "/images/home/icon-resistance-to-corrosion.png",
+                image: "/images/home/icon-resistance-to-corrosion-new.png",
                 title: "Resistance to Corrosion",
                 description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text"
             },
