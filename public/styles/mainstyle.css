@@ -24,8 +24,16 @@
 .bannerContentLft>h1>em{display:block}
 .bannerContentLft>p{font-size:20px;line-height:1.5em;padding-top:30px;max-width:455px}
 .bannerGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-.bannerGridItem{border-radius:10px;background:#22345a;padding:30px 25px;min-width:100%;transition:background .35s ease, transform .9s cubic-bezier(.16,1,.29,1), box-shadow .9s cubic-bezier(.16,1,.29,1), filter .85s cubic-bezier(.16,1,.29,1);will-change:transform,box-shadow,filter;backface-visibility:hidden;transform-origin:center;transform:translateZ(0)}
-.bannerGridItem:hover{background:#1C3363;transform:translateY(-1px) scale(1.05) translateZ(0);box-shadow:0 56px 112px rgba(0,0,0,0.34);filter:brightness(1.06)}
+
+/* card container */
+.bannerGridItem{position:relative;border-radius:10px;padding:30px 25px;min-width:100%;overflow:visible}
+/* background layer to animate independently from text to avoid font flicker */
+.bannerGridItem::before{content:"";position:absolute;inset:0;border-radius:10px;background:#22345a;z-index:0;transition:transform .9s cubic-bezier(.16,1,.29,1),box-shadow .9s cubic-bezier(.16,1,.29,1),filter .85s cubic-bezier(.16,1,.29,1),background .35s ease;will-change:transform,box-shadow,filter;transform-origin:center;transform:translateZ(0)}
+/* ensure textual content stays above the animated layer so it doesn't get scaled */
+.bannerGridItem > *{position:relative;z-index:2}
+
+/* animate the layer on hover instead of the text container to prevent text aliasing/flicker */
+.bannerGridItem:hover::before{background:#1C3363;transform:translateY(-6px) scale(1.03);box-shadow:0 56px 112px rgba(0,0,0,0.34);filter:brightness(1.06)}
 .bannerGridItem>em{display:block;color:#808eab;font-style:normal;font-size:30px;line-height:1em;padding-bottom:15px;border-bottom:1px solid #435782;font-family:var(--light)}
 .bannerGridItem>h2{padding:40px 0 15px;font-family:var(--medium);line-height:1.2em}
 .bannerGridItem>h2>em{display:block}
