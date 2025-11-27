@@ -388,12 +388,12 @@ export const specialitiesSlides = [
                 description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text"
             },
             {
-                image: "/images/home/nickel-sealing.jpg",
+                image: "/images/home/pressed-contacts.jpg",
                 title: "Pressed Contacts",
                 description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text"
             },
             {
-                image: "/images/home/nickel-sealing.jpg",
+                image: "/images/home/tinned-terminals.jpg",
                 title: "Tinned Terminals",
                 description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text"
             },
@@ -406,17 +406,17 @@ export const specialitiesSlides = [
             {
                 image: "/images/home/icon-iec-certified.png",
                 title: "IEC 62561-7:2018 Tested & Certified",
-                // description: "High-definition surveillance and analytics."
+                description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text"
             },
             {
                 image: "/images/home/icon-eco-friendly.png",
                 title: "Eco-Friendly",
-                // description: "Seamless, secure entry management systems."
+                description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text"
             },
             {
                 image: "/images/home/icon-resistance-to-corrosion.png",
                 title: "Resistance to Corrosion",
-                // description: "Instant alerts for maximum safety."
+                description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text"
             },
         ],
     },
@@ -430,12 +430,12 @@ export const specialitiesSlides = [
                 description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text"
             },
             {
-                image: "/images/home/nickel-sealing.jpg",
+                image: "/images/home/pressed-contacts.jpg",
                 title: "Pressed Contacts",
                 description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text"
             },
             {
-                image: "/images/home/nickel-sealing.jpg",
+                image: "/images/home/tinned-terminals.jpg",
                 title: "Tinned Terminals",
                 description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text"
             },
@@ -446,19 +446,19 @@ export const specialitiesSlides = [
         bg: "/images/home/bg-earth-enhancing-compound.jpg",
         items: [
             {
-                image: "/images/home/nickel-sealing.jpg",
+                image: "/images/home/icon-iec-certified.png",
                 title: "IEC 62561-7:2018 Tested & Certified",
-                // description: "High-definition surveillance and analytics."
+                description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text"
             },
             {
-                image: "/images/home/nickel-sealing.jpg",
+                image: "/images/home/icon-eco-friendly.png",
                 title: "Eco-Friendly",
-                // description: "Seamless, secure entry management systems."
+                description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text"
             },
             {
-                image: "/images/home/nickel-sealing.jpg",
+                image: "/images/home/icon-resistance-to-corrosion.png",
                 title: "Resistance to Corrosion",
-                // description: "Instant alerts for maximum safety."
+                description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text"
             },
         ],
     },
