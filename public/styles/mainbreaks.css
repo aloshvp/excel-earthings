@@ -183,7 +183,7 @@
     .insightsUpdateGridItem span{margin:25px 0 10px}
     .insightsUpdateGridItem p{color:#111;margin:15px 0 20px;font-size:16px}
         
-    .eventsWrap{padding:60px 0 220px}
+    .eventsWrap{padding:60px 0}
     .eventsBodyLft{justify-content:center}
     /* .eventSliderWrap{max-width:100%} */
     .eventItem{flex-direction:column}
