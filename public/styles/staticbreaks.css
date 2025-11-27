@@ -86,13 +86,11 @@
 
 @media screen and (min-width: 1600px) {
 
-    .productsMainItem {
+    /* .productsMainItem {
         top: 100px;
-    }
+    } */
 
-    .productsMainItemBg {
-        height: calc(100vh - 100px);
-    }
+    /* .productsMainItemBg {height: calc(100vh - 100px);} */
 
     /*about-us*/
     .aboutUsUniqueWrap,

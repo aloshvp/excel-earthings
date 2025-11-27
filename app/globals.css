@@ -16,7 +16,8 @@ select:focus,select:active,select:focus-visible{outline:none;box-shadow:none}
 .staticWrapper.paddngTop{padding:80px 0 0}
 
 /*header*/
-.headerWrap{position:fixed;top:0;left:0;z-index:1000;display:flex;justify-content:space-between;align-items:center;padding:20px 60px;width:100%;transition:all .6s cubic-bezier(0.25,0.8,0.25,1);background:transparent;will-change:padding,background,box-shadow;gap:25px}
+/* .headerWrap{position:fixed;top:0;left:0;z-index:1000;display:flex;justify-content:space-between;align-items:center;padding:20px 60px;width:100%;transition:all .6s cubic-bezier(0.25,0.8,0.25,1);background:transparent;will-change:padding,background,box-shadow;gap:25px} */
+.headerWrap { position: fixed; top: 0; left: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; padding: 20px 60px; width: 100%; transition: all .6s cubic-bezier(0.25, 0.8, 0.25, 1); background: linear-gradient( to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) ); will-change: padding, background, box-shadow; gap: 25px; }
 .headerWrap.scrolled{background:#333;backdrop-filter:blur(8px);padding:10px 40px;box-shadow:0 4px 12px rgba(0,0,0,0.3)}
 .headerLogoSec>a{cursor:default}
 .headerLogoSec img{transition:all .6s cubic-bezier(0.25,0.8,0.25,1);will-change:width,height;width:300px}
@@ -105,17 +106,17 @@ select:focus,select:active,select:focus-visible{outline:none;box-shadow:none}
 
 
 @media screen and (min-width: 1800px) {
-  .staticWrapper.paddngTop{padding:100px 0 0!important}
+  /* .staticWrapper.paddngTop{padding:100px 0 0!important} */
   .headerLogoSec img{width:620px!important;height:auto!important}
   .headerRghtSec{gap:60px}
   .headerBadgeSec img{width:100px}
 }
 
 @media screen and (min-width: 1600px) {
-  .staticWrapper.paddngTop{padding:100px 0 0}
+  /* .staticWrapper.paddngTop{padding:100px 0 0} */
   .headerLogoSec img{width:480px!important;height:auto!important}
   .headerWrap.scrolled .headerLogoSec img{width:380px!important}
-  .headerWrap.scrolled .headerBadgeSec img{width:80px!important;height:80px!important}
+  /* .headerWrap.scrolled .headerBadgeSec img{width:80px!important;height:80px!important} */
 }
 
 @media screen and (min-width: 1440px) {
