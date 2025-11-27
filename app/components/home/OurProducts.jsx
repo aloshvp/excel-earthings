@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, EffectFade } from "swiper/modules";
+import { Navigation, EffectFade, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
@@ -37,7 +37,7 @@ const OurProducts = () => {
                 </div>
 
                 <Swiper
-                    modules={[Navigation, EffectFade]}
+                    modules={[Navigation, EffectFade,Autoplay]}
                     effect="fade"
                     slidesPerView={1}
                     loop
@@ -47,6 +47,10 @@ const OurProducts = () => {
                         nextEl: nextRef.current,
                     }}
                     allowTouchMove={false}
+                    autoplay={{
+                        delay: 2000,
+                        disableOnInteraction: false,
+                    }}
                     onBeforeInit={(swiper) => {
                         swiper.params.navigation.prevEl = prevRef.current;
                         swiper.params.navigation.nextEl = nextRef.current;
