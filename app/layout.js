@@ -12,6 +12,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* Preload banner video and poster to start fetching early */}
+        <link rel="preload" href="/videos/BANNER-VIDEO.webm" as="video" type="video/webm" crossOrigin="anonymous" />
+        {/* <link rel="preload" href="/videos/BANNER-VIDEO.mp4" as="video" type="video/mp4" crossOrigin="anonymous" /> */}
+        <link rel="preload" href="/images/home/banner-home-bg.jpg" as="image" />
+      </head>
       <body>
         <ClientLayoutWrapper>{children}</ClientLayoutWrapper>
       </body>
