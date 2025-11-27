@@ -93,13 +93,13 @@
     /* .productsMainItemBg {height: calc(100vh - 100px);} */
 
     /*about-us*/
-    .aboutUsUniqueWrap,
+    /* .aboutUsUniqueWrap,
     .aboutUsGlanceWrap,
     .aboutUsMilestonesWrap,
     .aboutUsMissionWrap,
     .aboutUsCeoWrap {
         top: 100px;
-    }
+    } */
 
 
     .aboutUsBannerContentLft>p {
