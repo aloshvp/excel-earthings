@@ -1,14 +1,18 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
+import useWindowSize from "@functions/useWindowSize";
 
 const Banner = () => {
     const [videoLoaded, setVideoLoaded] = useState(false);
     const [showPlayButton, setShowPlayButton] = useState(false);
     const videoRef = useRef(null);
+    const windowSize = useWindowSize();
+    const showVideo = windowSize.width === undefined ? true : windowSize.width >= 992;
 
     // helper to attempt playing the video and handle autoplay prevention
     const tryPlayVideo = async () => {
+        if (!showVideo) return;
         const v = videoRef.current;
         if (!v) return;
         try {
@@ -30,20 +34,24 @@ const Banner = () => {
 
     // If the video element mounts, try to play it once ready (in case canplay fired before handlers)
     useEffect(() => {
+        if (!showVideo) return;
         if (videoRef.current) {
             // small timeout to let browser settle
             const t = setTimeout(() => tryPlayVideo(), 200);
             return () => clearTimeout(t);
         }
-    }, []);
+    }, [showVideo]);
+
+    // showVideo is derived from `useWindowSize` above
 
     return (
         <section className="bannerWrap">
             {/* Background video with image fallback while loading */}
-            <div className={`bannerBg ${!videoLoaded ? 'blurred' : ''}`} style={{ position: "relative", overflow: "hidden" }}>
+            <div className={`bannerBg ${!videoLoaded && showVideo ? 'blurred' : ''}`} style={{ position: "relative", overflow: "hidden" }}>
+                {showVideo && (
                 <video
                     className={`bannerVideo ${videoLoaded ? 'ready' : ''}`}
-                    poster="/images/home/banner-home-bg.jpg"
+                    poster="/images/home/BANNER-VIDEO-New.png"
                     autoPlay
                     muted
                     loop
@@ -60,14 +68,15 @@ const Banner = () => {
                     }}
                 >
                     {/* Prefer WebM for smaller size on supported browsers, fallback to MP4 */}
-                    <source src="/videos/BANNER-VIDEO.webm" type="video/webm" />
+                    <source src="/videos/BANNER-VIDEO-NEW.webm" type="video/webm" />
                     {/* <source src="/videos/BANNER-VIDEO.mp4" type="video/mp4" /> */}
                     Your browser does not support the video tag.
                 </video>
+                )}
 
                 {/* Show optimized Next/Image as a fallback/poster until video is ready */}
                 <Image
-                    src="/images/home/banner-home-bg.jpg"
+                    src="/images/home/BANNER-VIDEO-New.png"
                     alt="Banner Background"
                     fill
                     priority
@@ -76,7 +85,7 @@ const Banner = () => {
 
                 <div className="bannerOverlay"></div>
 
-                {showPlayButton && (
+                {showPlayButton && showVideo && (
                     <button
                         aria-label="Play background video"
                         onClick={async () => {

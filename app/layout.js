@@ -14,9 +14,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* Preload banner video and poster to start fetching early */}
-        <link rel="preload" href="/videos/BANNER-VIDEO.webm" as="video" type="video/webm" crossOrigin="anonymous" />
+        <link rel="preload" href="/videos/BANNER-VIDEO-NEW.webm" as="video" type="video/webm" crossOrigin="anonymous" />
         {/* <link rel="preload" href="/videos/BANNER-VIDEO.mp4" as="video" type="video/mp4" crossOrigin="anonymous" /> */}
-        <link rel="preload" href="/images/home/banner-home-bg.jpg" as="image" />
+        <link rel="preload" href="/images/home/BANNER-VIDEO-New.png" as="image" />
       </head>
       <body>
         <ClientLayoutWrapper>{children}</ClientLayoutWrapper>
