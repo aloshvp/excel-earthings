@@ -17,14 +17,14 @@ const Events = () => {
 
                 <div className="eventsBody">
 
-                    <div className="eventsBodyLft">
+                    <div className="eventsBodyLft" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                         <h2 className="homeCmnHead">Meet Excel in <em></em>Your City</h2>
                     </div>
 
                     {/* Slider navigation */}
-                    <div className="eventsSliderNav">
-                        <div ref={prevRef} className="eventNavBtn eventsPrevBtn"></div>
-                        <div ref={nextRef} className="eventNavBtn eventsNextBtn"></div>
+                    <div className="eventsSliderNav" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" data-aos-easing="ease-out-cubic" data-aos-offset="50">
+                        <div ref={prevRef} className="eventNavBtn eventsPrevBtn" data-aos="fade-down" data-aos-duration="600" data-aos-delay="500" data-aos-easing="ease-out-cubic" data-aos-offset="50"></div>
+                        <div ref={nextRef} className="eventNavBtn eventsNextBtn" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500" data-aos-easing="ease-out-cubic" data-aos-offset="50"></div>
                     </div>
 
 
@@ -43,10 +43,10 @@ const Events = () => {
                         }}
                         className="eventSliderWrap"
                     >
-                        {eventsData?.map((event) => (
+                        {eventsData?.map((event, index) => (
                             <SwiperSlide key={event.id}>
-                                <div className="eventItem">
-                                    <div className="eventImg">
+                                <div className="eventItem" data-aos="fade-up" data-aos-delay={index * 150 + 600} data-aos-duration="700" data-aos-easing="ease-out-cubic" data-aos-offset="50">
+                                    <div className="eventImg" data-aos="fade-up" data-aos-delay={index * 150 + 650} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                                         <Image
                                             src={event.image}
                                             alt={event.title}
@@ -56,9 +56,9 @@ const Events = () => {
                                         />
                                     </div>
                                     <div className="eventInfo">
-                                        <h3>{event.title}</h3>
+                                        <h3 data-aos="fade-up" data-aos-delay={index * 150 + 750} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">{event.title}</h3>
 
-                                        <span><Image
+                                        <span data-aos="fade-up" data-aos-delay={index * 150 + 800} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50"><Image
                                             src="/images/home/icon-calendar.svg"
                                             width={25}
                                             height={25}
@@ -68,7 +68,7 @@ const Events = () => {
                                             {event.date}
                                         </span>
 
-                                        <span><Image
+                                        <span data-aos="fade-up" data-aos-delay={index * 150 + 850} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50"><Image
                                             src="/images/home/icon-time.svg"
                                             width={25}
                                             height={25}
@@ -78,7 +78,7 @@ const Events = () => {
                                             {event.time}
                                         </span>
 
-                                        <span><Image
+                                        <span data-aos="fade-up" data-aos-delay={index * 150 + 900} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50"><Image
                                             src="/images/home/icon-location.svg"
                                             width={25}
                                             height={25}
@@ -88,7 +88,7 @@ const Events = () => {
                                             {event.location}
                                         </span>
 
-                                        <p>{event.description}</p>
+                                        <p data-aos="fade-up" data-aos-delay={index * 150 + 950} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">{event.description}</p>
                                     </div>
                                 </div>
                             </SwiperSlide>

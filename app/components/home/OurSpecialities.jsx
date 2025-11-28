@@ -15,16 +15,16 @@ const OurSpecialities = () => {
     return (
         <section className="ourSpecialitiesWrap">
             <div className="container">
-                <div className="ourSpecialitiesHead">
+                <div className="ourSpecialitiesHead" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                     <h4 className="homeCmnSubHead">Specialities</h4>
                     <h2 className="homeCmnHead">Our Specialities</h2>
                 </div>
 
                 <div className="ourSpecialitiesBody">
                     {/* Navigation Buttons */}
-                    <div className="ourSpecialitiesSliderNav">
-                        <div ref={prevRef} className="ourSpecialitiesSliderBtn ourSpecialitiesPrevBtn"></div>
-                        <div ref={nextRef} className="ourSpecialitiesSliderBtn ourSpecialitiesNextBtn"></div>
+                    <div className="ourSpecialitiesSliderNav" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" data-aos-easing="ease-out-cubic" data-aos-offset="50">
+                        <div ref={prevRef} className="ourSpecialitiesSliderBtn ourSpecialitiesPrevBtn" data-aos="fade-down" data-aos-duration="600" data-aos-delay="500" data-aos-easing="ease-out-cubic" data-aos-offset="50"></div>
+                        <div ref={nextRef} className="ourSpecialitiesSliderBtn ourSpecialitiesNextBtn" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500" data-aos-easing="ease-out-cubic" data-aos-offset="50"></div>
                     </div>
 
                     {/* Swiper Slider */}
@@ -45,7 +45,7 @@ const OurSpecialities = () => {
                     >
                         {specialitiesSlides.map((slide, i) => (
                             <SwiperSlide key={i}>
-                                <div className='specialitySlideWrap'>
+                                <div className='specialitySlideWrap' data-aos="fade-up" data-aos-delay={i * 200 + 600} data-aos-duration="800" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                                     <div
                                         className="specialitySlide"
                                         style={{
@@ -55,7 +55,7 @@ const OurSpecialities = () => {
                                         <div className="specialityOverlay"></div>
                                         <div className="specialityItems">
                                             {slide.items.map((item, index) => (
-                                                <div className="specialityCard" key={index}>
+                                                <div className="specialityCard" key={index} data-aos="fade-up" data-aos-delay={i * 200 + 700 + index * 100} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                                                     <div className="specialityImageWrap">
                                                         <Image
                                                             src={item.image}
@@ -75,7 +75,7 @@ const OurSpecialities = () => {
                                             ))}
                                         </div>
                                     </div>
-                                    <h3 className="specialitySlideTitle">{slide.title}</h3>
+                                    <h3 className="specialitySlideTitle" data-aos="fade-up" data-aos-delay={i * 200 + 800} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">{slide.title}</h3>
                                 </div>
                             </SwiperSlide>
                         ))}

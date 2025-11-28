@@ -2,25 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { insightsData } from "@utils/homeData";
-import useInViewFade from "@functions/useInViewFade";
 
 const InsightsUpdates = () => {
-
-    // Fade-up for heading (left block)
-    useInViewFade(".insightsUpdateHeadLft", {
-        offset: 18,
-        duration: 0.7,
-        easing: "ease-in-out",
-    });
-
-    // Fade-up for each card in the grid with stagger
-    useInViewFade(".insightsUpdateGridItem", {
-        offset: 22,
-        duration: 0.8,
-        easing: "ease-in-out",
-        staggerField: "index",
-        staggerStep: 0.04,
-    });
 
     return (
         <div className='insightsUpdatesWrap'>
@@ -28,12 +11,12 @@ const InsightsUpdates = () => {
                 <div className="insightsUpdateHead">
                     <div
                         className="insightsUpdateHeadLft"
-                        style={{ opacity: 0, transform: "translateY(20px)" }}
+                        data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-easing="ease-out-cubic" data-aos-offset="50"
                     >
                         <h4 className="homeCmnSubHead">Insights & Updates</h4>
                         <h2 className="homeCmnHead">Insights & Updates</h2>
                     </div>
-                    <div className="insightsUpdateHeadRght">
+                    <div className="insightsUpdateHeadRght" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                         <Link href="/insights-and-updates" className='exploreMoreBtn'>Explore More <span className="arrow"></span></Link>
                     </div>
                 </div>
@@ -44,8 +27,7 @@ const InsightsUpdates = () => {
                             <div
                                 key={item.id}
                                 className="insightsUpdateGridItem"
-                                data-index={index}
-                                style={{ opacity: 0, transform: "translateY(25px)" }}
+                                data-aos="fade-up" data-aos-delay={index * 100 + 500} data-aos-duration="700" data-aos-easing="ease-out-cubic" data-aos-offset="50"
                             >
                                 <div className="insightsImgWrap">
                                     <Image

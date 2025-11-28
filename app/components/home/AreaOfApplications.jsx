@@ -7,18 +7,13 @@ import { Navigation } from 'swiper/modules';
 import Link from 'next/link';
 import Image from 'next/image';
 import { slidesData } from '@utils/homeData';
-import useInViewFade from '@functions/useInViewFade';
 
 const SlideItem = ({ slide, index }) => {
     const [isLoaded, setIsLoaded] = useState(false);
 
     return (
-        <div
-            className="slideSec areaOfApplicationsSlideItem"
-            data-id={index}
-            style={{ opacity: 0 }}
-        >
-            <div className="slideImg">
+        <div className="slideSec areaOfApplicationsSlideItem">
+            <div className="slideImg" data-aos="fade-up" data-aos-delay={index * 100} data-aos-duration="800" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                 <Image
                     src={slide.img}
                     width={800}
@@ -34,11 +29,11 @@ const SlideItem = ({ slide, index }) => {
                     }}
                 />
             </div>
-            <div className="slideTitle">
+            <div className="slideTitle" data-aos="fade-up" data-aos-delay={index * 100 + 100} data-aos-duration="800" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                 <Image src={slide.icon} width={70} height={70} alt={slide.title} />
                 <h3>{slide.title}</h3>
             </div>
-            <div className="slideContent">
+            <div className="slideContent" data-aos="fade-up" data-aos-delay={index * 100 + 200} data-aos-duration="800" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                 <p>{slide.content}</p>
                 <Link href={slide.link}>Learn More</Link>
             </div>
@@ -50,34 +45,25 @@ const AreaOfApplications = () => {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
 
-    // Animate slide items on view using shared hook
-    useInViewFade(".areaOfApplicationsSlideItem", {
-        offset: 50,
-        duration: 0.8,
-        easing: "ease-out",
-        staggerField: "id",      // uses data-id from SlideItem
-        staggerStep: 0.1,
-    });
-
     return (
         <section className="areaOfApplicationsWrap">
             <div className="container">
                 <div className="areaOfApplicationsHead">
-                    <div className="areaOfApplicationsHeadTitle">
+                    <div className="areaOfApplicationsHeadTitle" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                         <h4 className="homeCmnSubHead">Areas of Use</h4>
                         <h2 className="homeCmnHead">Applications</h2>
                     </div>
-                    <div className="areaOfApplicationsHeadBtn">
+                    <div className="areaOfApplicationsHeadBtn" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                         <Link href="/applications" className='exploreMoreBtn'>Explore More <span className="arrow"></span></Link>
                     </div>
                 </div>
 
-                <div className="areaOfApplicationsSlider">
+                <div className="areaOfApplicationsSlider" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
 
                     {/* Custom Nav Buttons */}
-                    <div className="areaOfApplicationsSliderNav">
-                        <div ref={prevRef} className="areaOfApplicationsSliderBtn areaOfApplicationsPrevBtn"></div>
-                        <div ref={nextRef} className="areaOfApplicationsSliderBtn areaOfApplicationsNextBtn"></div>
+                    <div className="areaOfApplicationsSliderNav" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                        <div ref={prevRef} className="areaOfApplicationsSliderBtn areaOfApplicationsPrevBtn" data-aos="fade-down" data-aos-duration="600" data-aos-delay="500"></div>
+                        <div ref={nextRef} className="areaOfApplicationsSliderBtn areaOfApplicationsNextBtn" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500"></div>
                     </div>
 
                     {/* Swiper Slider */}
