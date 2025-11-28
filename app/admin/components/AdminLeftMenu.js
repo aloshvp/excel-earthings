@@ -4,7 +4,7 @@ import { logout } from "@lib/auth";
 import { usePathname, useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 
-const AdminLeftMenu = () => {
+const AdminLeftMenu = ({flag}) => {
   const router = useRouter();
   const pathname = usePathname();
   const [activeParentOrder, setActiveParentOrder] = useState(null);
@@ -15,6 +15,9 @@ const AdminLeftMenu = () => {
       name: 'General', href: '', order: "0",
       submenu: [
         { name: 'Order Management', href: 'order-management', order: "0.1" },
+        { name: 'Careers', href: 'careers', order: "0.2" },
+        { name: 'Contact Enquiries', href: 'enquiries', order: "0.2" },
+        { name: 'Dealerships', href: 'dealerships', order: "0.2" },
       ]
     },
     {
@@ -38,6 +41,13 @@ const AdminLeftMenu = () => {
         { name: 'View Category', href: 'view-category', order: "3.1" },
         { name: 'Add Product', href: 'add-product', order: "3.2" },
         { name: 'View Product', href: 'view-product', order: "3.3" } 
+      ]
+    },
+    {
+      name: 'Events', href: "", order: "4",
+      submenu: [
+        { name: 'Add Events', href: 'add-events', order: "4.0" },
+        { name: 'View Events', href: 'view-events', order: "4.1" }
       ]
     }
   ]);
@@ -135,7 +145,7 @@ const AdminLeftMenu = () => {
     //   </div>
     // </>
     <>
-      <aside className="sidebar">
+      <aside className={(flag)?"sidebar open":"sidebar"}>
             <nav className="menu">
               <ul>
                 {AdminMenuData.map((val, index) => (
