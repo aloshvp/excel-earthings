@@ -31,7 +31,7 @@ const CommonBanner = ({ pageName }) => {
         </div>
 
         <div className="commonBannerContent">
-          <h1 dangerouslySetInnerHTML={{ __html: title }} />
+          <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" data-aos-easing="ease-out-cubic" data-aos-offset="50" dangerouslySetInnerHTML={{ __html: title }} />
         </div>
       </div>
     </section>
