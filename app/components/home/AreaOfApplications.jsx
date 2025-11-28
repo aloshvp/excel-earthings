@@ -62,8 +62,8 @@ const AreaOfApplications = () => {
 
                     {/* Custom Nav Buttons */}
                     <div className="areaOfApplicationsSliderNav" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
-                        <div ref={prevRef} className="areaOfApplicationsSliderBtn areaOfApplicationsPrevBtn" data-aos="fade-down" data-aos-duration="600" data-aos-delay="500"></div>
-                        <div ref={nextRef} className="areaOfApplicationsSliderBtn areaOfApplicationsNextBtn" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500"></div>
+                        <div ref={prevRef} className="areaOfApplicationsSliderBtn areaOfApplicationsPrevBtn" data-aos="fade-down" data-aos-duration="600" data-aos-delay="0"></div>
+                        <div ref={nextRef} className="areaOfApplicationsSliderBtn areaOfApplicationsNextBtn" data-aos="fade-up" data-aos-duration="600" data-aos-delay="0"></div>
                     </div>
 
                     {/* Swiper Slider */}

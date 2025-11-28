@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Marquee from 'react-fast-marquee'
 import React, { useEffect } from 'react';
-import { timeline, animate } from "@motionone/dom";
 
 const AtGlance = () => {
 
@@ -11,86 +10,46 @@ const AtGlance = () => {
         const section = document.querySelector(".atGlanceWrap");
         if (!section) return;
 
-        let hasAnimated = false;
-
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
-                    if (!entry.isIntersecting || hasAnimated) return;
-
                     const numberEl = document.querySelector(".atGlanceYearNumber");
-                    const img = document.querySelector(".atGlanceTopContRght em");
                     if (!numberEl) return;
 
-                    hasAnimated = true;
+                    if (entry.isIntersecting) {
+                        // Reset and restart animation when entering view
+                        numberEl.textContent = "0";
 
-                    // Set initial text content to 0
-                    numberEl.textContent = "0";
+                        // -------------------------------
+                        // SMOOTH COUNT-UP (0 → 19)
+                        // -------------------------------
+                        const start = 0;
+                        const end = 19;
+                        const duration = 1400;
+                        let startTime = null;
 
-                    // -------------------------------
-                    // SMOOTH COUNT-UP (0 → 19)
-                    // -------------------------------
-                    const start = 0;
-                    const end = 19;
-                    const duration = 1400;
-                    let startTime = null;
+                        const smoothCount = (timestamp) => {
+                            if (!startTime) startTime = timestamp;
+                            const progress = Math.min((timestamp - startTime) / duration, 1);
 
-                    const smoothCount = (timestamp) => {
-                        if (!startTime) startTime = timestamp;
-                        const progress = Math.min((timestamp - startTime) / duration, 1);
+                            // cubic easing
+                            const eased = 1 - Math.pow(1 - progress, 3);
 
-                        // cubic easing
-                        const eased = 1 - Math.pow(1 - progress, 3);
+                            // use ceil for smoother final increment
+                            const current = Math.ceil(start + (end - start) * eased);
 
-                        // use ceil for smoother final increment
-                        const current = Math.ceil(start + (end - start) * eased);
+                            numberEl.textContent = current;
 
-                        numberEl.textContent = current;
+                            if (progress < 1) {
+                                requestAnimationFrame(smoothCount);
+                            } else {
+                                // make sure final number is exact
+                                numberEl.textContent = end;
+                            }
+                        };
 
-                        if (progress < 1) {
-                            requestAnimationFrame(smoothCount);
-                        } else {
-                            // make sure final number is exact
-                            numberEl.textContent = end;
-                        }
-                    };
-
-                    requestAnimationFrame(smoothCount);
-
-                    // --------------------------------
-                    // MOTION ONE ANIMATION TIMELINE
-                    // --------------------------------
-                    if (img) {
-                        timeline([
-                            [
-                                numberEl,
-                                {
-                                    opacity: [0, 1],
-                                    scale: [0.4, 1.25, 1],
-                                    transform: ["scale(0.4)", "scale(1.25)", "scale(1)"]
-                                },
-                                {
-                                    duration: 1.2,
-                                    easing: "ease-out"
-                                }
-                            ],
-                            [
-                                img,
-                                {
-                                    opacity: [0, 1],
-                                    transform: ["translateY(25px)", "translateY(0)"]
-                                },
-                                {
-                                    duration: 0.9,
-                                    delay: 0.15,
-                                    easing: "ease-out"
-                                }
-                            ]
-                        ]);
+                        requestAnimationFrame(smoothCount);
                     }
-
-                    // Run only once
-                    observer.unobserve(entry.target);
                 });
             },
             {
@@ -127,7 +86,7 @@ const AtGlance = () => {
                         <div className="atGlanceTopContRght">
                             <span
                                 className="atGlanceYearNumber"
-                                style={{ opacity: 0, transform: "scale(0.4)" }}
+                                data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="100" data-aos-easing="ease-out-cubic" data-aos-offset="50"
                             >
                                 {/* Initially empty - will be populated by animation */}
                             </span>
