@@ -48,16 +48,28 @@ const Header = () => {
     <>
       <header className={`headerWrap ${scrolled ? "scrolled" : ""}`}>
         <div className="headerLogoSec">
-          <Link href="">
+          <Link href="/" className="firstLogoLink">
             <Image
-              src="/images/logo.svg"
+              src="/images/logo-excel-earthings.svg"
               alt="Logo"
-              width={620}
-              height={95}
-              className="headerLogo"
+              width={260}
+              height={60}
+              className="headerLogo img"
               priority
             />
           </Link>
+          <Link href="" scroll={false} className="secondLogoLink">
+            <Image
+              src="/images/logo-excel-safepower.svg"
+              alt="Logo"
+              width={260}
+              height={60}
+              className="headerLogo img"
+              priority
+            />
+          </Link>
+
+
         </div>
 
         <div className="headerRghtSec">
@@ -128,7 +140,7 @@ const Header = () => {
               </nav>
             </>
           ) : (
-            
+
             /* Desktop Navigation */
             <nav className="headerNavSec">
               <ul>

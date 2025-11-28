@@ -19,9 +19,14 @@ select:focus,select:active,select:focus-visible{outline:none;box-shadow:none}
 /* .headerWrap{position:fixed;top:0;left:0;z-index:1000;display:flex;justify-content:space-between;align-items:center;padding:20px 60px;width:100%;transition:all .6s cubic-bezier(0.25,0.8,0.25,1);background:transparent;will-change:padding,background,box-shadow;gap:25px} */
 .headerWrap { position: fixed; top: 0; left: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; padding: 20px 60px; width: 100%; transition: all .6s cubic-bezier(0.25, 0.8, 0.25, 1); background: linear-gradient( to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) ); will-change: padding, background, box-shadow; gap: 25px; }
 .headerWrap.scrolled{background:#333;backdrop-filter:blur(8px);padding:10px 40px;box-shadow:0 4px 12px rgba(0,0,0,0.3)}
+.headerLogoSec{display: flex;align-items: center;justify-content: center;}
 .headerLogoSec>a{cursor:default}
-.headerLogoSec img{transition:all .6s cubic-bezier(0.25,0.8,0.25,1);will-change:width,height;width:300px}
-.headerWrap.scrolled .headerLogoSec img{width:300px!important;height:auto!important}
+.headerLogoSec .firstLogoLink{border-right: 1px solid #7B7B7B; padding-right: 20px; margin-right: 20px;cursor: pointer;}
+.secondLogoLink > img{max-width: 200px;}
+.headerLogoSec img{transition:all .6s cubic-bezier(0.25,0.8,0.25,1);will-change:width,height;}
+.headerWrap.scrolled .headerLogoSec img{height:auto!important;width: 180px;}
+.headerWrap.scrolled .headerLogoSec .firstLogoLink{padding-right: 15px; margin-right: 15px;}
+.headerWrap.scrolled .headerLogoSec .secondLogoLink img{max-width: 150px;}
 .headerNavSec>ul{display:flex;gap:20px;align-items:center;list-style:none;margin:0;padding:0}
 .headerNavSec>ul>li{position:relative}
 .headerNavSec>ul>li a{color:#fff;text-decoration:none;font-size:16px;transition:color .4s cubic-bezier(0.25,0.8,0.25,1)}
@@ -107,20 +112,20 @@ select:focus,select:active,select:focus-visible{outline:none;box-shadow:none}
 
 @media screen and (min-width: 1800px) {
   /* .staticWrapper.paddngTop{padding:100px 0 0!important} */
-  .headerLogoSec img{width:620px!important;height:auto!important}
+  /* .headerLogoSec img{width:620px!important;height:auto!important} */
   .headerRghtSec{gap:60px}
   .headerBadgeSec img{width:100px}
 }
 
 @media screen and (min-width: 1600px) {
   /* .staticWrapper.paddngTop{padding:100px 0 0} */
-  .headerLogoSec img{width:480px!important;height:auto!important}
-  .headerWrap.scrolled .headerLogoSec img{width:380px!important}
+  /* .headerLogoSec img{width:480px!important;height:auto!important} */
+  /* .headerWrap.scrolled .headerLogoSec img{width:380px!important} */
   /* .headerWrap.scrolled .headerBadgeSec img{width:80px!important;height:80px!important} */
 }
 
 @media screen and (min-width: 1440px) {
-  .headerLogoSec img{width:380px}
+  /* .headerLogoSec img{width:380px} */
   .headerNavSec>ul{gap:25px}
   .headerRghtSec{gap:40px}
   .footerWrap{padding:140px 0}
@@ -156,7 +161,7 @@ select:focus,select:active,select:focus-visible{outline:none;box-shadow:none}
   .footerAboutSec{flex-direction:column;padding:40px 0;gap:35px}
   .footerBody p>em{display:inline-block}
   .headerWrap.scrolled{padding:10px 25px}
-  .headerWrap.scrolled .headerLogoSec img{width:300px!important}
+  /* .headerWrap.scrolled .headerLogoSec img{width:300px!important} */
   .headerWrap.scrolled .headerBadgeSec img{width:55px!important;height:55px!important}
   .headerNavSec{display:none}
   .mobileNav{top:75px}
@@ -172,13 +177,19 @@ select:focus,select:active,select:focus-visible{outline:none;box-shadow:none}
   .footerAddressSec{gap:30px;padding:30px 0;flex-direction:column}
   .footerAboutSec{gap:30px;padding:30px 0}
   .footerBottomSec{padding:30px 0 0;flex-direction:column;gap:5px}
-  .headerWrap.scrolled .headerLogoSec img{width:260px!important}
+  .headerWrap.scrolled { padding: 10px 15px; }
+  .headerWrap.scrolled .headerLogoSec .firstLogoLink { margin-right: 10px; padding-right: 10px; }
+  .headerLogoSec .firstLogoLink {margin-right: 12px; padding-right: 12px; }
+  .headerWrap.scrolled .headerLogoSec img{width: 130px;}
   .headerWrap.scrolled .headerBadgeSec img{width:45px!important;height:45px!important}
+  .headerWrap.scrolled .headerLogoSec .secondLogoLink img { max-width: 100px; }
   .mobileNav{top:65px;width:100%;max-width:100%}
   .hamburgerOverlay{top:65px}
+  .headerRghtSec{gap:15px}
 }
 @media only screen and (max-width: 479px) {
 .footerLogoImg>img{max-width:120px}
+.headerWrap.scrolled .headerLogoSec .secondLogoLink img {max-width: 85px}
 }
 
 
