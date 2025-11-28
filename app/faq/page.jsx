@@ -3,7 +3,6 @@ import "@styles/staticbundles.scss";
 import CommonBanner from '@common/CommonBanner';
 import Image from "next/image";
 import { useState } from "react";
-import useInViewFade from "@functions/useInViewFade";
 import { faqData } from '@utils/staticData';
 
 const Page = () => {
@@ -13,39 +12,22 @@ const Page = () => {
         setOpenIndex(prev => (prev === index ? -1 : index));
     };
 
-    // Heading: fade up on view
-    useInViewFade(".faqHead h2", {
-        offset: 20,
-        duration: 0.35,
-        easing: "ease-out",
-    });
-
-    // FAQ items: fade up with stagger on view
-    useInViewFade(".faqItem", {
-        offset: 30,
-        duration: 0.45,
-        easing: "ease-out",
-        staggerField: "index",
-        staggerStep: 0.05,
-    });
-
     return (
         <section className='faqWrapper'>
             <CommonBanner pageName={"faq"} />
             <div className="faqBody">
                 <div className="container">
                     <div className="faqHead">
-                        <h2 style={{ opacity: 0, transform: "translateY(20px)" }}>Faq</h2>
+                        <h2 data-aos="fade-up" data-aos-duration="600" data-aos-delay="200" data-aos-easing="ease-out-cubic" data-aos-offset="50" data-aos-once="true">Faq</h2>
                     </div>
                     <div className="faqList">
                         {faqData.map((item, idx) => (
                             <div
                                 key={idx}
                                 className={`faqItem ${openIndex === idx ? 'open' : ''}`}
-                                data-index={idx}
-                                style={{ opacity: 0, transform: "translateY(30px)" }}
+                                data-aos="fade-up" data-aos-delay={idx * 100 + 400} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50" data-aos-once="true"
                             >
-                                <div className="faqHeading" onClick={() => toggleFaq(idx)}>
+                                <div className="faqHeading" onClick={() => toggleFaq(idx)} data-aos="fade-up" data-aos-delay={idx * 100 + 450} data-aos-duration="500" data-aos-easing="ease-out-cubic" data-aos-offset="50" data-aos-once="true">
                                     <h3>{item.heading}</h3>
                                     <span
                                         className="faqToggle"
@@ -65,9 +47,11 @@ const Page = () => {
                                 </div>
                                 <div
                                     className="faqContent"
+                                    data-aos="fade-up" data-aos-delay={idx * 100 + 600} data-aos-duration="400" data-aos-easing="ease-out-cubic" data-aos-offset="50" data-aos-once="true"
                                     style={{
                                         maxHeight: openIndex === idx ? '500px' : '0',
-                                        transition: 'max-height 0.5s ease',
+                                        opacity: openIndex === idx ? 1 : 0,
+                                        transition: 'max-height 0.5s ease, opacity 0.3s ease 0.1s',
                                         overflow: 'hidden'
                                     }}
                                 >

@@ -4,21 +4,8 @@ import CommonBanner from "@common/CommonBanner"
 import { slidesData } from "@utils/homeData";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect } from "react";
-import { animate, inView } from "@motionone/dom";
 
 const page = () => {
-
-    useEffect(() => {
-        inView(".applicationsInnerGridItem", ({ target }) => {
-            const delay = (Number(target.dataset.id) % 3) * 0.1;
-            animate(
-                target,
-                { opacity: [0, 1], transform: ["translateY(50px)", "none"] },
-                { duration: 0.8, delay, easing: "ease-out" }
-            );
-        });
-    }, []);
 
     return (
         <section className="applicationsInnerWrap">
@@ -27,8 +14,8 @@ const page = () => {
                 <div className="container">
                     <div className="applicationsInnerGrid">
                         {slidesData?.map((slide, idx) => (
-                            <div className="applicationsInnerGridItem" key={idx} data-id={idx} style={{ opacity: 0 }}>
-                                <div className="applicationsInnerGridItemImg">
+                            <div className="applicationsInnerGridItem" key={idx}>
+                                <div className="applicationsInnerGridItemImg" data-aos="fade-up" data-aos-delay={Math.floor(idx / 3) * 200 + (idx % 3) * 100} data-aos-duration="700" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                                     <Image
                                         src={slide.img}
                                         width={800}
@@ -37,7 +24,7 @@ const page = () => {
                                         loading="eager"
                                     />
                                 </div>
-                                <div className="applicationsInnerGridItemTitle">
+                                <div className="applicationsInnerGridItemTitle" data-aos="fade-up" data-aos-delay={Math.floor(idx / 3) * 200 + (idx % 3) * 100 + 100} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                                     <Image
                                         src={slide.icon}
                                         width={70}
@@ -47,7 +34,7 @@ const page = () => {
                                     />
                                     <h3>{slide.title}</h3>
                                 </div>
-                                <div className="applicationsInnerGridItemContent">
+                                <div className="applicationsInnerGridItemContent" data-aos="fade-up" data-aos-delay={Math.floor(idx / 3) * 200 + (idx % 3) * 100 + 200} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                                     <p>{slide.content}</p>
                                     <Link href={slide.link}>Learn More</Link>
                                 </div>

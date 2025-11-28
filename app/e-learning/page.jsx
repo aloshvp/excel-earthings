@@ -4,49 +4,8 @@ import "@styles/staticbundles.scss";
 import CommonBanner from "@common/CommonBanner";
 import Image from "next/image";
 import { videoList, brochures } from "@utils/staticData";
-import useInViewFade from "@functions/useInViewFade";
 
 const Page = () => {
-
-    // Page title
-    useInViewFade(".eLearningTitle", {
-        offset: 20,
-        duration: 0.45,
-        easing: "ease-out",
-        rootMargin: "0px 0px -15% 0px",
-        threshold: 0.15,
-    });
-
-    // Video cards
-    useInViewFade(".eLearningVideoItem", {
-        offset: 25,
-        duration: 0.6,
-        easing: "ease-out",
-        staggerField: "index",
-        staggerStep: 0.04,
-        rootMargin: "0px 0px -15% 0px",
-        threshold: 0.15,
-    });
-
-    // Brochures header
-    useInViewFade(".eLearningBrochuresHead", {
-        offset: 20,
-        duration: 0.45,
-        easing: "ease-out",
-        rootMargin: "0px 0px -15% 0px",
-        threshold: 0.15,
-    });
-
-    // Brochure cards
-    useInViewFade(".eLearningBrochuresItem", {
-        offset: 25,
-        duration: 0.6,
-        easing: "ease-out",
-        staggerField: "index",
-        staggerStep: 0.04,
-        rootMargin: "0px 0px -15% 0px",
-        threshold: 0.15,
-    });
     return (
         <section className="eLearningWrap">
             <CommonBanner pageName={"e-learning"} />
@@ -56,7 +15,7 @@ const Page = () => {
                 {/* TITLE SECTION */}
                 <div className="eLearningTitleWrap">
                     <div className="container">
-                        <div className="eLearningTitle" style={{ opacity: 0, transform: "translateY(20px)" }}>
+                        <div className="eLearningTitle" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                             <h2>E-Learning</h2>
                             <p>
                                 Excel Earthings E-Learning Platform focuses on imparting a great
@@ -77,10 +36,8 @@ const Page = () => {
                                 <div
                                     className="eLearningVideoItem"
                                     key={i}
-                                    data-index={i}
-                                    style={{ opacity: 0, transform: "translateY(25px)" }}
                                 >
-                                    <div className="eLearningVideoItemImg">
+                                    <div className="eLearningVideoItemImg" data-aos="fade-up" data-aos-delay={i * 100 + 400} data-aos-duration="700" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                                         <Image src={item.img} alt={item.title} width={546} height={307} />
                                         <em>
                                             <Image
@@ -93,8 +50,8 @@ const Page = () => {
                                     </div>
 
                                     <div className="eLearningVideoItemText">
-                                        <h4>{item.title}</h4>
-                                        <p>{item.desc}</p>
+                                        <h4 data-aos="fade-up" data-aos-delay={i * 100 + 500} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">{item.title}</h4>
+                                        <p data-aos="fade-up" data-aos-delay={i * 100 + 600} data-aos-duration="500" data-aos-easing="ease-out-cubic" data-aos-offset="50">{item.desc}</p>
                                     </div>
                                 </div>
                             ))}
@@ -105,7 +62,7 @@ const Page = () => {
                 {/* BROCHURES */}
                 <div className="eLearningBrochuresWrap">
                     <div className="container">
-                        <div className="eLearningBrochuresHead" style={{ opacity: 0, transform: "translateY(20px)" }}>
+                        <div className="eLearningBrochuresHead" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                             <h3>Download Brochures</h3>
                         </div>
                         <div className="eLearningBrochuresItemWrap">
@@ -113,16 +70,14 @@ const Page = () => {
                                 <div
                                     className="eLearningBrochuresItem"
                                     key={i}
-                                    data-index={i}
-                                    style={{ opacity: 0, transform: "translateY(25px)" }}
                                 >
-                                    <div className="eLearningBrochuresItemImg">
+                                    <div className="eLearningBrochuresItemImg" data-aos="fade-up" data-aos-delay={i * 100 + 400} data-aos-duration="700" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                                         <Image src={b.img} alt={b.title} width={200} height={300} />
                                     </div>
                                     <div className="eLearningBrochuresItemText">
-                                        <span>Brochure
-                                            <b>{b.title}</b>
-                                        </span>                                        
+                                        <span data-aos="fade-up" data-aos-delay={i * 100 + 500} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">Brochure
+                                            <b data-aos="fade-up" data-aos-delay={i * 100 + 600} data-aos-duration="500" data-aos-easing="ease-out-cubic" data-aos-offset="50">{b.title}</b>
+                                        </span>
                                     </div>
                                 </div>
                             ))}

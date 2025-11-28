@@ -9,7 +9,7 @@ export default function AOSInit() {
         AOS.init({
             duration: 600, // Reduced duration for snappier animations
             easing: "ease-out-cubic", // Easing function
-            //   once: true, // Prevent animations from replaying on scroll back
+            // once: true, // Prevent animations from replaying on scroll back
             offset: 80, // Increased offset to reduce frequent triggering
             delay: 0, // Delay animation
             anchorPlacement: "top-bottom", // Better anchor placement

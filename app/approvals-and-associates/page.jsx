@@ -3,29 +3,8 @@ import "@styles/staticbundles.scss";
 import CommonBanner from '@common/CommonBanner'
 import Image from 'next/image'
 import { associatesData } from '@utils/homeData'
-import useInViewFade from '@functions/useInViewFade';
 
 const Page = () => {
-
-    // Fade-up for section title (slightly slower for smoothness)
-    useInViewFade(".approvalsAndAsscociatesBodyTitle", {
-        offset: 20,
-        duration: 0.5,
-        easing: "ease-out",
-        rootMargin: "0px 0px -15% 0px",
-        threshold: 0.15,
-    });
-
-    // Fade-up for each logo tile, with smoother stagger
-    useInViewFade(".approvalsAndAsscociatesBodyGridItem", {
-        offset: 20,
-        duration: 0.65,
-        easing: "ease-out",
-        staggerField: "index",
-        staggerStep: 0.03,
-        rootMargin: "0px 0px -15% 0px",
-        threshold: 0.15,
-    });
 
     return (
         <section className='approvalsAndAsscociatesWrap'>
@@ -33,7 +12,7 @@ const Page = () => {
 
             <div className="approvalsAndAsscociatesBody">
                 <div className="container">
-                    <div className="approvalsAndAsscociatesBodyTitle" style={{ opacity: 0, transform: "translateY(20px)" }}>
+                    <div className="approvalsAndAsscociatesBodyTitle" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                         <h2>Approvals & Associates</h2>
                         <p>Our Products are widely accepted and approved by Leading PSUs, State Government Organizations and Private Companies, with its inherent quality and standards.</p>
                     </div>
@@ -43,10 +22,8 @@ const Page = () => {
                             <div
                                 className="approvalsAndAsscociatesBodyGridItem"
                                 key={idx}
-                                data-index={idx}
-                                style={{ opacity: 0, transform: "translateY(30px)" }}
                             >
-                                <em>
+                                <em data-aos="fade-up" data-aos-delay={idx * 50 + 400} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                                     <Image
                                         src={item.img}
                                         alt={item.name}
@@ -55,7 +32,7 @@ const Page = () => {
                                         loading="eager"
                                     />
                                 </em>
-                                <h3>{item.name}</h3>
+                                <h3 data-aos="fade-up" data-aos-delay={idx * 50 + 450} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">{item.name}</h3>
                             </div>
                         ))}
                     </div>

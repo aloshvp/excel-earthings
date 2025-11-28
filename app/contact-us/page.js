@@ -4,7 +4,6 @@ import CommonBanner from "@common/CommonBanner";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import useInViewFade from "@functions/useInViewFade";
 
 const Page = () => {
 
@@ -16,36 +15,6 @@ const Page = () => {
 
    const [isEmHovered, setIsEmHovered] = useState(false);
 
-   // Animate top contact info cards
-   useInViewFade(".contactInfoBx", {
-     offset: 20,
-     duration: 0.5,
-     easing: "ease-out",
-     staggerField: "index",
-     staggerStep: 0.06,
-     rootMargin: "0px 0px -15% 0px",
-     threshold: 0.15,
-   });
-
-   // Animate "Get in Touch" section and boxes (but not map or form)
-   useInViewFade(".contactGetInTouch > h3", {
-     offset: 18,
-     duration: 0.45,
-     easing: "ease-out",
-     rootMargin: "0px 0px -15% 0px",
-     threshold: 0.15,
-   });
-
-   useInViewFade(".getInTouchBox", {
-     offset: 22,
-     duration: 0.55,
-     easing: "ease-out",
-     staggerField: "index",
-     staggerStep: 0.05,
-     rootMargin: "0px 0px -15% 0px",
-     threshold: 0.18,
-   });
-
   return (
     <section className="contactUsWrapper">
         <CommonBanner pageName={"contact-us"}/>
@@ -54,8 +23,7 @@ const Page = () => {
               <div className="contactInfoList">
                 <div
                   className="contactInfoBx"
-                  data-index={0}
-                  style={{ opacity: 0, transform: "translateY(20px)" }}
+                  data-aos="fade-up" data-aos-delay="200" data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50"
                 >
                     <span><div><Image src='/images/contactus/email.svg' width={50} height={50} alt="mail" title="mail"/></div></span>
                     <h2>Send Your Mail at</h2>
@@ -63,8 +31,7 @@ const Page = () => {
                 </div>
                 <div
                   className="contactInfoBx"
-                  data-index={1}
-                  style={{ opacity: 0, transform: "translateY(20px)" }}
+                  data-aos="fade-up" data-aos-delay="350" data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50"
                 >
                     <span><div><Image src='/images/contactus/phone.svg' width={50} height={50} alt="phone" title="phone"/></div></span>
                     <h2>Customer Care</h2>
@@ -72,8 +39,7 @@ const Page = () => {
                 </div>
                 <div
                   className="contactInfoBx"
-                  data-index={2}
-                  style={{ opacity: 0, transform: "translateY(20px)" }}
+                  data-aos="fade-up" data-aos-delay="500" data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50"
                 >
                     <span><div><Image src='/images/contactus/whatsapp.svg' width={50} height={50} alt="whatsapp" title="whatsapp"/></div></span>
                     <h2>Have Any Question</h2>
@@ -85,12 +51,11 @@ const Page = () => {
         <div className="contactGetInTouchWrap">
           <div className="container">
             <div className="contactGetInTouch">
-              <h3 style={{ opacity: 0, transform: "translateY(18px)" }}>Get in Touch</h3>
+              <h3 data-aos="fade-up" data-aos-duration="600" data-aos-delay="200" data-aos-easing="ease-out-cubic" data-aos-offset="50">Get in Touch</h3>
               <div className="getInBoxSet">
                   <div
                     className="getInTouchBox"
-                    data-index={0}
-                    style={{ opacity: 0, transform: "translateY(22px)" }}
+                    data-aos="fade-up" data-aos-delay="400" data-aos-duration="700" data-aos-easing="ease-out-cubic" data-aos-offset="50"
                   >
                     <h4>Head Office</h4>
                     <span>
@@ -104,8 +69,7 @@ const Page = () => {
                   </div>
                   <div
                     className="getInTouchBox"
-                    data-index={1}
-                    style={{ opacity: 0, transform: "translateY(22px)" }}
+                    data-aos="fade-up" data-aos-delay="550" data-aos-duration="700" data-aos-easing="ease-out-cubic" data-aos-offset="50"
                   >
                     <h4>Marketing Division</h4>
                     <span>
@@ -119,8 +83,7 @@ const Page = () => {
                   </div>
                   <div
                     className="getInTouchBox"
-                    data-index={2}
-                    style={{ opacity: 0, transform: "translateY(22px)" }}
+                    data-aos="fade-up" data-aos-delay="700" data-aos-duration="700" data-aos-easing="ease-out-cubic" data-aos-offset="50"
                   >
                     <h4>Factory</h4>
                     <span>

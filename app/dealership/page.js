@@ -71,14 +71,14 @@ const page = () => {
     <div className="dealerShipWraper">
         <div className="container">
             <div className="dealerShipCntSec">
-                <div className="dealerLeftSide">
+                <div className="dealerLeftSide" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                     <h2>Dealership</h2>
                     <h3>Join Hands with Excel Earthings</h3>
                 </div>
-                <div className="dealerRightSide">
+                <div className="dealerRightSide" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                     <p><i>Excel Earthings is looking for distributors</i> worldwide to promote our products.</p>
                     <div className="delarContainer">
-                        <div>
+                        <div data-aos="fade-up" data-aos-duration="700" data-aos-delay="500" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                             <h3>By becoming our distributor, you can:</h3>
                             <ul>
                                 <li>Deal with very high-quality products in cost effective manner</li>
@@ -87,7 +87,7 @@ const page = () => {
                                 <li>Grow prominently in the market</li>
                             </ul>
                         </div>
-                        <div>
+                        <div data-aos="fade-up" data-aos-duration="700" data-aos-delay="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                             <h3>To become our distributor, you need to:</h3>
                             <ul>
                                 <li>Have adequate Sales and Technical Team</li>
@@ -95,15 +95,15 @@ const page = () => {
                             </ul>
                         </div>
                     </div>
-                    <p className="outside">Get in touch with us at <a href="mailto:mail@excelearthing.com">mail@excelearthing.com</a> or fill out the contact form.</p>
+                    <p className="outside" data-aos="fade-up" data-aos-duration="700" data-aos-delay="700" data-aos-easing="ease-out-cubic" data-aos-offset="50">Get in touch with us at <a href="mailto:mail@excelearthing.com">mail@excelearthing.com</a> or fill out the contact form.</p>
                 </div>
             </div>
         </div>
          <div className="dealerShipFormSec">
                 <div className="contactEnqFormWrap">
                     <div className="container">
-                        <div className="contactEnqSec">
-                        <h4>For Dealership FillOut The Form Below & We'll Get in Touch</h4>
+                        <div className="contactEnqSec">  
+                        <h4>For Dealership FillOut The Form Below & We'll Get in Touch</h4>                     
                         <form className="formMain" onSubmit={handleSubmit} method="POST" encType="multipart/form-data">
                             <div className="formGroup">
                                 <div className="formInput">
