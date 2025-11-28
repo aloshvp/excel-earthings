@@ -13,10 +13,29 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Preload banner video and poster to start fetching early */}
-        <link rel="preload" href="/videos/BANNER-VIDEO-NEW.webm" as="video" type="video/webm" crossOrigin="anonymous" />
-        {/* <link rel="preload" href="/videos/BANNER-VIDEO.mp4" as="video" type="video/mp4" crossOrigin="anonymous" /> */}
+        {/* DNS prefetch for external resources */}
+        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+
+        {/* Preconnect to critical origins */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+
+        {/* Preload critical resources only - banner poster for above the fold */}
         <link rel="preload" href="/images/home/BANNER-VIDEO-New.png" as="image" />
+
+        {/* Preload critical fonts */}
+        <link rel="preload" href="/fonts/neuehaasdisplaybold-webfont.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/neuehaasdisplayroman-webfont.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+
+        {/* Resource hints for performance */}
+        <link rel="prefetch" href="/videos/BANNER-VIDEO-NEW.webm" as="video" type="video/webm" crossOrigin="anonymous" />
+
+        {/* Viewport meta tag for mobile optimization */}
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        {/* Theme color for mobile browsers */}
+        <meta name="theme-color" content="#002581" />
       </head>
       <body>
         <ClientLayoutWrapper>{children}</ClientLayoutWrapper>

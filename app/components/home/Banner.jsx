@@ -1,18 +1,43 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useCallback } from "react";
 import Image from "next/image";
 import useWindowSize from "@functions/useWindowSize";
 
 const Banner = () => {
     const [videoLoaded, setVideoLoaded] = useState(false);
     const [showPlayButton, setShowPlayButton] = useState(false);
+    const [videoInView, setVideoInView] = useState(false);
     const videoRef = useRef(null);
     const windowSize = useWindowSize();
     const showVideo = windowSize.width === undefined ? true : windowSize.width >= 992;
 
-    // helper to attempt playing the video and handle autoplay prevention
-    const tryPlayVideo = async () => {
+    // Intersection Observer for lazy loading video
+    useEffect(() => {
         if (!showVideo) return;
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setVideoInView(true);
+                        observer.disconnect();
+                    }
+                });
+            },
+            { threshold: 0.1, rootMargin: '50px' }
+        );
+
+        const bannerElement = document.querySelector('.bannerWrap');
+        if (bannerElement) {
+            observer.observe(bannerElement);
+        }
+
+        return () => observer.disconnect();
+    }, [showVideo]);
+
+    // helper to attempt playing the video and handle autoplay prevention
+    const tryPlayVideo = useCallback(async () => {
+        if (!showVideo || !videoInView) return;
         const v = videoRef.current;
         if (!v) return;
         try {
@@ -30,17 +55,17 @@ const Banner = () => {
             setVideoLoaded(false);
             setShowPlayButton(true);
         }
-    };
+    }, [showVideo, videoInView]);
 
-    // If the video element mounts, try to play it once ready (in case canplay fired before handlers)
+    // If the video element mounts and is in view, try to play it once ready
     useEffect(() => {
-        if (!showVideo) return;
+        if (!showVideo || !videoInView) return;
         if (videoRef.current) {
             // small timeout to let browser settle
             const t = setTimeout(() => tryPlayVideo(), 200);
             return () => clearTimeout(t);
         }
-    }, [showVideo]);
+    }, [showVideo, videoInView, tryPlayVideo]);
 
     // showVideo is derived from `useWindowSize` above
 
@@ -48,7 +73,7 @@ const Banner = () => {
         <section className="bannerWrap">
             {/* Background video with image fallback while loading */}
             <div className={`bannerBg ${!videoLoaded && showVideo ? 'blurred' : ''}`} style={{ position: "relative", overflow: "hidden" }}>
-                {showVideo && (
+                {showVideo && videoInView && (
                 <video
                     className={`bannerVideo ${videoLoaded ? 'ready' : ''}`}
                     poster="/images/home/BANNER-VIDEO-New.png"
@@ -56,7 +81,7 @@ const Banner = () => {
                     muted
                     loop
                     playsInline
-                    preload="auto"
+                    preload="metadata" // Changed from "auto" to "metadata" for better performance
                     crossOrigin="anonymous"
                     ref={videoRef}
                     onLoadedData={() => tryPlayVideo()}
@@ -66,6 +91,7 @@ const Banner = () => {
                         setVideoLoaded(false);
                         setShowPlayButton(true);
                     }}
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 >
                     {/* Prefer WebM for smaller size on supported browsers, fallback to MP4 */}
                     <source src="/videos/BANNER-VIDEO-NEW.webm" type="video/webm" />

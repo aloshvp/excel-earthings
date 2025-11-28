@@ -18,16 +18,38 @@ export default function ClientLayoutWrapper({ children }) {
     const isAdmin = pathname.startsWith("/admin");
 
     useEffect(() => {
-        const lenis = new Lenis();
+        // Check if user prefers reduced motion
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-        function raf(time) {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
+        if (prefersReducedMotion) {
+            return; // Skip smooth scrolling if user prefers reduced motion
         }
 
-        requestAnimationFrame(raf);
+        const lenis = new Lenis({
+            lerp: 0.08, // Reduced from default 0.1 for better performance
+            duration: 1.2, // Slightly faster
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Custom easing for smoother feel
+            direction: 'vertical',
+            gestureDirection: 'vertical',
+            smooth: true,
+            mouseMultiplier: 1,
+            smoothTouch: false, // Disable on touch devices for better performance
+            touchMultiplier: 2,
+            infinite: false,
+        });
+
+        let rafId;
+        function raf(time) {
+            lenis.raf(time);
+            rafId = requestAnimationFrame(raf);
+        }
+
+        rafId = requestAnimationFrame(raf);
 
         return () => {
+            if (rafId) {
+                cancelAnimationFrame(rafId);
+            }
             lenis.destroy();
         };
     }, []);

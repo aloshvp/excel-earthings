@@ -41,12 +41,13 @@ const OurProducts = () => {
                     effect="fade"
                     slidesPerView={1}
                     loop
-                    speed={800}
+                    speed={600} // Reduced speed for better performance
                     navigation
                     allowTouchMove={false}
                     autoplay={{
-                        delay: 2000,
-                        disableOnInteraction: false,
+                        delay: 4000, // Increased delay to reduce CPU usage
+                        disableOnInteraction: true, // Pause on interaction
+                        pauseOnMouseEnter: true, // Pause on hover
                     }}
                     onBeforeInit={(swiper) => {
                         swiper.params.navigation.prevEl = prevRef.current;

@@ -7,27 +7,46 @@ import { Navigation } from 'swiper/modules';
 import Link from 'next/link';
 import Image from 'next/image';
 import { slidesData } from '@utils/homeData';
+import { useLazyImage } from '@functions/useLazyImage';
 
 const SlideItem = ({ slide, index }) => {
-    const [isLoaded, setIsLoaded] = useState(false);
+    const { imgRef, loaded, shouldLoad } = useLazyImage(slide.img);
 
     return (
         <div className="slideSec areaOfApplicationsSlideItem">
             <div className="slideImg" data-aos="fade-up" data-aos-delay={index * 100} data-aos-duration="800" data-aos-easing="ease-out-cubic" data-aos-offset="50">
-                <Image
-                    src={slide.img}
-                    width={800}
-                    height={533}
-                    alt={slide.title}
-                    loading="eager"
-                    onLoadingComplete={() => setIsLoaded(true)}
-                    style={{
-                        width: '100%',
-                        height: 'auto',
-                        transition: 'filter 0.5s ease-in-out',
-                        filter: isLoaded ? 'blur(0)' : 'blur(10px)',
-                    }}
-                />
+                <div ref={imgRef} style={{ width: '100%', height: 'auto', position: 'relative' }}>
+                    {shouldLoad ? (
+                        <Image
+                            src={slide.img}
+                            width={800}
+                            height={533}
+                            alt={slide.title}
+                            loading="lazy"
+                            onLoadingComplete={() => {}}
+                            style={{
+                                width: '100%',
+                                height: 'auto',
+                                transition: 'filter 0.5s ease-in-out',
+                                filter: loaded ? 'blur(0)' : 'blur(10px)',
+                            }}
+                        />
+                    ) : (
+                        <div
+                            style={{
+                                width: '100%',
+                                height: '400px', // Placeholder height
+                                background: '#f5f5f5',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                borderRadius: '8px'
+                            }}
+                        >
+                            <div style={{ color: '#999', fontSize: '14px' }}>Loading...</div>
+                        </div>
+                    )}
+                </div>
             </div>
             <div className="slideTitle" data-aos="fade-up" data-aos-delay={index * 100 + 100} data-aos-duration="800" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                 <Image src={slide.icon} width={70} height={70} alt={slide.title} />
@@ -69,20 +88,23 @@ const AreaOfApplications = () => {
                     {/* Swiper Slider */}
                     <Swiper
                         modules={[Navigation]}
-                        spaceBetween={45}
+                        spaceBetween={30} // Reduced spacing for better performance
                         slidesPerView={3}
                         loop
                         navigation
+                        speed={400} // Added speed for smoother transitions
                         onBeforeInit={(swiper) => {
                             swiper.params.navigation.prevEl = prevRef.current;
                             swiper.params.navigation.nextEl = nextRef.current;
                         }}
                         breakpoints={{
-                            320: { slidesPerView: 1 },
-                            768: { slidesPerView: 2 },
-                            1024: { slidesPerView: 3, spaceBetween: 45 }
+                            320: { slidesPerView: 1, spaceBetween: 20 },
+                            768: { slidesPerView: 2, spaceBetween: 25 },
+                            1024: { slidesPerView: 3, spaceBetween: 30 }
                         }}
-                        allowTouchMove={false}
+                        allowTouchMove={true} // Enabled touch move for better UX on mobile
+                        grabCursor={true}
+                        watchSlidesProgress={true}
                     >
                         {slidesData?.map((slide, idx) => (
                             <SwiperSlide key={idx}>
