@@ -66,6 +66,9 @@
     .ourSpecialitiesWrap{padding:80px 0 150px}
     .ourSpecialitiesMarquee .marqueeText{font-size:60px}
     .ourSpecialitiesMarquee{padding:40px 25px 0}
+    .specialityContent{padding: 30px 30px 30px 0;}
+    .specialityCard{gap: 15px;}
+    .specialityContent p{font-size: 16px;}
     
     .ourAssociatesWrap{padding:80px 0 280px}
     .ourAssociatesHead{flex-direction:column;gap:20px;align-items:flex-start;padding-bottom:40px}
@@ -145,11 +148,13 @@
     .ourSpecialitiesWrap{padding:60px 0 150px}
     .ourSpecialitiesSliderBtn{width:32px;height:32px}
     .ourSpecialitiesSliderNav{gap:10px;top:-80px}
-    .specialitySlide{padding:25px}
+    .specialitySlide{padding:20px}
     .specialitySlideTitle{font-size:24px;margin-top:20px}
-    .specialityContent h4{font-size:20px}
-    .specialityImageWrap{flex:0 0 100px}
-    .specialityCard{gap:15px}
+    .specialityContent h4{font-size:18px;padding-bottom: 3px;}
+    .specialityImageWrap{flex:0 0 150px}
+    .specialityContent{padding: 15px 10px 15px 0;}
+    .specialityContent p{font-size: 14px;}
+    .specialityCard{gap:10px}
     .ourSpecialitiesMarquee{padding:30px 20px 0}
     .ourSpecialitiesMarquee .marqueeText{font-size:45px}
         

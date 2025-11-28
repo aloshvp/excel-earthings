@@ -40,7 +40,7 @@ const OurSpecialities = () => {
                         }}
                         breakpoints={{
                             320: { slidesPerView: 1 },
-                            1024: { slidesPerView: 2 },
+                            1440: { slidesPerView: 2 },
                         }}
                     >
                         {specialitiesSlides.map((slide, i) => (
