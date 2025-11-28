@@ -17,11 +17,11 @@ const OurProducts = () => {
         <div className="ourProductsWrap">
             <div className="container">
                 <div className="ourProductsHead">
-                    <div className="ourProductsHeadLft">
+                    <div className="ourProductsHeadLft" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                         <h4 className="homeCmnSubHead">Range of products</h4>
                         <h2 className="homeCmnHead">Our Products</h2>
                     </div>
-                    <div className="ourProductsHeadRght">
+                    <div className="ourProductsHeadRght" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                         <Link href="/products" className="exploreMoreBtn">
                             View All
                         </Link>
@@ -31,9 +31,9 @@ const OurProducts = () => {
 
             <div className="ourProductsBody">
                 {/* Custom navigation buttons */}
-                <div className="ourProductsSliderNav">
-                    <div ref={prevRef} className="ourProductsSlierNavBtn ourProductsSliderPrevBtn"></div>
-                    <div ref={nextRef} className="ourProductsSlierNavBtn ourProductsSliderNextBtn"></div>
+                <div className="ourProductsSliderNav" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400" data-aos-easing="ease-out-cubic" data-aos-offset="50">
+                    <div ref={prevRef} className="ourProductsSlierNavBtn ourProductsSliderPrevBtn" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-easing="ease-out-cubic" data-aos-offset="50"></div>
+                    <div ref={nextRef} className="ourProductsSlierNavBtn ourProductsSliderNextBtn" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-easing="ease-out-cubic" data-aos-offset="50"></div>
                 </div>
 
                 <Swiper
@@ -42,10 +42,7 @@ const OurProducts = () => {
                     slidesPerView={1}
                     loop
                     speed={800}
-                    navigation={{
-                        prevEl: prevRef.current,
-                        nextEl: nextRef.current,
-                    }}
+                    navigation
                     allowTouchMove={false}
                     autoplay={{
                         delay: 2000,
@@ -69,10 +66,10 @@ const OurProducts = () => {
                                         priority
                                     />
                                 </div>
-                                <div className="productContent">
-                                    <span className="productNumber">{product.number}</span>
-                                    <h3 className="productName">{product.name}</h3>
-                                    <Link href="" scroll={false}>
+                                <div className="productContent" data-aos="fade-up" data-aos-delay={index * 100 + 600} data-aos-duration="700" data-aos-easing="ease-out-cubic" data-aos-offset="50">
+                                    <span className="productNumber" data-aos="fade-up" data-aos-delay={index * 100 + 650} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">{product.number}</span>
+                                    <h3 className="productName" data-aos="fade-up" data-aos-delay={index * 100 + 750} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">{product.name}</h3>
+                                    <Link href="" scroll={false} data-aos="fade-up" data-aos-delay={index * 100 + 850} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                                         Explore More <span className="arrow"></span>
                                     </Link>
                                 </div>

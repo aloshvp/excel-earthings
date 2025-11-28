@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import dynamic from "next/dynamic";
 import Lenis from "lenis";
 import Header from "./Header";
+import AOSInit from "./AOSInit";
 import { dynamicScrollPages } from "@utils/CommonData";
 
 const Footer = dynamic(() => import("./Footer"), {
@@ -44,6 +45,7 @@ export default function ClientLayoutWrapper({ children }) {
 
     return (
         <>
+            <AOSInit />
             {showLayout && <Header />}
 
             <main>

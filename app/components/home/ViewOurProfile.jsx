@@ -23,11 +23,12 @@ const ViewOurProfile = () => {
         <>
             <section className="viewOurProfileWrap">
                 <div className="viewOurProfileBody">
-                    <h2 className="homeCmnHead">View Our Profile</h2>
+                    <h2 className="homeCmnHead" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-easing="ease-out-cubic" data-aos-offset="50">View Our Profile</h2>
 
                     {/* Play button */}
                     <div
                         className="playButtonWrap"
+                        data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" data-aos-easing="ease-out-cubic" data-aos-offset="50"
                         onClick={() => setIsOpen(true)}
                         role="button"
                     >
@@ -40,7 +41,7 @@ const ViewOurProfile = () => {
                         />
                     </div>
 
-                    <span>Watch Corporate Video</span>
+                    <span data-aos="fade-up" data-aos-duration="800" data-aos-delay="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">Watch Corporate Video</span>
                 </div>
 
             </section>
@@ -50,6 +51,10 @@ const ViewOurProfile = () => {
                     <div className="videoPopupOverlay" onClick={() => setIsOpen(false)}>
                         <div
                             className="videoPopupContent"
+                            data-aos="fade-up"
+                            data-aos-duration="600"
+                            data-aos-delay="100"
+                            data-aos-easing="ease-out-cubic"
                             onClick={(e) => e.stopPropagation()}
                         >
                             <button

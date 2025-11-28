@@ -4,7 +4,6 @@ import Link from 'next/link'
 import Marquee from 'react-fast-marquee'
 import React, { useEffect } from 'react';
 import { timeline, animate } from "@motionone/dom";
-import useInViewFade from '@functions/useInViewFade';
 
 const AtGlance = () => {
 
@@ -107,28 +106,13 @@ const AtGlance = () => {
         };
     }, []);
 
-    // Fade-up for left content
-    useInViewFade(".atGlanceTopContLft", {
-        offset: 20,
-        duration: 0.45,
-        easing: "ease-out",
-    });
-
-    // Fade-up for grid items with slight stagger
-    useInViewFade(".atGlanceGridItem", {
-        offset: 25,
-        duration: 0.55,
-        easing: "ease-out",
-        staggerField: "index",
-        staggerStep: 0.06,
-    });
 
     return (
         <section className='atGlanceWrap'>
             <div className="container">
                 <div className="atGlanceBody">
                     <div className="atGlanceTopCont">
-                        <div className="atGlanceTopContLft">
+                        <div className="atGlanceTopContLft" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200" data-aos-easing="ease-out" data-aos-offset="50">
                             <h4 className="homeCmnSubHead">Excel Earthings</h4>
                             <h2 className="homeCmnHead">At a Glance</h2>
                             <p>
@@ -147,23 +131,23 @@ const AtGlance = () => {
                             >
                                 {/* Initially empty - will be populated by animation */}
                             </span>
-                            <em style={{ opacity: 0, transform: "translateY(25px)" }}>
+                            <em data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" data-aos-easing="ease-out" data-aos-offset="50">
                                 <Image src="/images/home/year.svg" width={380} height={320} alt="year" title="year" />
                             </em>
                         </div>
                     </div>
                     <div className="atGlanceGrid">
-                        <div className="atGlanceGridItem" data-index={0}>
+                        <div className="atGlanceGridItem" data-aos="fade-up" data-aos-duration="700" data-aos-delay="400" data-aos-easing="ease-out" data-aos-offset="50">
                             <Image src="/images/home/logo-iso.svg" width={100} height={100} alt='ISI'></Image>
                             <div className='horizontalLIne'></div>
                             <p>India&apos;s First ISI Certified Copper Bonded Earth Electrode Manufacturer</p>
                         </div>
-                        <div className="atGlanceGridItem" data-index={1}>
+                        <div className="atGlanceGridItem" data-aos="fade-up" data-aos-duration="700" data-aos-delay="550" data-aos-easing="ease-out" data-aos-offset="50">
                             <Image src="/images/home/logo-iec.svg" width={100} height={100} alt='ISI'></Image>
                             <div className='horizontalLIne'></div>
                             <p>IEC Certified for Earth Enhancing Compounds & Copper Bonded Rods</p>
                         </div>
-                        <div className="atGlanceGridItem" data-index={2}>
+                        <div className="atGlanceGridItem" data-aos="fade-up" data-aos-duration="700" data-aos-delay="700" data-aos-easing="ease-out" data-aos-offset="50">
                             <Image src="/images/home/logo-ul.svg" width={100} height={100} alt='ISI'></Image>
                             <div className='horizontalLIne'></div>
                             <p>UL Listed Manufacturer for Copper Bonded Earth Electrode</p>
