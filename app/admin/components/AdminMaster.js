@@ -4,6 +4,7 @@ import AdminLeftMenu from './AdminLeftMenu';
 import { usePathname,useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { logout } from '@lib/auth';
+import Image from 'next/image';
 
 const AdminMaster = ({ children }) => {
     const pathname = usePathname();
@@ -18,40 +19,6 @@ const AdminMaster = ({ children }) => {
         router.push('/admin/login');
     };
     return (
-        // <div className={openClose?"adminwrapper":"adminwrapper closewrp"}>
-        //     <div className="header">
-        //         <div className="adminHeadCnt">
-        //             <div className='headImg'>
-        //                 <div>
-        //                     <Image
-        //                         src={'/images/log.png'}
-        //                         alt={websiteName}
-        //                         title={websiteName}
-        //                         width={220}
-        //                         height={77}
-        //                         className="img-fluid"
-        //                     />
-        //                 </div>
-        //             </div>
-        //             <div className="head"><p>ADMIN CONSOLE</p></div>
-        //         </div>
-        //         <AdminLeftMenu />
-        //         <em className="admnclose" onClick={()=>setOpenClose(!openClose)}></em>
-        //     </div>
-        //     <div className="admindatasecwrap">
-        //         <div className="adminbody">
-        //             <div className="container-fluid">
-        //                 <div className="row">
-        //                     <div className="col-md-12">
-        //                         <div className={isWelcomePage ? 'rghtcnt wlcomecontent' : 'rghtcnt'}>
-        //                             {children}
-        //                         </div>
-        //                     </div>
-        //                 </div>
-        //             </div>
-        //         </div>
-        //     </div>
-        // </div>
         <>
             <header className="header">
                 <div className="header-left">
@@ -59,19 +26,19 @@ const AdminMaster = ({ children }) => {
                 </div>
                 <div className="header-right">
                     <div className="user-profile">
-                        <div className="user-icon">U</div> 
+                        <div className="user-icon"></div> 
                         
                         <div className="logout-menu">
-                            <a href="#profile">Profile</a>
                             <a href="#settings">Settings</a>
-                            <a href=":" onClick={handleLogoutClick} >Logout</a>
+                            <a onClick={handleLogoutClick} >Logout</a>
                         </div>
                     </div>
                 </div>
+                <em onClick={()=>setOpenClose(!openClose)}><Image src={'/images/admin/menu.svg'} width={24} height={24} className="img-fluid" alt="menu" title="menu"/></em>
             </header>
             <div className="dashboard-layout">
-                <AdminLeftMenu />
-                <main className="main-content">
+                <AdminLeftMenu flag={openClose}/>
+                <main className={(openClose)?'main-content pushed':'main-content'}>
                     {children}
                 </main>
             </div>

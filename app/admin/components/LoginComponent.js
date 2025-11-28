@@ -67,37 +67,49 @@ const LoginComponent = () => {
     }
 
     return (
-       
+
     <div className='login-wrapper'>
-        <div className="login-panel">
-            <div className="company-header">
-                <h1>Excel Earthing</h1>
+        <div className="split-container">
+
+        <div className="left-panel">
+            <div className="left-panel-content">
+                <h2>Welcome Back</h2>
+                <p>Access your professional admin dashboard securely.</p>
             </div>
-            <form onSubmit={LoginClick} method="post">
-                <div className="form-group">
-                    <label htmlFor="username">Username</label>
-                    <input type="text" id="username" name="username"
-                        placeholder="Username"
-                        value={username}
-                        onChange={(e) => setUsername(e.target.value)}
-                        required
-                        aria-label="Username"
-                        disabled={isSubmitting} />
+        </div>
+
+        <div className="right-panel">
+            <div className="login-container">
+                <div className="company-logo">
+                    <h1>Admin Dashboard</h1>
+                    <p>Sign in to continue</p>
                 </div>
-                
-                <div className="form-group">
-                    <label htmlFor="password">Password</label>
-                    <input type="password" id="password" name="password" 
-                        placeholder="Password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        required
-                        aria-label="Password"
-                        disabled={isSubmitting} 
-                    />
-                </div>
-                <button type="submit" className="login-button" value={isSubmitting ? "Logging in..." : "Login"} disabled={isSubmitting}>Log In</button>
-            </form>
+                <form onSubmit={LoginClick} method="post">
+                    <div className="form-group">
+                        <label htmlFor="username">Username</label>
+                            <input type="text" id="username" name="username"
+                            placeholder="Enter your username"
+                            value={username}
+                            onChange={(e) => setUsername(e.target.value)}
+                            required
+                            aria-label="Username"
+                            disabled={isSubmitting} />
+                    </div>
+                    <div className="form-group">
+                            <label htmlFor="password">Password</label>
+                        <input type="password" id="password" name="password" 
+                            placeholder="Enter your password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            required
+                            aria-label="Password"
+                            disabled={isSubmitting} 
+                        />
+                    </div>
+                    <button type="submit" className="login-button"  value={isSubmitting ? "Signing..." : "Sign In"} disabled={isSubmitting}>Sign In</button>
+                </form>
+            </div>
+        </div>
         </div>
     </div>
     );
