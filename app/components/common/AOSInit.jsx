@@ -16,7 +16,8 @@ export default function AOSInit() {
             offset: 50, // Reduced offset for earlier triggering
             delay: 0,
             anchorPlacement: "top-bottom",
-            // Disable on mobile for performance or if user prefers reduced motion
+            disable: prefersReducedMotion ? true : false, // Respect user's motion preferences
+            // Disable on mobile for performance, but keep on desktop/tablet
             disable: function() {
                 const isMobile = window.innerWidth < 768;
                 const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
