@@ -22,33 +22,33 @@ const page = () => {
             <div className="careersBodyWrap">
                 <div className="container">
                     <div className="careersBody">
-                        <div className="careersFormSec">
+                        <div className="careersFormSec" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                             <form onSubmit={handleSubmit}>
-                                <div className="careerFormHead">
+                                <div className="careerFormHead" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                                     <h2>Looking for a Better Career Opportunity?</h2>
                                     <p>Choose a career with us, and together, let's create positive, long-lasting values and take your
                                         career to the next level.
                                     </p>
                                 </div>
-                                <span>
+                                <span data-aos="fade-up" data-aos-delay="500" data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                                     <input type="text" placeholder="First Name" />
                                 </span>
-                                <span>
+                                <span data-aos="fade-up" data-aos-delay="550" data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                                     <input type="text" placeholder="Last Name" />
                                 </span>
-                                <span>
+                                <span data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                                     <input type="text" placeholder="Phone" />
                                 </span>
-                                <span>
+                                <span data-aos="fade-up" data-aos-delay="650" data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                                     <input type="email" placeholder="Email" />
                                 </span>
-                                <span>
+                                <span data-aos="fade-up" data-aos-delay="700" data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                                     <input type="text" placeholder="Location" />
                                 </span>
-                                <span>
+                                <span data-aos="fade-up" data-aos-delay="750" data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                                     <input type="text" placeholder="Your Expertise" />
                                 </span>
-                                <span className="fileUpload">
+                                <span className="fileUpload" data-aos="fade-up" data-aos-delay="800" data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                                     <i>Upload Your Resume</i>
                                     <div>
                                         <label htmlFor="resumeUpload" className="customFileLabel">
@@ -58,7 +58,7 @@ const page = () => {
                                         <span className="fileName">{fileName}</span>
                                     </div>
                                 </span>
-                                <span className="captchaSec">
+                                <span className="captchaSec" data-aos="fade-up" data-aos-delay="850" data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                                     <div className="captchaText">ABWI</div>
                                     <input type="text" className="captchaInput" placeholder="Enter Captcha" />
                                     <div className="captchaReloadBtn">
@@ -72,13 +72,13 @@ const page = () => {
                                     </div>
                                 </span>
 
-                                <span>
+                                <span data-aos="fade-up" data-aos-delay="900" data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                                     <button>Submit</button>
                                 </span>
 
                             </form>
                         </div>
-                        <div className="careersImgSec">
+                        <div className="careersImgSec" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                             <Image
                                 src="/images/static/careers-hero.png"
                                 alt="careers"
