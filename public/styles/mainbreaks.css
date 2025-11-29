@@ -222,11 +222,14 @@
         .eventInfo>p{padding-top:0}
         .eventItem{gap:25px}
 
-        .specialityCard{flex-direction: column;gap: 15px;padding: 15px;align-items: center;}
+        .specialityCard{flex-direction: column;gap: 10px;padding: 15px;align-items: center;}
         .specialityImageWrap{flex: auto;width: 100px;height: 100px;}
         .specialityContent{padding: 0;align-items: center;}
-        .specialityItems{gap: 15px;}
+        .specialityItems{gap: 5px;}
         .specialityContent{text-align: center;}
+        .specialitySlide{height: 680px;}
+        .specialityItems{height: 100%;justify-content: center;}
+        .specialityContent h4{font-size: 19;}
 
         .insightsUpdateHead{flex-direction: column;gap: 20px;}
         .insightsUpdateHead .exploreMoreBtn{max-width: fit-content;}
