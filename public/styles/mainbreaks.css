@@ -198,8 +198,8 @@
     .eventItem{flex-direction:column}
     .eventInfo>h3,.eventInfo>p{text-align:center}
     .eventInfo>span{justify-content:center}
-    .eventsSliderNav{top:unset;bottom:160px;left:50%;gap:10px;transform:translateX(-50%);right:unset}
-    .eventNavBtn{height:35px;width:35px}
+    .eventsSliderNav{top:unset;bottom:160px;left:50%;gap:5px;transform:translateX(-50%);right:unset}
+    .eventNavBtn{height:38px;width:38px}
     .eventsSliderNav{position:static;transform: none;justify-content: center;align-items: center;}
     .eventSliderWrap{width: 100%;}
 
