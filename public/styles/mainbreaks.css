@@ -5,6 +5,7 @@
 
 @media screen and (min-width: 1600px) {
     .atGlanceTopCont{gap:140px}
+    .atGlanceMarquee .marqueeText{font-size:110px;}
 
     .bannerGridItem{min-width:450px}
     

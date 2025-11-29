@@ -185,7 +185,7 @@
 .ourSpecialitiesSliderBtn{width:50px;height:50px;background-image:url(/images/home/circled-right-white.png);background-size:contain;background-repeat:no-repeat;cursor:pointer}
 .ourSpecialitiesSliderBtn.ourSpecialitiesPrevBtn{rotate:180deg}
 .ourSpecialitiesMarquee{padding:60px 30px 0;overflow:hidden}
-.ourSpecialitiesMarquee .marqueeText{font-family:var(--marquee-black);font-size:80px;color:#a8a8a8;text-transform:uppercase}
+.ourSpecialitiesMarquee .marqueeText{font-family:var(--marquee-black);font-size:84px;color:#a8a8a8;text-transform:uppercase}
 
 /*at glance*/
 .atGlanceWrap{padding:100px 0 180px;background:#ececec;position:relative;border-radius:var(--border-home);margin-top:-100px;z-index:1}
@@ -199,7 +199,7 @@
 .atGlanceTopContRght>span{font-size:380px;line-height:1em;font-family:var(--medium);color:#e5e5e5}
 .atGlanceTopContRght>em{position:absolute;bottom:120px;right:0;max-width:60%}
 .atGlanceMarquee{padding:60px 30px 0;overflow:hidden}
-.atGlanceMarquee .marqueeText{font-family:var(--marquee-black);font-size:80px;color:#a8a8a8;text-transform:uppercase}
+.atGlanceMarquee .marqueeText{font-family:var(--marquee-black);font-size:80px;color: #D4D4D4; text-transform:uppercase}
 .atGlanceGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:50px;padding-top:20px}
 .atGlanceGridItem{display:flex;flex-direction:column;gap:30px}
 .atGlanceGridItem>img{object-fit:contain;height:100px;width:100px}
