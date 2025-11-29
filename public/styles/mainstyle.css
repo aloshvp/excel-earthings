@@ -58,7 +58,7 @@
 .skeleton-img{height:350px;background:#ccc;border-radius:20px}
 .skeleton-title{height:30px;width:50%;background:#ddd;border-radius:6px}
 .skeleton-text{height:20px;width:100%;background:#eee;border-radius:6px}
-.areaOfApplicationsSliderNav{position:absolute;bottom:-100px;left:50%;transform:translateX(-50%);display:flex;gap:10px;z-index:10}
+.areaOfApplicationsSliderNav{position:absolute;bottom:-100px;left:0;right:0;display:flex;justify-content:center;gap:10px;z-index:10}
 .areaOfApplicationsSliderBtn{width:50px;height:50px;background-image:url(/images/home/circled-right.png);background-size:contain;background-repeat:no-repeat;cursor:pointer}
 .areaOfApplicationsSliderBtn.areaOfApplicationsPrevBtn{rotate:180deg}
 .areaOfApplicationsSlider .swiper-slide{width:100%;margin-right:45px}
@@ -71,7 +71,7 @@
 .associateSlide{position:relative;display:flex;justify-content:center;align-items:center;flex-direction:column;gap:15px}
 .associateSlide .associateImg>img{border-radius:20px}
 .associateSlide .associateDesc{font-size:18px;line-height:1.3em;color:#444444;font-family:var(--medium);text-align:center}
-.ourAssociatesSliderNav{position:absolute;bottom:-100px;left:50%;transform:translateX(-50%);display:flex;gap:10px;z-index:10}
+.ourAssociatesSliderNav{position:absolute;bottom:-100px;left:0;transform:translateX(-50%);display:flex;gap:10px;z-index:10;justify-content: center;width: 100%;}
 .ourAssociatesSliderNavBtn{width:50px;height:50px;background-image:url(/images/home/circled-right.png);background-size:contain;background-repeat:no-repeat;cursor:pointer}
 .ourAssociatesSliderNavBtn.ourAssociatesSliderPrevBtn{rotate:180deg}
 
@@ -84,7 +84,7 @@
 .certificationContent{display:flex;justify-content:center;align-items:center;flex-direction:column;text-align:center}
 .certificationContent>h3{font-size:22px;line-height:1.3em;font-family:var(--medium);color:#444444}
 .certificationContent>p{font-size:18px;line-height:1.3em}
-.ourCertificationNav{position:absolute;bottom:-100px;left:50%;transform:translateX(-50%);display:flex;gap:10px;z-index:10}
+.ourCertificationNav{position:absolute;bottom:-100px;width:100%;display:flex;justify-content:center;gap:10px;z-index:10}
 .ourCertificationSlierNavBtn{width:50px;height:50px;background-image:url(/images/home/circled-right.png);background-size:contain;background-repeat:no-repeat;cursor:pointer}
 .ourCertificationSlierNavBtn.ourCertificationSliderPrevBtn{rotate:180deg}
 
