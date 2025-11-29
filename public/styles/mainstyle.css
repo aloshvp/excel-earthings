@@ -58,8 +58,8 @@
 .skeleton-img{height:350px;background:#ccc;border-radius:20px}
 .skeleton-title{height:30px;width:50%;background:#ddd;border-radius:6px}
 .skeleton-text{height:20px;width:100%;background:#eee;border-radius:6px}
-.areaOfApplicationsSliderNav{position:absolute;bottom:-100px;left:50%;transform:translateX(-50%);display:flex;gap:15px;z-index:10}
-.areaOfApplicationsSliderBtn{width:40px;height:40px;background-image:url(/images/home/right-arrow.svg);background-size:contain;background-repeat:no-repeat;cursor:pointer}
+.areaOfApplicationsSliderNav{position:absolute;bottom:-100px;left:50%;transform:translateX(-50%);display:flex;gap:10px;z-index:10}
+.areaOfApplicationsSliderBtn{width:50px;height:50px;background-image:url(/images/home/circled-right.png);background-size:contain;background-repeat:no-repeat;cursor:pointer}
 .areaOfApplicationsSliderBtn.areaOfApplicationsPrevBtn{rotate:180deg}
 .areaOfApplicationsSlider .swiper-slide{width:100%;margin-right:45px}
 
@@ -71,8 +71,8 @@
 .associateSlide{position:relative;display:flex;justify-content:center;align-items:center;flex-direction:column;gap:15px}
 .associateSlide .associateImg>img{border-radius:20px}
 .associateSlide .associateDesc{font-size:18px;line-height:1.3em;color:#444444;font-family:var(--medium);text-align:center}
-.ourAssociatesSliderNav{position:absolute;bottom:-100px;left:50%;transform:translateX(-50%);display:flex;gap:15px;z-index:10}
-.ourAssociatesSliderNavBtn{width:40px;height:40px;background-image:url(/images/home/right-arrow.svg);background-size:contain;background-repeat:no-repeat;cursor:pointer}
+.ourAssociatesSliderNav{position:absolute;bottom:-100px;left:50%;transform:translateX(-50%);display:flex;gap:10px;z-index:10}
+.ourAssociatesSliderNavBtn{width:50px;height:50px;background-image:url(/images/home/circled-right.png);background-size:contain;background-repeat:no-repeat;cursor:pointer}
 .ourAssociatesSliderNavBtn.ourAssociatesSliderPrevBtn{rotate:180deg}
 
 /*our certificates*/
@@ -84,8 +84,8 @@
 .certificationContent{display:flex;justify-content:center;align-items:center;flex-direction:column;text-align:center}
 .certificationContent>h3{font-size:22px;line-height:1.3em;font-family:var(--medium);color:#444444}
 .certificationContent>p{font-size:18px;line-height:1.3em}
-.ourCertificationNav{position:absolute;bottom:-100px;left:50%;transform:translateX(-50%);display:flex;gap:15px;z-index:10}
-.ourCertificationSlierNavBtn{width:40px;height:40px;background-image:url(/images/home/right-arrow.svg);background-size:contain;background-repeat:no-repeat;cursor:pointer}
+.ourCertificationNav{position:absolute;bottom:-100px;left:50%;transform:translateX(-50%);display:flex;gap:10px;z-index:10}
+.ourCertificationSlierNavBtn{width:50px;height:50px;background-image:url(/images/home/circled-right.png);background-size:contain;background-repeat:no-repeat;cursor:pointer}
 .ourCertificationSlierNavBtn.ourCertificationSliderPrevBtn{rotate:180deg}
 
 /*testimonials*/
@@ -96,9 +96,9 @@
 .testimonialItem>h3{font-size:24px;line-height:1em;margin:20px 0 5px}
 .testimonialDesignation{font-family:var(--medium);font-size:18px}
 .testimonialDescription{font-size:18px;line-height:1.4em;margin:50px 0 60px}
-.testimonialsSliderNav{position:absolute;top:-40px;right:0;display:flex;gap:15px;z-index:10}
-.testimonialsSlierNavBtn{width:40px;height:40px;background-image:url(/images/home/left-arrow.svg);background-size:contain;background-repeat:no-repeat;cursor:pointer}
-.testimonialsSlierNavBtn.testimonialsSliderNextBtn{rotate:180deg}
+.testimonialsSliderNav{position:absolute;top:-50px;right:0;display:flex;gap:10px;z-index:10}
+.testimonialsSlierNavBtn{width:50px;height:50px;background-image:url(/images/home/circled-right-white.png);background-size:contain;background-repeat:no-repeat;cursor:pointer}
+.testimonialsSlierNavBtn.testimonialsSliderPrevBtn{rotate:180deg}
 
 /*view our profile*/
 .viewOurProfileWrap{height:100vh;background:linear-gradient(rgba(0,22,42,0.6)),url(/images/home/bg-corporate-profile.jpg) no-repeat center center;background-size:cover;color:#fff;position:relative;border-radius:var(--border-home);margin-top:-100px;z-index:1}
@@ -121,9 +121,9 @@
 .ourProductsHeadRght .exploreMoreBtn{color:#fff;border-color:#fff}
 .ourProductsHeadRght .exploreMoreBtn:hover{background-color:#fff;color:#000}
 .ourProductsBody{position:relative}
-.ourProductsSliderNav{position:absolute;top:60px;right:100px;display:flex;gap:15px;z-index:10}
-.ourProductsSlierNavBtn{width:40px;height:40px;background-image:url(/images/home/left-arrow.svg);background-size:contain;background-repeat:no-repeat;cursor:pointer}
-.ourProductsSlierNavBtn.ourProductsSliderNextBtn{rotate:180deg}
+.ourProductsSliderNav{position:absolute;top:60px;right:100px;display:flex;gap:10px;z-index:10}
+.ourProductsSlierNavBtn{width:50px;height:50px;background-image:url(/images/home/circled-right-white.png);background-size:contain;background-repeat:no-repeat;cursor:pointer}
+.ourProductsSlierNavBtn.ourProductsSliderPrevBtn{rotate:180deg}
 .productItem{display:block;position:relative;overflow:hidden;text-decoration:none;color:inherit}
 .productBg{position:relative;width:100%;height:95vh}
 .productImage{object-fit:cover}
@@ -144,9 +144,9 @@
 .eventInfo>h3{font-size:34px;line-height:1.4em;font-family:var(--medium);color:#fff;margin-bottom:30px}
 .eventInfo>p{font-size:18px;line-height:1.5em;color:#fff;padding-top:20px;max-width:550px}
 .eventInfo>span{display:flex;align-items:center;gap:15px;font-size:20px;line-height:1em;margin-bottom:20px}
-.eventsSliderNav{position:absolute;top:150px;right:100px;display:flex;gap:15px;z-index:10}
-.eventNavBtn{width:40px;height:40px;background-image:url(/images/home/left-arrow.svg);background-size:contain;background-repeat:no-repeat;cursor:pointer}
-.eventNavBtn.eventsNextBtn{rotate:180deg}
+.eventsSliderNav{position:absolute;top:150px;right:100px;display:flex;gap:10px;z-index:10}
+.eventNavBtn{width:50px;height:50px;background-image:url(/images/home/circled-right-white.png);background-size:contain;background-repeat:no-repeat;cursor:pointer}
+.eventNavBtn.eventsPrevBtn{rotate:180deg}
 
 /*insight*/
 .insightsUpdatesWrap{padding:100px 0 220px;background:#ececec;position:relative;border-radius:var(--border-home);margin-top:-100px;z-index:1}
@@ -181,9 +181,9 @@
 .specialityCard:hover .specialityContent h4{transform:translateY(-8px)}
 .specialityCard:hover .specialityContent p{opacity:1;transform:translateY(0);max-height:150px;}
 .ourSpecialitiesBody{position:relative}
-.ourSpecialitiesSliderNav{z-index:10;gap:15px;display:flex;position:absolute;top:-100px;right:0}
-.ourSpecialitiesSliderBtn{width:45px;height:45px;background-image:url(/images/home/left-arrow.svg);background-size:contain;background-repeat:no-repeat;cursor:pointer}
-.ourSpecialitiesSliderBtn.ourSpecialitiesNextBtn{rotate:180deg}
+.ourSpecialitiesSliderNav{z-index:10;gap:10px;display:flex;position:absolute;top:-100px;right:0}
+.ourSpecialitiesSliderBtn{width:50px;height:50px;background-image:url(/images/home/circled-right-white.png);background-size:contain;background-repeat:no-repeat;cursor:pointer}
+.ourSpecialitiesSliderBtn.ourSpecialitiesPrevBtn{rotate:180deg}
 .ourSpecialitiesMarquee{padding:60px 30px 0;overflow:hidden}
 .ourSpecialitiesMarquee .marqueeText{font-family:var(--marquee-black);font-size:80px;color:#a8a8a8;text-transform:uppercase}
 

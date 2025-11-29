@@ -226,10 +226,10 @@
 .relatedProductsWrap>h3{font-family: var(--medium);font-size: 25px;line-height: 32px;}
 .relatedProductsSlider{padding-top:30px ;position: relative;}
 .testdesc{padding: 20px 0;min-height: 90px;}
-.customClck{position: absolute;top:-41px;right:0;display: flex;gap:20px;z-index: 1;}
-.customClck>div{display: inline-block;width: 40px;height: 40px;position: relative;cursor: pointer;}
-.customClck>div:after{content:'';display: inline-block;width: 100%;height: 100%;position: absolute;top:0;left:0;background-image: url(../images/home/right-arrow.svg);background-repeat: no-repeat;background-size: cover;}
-.swiper-button-prev-custom:after{transform: rotate(180deg);}
+.customClck{position: absolute;top:-41px;right:0;display: flex;gap:10px;z-index: 1;}
+.customClck>div{display: inline-block;width: 50px;height: 50px;position: relative;cursor: pointer;}
+.customClck>div:after{content:'';display: inline-block;width: 100%;height: 100%;position: absolute;top:0;left:0;background-image: url(../images/home/circled-right.png);background-repeat: no-repeat;background-size: cover;}
+.swiper-button-prev-custom:after{rotate:180deg}
 .relatedProductsSlider .prdtDesc > em{font-size: 16px;line-height: 25px;}
 
 .customClck .swiper-button-disabled{opacity: 0.6;cursor: default;}
