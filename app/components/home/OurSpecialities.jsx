@@ -40,7 +40,7 @@ const OurSpecialities = () => {
                         }}
                         breakpoints={{
                             320: { slidesPerView: 1 },
-                            1440: { slidesPerView: 2 },
+                            1300: { slidesPerView: 2 },
                         }}
                     >
                         {specialitiesSlides.map((slide, i) => (
@@ -68,7 +68,7 @@ const OurSpecialities = () => {
 
                                                     <div className="specialityContent">
                                                         <h4>{item.title}</h4>
-                                                        {/* <p>{item.description}</p> */}
+                                                        <p>{item.description}</p>
                                                     </div>
                                                 </div>
 
