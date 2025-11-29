@@ -190,11 +190,12 @@
 /*at glance*/
 .atGlanceWrap{padding:100px 0 180px;background:#ececec;position:relative;border-radius:var(--border-home);margin-top:-100px;z-index:1}
 .atGlanceTopCont{display:flex;gap:100px}
+.atGlanceTopContLft{flex: 1;}
 .atGlanceTopContLft>p{font-size:30px;line-height:1.5em;margin-top:50px;color:#111111;max-width:820px}
 .atGlanceTopContLft a{color:var(--blue);margin-top:40px;font-size:18px;line-height:1em;display:inline-block;position:relative;padding-right:30px;transition:color .3s ease;font-family:var(--medium)}
 .atGlanceTopContLft a:after{content:"";position:absolute;right:0;top:5px;width:20px;height:20px;background-image:url(/images/icons/right-arrow-red.svg);background-size:contain;background-repeat:no-repeat;cursor:pointer;transition:transform .3s ease}
 .atGlanceTopContLft a:hover:after{transform:translateX(3px)}
-.atGlanceTopContRght{position:relative;flex:1}
+.atGlanceTopContRght{position:relative;flex:1;}
 .atGlanceTopContRght>span{font-size:380px;line-height:1em;font-family:var(--medium);color:#e5e5e5}
 .atGlanceTopContRght>em{position:absolute;bottom:120px;right:0;max-width:60%}
 .atGlanceMarquee{padding:60px 30px 0;overflow:hidden}
