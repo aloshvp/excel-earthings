@@ -107,7 +107,7 @@ const AdminLeftMenu = ({flag}) => {
     
     if (href) {
       const baseUrl = '/' ||''; 
-      router.push(`${baseUrl}/admin/pages/${href}`); 
+      router.push(`/admin/pages/${href}`); 
     }
   };
 
