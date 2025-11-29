@@ -69,7 +69,7 @@ const OurProducts = () => {
                                 <div className="productContent" data-aos="fade-up" data-aos-delay={index * 100 + 600} data-aos-duration="700" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                                     <span className="productNumber" data-aos="fade-up" data-aos-delay={index * 100 + 650} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">{product.number}</span>
                                     <h3 className="productName" data-aos="fade-up" data-aos-delay={index * 100 + 750} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">{product.name}</h3>
-                                    <Link href="" scroll={false} data-aos="fade-up" data-aos-delay={index * 100 + 850} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">
+                                    <Link href="/products/category"  data-aos="fade-up" data-aos-delay={index * 100 + 850} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                                         Explore More <span className="arrow"></span>
                                     </Link>
                                 </div>
