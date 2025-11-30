@@ -1,1243 +1,283 @@
-@media only screen and (min-width : 1200px) {}
 
-@media screen and (min-width: 1300px) {
-
-    /*common*/
-    .commonBanner .commonBannerContent {
-        padding: 0 100px 70px;
-    }
-
-    /*product listing*/
-    .productLeftMenuSec {
-        min-width: 350px;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-
-    /*application page*/
-    .applicationsInnerBody {
-        padding: 150px 0;
-        gap: 90px 45px;
-    }
-
-    /*approvals-and-associates page*/
-    .approvalsAndAsscociatesBody {
-        padding: 100px 0;
-    }
-
-    .approvalsAndAsscociatesBodyGrid {
-        grid-template-columns: repeat(6, 1fr);
-    }
-
-    /*faq*/
-    .faqBody {
-        padding: 150px 0;
-    }
-
-    /* insights And Updates page */
-    .insightsAndUpdatesInnerWrap {
-        padding: 150px 0;
-    }
-
-    .insightsAndUpdatesInnerBody {
-        max-width: 90%;
-        margin: 0 auto;
-    }
-
-    /*careers*/
-    .careerFormHead {
-        padding-right: 160px;
-    }
-
-    /*e-learning*/
-    .eLearningTitle p {
-        max-width: 850px;
-    }
-
-    .eLearningVideoWrap {
-        padding: 150px 0 250px;
-    }
-
-    .eLearningBrochuresWrap {
-        padding: 150px 0;
-    }
-
-    .eLearningBrochuresHead {
-        margin-bottom: 40px;
-    }
-
-    /*design*/
-    .transformerEarthingBody {
-        padding: 140px 0 0;
-    }
-
-    /*about-us*/
-    .aboutUsBannerContentRght>span {
-        font-size: 500px;
-    }
-
-    .aboutUsBannerContentRght>em {
-        bottom: 100px;
-        right: 0;
-        max-width: 55%;
-    }
-}
-
-@media screen and (min-width: 1600px) {
-
-    /* .productsMainItem {
-        top: 100px;
-    } */
-
-    /* .productsMainItemBg {height: calc(100vh - 100px);} */
-
-    /*about-us*/
-    /* .aboutUsUniqueWrap,
-    .aboutUsGlanceWrap,
-    .aboutUsMilestonesWrap,
-    .aboutUsMissionWrap,
-    .aboutUsCeoWrap {
-        top: 100px;
-    } */
-
-
-    .aboutUsBannerContentLft>p {
-        max-width: 760px;
-    }
-}
-
-@media screen and (min-width: 1800px) {
-
-    /*about-us*/
-    .aboutUsBannerContentRght>span {
-        font-size: 620px;
-    }
-
-    .aboutUsBannerContentRght>em {
-        bottom: 100px;
-        right: 0;
-        max-width: 100%;
-    }
-
-    .aboutUsBannerContentRght {
-        max-width: 680px;
-    }
-}
-
-@media screen and (max-width: 1200px) {}
-
-@media only screen and (max-width: 1100px) {}
-
-@media screen and (min-width: 2100px) {}
-
-@media only screen and (max-width: 991px) {
-
-    /*common banner*/
-    .commonBanner .commonBannerWrap {
-        height: 450px;
-    }
-
-    .commonBanner .commonBannerContent {
-        padding: 0 25px 30px;
-    }
-
-
-    /*product listing*/
-    .prdctMobMenu {
-        position: relative;
-    }
-
-    .prdctMobMenu>span {
-        display: block;
-        padding: 10px;
-        margin-bottom: 10px;
-        background-color: var(--blue);
-        color: #fff;
-        font-size: 18px;
-        line-height: 20px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        cursor: pointer;
-    }
-
-    .prdctMobMenu>div {
-        display: none;
-        position: absolute;
-        top: 40px;
-        left: 0;
-        right: 0;
-        background-color: #fdfafaf2;
-        max-height: 250px;
-        overflow-y: scroll;
-        transition: all 0.5s ease;
-        z-index: 99;
-    }
-
-    .prdctMobMenu>div.active {
-        display: block;
-        padding: 15px;
-    }
-
-    .productSections {
-        flex-direction: column;
-    }
-
-    .productContent {
-        top: 60px;
-        left: 25px;
-    }
-
-    .productList {
-        padding-top: 30px;
-    }
-
-    /*products main*/
-    .productsMainItem {
-        top: 75px;
-    }
-
-    .productsMainItemBg {
-        height: calc(100vh - 75px);
-    }
-
-    .productsMainItemContent {
-        left: 25px;
-        top: 60px;
-    }
-
-    .productsMainItemName {
-        font-size: 40px;
-        margin: 5px 0px 12px;
-    }
-
-
-    /*application page*/
-    .applicationsInnerBody {
-        padding: 80px 0;
-    }
-
-    .applicationsInnerGrid {
-        gap: 60px 30px;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .applicationsInnerGridItemTitle>h3 {
-        font-size: 22px;
-    }
-
-    .applicationsInnerGridItemTitle>img {
-        max-width: 60px;
-    }
-
-    .applicationsInnerGridItemContent a {
-        margin-top: 25px;
-    }
-
-    /*approvals-and-associates page*/
-    .approvalsAndAsscociatesBody {
-        padding: 60px 0;
-    }
-
-    .approvalsAndAsscociatesBodyGrid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-        margin-top: 40px;
-    }
-
-    .approvalsAndAsscociatesBodyTitle>p {
-        max-width: 100%;
-    }
-
-    /*faq*/
-    .faqBody {
-        padding: 60px 0;
-    }
-
-    .faqHead>h2 {
-        margin-bottom: 15px;
-    }
-
-    .faqContent {
-        padding: 0;
-    }
-
-    /* insights And Updates page */
-    .insightsAndUpdatesInnerWrap {
-        padding: 60px 0;
-    }
-
-    .insightsAndUpdatesInnerGridItem span {
-        margin: 30px 0 15px;
-    }
-
-    .insightsAndUpdatesInnerGridItem h4 {
-        font-size: 20px;
-    }
-
-    .insightsAndUpdatesInnerGridItem p {
-        margin: 20px 0 35px;
-    }
-
-    /*careers*/
-    .careersBodyWrap {
-        padding: 60px 0;
-    }
-
-    .careersBody {
-        flex-direction: column;
-        gap: 45px;
-    }
-
-    .careersBodyWrap {
-        gap: 20px;
-    }
-
-    .careerFormHead>p {
-        margin: 10px 0;
-    }
-
-    /*e-learning*/
-    .eLearningBodyWrap {
-        padding: 60px 0 0;
-    }
-
-    .eLearningTitle {
-        gap: 40px;
-    }
-
-    .eLearningVideoWrap {
-        padding: 80px 0 180px;
-    }
-
-    .eLearningVideoItemWrap {
-        gap: 40px 25px;
-    }
-
-    .eLearningVideoItemText>h4 {
-        font-size: 18px;
-    }
-
-    .eLearningVideoItemText>p {
-        font-size: 15px;
-    }
-
-    .eLearningBrochuresWrap {
-        padding: 80px 0 180px;
-    }
-
-    .eLearningBrochuresItemWrap {
-        gap: 15px;
-    }
-
-    .eLearningBrochuresItemImg {
-        padding: 25px 40px;
-    }
-
-    /*applications details*/
-    .applicationDetailsBody {
-        padding: 60px 0;
-    }
-
-    .applicationDetailsHead>h2 {
-        font-size: 36px;
-    }
-
-    .applicationDetailsContent {
-        flex-direction: column-reverse;
-        padding-top: 30px;
-        gap: 30px;
-    }
-
-    .applicationDetailsItemswrap {
-        width: 100%;
-    }
-
-    .applicationDetailsItem>p>em {
-        display: block;
-    }
-
-    /*design*/
-    .transformerEarthingBody {
-        padding: 60px 0 0;
-    }
-
-    .transformerEarthingHead p {
-        max-width: 100%;
-    }
-
-    .transformerEarthingForm {
-        padding: 60px 0 180px;
-    }
-
-    .transformerEarthingDsgnCalc {
-        padding: 60px 0 160px;
-    }
-
-    .transformerEarthingDsgnCalc form {
-        gap: 40px 30px;
-    }
-
-    .DesignCalcFormSec>div {
-        gap: 10px;
-    }
-
-    .transformerEarthingDsgnCalc form {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .DesignCalcFormSec.fullRow {
-        grid-column: auto;
-    }
-
-    .DesignCalcFormSec>div>span {
-        min-width: 40px;
-        text-align: center;
-    }
-
-    /*insights-and-updates-details*/
-    .insightsUpdatesDetailsWrap {
-        padding: 60px 0;
-    }
-
-    .insightsUpdatesDetailsBody {
-        flex-direction: column;
-    }
-
-    .insightsUpdatesDetailsLftCont {
-        border-right: none;
-        padding-right: 0;
-    }
-
-    .insightsUpdatesDetailsRghtCont {
-        padding-left: 0;
-    }
-
-    .blogPostContentHead>h1 {
-        max-width: 100%;
-    }
-
-    .blogPostShareSec {
-        margin: 40px 0;
-    }
-
-    .recentPostsWrap {
-        gap: 20px;
-    }
-
-    .recentPostsitem {
-        padding-bottom: 20px;
-    }
-
-    /*about-us*/
-    .aboutUsBannerContentRght {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .aboutUsBannerContentRght>span {
-        font-size: 420px;
-    }
-
-    .aboutUsBannerContentRght>em {
-        bottom: 50px;
-        max-width: 300px;
-    }
-
-    .atGlanceTopContRght {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .aboutUsBannerContentRght>span {
-        font-size: 420px;
-    }
-
-    .aboutUsBannerContentRght>em {
-        bottom: 50px;
-        max-width: 300px;
-    }
-
-    /*about-us*/
-    .aboutUsBannerWrap {
-        padding: 60px 0;
-    }
-
-    .aboutUsBannerContent {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .aboutUsBannerContentLft>h1 {
-        font-size: 34px;
-    }
-
-    .aboutUsBannerContentLft>p {
-        margin-top: 30px;
-    }
-
-    .aboutUsUniqueWrap {
-        /* top: 75px; */
-        position: static;
-        height: auto;
-    }
-
-    .aboutUsUniqueGridItem>p {
-        max-width: 100%;
-        font-size: 22px;
-        font-size: 20px;
-    }
-
-    .aboutUsUniqueContent {
-        padding: 60px 0;
-    }
-
-    .aboutUsUniqueContent>h2 {
-        font-size: 40px;
-    }
-
-    .aboutUsUniqueGrid {
-        align-items: flex-start;
-    }
-
-    .aboutUsUniqueGridItem>em {
-        width: 90px;
-        height: 90px;
-        padding: 15px;
-    }
-
-    .aboutUsUniqueGridItem {
-        gap: 30px;
-    }
-
-    .aboutUsGlanceContent {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .aboutUsGlanceWrap {
-        position: static;
-        padding: 60px 0;
-    }
-
-    .aboutUsGlanceHead {
-        padding-bottom: 25px;
-    }
-
-    .aboutUsGlanceHead>h2 {
-        font-size: 40px;
-    }
-
-    .aboutUsGlanceContentLft>p {
-        margin-bottom: 20px;
-    }
-
-    .aboutUsGlanceContentRghtBox {
-        padding: 30px 50px;
-    }
-
-    .aboutUsGlanceContentRghtBox ul>li {
-        font-size: 20px;
-    }
-
-    .aboutUsMilestonesWrap {
-        position: static;
-        padding: 60px 0;
-        height: auto;
-        padding-bottom: 150px;
-    }
-
-    .aboutUsMilestonesHead>h2 {
-        font-size: 40px;
-    }
-
-    .aboutUsMilestonesSlider {
-        padding: 40px 0 0;
-        margin: 30px 0 60px;
-    }
-
-    .aboutUsMilestonesContentLft {
-        max-width: 200px;
-        margin-right: 40px;
-    }
-
-    .aboutUsMilestonesContentLft>span {
-        font-size: 100px;
-    }
-
-    .aboutUsMilestonesContentRght {
-        max-width: 100%;
-        padding-left: 40px;
-    }
-
-    .aboutUsMilestonesContentRght>h3 {
-        font-size: 24px;
-    }
-
-    .aboutUsMissionWrap {
-        padding: 60px 0;
-        margin-top: -100px;
-        position: static;
-        height: auto;
-        padding-bottom: 150px;
-    }
-
-    .aboutUsMissionHead>h2 {
-        font-size: 40px;
-    }
-
-    .aboutUsMissionGrid {
-        margin-top: 40px;
-    }
-
-    .aboutUsMissionGridItem>h3 {
-        font-size: 25px;
-        /* margin: 20px 0; */
-    }
-
-    .aboutUsMissionGridItem>img {
-        max-width: 60px;
-    }
-
-    .aboutUsInfraStructureWrap {
-        padding: 60px 0;
-        position: static;
-        height: auto;
-        padding-bottom: 150px;
-        margin-top: -100px;
-    }
-
-    .aboutUsInfraStructureTopContLft>h2 {
-        font-size: 40px;
-    }
-
-    .aboutUsInfraStructureTopCont {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .aboutUsInfraStructureTopContRght>em {
-        max-width: 60%;
-    }
-
-    .aboutUsInfraStructureBtmCont {
-        margin-top: 45px;
-    }
-
-    .infrastructureHighlightsSec {
-        gap: 40px;
-    }
-
-    .aboutUsInfraStructureBtmCont>h3 {
-        font-size: 30px;
-    }
-
-    .aboutUsCeoWrap {
-        padding: 60px 0 150px;
-        position: static;
-        margin-top: -100px;
-        height: auto;
-    }
-
-    .aboutUsCeoContent {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .aboutUsCeoContentLft {
-        text-align: center;
-    }
-
-    .aboutUsCeoContentLft>em {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-width: auto;
+    @media screen and (min-width: 1300px) {
+    .commonBanner .commonBannerContent{padding:0 100px 70px}
+    .productLeftMenuSec{min-width:350px}
+    .aboutUsUniqueWrap{height:100vh;position:sticky;top:80px;}
+    }
+
+    @media screen and (min-width: 1440px) {
+    .applicationsInnerBody{padding:150px 0;gap:90px 45px}
+    .approvalsAndAsscociatesBody{padding:100px 0}
+    .approvalsAndAsscociatesBodyGrid{grid-template-columns:repeat(6,1fr)}
+    .faqBody{padding:150px 0}
+    .insightsAndUpdatesInnerWrap{padding:150px 0}
+    .insightsAndUpdatesInnerBody{max-width:90%;margin:0 auto}
+    .careerFormHead{padding-right:160px}
+    .eLearningTitle p{max-width:850px}
+    .eLearningVideoWrap{padding:150px 0 250px}
+    .eLearningBrochuresWrap{padding:150px 0}
+    .eLearningBrochuresHead{margin-bottom:40px}
+    .transformerEarthingBody{padding:140px 0 0}
+    .aboutUsBannerContentRght>span{font-size:500px}
+    .aboutUsBannerContentRght>em{bottom:100px;right:0;max-width:55%}
+    .aboutUsUniqueContent > h2{font-size:48px;margin-bottom:60px;}
+    .aboutUsUniqueGrid {gap: 45px;}
+    .aboutUsUniqueGridItem>p{font-size:32px;}
+    .aboutUsUniqueGridItem{gap:40px}
+    
+    }
+
+    @media screen and (min-width: 1600px) {
+    .aboutUsBannerContentLft>p{max-width:760px}
+    .aboutUsGlanceHead>h2{font-size:90px;}
+    .aboutUsGlanceWrap{padding:100px 0 200px;}
+    }
+
+    @media screen and (min-width: 1800px) {
+    .aboutUsBannerContentRght>span{font-size:620px}
+    .aboutUsBannerContentRght>em{bottom:100px;right:0;max-width:100%}
+    .aboutUsBannerContentRght{max-width:680px}
+    }
+
+    @media only screen and (max-width: 991px) {
+    .commonBanner .commonBannerWrap{height:450px}
+    .commonBanner .commonBannerContent{padding:0 25px 30px}
+    .prdctMobMenu{position:relative}
+    .prdctMobMenu>span{display:block;padding:10px;margin-bottom:10px;background-color:var(--blue);color:#fff;font-size:18px;line-height:20px;position:absolute;left:0;right:0;cursor:pointer}
+    .prdctMobMenu>div{display:none;position:absolute;top:40px;left:0;right:0;background-color:#fdfafaf2;max-height:250px;overflow-y:scroll;transition:all .5s ease;z-index:99}
+    .prdctMobMenu>div.active{display:block;padding:15px}
+    .productSections{flex-direction:column}
+    .productContent{top:60px;left:25px}
+    .productList{padding-top:30px}
+    .productsMainItem{top:75px}
+    .productsMainItemBg{height:calc(100vh - 75px)}
+    .productsMainItemContent{left:25px;top:60px}
+    .productsMainItemName{font-size:40px;margin:5px 0 12px}
+    .applicationsInnerBody{padding:80px 0}
+    .applicationsInnerGrid{gap:60px 30px;grid-template-columns:repeat(2,1fr)}
+    .applicationsInnerGridItemTitle>h3{font-size:22px}
+    .applicationsInnerGridItemTitle>img{max-width:60px}
+    .applicationsInnerGridItemContent a{margin-top:25px}
+    .approvalsAndAsscociatesBody{padding:60px 0}
+    .approvalsAndAsscociatesBodyGrid{grid-template-columns:repeat(3,1fr);gap:30px;margin-top:40px}
+    .approvalsAndAsscociatesBodyTitle>p{max-width:100%}
+    .faqBody{padding:60px 0}
+    .faqHead>h2{margin-bottom:15px}
+    .faqContent{padding:0}
+    .insightsAndUpdatesInnerWrap{padding:60px 0}
+    .insightsAndUpdatesInnerGridItem span{margin:30px 0 15px}
+    .insightsAndUpdatesInnerGridItem h4{font-size:20px}
+    .insightsAndUpdatesInnerGridItem p{margin:20px 0 35px}
+    .careersBodyWrap{padding:60px 0}
+    .careersBody{flex-direction:column;gap:45px}
+    .careersBodyWrap{gap:20px}
+    .careerFormHead>p{margin:10px 0}
+    .eLearningBodyWrap{padding:60px 0 0}
+    .eLearningTitle{gap:40px}
+    .eLearningVideoWrap{padding:80px 0 180px}
+    .eLearningVideoItemWrap{gap:40px 25px}
+    .eLearningVideoItemText>h4{font-size:18px}
+    .eLearningVideoItemText>p{font-size:15px}
+    .eLearningBrochuresWrap{padding:80px 0 180px}
+    .eLearningBrochuresItemWrap{gap:15px}
+    .eLearningBrochuresItemImg{padding:25px 40px}
+    .applicationDetailsBody{padding:60px 0}
+    .applicationDetailsHead>h2{font-size:36px}
+    .applicationDetailsContent{flex-direction:column-reverse;padding-top:30px;gap:30px}
+    .applicationDetailsItemswrap{width:100%}
+    .applicationDetailsItem>p>em{display:block}
+    .transformerEarthingBody{padding:60px 0 0}
+    .transformerEarthingHead p{max-width:100%}
+    .transformerEarthingForm{padding:60px 0 180px}
+    .transformerEarthingDsgnCalc{padding:60px 0 160px}
+    .transformerEarthingDsgnCalc form{gap:40px 30px}
+    .DesignCalcFormSec>div{gap:10px}
+    .transformerEarthingDsgnCalc form{grid-template-columns:repeat(1,1fr)}
+    .DesignCalcFormSec.fullRow{grid-column:auto}
+    .DesignCalcFormSec>div>span{min-width:40px;text-align:center}
+    .insightsUpdatesDetailsWrap{padding:60px 0}
+    .insightsUpdatesDetailsBody{flex-direction:column}
+    .insightsUpdatesDetailsLftCont{border-right:none;padding-right:0}
+    .insightsUpdatesDetailsRghtCont{padding-left:0}
+    .blogPostContentHead>h1{max-width:100%}
+    .blogPostShareSec{margin:40px 0}
+    .recentPostsWrap{gap:20px}
+    .recentPostsitem{padding-bottom:20px}
+    .aboutUsBannerContentRght{display:flex;justify-content:center;align-items:center}
+    .aboutUsBannerContentRght>span{font-size:420px}
+    .aboutUsBannerContentRght>em{bottom:50px;max-width:300px}
+    .atGlanceTopContRght{display:flex;justify-content:center;align-items:center}
+    .aboutUsBannerContentRght>span{font-size:420px}
+    .aboutUsBannerContentRght>em{bottom:50px;max-width:300px}
+    .aboutUsBannerWrap{padding:60px 0}
+    .aboutUsBannerContent{flex-direction:column;gap:30px}
+    .aboutUsBannerContentLft>h1{font-size:34px}
+    .aboutUsBannerContentLft>p{margin-top:30px}
+    /* .aboutUsUniqueWrap{position:static;height:auto} */
+    .aboutUsUniqueGridItem>p{max-width:100%;font-size:22px;font-size:20px}
+    /* .aboutUsUniqueContent{padding:60px 0} */
+    .aboutUsUniqueContent>h2{font-size:40px}
+    .aboutUsUniqueGrid{align-items:flex-start}
+    .aboutUsUniqueGridItem>em{width:90px;height:90px;padding:15px}
+    .aboutUsUniqueGridItem{gap:30px}
+    .aboutUsGlanceContent{flex-direction:column;gap:30px}
+    .aboutUsGlanceWrap{position:static;padding:60px 0}
+    .aboutUsGlanceHead{padding-bottom:25px}
+    .aboutUsGlanceHead>h2{font-size:40px}
+    .aboutUsGlanceContentLft>p{margin-bottom:20px}
+    .aboutUsGlanceContentRghtBox{padding:30px 50px}
+    .aboutUsGlanceContentRghtBox ul>li{font-size:20px}
+    .aboutUsMilestonesWrap{position:static;padding:60px 0;height:auto;padding-bottom:150px}
+    .aboutUsMilestonesHead>h2{font-size:40px}
+    .aboutUsMilestonesSlider{padding:40px 0 0;margin:30px 0 60px}
+    .aboutUsMilestonesContentLft{max-width:200px;margin-right:40px}
+    .aboutUsMilestonesContentLft>span{font-size:100px}
+    .aboutUsMilestonesContentRght{max-width:100%;padding-left:40px}
+    .aboutUsMilestonesContentRght>h3{font-size:24px}
+    .aboutUsMissionWrap{padding:60px 0;margin-top:-100px;position:static;height:auto;padding-bottom:150px}
+    .aboutUsMissionHead>h2{font-size:40px}
+    .aboutUsMissionGrid{margin-top:40px}
+    .aboutUsMissionGridItem>h3{font-size:25px}
+    .aboutUsMissionGridItem>img{max-width:60px}
+    .aboutUsInfraStructureWrap{padding:60px 0;position:static;height:auto;padding-bottom:150px;margin-top:-100px}
+    .aboutUsInfraStructureTopContLft>h2{font-size:40px}
+    .aboutUsInfraStructureTopCont{flex-direction:column;gap:20px}
+    .aboutUsInfraStructureTopContRght>em{max-width:60%}
+    .aboutUsInfraStructureBtmCont{margin-top:45px}
+    .infrastructureHighlightsSec{gap:40px}
+    .aboutUsInfraStructureBtmCont>h3{font-size:30px}
+    .aboutUsCeoWrap{padding:60px 0 150px;position:static;margin-top:-100px;height:auto}
+    .aboutUsCeoContent{flex-direction:column;gap:40px}
+    .aboutUsCeoContentLft{text-align:center}
+    .aboutUsCeoContentLft>em{width:100%;display:flex;justify-content:center;align-items:center;min-width:auto}
+    .aboutUsCeoContentLft>em>img{max-width:350px}
+    .aboutUsCeoContentRght{text-align:center}
+    .aboutUsCeoContentRght>em{display:flex;justify-content:center;align-items:center;max-width:75px;margin:0 auto}
+    .doubleArrowIcon{rotate:90deg}
+    .aboutUsCeoContentRght>span{font-size:30px;margin:30px 0}
+    .aboutUsCeoContentRght>p{margin-bottom:25px}
+    .aboutUsAwardsWrap{padding:60px 0;position:static;height:auto;margin-top:-100px}
+    .aboutUsAwardsHead{flex-direction:column;gap:20px}
+    .aboutUsAwardsHead>h2{font-size:40px}
+    .aboutUsAwardsGrid{flex-wrap:wrap;gap:40px 20px}
+    .aboutUsAwardsGridItem{width:calc(50% - 20px)}
+    .aboutUsAwardsGridItem>p{font-size:18px}
+    }
+
+    @media only screen and (max-width: 767px) {
+    .productSections{gap:30px}
+    .prdtDesc>em{font-size:16px;line-height:25px;margin-bottom:5px}
+    .prdtDesc{margin:0 0 20px}
+    .productLeftMenuSec{min-width:auto}
+    .commonBanner .commonBannerWrap{height:400px}
+    .commonBanner .commonBannerContent{padding:0 15px 30px}
+    .commonBanner .commonBannerContent h1{font-size:28px}
+    .productsMainItem{top:65px}
+    .productsMainItemBg{height:calc(100vh - 65px)}
+    .productsMainItemName{margin:5px 0 10px;font-size:28px}
+    .productsMainItemContent{top:40px;left:20px}
+    .productsMainItemContent>a{font-size:16px}
+    .applicationsInnerBody{padding:60px 0}
+    .applicationsInnerGrid{grid-template-columns:repeat(1,1fr);gap:40px}
+    .applicationsInnerGridItemTitle>img{max-width:55px}
+    .applicationsInnerGridItem{gap:25px}
+    .approvalsAndAsscociatesBody{padding:40px 0 60px}
+    .approvalsAndAsscociatesBodyGrid{grid-template-columns:repeat(2,1fr);gap:25px}
+    .approvalsAndAsscociatesBodyTitle>h2{font-size:25px;margin-bottom:12px}
+    .approvalsAndAsscociatesBodyTitle>p{font-size:16px}
+    .faqBody{padding:40px 0 60px}
+    .faqHeading{padding:15px 15px 15px 0}
+    .faqHead>h2{margin-bottom:0;font-size:26px}
+    .faqHeading h3{font-size:18px}
+    .faqContent p{margin:0 0 15px;font-size:16px}
+    .faqToggle{font-size:15px}
+    .faqToggle>img{max-width:13px}
+    .insightsAndUpdatesInnerWrap{padding:40px 0 60px}
+    .insightsAndUpdatesInnerGrid{grid-template-columns:repeat(2,1fr);gap:45px 20px}
+    .careersBodyWrap{padding:40px 0 60px}
+    .careerFormHead>h2{font-size:26px}
+    .careersFormSec form{gap:20px}
+    .careersFormSec form input{padding:16px;height:50px;font-size:15px}
+    .careersFormSec form input::placeholder{font-size:15px}
+    .careersFormSec form button{font-size:16px;padding:16px}
+    .careersFormSec .captchaText{font-size:16px}
+    .careersFormSec .customFileLabel{font-size:16px}
+    .careersFormSec .fileUpload .fileName{font-size:16px}
+    .eLearningTitle{flex-direction:column;gap:25px}
+    .eLearningVideoWrap{padding:60px 0 160px}
+    .eLearningVideoItemWrap{grid-template-columns:repeat(1,1fr)}
+    .eLearningBrochuresItemWrap{flex-direction:column;gap:40px}
+    .eLearningBrochuresWrap{padding:60px 0 160px}
+    .eLearningBrochuresHead>h3{font-size:26px}
+    .eLearningBrochuresItemText>span>b{font-size:18px}
+    .applicationDetailsBody{padding:40px 0 60px}
+    .applicationDetailsHead>h2{font-size:30px}
+    .applicationDetailsItem>p{font-size:18px}
+    .applicationDetailsItem>img{max-width:120px}
+    .applicationDetailsItemImg>em>span{width:25px;height:25px;font-size:14px}
+    h2.designCommonHead{font-size:20px}
+    .transformerEarthingBody{padding:40px 0 0}
+    .transformerEarthingHead h2{font-size:24px}
+    .transformerEarthingHead p{margin-top:15px}
+    .transformerEarthingHead{padding-bottom:30px}
+    .transformerEarthingForm{padding:40px 0 160px}
+    .transformerEarthingForm form{grid-template-columns:repeat(1,1fr);gap:20px;margin:30px 0 0}
+    .transformerEarthingFormSec label,.DesignCalcFormSec label{font-size:16px}
+    .transformerEarthingFormSec input,.DesignCalcFormSec input,.DesignCalcFormSec.fullRow button{height:45px}
+    .transformerEarthingDsgnCalc{padding:40px 0 140px}
+    .transformerEarthingDsgnCalc form{margin:30px 0 0;gap:20px}
+    .DesignCalcFormSec>div{gap:5px}
+    .insightsUpdatesDetailsWrap{padding:40px 0 60px}
+    .blogPostContentHead>h1{font-size:24px;margin:15px 0 5px}
+    .blogPostContentHead>h3{font-size:16px}
+    .blogPostContentHead>span{font-size:14px}
+    .blogPostContent img{margin:20px 0}
+    .blogPostContent p{font-size:16px}
+    .blogPostContent h2{font-size:20px;margin:15px 0}
+    .blogPostContent ul>li{font-size:16px;padding:0 0 8px 20px}
+    .blogPostContent ul>li:before{width:6px;height:6px}
+    .blogVideowWap img{margin:0}
+    .blogPostShareSec{flex-wrap:wrap}
+    .blogPostShareSec .shareButton{font-size:14px;min-width:90px}
+    .insightsUpdatesDetailsRghtCont>h3{font-size:20px}
+    .recentPostsitem{gap:15px}
+    .recentPostsitem>p{font-size:16px}
+    .blogVideoPlayBtn{width:50px;height:50px}
+    .aboutUsBannerContentRght>span{font-size:360px}
+    .aboutUsBannerContentRght>em{max-width:220px}
+    .aboutUsMilestonesContent{flex-direction:column;gap:20px;align-items:flex-start}
+    .aboutUsMilestonesContentLft{margin:0}
+    .aboutUsMilestonesContentRght{padding:0;border:0}
+    .aboutUsCeoContentLft>em{min-width:auto}
+    .aboutUsMissionGrid{flex-direction:column}
+    }
+
+    @media only screen and (max-width: 479px) {
+    .productList{grid-template-columns:1fr}
+    .productSections{padding:30px 0}
+    .productLeftMenu>span{font-size:16px;line-height:25px}
+    .productLeftMenu>ul{font-size:14px;line-height:24px}
+    .approvalsAndAsscociatesBodyGrid{gap:30px 20px}
+    .approvalsAndAsscociatesBodyGridItem{gap:15px}
+    .approvalsAndAsscociatesBodyGridItem>h3{font-size:16px}
+    .approvalsAndAsscociatesBodyGrid{margin-top:30px}
+    .insightsAndUpdatesInnerGrid{grid-template-columns:repeat(1,1fr)}
+    .insightsAndUpdatesInnerGridItem p{margin:15px 0 20px}
+    .careerFormHead>h2{font-size:20px}
+    .careerFormHead>p{font-size:16px;margin:10px 0 5px}
+    .careersFormSec form{gap:15px}
+    .eLearningBodyWrap{padding:40px 0 0}
+    .eLearningTitle h2{font-size:24px}
+    .eLearningTitle p{font-size:16px}
+    .eLearningBrochuresHead>h3{font-size:24px}
+    .applicationDetailsBody{padding:30px 0 50px}
+    .applicationDetailsHead>h2{font-size:20px}
+    .applicationDetailsItem{gap:15px;gap:12px}
+    .applicationDetailsItem>p{font-size:15px}
+    .applicationDetailsItem>img{max-width:80px}
+    .applicationDetailsItemImg>em>span{width:20px;height:20px;font-size:12px;border-width:2px}
+    .applicationDetailsContent{padding-top:15px}
+    .insightsUpdatesDetailsWrap{padding:30px 0 40px}
+    .aboutUsBannerContentRght>span{font-size:250px}
+    .aboutUsBannerContentRght>em{max-width:160px;bottom:35px}
     }
-
-    .aboutUsCeoContentLft>em>img {
-        max-width: 350px;
-    }
-
-    .aboutUsCeoContentRght {
-        text-align: center;
-    }
-
-    .aboutUsCeoContentRght>em {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 75px;
-        margin: 0 auto;
-    }
-
-    .doubleArrowIcon {
-        rotate: 90deg;
-    }
-
-    .aboutUsCeoContentRght>span {
-        font-size: 30px;
-        margin: 30px 0;
-    }
-
-    .aboutUsCeoContentRght>p {
-        margin-bottom: 25px;
-    }
-
-    .aboutUsAwardsWrap {
-        padding: 60px 0;
-        position: static;
-        height: auto;
-        margin-top: -100px;
-    }
-
-    .aboutUsAwardsHead {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .aboutUsAwardsHead>h2 {
-        font-size: 40px;
-    }
-
-    .aboutUsAwardsGrid {
-        flex-wrap: wrap;
-        gap: 40px 20px;
-    }
-
-    .aboutUsAwardsGridItem {
-        width: calc(50% - 20px);
-    }
-
-    .aboutUsAwardsGridItem>p {
-        font-size: 18px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-
-    /*product listing*/
-    .productSections {
-        gap: 30px
-    }
-
-    .prdtDesc>em {
-        font-size: 16px;
-        line-height: 25px;
-        margin-bottom: 5px;
-    }
-
-    .prdtDesc {
-        margin: 0 0 20px;
-    }
-
-    .productLeftMenuSec {
-        min-width: auto;
-    }
-
-    /*common banner*/
-    .commonBanner .commonBannerWrap {
-        height: 400px;
-    }
-
-    .commonBanner .commonBannerContent {
-        padding: 0 15px 30px;
-    }
-
-    .commonBanner .commonBannerContent h1 {
-        font-size: 28px;
-    }
-
-    /*products main*/
-    .productsMainItem {
-        top: 65px;
-    }
-
-    .productsMainItemBg {
-        height: calc(100vh - 65px);
-    }
-
-    .productsMainItemName {
-        margin: 5px 0 10px;
-        font-size: 28px;
-    }
-
-    .productsMainItemContent {
-        top: 40px;
-        left: 20px;
-    }
-
-    .productsMainItemContent>a {
-        font-size: 16px;
-    }
-
-    /*application page*/
-    .applicationsInnerBody {
-        padding: 60px 0;
-    }
-
-    .applicationsInnerGrid {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 40px;
-    }
-
-    .applicationsInnerGridItemTitle>img {
-        max-width: 55px;
-    }
-
-    .applicationsInnerGridItem {
-        gap: 25px;
-    }
-
-    /*approvals-and-associates page*/
-    .approvalsAndAsscociatesBody {
-        padding: 40px 0 60px;
-    }
-
-    .approvalsAndAsscociatesBodyGrid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-    }
-
-    .approvalsAndAsscociatesBodyTitle>h2 {
-        font-size: 25px;
-        margin-bottom: 12px;
-    }
-
-    .approvalsAndAsscociatesBodyTitle>p {
-        font-size: 16px;
-    }
-
-    /*faq*/
-    .faqBody {
-        padding: 40px 0 60px;
-    }
-
-    .faqHeading {
-        padding: 15px 15px 15px 0;
-    }
-
-    .faqHead>h2 {
-        margin-bottom: 0px;
-        font-size: 26px;
-    }
-
-    .faqHeading h3 {
-        font-size: 18px;
-    }
-
-    .faqContent p {
-        margin: 0 0 15px;
-        font-size: 16px;
-    }
-
-    .faqToggle {
-        font-size: 15px;
-    }
-
-    .faqToggle>img {
-        max-width: 13px;
-    }
-
-    /* insights And Updates page */
-    .insightsAndUpdatesInnerWrap {
-        padding: 40px 0 60px;
-    }
-
-    .insightsAndUpdatesInnerGrid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 45px 20px;
-    }
-
-    /*careers*/
-    .careersBodyWrap {
-        padding: 40px 0 60px;
-    }
-
-    .careerFormHead>h2 {
-        font-size: 26px;
-    }
-
-    .careersFormSec form {
-        gap: 20px;
-    }
-
-    .careersFormSec form input {
-        padding: 16px;
-        height: 50px;
-        font-size: 15px;
-    }
-
-    .careersFormSec form input::placeholder {
-        font-size: 15px;
-    }
-
-    .careersFormSec form button {
-        font-size: 16px;
-        padding: 16px;
-    }
-
-    .careersFormSec .captchaText {
-        font-size: 16px;
-    }
-
-    .careersFormSec .customFileLabel {
-        font-size: 16px;
-    }
-
-    .careersFormSec .fileUpload .fileName {
-        font-size: 16px;
-    }
-
-    /*e-learning*/
-    .eLearningTitle {
-        flex-direction: column;
-        gap: 25px;
-    }
-
-    .eLearningVideoWrap {
-        padding: 60px 0 160px;
-    }
-
-    .eLearningVideoItemWrap {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .eLearningBrochuresItemWrap {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .eLearningBrochuresWrap {
-        padding: 60px 0 160px;
-    }
-
-    .eLearningBrochuresHead>h3 {
-        font-size: 26px;
-    }
-
-    .eLearningBrochuresItemText>span>b {
-        font-size: 18px;
-    }
-
-    /*application details*/
-    .applicationDetailsBody {
-        padding: 40px 0 60px;
-    }
-
-    .applicationDetailsHead>h2 {
-        font-size: 30px;
-    }
-
-    .applicationDetailsItem>p {
-        font-size: 18px;
-    }
-
-    .applicationDetailsItem>img {
-        max-width: 120px;
-    }
-
-    .applicationDetailsItemImg>em>span {
-        width: 25px;
-        height: 25px;
-        font-size: 14px;
-    }
-
-    /*design*/
-    h2.designCommonHead {
-        font-size: 20px;
-    }
-
-    .transformerEarthingBody {
-        padding: 40px 0 0;
-    }
-
-    .transformerEarthingHead h2 {
-        font-size: 24px;
-    }
-
-    .transformerEarthingHead p {
-        margin-top: 15px;
-    }
-
-    .transformerEarthingHead {
-        padding-bottom: 30px;
-    }
-
-    .transformerEarthingForm {
-        padding: 40px 0 160px;
-    }
-
-    .transformerEarthingForm form {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
-        margin: 30px 0 0;
-    }
-
-    .transformerEarthingFormSec label,
-    .DesignCalcFormSec label {
-        font-size: 16px;
-    }
-
-    .transformerEarthingFormSec input,
-    .DesignCalcFormSec input,
-    .DesignCalcFormSec.fullRow button {
-        height: 45px;
-    }
-
-    .transformerEarthingDsgnCalc {
-        padding: 40px 0 140px;
-    }
-
-    .transformerEarthingDsgnCalc form {
-        margin: 30px 0 0;
-        gap: 20px;
-    }
-
-    .DesignCalcFormSec>div {
-        gap: 5px;
-    }
-
-    /*insights-and-updates-details*/
-    .insightsUpdatesDetailsWrap {
-        padding: 40px 0 60px;
-    }
-
-    .blogPostContentHead>h1 {
-        font-size: 24px;
-        margin: 15px 0 5px;
-    }
-
-    .blogPostContentHead>h3 {
-        font-size: 16px;
-    }
-
-    .blogPostContentHead>span {
-        font-size: 14px;
-    }
-
-    .blogPostContent img {
-        margin: 20px 0;
-    }
-
-    .blogPostContent p {
-        font-size: 16px;
-    }
-
-    .blogPostContent h2 {
-        font-size: 20px;
-        margin: 15px 0;
-    }
-
-    .blogPostContent ul>li {
-        font-size: 16px;
-        padding: 0 0 8px 20px;
-    }
-
-    .blogPostContent ul>li:before {
-        width: 6px;
-        height: 6px;
-    }
-
-    .blogVideowWap img {
-        margin: 0;
-    }
-
-    .blogPostShareSec {
-        flex-wrap: wrap;
-    }
-
-    .blogPostShareSec .shareButton {
-        font-size: 14px;
-        min-width: 90px;
-    }
-
-    .insightsUpdatesDetailsRghtCont>h3 {
-        font-size: 20px;
-    }
-
-    .recentPostsitem {
-        gap: 15px;
-    }
-
-    .recentPostsitem>p {
-        font-size: 16px;
-    }
-
-    .blogVideoPlayBtn {
-        width: 50px;
-        height: 50px;
-    }
-
-    /*about-us*/
-    .aboutUsBannerContentRght>span {
-        font-size: 360px;
-    }
-
-    .aboutUsBannerContentRght>em {
-        max-width: 220px;
-    }
-
-    /*about-us*/
-    .aboutUsMilestonesContent {
-        flex-direction: column;
-        gap: 20px;
-        align-items: flex-start;
-    }
-
-    .aboutUsMilestonesContentLft {
-        margin: 0;
-    }
-
-    .aboutUsMilestonesContentRght {
-        padding: 0;
-        border: 0;
-    }
-
-    .aboutUsCeoContentLft>em {
-        min-width: auto;
-    }
-
-    .aboutUsMissionGrid {
-        flex-direction: column;
-    }
-
-}
-
-@media only screen and (max-width: 479px) {
-
-    /*product listing*/
-    .productList {
-        grid-template-columns: 1fr;
-    }
-
-    .productSections {
-        padding: 30px 0;
-    }
-
-    .productLeftMenu>span {
-        font-size: 16px;
-        line-height: 25px;
-    }
-
-    .productLeftMenu>ul {
-        font-size: 14px;
-        line-height: 24px;
-    }
-
-    /*approvals-and-associates page*/
-    .approvalsAndAsscociatesBodyGrid {
-        gap: 30px 20px;
-    }
-
-    .approvalsAndAsscociatesBodyGridItem {
-        gap: 15px;
-    }
-
-    .approvalsAndAsscociatesBodyGridItem>h3 {
-        font-size: 16px;
-    }
-
-    .approvalsAndAsscociatesBodyGrid {
-        margin-top: 30px;
-    }
-
-    /* insights And Updates page */
-    .insightsAndUpdatesInnerGrid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .insightsAndUpdatesInnerGridItem p {
-        margin: 15px 0px 20px;
-    }
-
-    /*careers*/
-    .careerFormHead>h2 {
-        font-size: 20px;
-    }
-
-    .careerFormHead>p {
-        font-size: 16px;
-        margin: 10px 0 5px;
-    }
-
-    .careersFormSec form {
-        gap: 15px;
-    }
-
-    /*e-learning*/
-    .eLearningBodyWrap {
-        padding: 40px 0 0;
-    }
-
-    .eLearningTitle h2 {
-        font-size: 24px;
-    }
-
-    .eLearningTitle p {
-        font-size: 16px;
-    }
-
-    .eLearningBrochuresHead>h3 {
-        font-size: 24px;
-    }
-
-    /*application details*/
-    .applicationDetailsBody {
-        padding: 30px 0 50px;
-    }
-
-    .applicationDetailsHead>h2 {
-        font-size: 20px;
-    }
-
-    .applicationDetailsItem {
-        gap: 15px;
-        gap: 12px;
-    }
-
-    .applicationDetailsItem>p {
-        font-size: 15px;
-    }
-
-    .applicationDetailsItem>img {
-        max-width: 80px;
-    }
-
-    .applicationDetailsItemImg>em>span {
-        width: 20px;
-        height: 20px;
-        font-size: 12px;
-        border-width: 2px;
-    }
-
-    .applicationDetailsContent {
-        padding-top: 15px;
-    }
-
-    /*insights-and-updates-details*/
-    .insightsUpdatesDetailsWrap {
-        padding: 30px 0 40px;
-    }
-
-    /*about-us*/
-    .aboutUsBannerContentRght>span {
-        font-size: 250px;
-    }
-
-    .aboutUsBannerContentRght>em {
-        max-width: 160px;
-        bottom: 35px;
-    }
-
-
-
-
-}
-
-
-@media only screen and (max-width: 320px) {}

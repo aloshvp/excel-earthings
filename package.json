@@ -9,7 +9,6 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@motionone/dom": "^10.18.0",
     "aos": "^2.3.4",
     "fs": "0.0.1-security",
     "jose": "5.9.3",
