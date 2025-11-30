@@ -75,6 +75,9 @@ html{scroll-behavior:smooth}
 .fixedLinks{position:fixed;bottom:30px;right:30px;display:flex;flex-direction:column;gap:10px;z-index:999}
 .fixedLinks>a{transition:transform .3s ease}
 .fixedLinks>a:hover{transform:scale(1.1)}
+.fixedLinks .scrollToTopBtn{background:#fff;border-radius:50%;width:44px;height:44px;display:flex;align-items:center;justify-content:center;color:#333;border:none;cursor:pointer;transition:transform .3s ease,background-color .3s ease,opacity .3s ease,visibility .3s ease;opacity:0;visibility:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.15)}
+.fixedLinks .scrollToTopBtn:hover{transform:scale(1.1);background-color:#f0f0f0}
+.fixedLinks .scrollToTopBtn.visible{opacity:1;visibility:visible}
 .mobileMenuTitle { display: flex; justify-content: space-between; align-items: center; padding: 15px 5px; font-size: 20px; color: #fff; cursor: pointer; } 
 .mobileMenuTitle:hover { color: #a8a8a8; }
 .mobileMenuTitle .arrow { font-size: 16px; font-weight: bold; }
