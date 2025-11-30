@@ -30,15 +30,15 @@ const AboutUsGlance = () => {
                         </p>
                         <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="700" data-aos-easing="ease-out-cubic" data-aos-offset="50">We provide reliable and cost-effective solutions and supply customized products.</p>
                     </div>
-                    <div className="aboutUsGlanceContentRght">
+                    <div className="aboutUsGlanceContentRght" data-aos="fade-up" data-aos-duration="800" data-aos-delay="250" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                         <div className="aboutUsGlanceContentRghtBox">
                             <ul>
                                 <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="350" data-aos-easing="ease-out-cubic" data-aos-offset="50">19 +Years of Excellence</li>
-                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="420" data-aos-easing="ease-out-cubic" data-aos-offset="50">Have network of 3000+ Electrical Dealers and 500+ Contractors</li>
-                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="490" data-aos-easing="ease-out-cubic" data-aos-offset="50">Part of 1000+ Projects</li>
-                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="560" data-aos-easing="ease-out-cubic" data-aos-offset="50">Strong Technical Support Team</li>
-                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="630" data-aos-easing="ease-out-cubic" data-aos-offset="50">Innovative R & D Division</li>
-                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="700" data-aos-easing="ease-out-cubic" data-aos-offset="50">Customized Products</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="550" data-aos-easing="ease-out-cubic" data-aos-offset="50">Have network of 3000+ Electrical Dealers and 500+ Contractors</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="750" data-aos-easing="ease-out-cubic" data-aos-offset="50">Part of 1000+ Projects</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="950" data-aos-easing="ease-out-cubic" data-aos-offset="50">Strong Technical Support Team</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="1150" data-aos-easing="ease-out-cubic" data-aos-offset="50">Innovative R & D Division</li>
+                                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="1350" data-aos-easing="ease-out-cubic" data-aos-offset="50">Customized Products</li>
                             </ul>
                         </div>
                     </div>
