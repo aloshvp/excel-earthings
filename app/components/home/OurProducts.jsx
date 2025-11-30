@@ -14,7 +14,7 @@ const OurProducts = () => {
     const nextRef = useRef(null);
 
     return (
-        <div className="ourProductsWrap">
+        <section className="ourProductsWrap">
             <div className="container">
                 <div className="ourProductsHead">
                     <div className="ourProductsHeadLft" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-easing="ease-out-cubic" data-aos-offset="50">
@@ -78,7 +78,7 @@ const OurProducts = () => {
                     ))}
                 </Swiper>
             </div>
-        </div>
+        </section>
     );
 };
 

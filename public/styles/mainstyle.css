@@ -84,7 +84,7 @@
 .ourCertificationSlider{position:relative}
 .certificationSlide{position:relative;display:flex;justify-content:center;align-items:center;flex-direction:column;gap:25px}
 .certificationContent{display:flex;justify-content:center;align-items:center;flex-direction:column;text-align:center}
-.certificationContent>h3{font-size:22px;line-height:1.3em;font-family:var(--medium);color:#444444}
+.certificationContent>h3{font-size:22px;line-height:1.5em;font-family:var(--medium);color:#444444;padding-bottom: 6px;}
 .certificationContent>p{font-size:18px;line-height:1.3em}
 .ourCertificationNav{position:absolute;bottom:-100px;width:100%;display:flex;justify-content:center;gap:10px;z-index:10}
 .ourCertificationSlierNavBtn{width:50px;height:50px;background-image:url(/images/home/circled-right.png);background-size:contain;background-repeat:no-repeat;cursor:pointer}

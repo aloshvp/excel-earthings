@@ -58,6 +58,7 @@ const OurCertifications = () => {
                                 320: { slidesPerView: 1 },
                                 480: { slidesPerView: 2 },
                                 1024: { slidesPerView: 5 },
+                                1440: { slidesPerView: 6 },
                             }}
                         >
                             {certificationsData?.map((cert, idx) => (
