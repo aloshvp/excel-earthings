@@ -27,38 +27,40 @@ const Testimonials = () => {
                         <div ref={nextRef} className="testimonialsSlierNavBtn testimonialsSliderNextBtn" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500" data-aos-easing="ease-out-cubic" data-aos-offset="50"></div>
                     </div>
 
-                    <Swiper
-                        modules={[Navigation]}
-                        spaceBetween={40}
-                        slidesPerView={4}
-                        loop
-                        allowTouchMove={false}
-                        onBeforeInit={(swiper) => {
-                            swiper.params.navigation.prevEl = prevRef.current;
-                            swiper.params.navigation.nextEl = nextRef.current;
-                        }}
-                        breakpoints={{
-                            320: { slidesPerView: 1 },
-                            640: { slidesPerView: 2 },
-                            1024: { slidesPerView: 2 },
-                        }}
-                    >
-                        {testimonialsData?.map((testimonial, index) => (
-                            <SwiperSlide key={index}>
-                                <div className="testimonialItem" data-aos="fade-up" data-aos-delay={index * 150 + 600} data-aos-duration="700" data-aos-easing="ease-out-cubic" data-aos-offset="50">
-                                    <div data-aos="fade-up" data-aos-delay={index * 150 + 650} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">
-                                        <Image src='/images/icons/quotes.svg' width={60} height={60} alt="quotes" title="quotes" />
+                    <div className='testimonialSlider'>
+                        <Swiper
+                            modules={[Navigation]}
+                            spaceBetween={40}
+                            slidesPerView={4}
+                            loop
+                            allowTouchMove={false}
+                            onBeforeInit={(swiper) => {
+                                swiper.params.navigation.prevEl = prevRef.current;
+                                swiper.params.navigation.nextEl = nextRef.current;
+                            }}
+                            breakpoints={{
+                                320: { slidesPerView: 1 },
+                                640: { slidesPerView: 2 },
+                                1024: { slidesPerView: 2 },
+                            }}
+                        >
+                            {testimonialsData?.map((testimonial, index) => (
+                                <SwiperSlide key={index}>
+                                    <div className="testimonialItem" data-aos="fade-up" data-aos-delay={index * 150 + 600} data-aos-duration="700" data-aos-easing="ease-out-cubic" data-aos-offset="50">
+                                        <div data-aos="fade-up" data-aos-delay={index * 150 + 650} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">
+                                            <Image src='/images/icons/quotes.svg' width={60} height={60} alt="quotes" title="quotes" />
+                                        </div>
+                                        <p className="testimonialDescription" data-aos="fade-up" data-aos-delay={index * 150 + 750} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">{testimonial.description}</p>
+                                        <div className='testimonialUserImg' data-aos="fade-up" data-aos-delay={index * 150 + 850} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">
+                                            <Image src='/images/home/icon-user-testimony.svg' width={100} height={100} alt="user" title="user" />
+                                        </div>
+                                        <h3 data-aos="fade-up" data-aos-delay={index * 150 + 950} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">{testimonial.name}</h3>
+                                        <span className="testimonialDesignation" data-aos="fade-up" data-aos-delay={index * 150 + 1050} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">{testimonial.designation}</span>
                                     </div>
-                                    <p className="testimonialDescription" data-aos="fade-up" data-aos-delay={index * 150 + 750} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">{testimonial.description}</p>
-                                    <div className='testimonialUserImg' data-aos="fade-up" data-aos-delay={index * 150 + 850} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">
-                                        <Image src='/images/home/icon-user-testimony.svg' width={100} height={100} alt="user" title="user" />
-                                    </div>
-                                    <h3 data-aos="fade-up" data-aos-delay={index * 150 + 950} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">{testimonial.name}</h3>
-                                    <span className="testimonialDesignation" data-aos="fade-up" data-aos-delay={index * 150 + 1050} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50">{testimonial.designation}</span>
-                                </div>
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
                 </div>
             </div>
         </section>

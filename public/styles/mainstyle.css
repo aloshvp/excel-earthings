@@ -93,6 +93,7 @@
 /*testimonials*/
 .tesimonialsWrap{padding:120px 0 200px;background:linear-gradient(rgba(17,17,17,0.8)),url(/images/home/bg-testimonials.jpg) no-repeat center center;background-size:cover;color:#fff;position:relative;border-radius:var(--border-home);margin-top:-100px;z-index:1}
 .testimonialsHead .homeCmnSubHead,.testimonialsHead .homeCmnHead{color:#fff}
+.testimonialSlider{margin: 0 5px;}
 .testimonialsBody{padding:40px 0 0;position:relative}
 .testimonialItem{display:flex;flex-direction:column;gap:0;align-items:center;justify-content:center;padding:80px 65px;border:1px solid #7b7b7b;border-radius:20px;text-align:center}
 .testimonialItem>h3{font-size:24px;line-height:1em;margin:20px 0 5px}
@@ -117,7 +118,7 @@
 .videoWrapper iframe{position:absolute;top:0;left:0;width:100%;height:100%}
 
 /*our products*/
-.ourProductsWrap{padding:100px 0 0;background:#333333;position:relative;border-radius:var(--border-home);margin-top:-100px;z-index:1}
+.ourProductsWrap{padding:80px 0 0;background:#333333;position:relative;border-radius:var(--border-home);margin-top:-100px;z-index:1;position: sticky;top: 80px;height: 100vh;overflow: hidden;}
 .ourProductsHead{display:flex;justify-content:space-between;padding-bottom:40px;align-items:flex-end}
 .ourProductsHeadLft .homeCmnSubHead,.ourProductsHeadLft .homeCmnHead{color:#fff}
 .ourProductsHeadRght .exploreMoreBtn{color:#fff;border-color:#fff}
@@ -146,7 +147,7 @@
 .eventInfo>h3{font-size:34px;line-height:1.4em;font-family:var(--medium);color:#fff;margin-bottom:30px}
 .eventInfo>p{font-size:18px;line-height:1.5em;color:#fff;padding-top:20px;max-width:550px}
 .eventInfo>span{display:flex;align-items:center;gap:15px;font-size:20px;line-height:1em;margin-bottom:20px}
-.eventsSliderNav{position:absolute;top:150px;right:100px;display:flex;gap:10px;z-index:10}
+.eventsSliderNav{position:absolute;top:150px;right:100px;display:flex;gap:10px;z-index:10;background: #556075;}
 .eventNavBtn{width:50px;height:50px;background-image:url(/images/home/circled-right-white.png);background-size:contain;background-repeat:no-repeat;cursor:pointer}
 .eventNavBtn.eventsPrevBtn{rotate:180deg}
 
