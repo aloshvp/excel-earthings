@@ -2,7 +2,9 @@
     @media screen and (min-width: 1300px) {
     .commonBanner .commonBannerContent{padding:0 100px 70px}
     .productLeftMenuSec{min-width:350px}
-    .aboutUsUniqueWrap{height:100vh;position:sticky;top:80px;}
+    /* .aboutUsUniqueWrap{height:100vh;position:sticky;top:80px;} */
+    .aboutUsBannerContent{flex-direction:row;gap:60px}
+    .aboutUsBannerContentRght>em{bottom:60px;right:0;left: unset;max-width: 50%;}
     }
 
     @media screen and (min-width: 1440px) {
@@ -24,7 +26,16 @@
     .aboutUsUniqueGrid {gap: 45px;}
     .aboutUsUniqueGridItem>p{font-size:32px;}
     .aboutUsUniqueGridItem{gap:40px}
-    
+    .aboutUsBannerWrap{padding:150px 0}
+    .aboutUsBannerContentLft>p{margin-top:60px}
+    .aboutUsBannerContent{gap:120px}
+    .aboutUsBannerContentLft > h1{font-size: 60px;}
+    .aboutUsUniqueWrap{position:sticky;top:80px;margin-top:0 ;}
+    .aboutUsGlanceWrap{position:sticky;top:80px;margin-top:0 ;}
+    .aboutUsMilestonesWrap{position:sticky;top:80px;height: 100vh;margin-top:0 ;}
+    .aboutUsMissionWrap{position:sticky;top:80px;height:100vh;margin-top:0 ;}
+    .aboutUsCeoWrap{position:sticky;top:80px;height:100vh;margin-top:0 ;}
+    .aboutUsAwardsWrap{position:sticky;top:80px;height:100vh;margin-top:0 ;}
     }
 
     @media screen and (min-width: 1600px) {
@@ -110,7 +121,7 @@
     .aboutUsBannerContentRght>span{font-size:420px}
     .aboutUsBannerContentRght>em{bottom:50px;max-width:300px}
     .aboutUsBannerWrap{padding:60px 0}
-    .aboutUsBannerContent{flex-direction:column;gap:30px}
+    /* .aboutUsBannerContent{flex-direction:column;gap:30px} */
     .aboutUsBannerContentLft>h1{font-size:34px}
     .aboutUsBannerContentLft>p{margin-top:30px}
     /* .aboutUsUniqueWrap{position:static;height:auto} */
@@ -250,6 +261,13 @@
     .aboutUsMilestonesContentRght{padding:0;border:0}
     .aboutUsCeoContentLft>em{min-width:auto}
     .aboutUsMissionGrid{flex-direction:column}
+    .aboutUsUniqueGridItem { gap: 20px; }
+    .aboutUsUniqueGridItem > em { width: 120px; height: 90px;}
+    .aboutUsGlanceContentRghtBox { padding: 30px; }
+    .aboutUsUniqueWrap{padding: 60px 0 160px;}
+    .doubleArrowIcon{width: 80px;height: 80px;}
+    .aboutUsAwardsGrid { flex-wrap: wrap; gap: 30px 15px; }
+    .aboutUsAwardsGridItem > p{margin: 15px 15px 0;font-size: 16px;}
     }
 
     @media only screen and (max-width: 479px) {
