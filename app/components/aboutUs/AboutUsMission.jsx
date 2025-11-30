@@ -14,7 +14,7 @@ const AboutUsMission = () => {
         <div className="aboutUsMissionGrid">
           {AboutUsMissionData.map((item, index) => (
             <div className="aboutUsMissionGridItem" key={index} data-aos="fade-up" data-aos-duration="800" data-aos-delay={300 + index * 150} data-aos-easing="ease-out-cubic" data-aos-offset="50">
-              <span data-aos="zoom-in" data-aos-duration="600" data-aos-delay={400 + index * 150} data-aos-easing="ease-out-cubic" data-aos-offset="50">{item.no}</span>
+              <span data-aos="fade-up" data-aos-duration="600" data-aos-delay={400 + index * 150} data-aos-easing="ease-out-cubic" data-aos-offset="50">{item.no}</span>
 
               <Image
                 src={item.img}
