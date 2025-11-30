@@ -128,41 +128,31 @@ html{scroll-behavior:smooth}
 
 
 @media screen and (min-width: 1800px) {
-  /* .staticWrapper.paddngTop{padding:100px 0 0!important} */
-  /* .headerLogoSec img{width:620px!important;height:auto!important} */
   .headerRghtSec{gap:60px}
   .headerBadgeSec img{width:100px}
 }
 
 @media screen and (min-width: 1600px) {
-  /* .staticWrapper.paddngTop{padding:100px 0 0} */
-  /* .headerLogoSec img{width:480px!important;height:auto!important} */
-  /* .headerWrap.scrolled .headerLogoSec img{width:380px!important} */
-  /* .headerWrap.scrolled .headerBadgeSec img{width:80px!important;height:80px!important} */
+
   .headerWrap.scrolled .headerLogoSec .secondLogoLink img{max-width: 150px;}
   .headerLogoSec .secondLogoLink > img{max-width: 200px;}
   .headerLogoSec .firstLogoLink { max-width: 280px;}
-  /* .headerLogoSec img{width: 280px;} */
+  .headerRghtSec { gap: 50px; }  
 }
 
 @media screen and (min-width: 1440px) {
-  /* .headerLogoSec img{width:380px} */
-  .headerNavSec>ul{gap:25px}
+
+  .headerNavSec>ul{gap:30px}
   .headerRghtSec{gap:40px}
   .footerWrap{padding:140px 0}
 }
 
+@media screen and (min-width: 1200px) {
+  .container{padding-left:100px;padding-right:100px}
+}
+
 @media screen and (min-width: 1300px) {
   .headerNavSec>ul>li a{font-size:18px}
-}
-
-@media screen and (max-width: 1200px) {
-  .container{padding-left:50px;padding-right:50px}
-  .headerRghtSec{flex-direction:row-reverse}
-}
-
-@media only screen and (min-width : 1200px) {
-  .container{padding-left:100px;padding-right:100px}
 }
 
 @media only screen and (max-width: 991px) {
@@ -208,6 +198,7 @@ html{scroll-behavior:smooth}
   .hamburgerOverlay{top:65px}
   .headerRghtSec{gap:15px}
 }
+
 @media only screen and (max-width: 479px) {
 .footerLogoImg>img{max-width:120px}
 .headerWrap.scrolled .headerLogoSec .secondLogoLink img {max-width: 85px}

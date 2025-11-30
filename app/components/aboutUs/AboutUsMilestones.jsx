@@ -3,60 +3,38 @@ import React, { useState, useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { milestones } from "@utils/staticData";
-import { animate, inView } from "@motionone/dom";
 
 const AboutUsMilestones = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const yearRef = useRef(null);
   const contentRightRef = useRef(null);
 
-  // Animate year digits on change - same reveal as right content
+  // Simple CSS transitions for dynamic content changes
   useEffect(() => {
-    if (!yearRef.current) return;
+    if (yearRef.current) {
+      const digits = yearRef.current.querySelectorAll(".digit");
+      digits.forEach((digit, i) => {
+        // Reset animation by removing and re-adding class
+        digit.classList.remove("animate-digit");
+        setTimeout(() => digit.classList.add("animate-digit"), 10);
+      });
+    }
 
-    const digits = yearRef.current.querySelectorAll(".digit");
-    digits.forEach((digit, i) => {
-      animate(
-        digit,
-        { opacity: [0, 1], transform: ["translateY(20px)", "translateY(0px)"] },
-        { duration: 0.5, delay: i * 0.12, easing: "ease-out" }
-      );
-    });
+    if (contentRightRef.current) {
+      const elems = contentRightRef.current.querySelectorAll("h3, p");
+      elems.forEach((el, i) => {
+        // Reset animation
+        el.classList.remove("animate-content");
+        setTimeout(() => el.classList.add("animate-content"), 10 + i * 50);
+      });
+    }
   }, [activeIndex]);
-
-  // Animate right content (h3 + p) on active milestone change
-  useEffect(() => {
-    if (!contentRightRef.current) return;
-
-    const elems = contentRightRef.current.querySelectorAll("h3, p");
-    elems.forEach((el, i) => {
-      animate(
-        el,
-        { opacity: [0, 1], transform: ["translateY(20px)", "translateY(0px)"] },
-        { duration: 0.5, delay: i * 0.12, easing: "ease-out" }
-      );
-    });
-  }, [activeIndex]);
-
-  // Animate H2 heading on scroll into view
-  useEffect(() => {
-    const h2 = document.querySelector(".aboutUsMilestonesHead h2");
-    if (!h2) return;
-
-    inView(h2, () => {
-      animate(
-        h2,
-        { opacity: [0, 1], transform: ["translateY(20px)", "translateY(0px)"] },
-        { duration: 0.5, easing: "ease-out" }
-      );
-    });
-  }, []);
 
   return (
     <section className="aboutUsMilestonesWrap">
       <div className="container">
         <div className="aboutUsMilestonesHead">
-          <h2>Milestones</h2>
+          <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-easing="ease-out-cubic" data-aos-offset="50">Milestones</h2>
         </div>
 
         {/* Timeline Slider */}
@@ -87,15 +65,15 @@ const AboutUsMilestones = () => {
         <div className="aboutUsMilestonesContent">
           <div className="aboutUsMilestonesContentLft" ref={yearRef}>
             {milestones[activeIndex]?.year.split("").map((digit, i) => (
-              <span key={i} className="digit">
+              <span key={i} className="digit animate-digit">
                 {digit}
               </span>
             ))}
           </div>
 
           <div className="aboutUsMilestonesContentRght" ref={contentRightRef}>
-            <h3>{milestones[activeIndex]?.title}</h3>
-            <p>{milestones[activeIndex]?.desc}</p>
+            <h3 className="animate-content">{milestones[activeIndex]?.title}</h3>
+            <p className="animate-content">{milestones[activeIndex]?.desc}</p>
           </div>
         </div>
       </div>

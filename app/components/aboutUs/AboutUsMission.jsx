@@ -1,42 +1,20 @@
 "use client";
-import { useEffect } from "react";
 import Image from "next/image";
 import { AboutUsMissionData } from "@utils/staticData";
 
 const AboutUsMission = () => {
-  useEffect(() => {
-    import("@motionone/dom").then(({ animate }) => {
-      const icons = document.querySelectorAll(".missionIcon");
-
-      icons.forEach((icon, index) => {
-        // Pop-in with smooth scale and fade
-        animate(
-          icon,
-          { opacity: [0, 1], scale: [0.4, 1.05, 1] },
-          { duration: 0.9, easing: "ease-in-out", delay: index * 0.25 }
-        );
-
-        // Subtle floating bounce
-        animate(
-          icon,
-          { y: [0, -6, 0] },
-          { duration: 1.5, repeat: Infinity, easing: "ease-in-out", delay: 0.9 + index * 0.25 }
-        );
-      });
-    });
-  }, []);
 
   return (
     <section className="aboutUsMissionWrap">
       <div className="container">
-        <div className="aboutUsMissionHead">
+        <div className="aboutUsMissionHead" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-easing="ease-out-cubic" data-aos-offset="50">
           <h2>Our Mission, <em></em> Vision & Values</h2>
         </div>
 
         <div className="aboutUsMissionGrid">
           {AboutUsMissionData.map((item, index) => (
-            <div className="aboutUsMissionGridItem" key={index}>
-              <span>{item.no}</span>
+            <div className="aboutUsMissionGridItem" key={index} data-aos="fade-up" data-aos-duration="800" data-aos-delay={300 + index * 150} data-aos-easing="ease-out-cubic" data-aos-offset="50">
+              <span data-aos="zoom-in" data-aos-duration="600" data-aos-delay={400 + index * 150} data-aos-easing="ease-out-cubic" data-aos-offset="50">{item.no}</span>
 
               <Image
                 src={item.img}
@@ -45,16 +23,17 @@ const AboutUsMission = () => {
                 width={70}
                 height={70}
                 className="missionIcon"
+                data-aos="zoom-in" data-aos-duration="800" data-aos-delay={500 + index * 150} data-aos-easing="ease-out-cubic" data-aos-offset="50"
               />
 
-              <h3>{item.title}</h3>
+              <h3 data-aos="fade-up" data-aos-duration="600" data-aos-delay={600 + index * 150} data-aos-easing="ease-out-cubic" data-aos-offset="50">{item.title}</h3>
 
-              {item.desc && <p>{item.desc}</p>}
+              {item.desc && <p data-aos="fade-up" data-aos-duration="600" data-aos-delay={700 + index * 150} data-aos-easing="ease-out-cubic" data-aos-offset="50">{item.desc}</p>}
 
               {item.list && (
                 <ul>
                   {item.list.map((val, i) => (
-                    <li key={i}>{val}</li>
+                    <li key={i} data-aos="fade-up" data-aos-duration="600" data-aos-delay={750 + index * 150 + i * 100} data-aos-easing="ease-out-cubic" data-aos-offset="50">{val}</li>
                   ))}
                 </ul>
               )}

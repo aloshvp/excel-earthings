@@ -4,11 +4,12 @@
 }  
 
 @media screen and (min-width: 1600px) {
-    .atGlanceTopCont{gap:140px}
+    .atGlanceTopCont{gap:100px}
     .atGlanceMarquee .marqueeText{font-size:110px;}
 
     .bannerGridItem{min-width:450px}
-    
+    .bannerGridItem > h2 {padding: 70px 0 15px;}
+
     .videoPopupContent{max-width:1200px}
     
     .associateSlide .associateDesc{font-size:22px;}
@@ -19,23 +20,49 @@
 }
 
 @media screen and (min-width: 1440px) {
+
     .areaOfApplicationsWrap{padding:150px 0 300px}
+    .areaOfApplicationsSlider .slideTitle>h3{font-size:26px;}
+    .areaOfApplicationsSlider .slideTitle > img{max-width: 70px;}
     
     .atGlanceWrap{padding:120px 0 200px}
+    .atGlanceTopCont{gap:100px}
     .atGlanceTopContRght>span{font-size:500px}
     .atGlanceTopContRght>em{bottom:100px;right:0;max-width:55%}
+    .atGlanceGrid{padding-top:20px}
+    .atGlanceTopContLft>p{font-size:30px;}
+    .atGlanceTopContLft > p{max-width: 820px;}
+    .atGlanceGridItem>p{font-size:22px;}
     
     .ourSpecialitiesWrap{padding:150px 0 200px}
     .ourAssociatesWrap{padding:120px 0 300px}
     
     .ourCertificationWrap{padding:120px 0 300px}
     
-    .ourProductsWrap{padding:150px 0 0}
+    .ourProductsWrap{padding:100px 0 0}
     
     .tesimonialsWrap{padding:150px 0 250px}
     
     .insightsUpdatesWrap{padding:150px 0 250px}
 }
+
+@media screen and (min-width: 1300px) {
+.atGlanceTopContRght>em{bottom:60px;}
+}
+
+@media screen  and (max-width: 1200px){
+
+    .atGlanceTopCont{flex-direction: column;gap: 0;}
+    .atGlanceTopContLft{width: 100%;}
+    .atGlanceTopContLft > p{max-width: 100%;}
+    .atGlanceTopContRght{display:flex;justify-content:center;align-items:center;width: 100%;}
+    .atGlanceTopContRght>span{font-size:420px}
+    .atGlanceTopContRght>em{bottom:50px;max-width:300px;right: unset;left: 50%;}
+    .atGlanceGrid{padding-top: 30px;}
+
+}
+    
+
 @media only screen and (max-width: 991px) {
     .homeCmnHead{font-size:42px}
     .exploreMoreBtn{font-size:16px;padding:16px 22px;min-width:168px}
@@ -56,11 +83,11 @@
     .areaOfApplicationsSliderNav{bottom:-100px}
     
     .atGlanceWrap{padding:80px 0 150px}
-    .atGlanceTopCont{flex-direction:column;gap:0}
+    /* .atGlanceTopCont{flex-direction:column;gap:0} */
     .atGlanceTopContLft>p{margin-top:30px;font-size:22px}
-    .atGlanceTopContRght{display:flex;justify-content:center;align-items:center}
-    .atGlanceTopContRght>span{font-size:420px}
-    .atGlanceTopContRght>em{bottom:50px;max-width:300px}
+    /* .atGlanceTopContRght{display:flex;justify-content:center;align-items:center} */
+    /* .atGlanceTopContRght>span{font-size:420px}
+    .atGlanceTopContRght>em{bottom:50px;max-width:300px} */
     .atGlanceGrid{gap:30px}
     .atGlanceGridItem{gap:20px}
     .atGlanceGridItem>p{font-size:18px}
@@ -118,6 +145,7 @@
     .eventInfo>p{font-size:16px;padding-top:10px}
     .eventInfo>span{font-size:18px;margin-bottom:15px}
 }
+
 @media only screen and (max-width: 767px) {
     .homeCmnHead{font-size:32px}
     .homeCmnSubHead{margin:0 0 10px;font-size:16px}
