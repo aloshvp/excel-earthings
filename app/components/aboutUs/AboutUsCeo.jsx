@@ -53,13 +53,13 @@ const AboutUsCeo = () => {
                                 className="img"
                             />
                         </em>
-                        <span ref={nameRef} data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400" data-aos-easing="ease-out-cubic" data-aos-offset="50">Auguin C P</span>
+                        <span ref={nameRef} data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" data-aos-easing="ease-out-cubic" data-aos-offset="50">Auguin C P</span>
                         <i data-aos="fade-up" data-aos-duration="600" data-aos-delay="500" data-aos-easing="ease-out-cubic" data-aos-offset="50">CEO - M/S. Excel Earthings</i>
                     </div>
 
                     {/* RIGHT CONTENT */}
                     <div className="aboutUsCeoContentRght" data-aos="fade-up" data-aos-duration="800" data-aos-delay="250" data-aos-easing="ease-out-cubic" data-aos-offset="50">
-                        <em data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300" data-aos-easing="ease-out-cubic" data-aos-offset="50">
+                        <em data-aos="fade-up" data-aos-duration="600" data-aos-delay="300" data-aos-easing="ease-out-cubic" data-aos-offset="50">
                             <svg
                                 width="24"
                                 height="24"

@@ -19,7 +19,7 @@ const AboutUsAwards = () => {
                 <div className="aboutUsAwardsGrid">
                     {awards.map((item, index) => (
                         <div className="aboutUsAwardsGridItem" key={index} data-aos="fade-up" data-aos-duration="800" data-aos-delay={400 + index * 150} data-aos-easing="ease-out-cubic" data-aos-offset="50">
-                            <em data-aos="zoom-in" data-aos-duration="600" data-aos-delay={500 + index * 150} data-aos-easing="ease-out-cubic" data-aos-offset="50">
+                            <em data-aos="fade-up" data-aos-duration="600" data-aos-delay={500 + index * 150} data-aos-easing="ease-out-cubic" data-aos-offset="50">
                                 <Image src={item.img} alt="Award" title="Award" width={400} height={400} />
                             </em>
                             <p data-aos="fade-up" data-aos-duration="600" data-aos-delay={600 + index * 150} data-aos-easing="ease-out-cubic" data-aos-offset="50">{item.text}</p>
