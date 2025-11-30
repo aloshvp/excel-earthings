@@ -38,7 +38,7 @@ const AboutUsMilestones = () => {
         </div>
 
         {/* Timeline Slider */}
-        <div className="aboutUsMilestonesSlider">
+        <div className="aboutUsMilestonesSlider" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" data-aos-easing="ease-out-cubic" data-aos-offset="50">
           <Swiper
             slidesPerView={6}
             spaceBetween={40}
@@ -62,7 +62,7 @@ const AboutUsMilestones = () => {
         </div>
 
         {/* Content Section */}
-        <div className="aboutUsMilestonesContent">
+        <div className="aboutUsMilestonesContent" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" data-aos-easing="ease-out-cubic" data-aos-offset="50">
           <div className="aboutUsMilestonesContentLft" ref={yearRef}>
             {milestones[activeIndex]?.year.split("").map((digit, i) => (
               <span key={i} className="digit animate-digit">
