@@ -1,6 +1,8 @@
 "use server";
 import { NextResponse } from 'next/server';
 import { Adminlogin } from '@lib/auth';
+import { executeProcedure } from '@lib/db';
+import { reverseString } from '@functions/reverseString';
 
 export async function POST(req) {
 
@@ -28,38 +30,18 @@ try{
                 if (!Username || !Password) {
                     return NextResponse.json({ resData: 'Username and Password are required' }, { status: 400 });
                 }
-
-
            
                 try {
+                    const Option='LOGIN';
+                    const hashedPassword=reverseString(Password);
+                    const result = await executeProcedure('CheckAdminLogin', [Option,Username, hashedPassword]);
 
-                     if(Username=="master"&&Password=="masterexcel"){
-                        const data={
-                            UserName:Username,
-                            Srno:2
-                        }
-                        await Adminlogin(data);
+                    if (result && result?.[0]?.[0]) {
+                        await Adminlogin(result[0][0]);
                         return NextResponse.json({ resData: 'success' }, { status: 200 });
-                     }else{
+                    } else {
                         return NextResponse.json({ resData: 'failed' }, { status: 200 });
-                     }
-
-                    // procedureName = 'adminlogin_sp';
-                    // const params = [
-                    //     { name: 'Option', type: sql.VarChar, value: 'login' },
-                    //     { name: 'SrNo', type: sql.Int, value: 0 },
-                    //     { name: 'Username', type: sql.VarChar, value: Username ?? null },
-                    //     { name: 'Password', type: sql.VarChar, value: Password ?? null },
-                    // ];
-
-                    // const result = await executeStoredProcedure(procedureName, params);
-
-                    // if (result && result?.[0]?.[0]) {
-                    //     await Adminlogin(result[0][0]);
-                    //     return NextResponse.json({ resData: 'success' }, { status: 200 });
-                    // } else {
-                    //     return NextResponse.json({ resData: 'failed' }, { status: 200 });
-                    // }
+                    }
                 } catch (error) {
                     console.error('Failed to fetch users:', error);
                     return NextResponse.json({ resData: 'Database error', error: error.message }, { status: 500 });
