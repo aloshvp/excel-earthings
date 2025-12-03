@@ -13,6 +13,7 @@ input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0;}
 ::-webkit-scrollbar:horizontal {height: 5px}
 ::-webkit-scrollbar-thumb {background-color: var(--black);border-radius: 5px}
 ::-webkit-scrollbar-track {background-color: transparent}
+.hiddeninput{display: none !important;}
 
 /* Firefox */
 input[type=number] {-moz-appearance: textfield;}
@@ -75,28 +76,31 @@ input[type=number] {-moz-appearance: textfield;}
 .welcomeMessage .card p{font-size: 16px;line-height: 26px;margin:0;}
 
 
-.responsive-form {}
+.responsive-form .react-datepicker-popper{position: relative;z-index: 9994;}
 .admnHead {color: #333;margin-bottom: 25px;font-size: 1.2rem;font-weight: 600;border-bottom: 1px solid #858383;padding-bottom: 5px;}
 .form-grid {display: grid;grid-template-columns: 1fr 1fr 1fr;gap: 20px;}
 .field-group {display: flex;flex-direction: column;}
 label {margin-bottom: 6px;font-size: 0.80rem;color: #444;}
+div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm){background-color: #34495e !important;}
+div:where(.swal2-container) div:where(.swal2-actions):not(.swal2-loading) .swal2-styled:hover{background-image: none;background-color: #2f4155 !important;}
 
+.responsive-form .react-datepicker__input-container input{width: 100%;}
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {padding: 10px;border: 1px solid #ccc;border-radius: 4px;font-size: 1rem;transition: border-color 0.3s, box-shadow 0.3s;}
-input:focus,textarea:focus {border-color: #007bff;outline: none;box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);}
+input:focus,textarea:focus {border-color: #34495e;outline: none;box-shadow:none;}
 textarea {resize: vertical;font-family:Open Sans, sans-serif !important;}
 .textarea-full {grid-column: 1 / -1; }
 .submit-button {display: inline-block;padding: 12px;margin-top: 30px;background-color: #34495e;color: white;border: none;border-radius: 4px;cursor: pointer;font-size: 1rem;transition: background-color 0.3s, box-shadow 0.3s;}
 .submit-button:hover {background-color: #2f4155;}    
-.submit-button:focus {outline: none;box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.4);}
+.submit-button:focus {outline: none;box-shadow: none;}
 .custom-file-upload {position: relative;overflow: hidden;display: inline-block;width: 100%;}
 .custom-file-upload input[type="file"] {position: absolute;top: 0;right: 0;min-width: 100%;min-height: 100%;z-index: 1; opacity: 0; cursor: pointer;}
 .file-display {display: flex;align-items: center;justify-content: space-between;padding: 4px 4px 4px 10px;border: 1px solid #ccc;border-radius: 4px;font-size: 1rem;transition: border-color 0.3s, box-shadow 0.3s;background-color: white;pointer-events: none; color: #888;}
 .file-display .browse-button { flex-shrink: 0;padding: 6px 12px;margin-left: 10px;background-color: #f0f0f0;border: 1px solid #ccc;border-radius: 4px;color: #333;font-size: 0.9rem;font-weight: 600;}
-.field-group:focus-within .file-display {border-color: #007bff;box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);}
-
+.field-group:focus-within .file-display {border-color: #34495e;box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);}
+.required{color: #0b59d9;}
 
 @media screen and (min-width: 1600px) {
     .right-panel {flex: 0 0 650px;}
