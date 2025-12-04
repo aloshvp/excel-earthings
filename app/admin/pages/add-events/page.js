@@ -4,6 +4,7 @@ import { format } from 'date-fns'; // Used for formatting the date before submis
 import { alert } from "@functions/alertmessage";
 import DatePickerComponent from "@functions/datepicker";
 import { ValidateFileUpload } from "app/admin/components/ValidateFileUpload";
+import Link from "next/link";
 
 
 const initialFormState = {
@@ -19,6 +20,7 @@ const AddEvents = () => {
     const [formData, setFormData] = useState(initialFormState);
     const [fileName, setFileName] = useState('Choose a file...');
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [isActive, setIsActive] = useState(true);
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -59,10 +61,6 @@ const AddEvents = () => {
                 file_upload: null,
             }));
         }
-    };
-
-    const fileNameStyle = {
-        color: fileName === 'Choose a file...' ? '#888' : '#333'
     };
 
 
@@ -130,6 +128,9 @@ const AddEvents = () => {
         }
         
         try {
+            postFormData.append('switchOption', 'ManageEvents');
+            postFormData.append('option', 'insert');
+            postFormData.append('active', isActive ? 1 : 0);
             const response = await fetch('/api/events', {
                 method: 'POST',
                 body: postFormData, 
@@ -139,7 +140,7 @@ const AddEvents = () => {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
 
-            alert('Event successfully added!');
+            alert('success','Event successfully added!');
             
             // Reset Form on success
             setFormData(initialFormState);
@@ -156,11 +157,11 @@ const AddEvents = () => {
 
     return (
         <div className="adminCmnWrap">
-            <h2 className="admnHead">Add Events</h2>
+            <div className="admnHead"><h2>Add Events</h2> <Link href={"/admin/pages/view-events"}>View Data</Link></div>  
             <form className="responsive-form" onSubmit={handleSubmit}>
                 <div className="form-grid">
                     <div className="field-group">
-                        <label htmlFor="event">Event Heading <span className="required">*</span></label>
+                        <label htmlFor="event">Event Heading <em className="required">*</em></label>
                         <input 
                             type="text" 
                             id="event" 
@@ -171,11 +172,11 @@ const AddEvents = () => {
                         />
                     </div>
                     <div className="field-group">
-                        <label htmlFor="date">Date <span className="required">*</span></label>
+                        <label htmlFor="date">Date <em className="required">*</em></label>
                         <DatePickerComponent selectedDate={formData.date} onChange={handleDateChange} placeHolder={"DD-MM-YYYY"}/>
                     </div>
                     <div className="field-group">
-                        <label htmlFor="time">Timing <span className="required">*</span></label>
+                        <label htmlFor="time">Timing <em className="required">*</em></label>
                         <input 
                             type="text" 
                             id="time" 
@@ -186,7 +187,7 @@ const AddEvents = () => {
                         />
                     </div>
                     <div className="field-group">
-                        <label htmlFor="place">Place <span className="required">*</span></label>
+                        <label htmlFor="place">Place <em className="required">*</em></label>
                         <input 
                             type="text" 
                             id="place" 
@@ -196,11 +197,22 @@ const AddEvents = () => {
                             placeholder="Place" 
                         />
                     </div>
+                    <div className="field-group textarea-full">
+                        <label htmlFor="description">Description <em className="required">*</em></label>
+                        <textarea 
+                            id="description" 
+                            name="description" 
+                            rows="4" 
+                            value={formData.description} 
+                            onChange={handleInputChange}
+                            placeholder="Type your message here..." 
+                        ></textarea>
+                    </div>
                     <div className="field-group">
-                        <label htmlFor="file_upload">Upload Image <span className="required">*</span></label>
+                        <label htmlFor="file_upload">Upload Image <em className="required">*</em></label>
                         <div className="custom-file-upload">
                             <div id="file_name_display" className="file-display">
-                                <span style={fileNameStyle}>{fileName}</span>
+                                <span>{fileName}</span>
                                 <span className="browse-button">Browse</span>
                             </div>
                             <input 
@@ -212,16 +224,11 @@ const AddEvents = () => {
                             />
                         </div>
                     </div>
-                    <div className="field-group textarea-full">
-                        <label htmlFor="description">Description <span className="required">*</span></label>
-                        <textarea 
-                            id="description" 
-                            name="description" 
-                            rows="4" 
-                            value={formData.description} 
-                            onChange={handleInputChange}
-                            placeholder="Type your message here..." 
-                        ></textarea>
+                    <div className="field-group">
+                        <label className="containerActive">Active
+                            <input type="checkbox" checked={isActive} onChange={() => setIsActive(!isActive)} />
+                            <span className="checkmark"></span>
+                        </label>
                     </div>
                 </div>
                  <input type='text' className='hiddeninput' name="hiddenfield" />
