@@ -1,0 +1,202 @@
+CREATE TABLE `procedure_error_log` (
+  `log_id` int NOT NULL AUTO_INCREMENT,
+  `procedure_name` varchar(128) NOT NULL,
+  `error_code` varchar(10) DEFAULT NULL,
+  `error_message` text NOT NULL,
+  `error_time` datetime DEFAULT CURRENT_TIMESTAMP,
+  `input_parameters` text,
+  PRIMARY KEY (`log_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
+
+CREATE DEFINER=`exceldemo_admin`@`%` PROCEDURE `LogProcedureError`(
+    IN p_proc_name VARCHAR(128),
+    IN p_err_code VARCHAR(10),
+    IN p_err_message TEXT,
+    IN p_input_params TEXT
+)
+BEGIN
+    INSERT INTO procedure_error_log (
+        procedure_name, 
+        error_code, 
+        error_message, 
+        input_parameters
+    )
+    VALUES (
+        p_proc_name, 
+        p_err_code, 
+        p_err_message, 
+        p_input_params
+    );
+END
+
+CREATE TABLE `admin_login` (
+  `srno` int NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `doe` datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`srno`),
+  UNIQUE KEY `username` (`username`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
+
+DELIMITER $$
+CREATE DEFINER=`exceldemo_admin`@`%` PROCEDURE `CheckAdminLogin`(
+	IN p_action_mode VARCHAR(15),
+    IN p_username VARCHAR(50),
+    IN p_password VARCHAR(50)
+    
+)
+BEGIN
+
+    DECLARE sql_error_code VARCHAR(10);
+    DECLARE sql_error_message TEXT;
+    
+
+    DECLARE EXIT HANDLER FOR SQLEXCEPTION
+    BEGIN
+
+        GET DIAGNOSTICS CONDITION 1
+            sql_error_code = RETURNED_SQLSTATE,
+            sql_error_message = MESSAGE_TEXT;
+            
+
+        CALL LogProcedureError(
+            'CheckAdminLogin', 
+            sql_error_code,
+            sql_error_message,
+            CONCAT('User:', p_username, ', Mode:', p_action_mode)
+        );
+        
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'A database error occurred and has been logged.';
+    END;
+
+
+    IF p_action_mode = 'LOGIN' THEN
+        SELECT srno, password AS hashed_password FROM admin_login WHERE username = p_username and password=p_password;
+            
+    ELSEIF p_action_mode = 'SELECT_ALL' THEN
+        SELECT srno, username, doe FROM admin_login ORDER BY srno;
+            
+    ELSE
+        -- Log the custom error using the standard procedure
+        CALL LogProcedureError(
+            'AdminAction_Logger_Example', 
+            '45001', 
+            'Invalid action mode received.', 
+            CONCAT('Mode:', p_action_mode)
+        );
+        SIGNAL SQLSTATE '45001' SET MESSAGE_TEXT = 'Invalid action mode.';
+    END IF;
+    
+END$$
+DELIMITER ;
+
+
+CREATE TABLE `events` (
+  `srno` int NOT NULL AUTO_INCREMENT,
+  `event_heading` varchar(255) NOT NULL,
+  `event_date` date NOT NULL,
+  `event_time` varchar(100) NOT NULL,
+  `place` varchar(255) NOT NULL,
+  `description` text NOT NULL,
+  `image_file_path` varchar(255) NOT NULL,
+  `active` tinyint(1) DEFAULT '1',
+  `is_delete` tinyint(1) DEFAULT '0',
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`srno`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `ManageEvents`(
+    IN action_option VARCHAR(50),
+    IN p_srno INT,
+    IN p_event_heading VARCHAR(255),
+    IN p_event_date DATE,
+    IN p_event_time VARCHAR(100),
+    IN p_place VARCHAR(255),
+    IN p_description TEXT,
+    IN p_image_file_path VARCHAR(255),
+    IN p_active BOOLEAN
+)
+BEGIN
+
+
+    DECLARE sql_error_code VARCHAR(10);
+    DECLARE sql_error_message TEXT;
+    
+
+    DECLARE EXIT HANDLER FOR SQLEXCEPTION
+    BEGIN
+        -- Get the details of the error that occurred
+        GET DIAGNOSTICS CONDITION 1
+            sql_error_code = RETURNED_SQLSTATE,
+            sql_error_message = MESSAGE_TEXT;
+            
+        -- Log the error using the external procedure
+        CALL LogProcedureError(
+            'HandleEventSections', -- Name of the current procedure
+            sql_error_code,
+            sql_error_message,
+            CONCAT('Action:', action_option, ', SRNO:', IFNULL(p_srno, 'NULL'), ', Heading:', IFNULL(p_event_heading, 'NULL'))
+        );
+        
+        -- Signal a generic error back to the caller (e.g., your Next.js API)
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'A database error occurred and has been logged.';
+    END;
+
+
+    IF action_option = 'selectall' THEN
+        SELECT 
+            srno, event_heading, event_date, event_time, 
+            place, description, image_file_path, active, 
+            created_at, updated_at
+        FROM events
+        WHERE is_delete = FALSE
+        ORDER BY event_date DESC, created_at DESC;
+
+    ELSEIF action_option = 'selectactive' THEN
+        SELECT 
+            srno, event_heading, event_date, event_time, 
+            place, description, image_file_path, active, 
+            created_at, updated_at
+        FROM events
+        WHERE is_delete = FALSE AND active = TRUE
+        ORDER BY event_date DESC, created_at DESC;
+
+
+    ELSEIF action_option = 'insert' THEN
+        INSERT INTO events (
+            event_heading, event_date, event_time, place, 
+            description, image_file_path, active
+        )
+        VALUES (
+            p_event_heading, p_event_date, p_event_time, p_place, 
+            p_description, p_image_file_path, p_active
+        );
+        SELECT LAST_INSERT_ID() AS srno;
+        
+
+    ELSEIF action_option = 'updaterecord' THEN
+        UPDATE events
+        SET 
+            event_heading = p_event_heading,
+            event_date = p_event_date,
+            event_time = p_event_time,
+            place = p_place,
+            description = p_description,
+            image_file_path = p_image_file_path,
+            active = p_active
+        WHERE srno = p_srno AND is_delete = FALSE;
+
+
+    ELSEIF action_option = 'softdeleterecord' THEN
+        UPDATE events
+        SET 
+            is_delete = TRUE
+        WHERE srno = p_srno;
+
+
+    ELSE
+        SELECT 'Error: Invalid action option provided.' AS result;
+    END IF;
+
+END
