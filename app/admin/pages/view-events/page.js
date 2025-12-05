@@ -86,17 +86,17 @@ const viewEventsPage = () => {
                 center: "true",
                 width: "14%",
                 cell: row => (
-                    row.Imgfile ? (
+                    row.image_file_path ? (
                         <a
-                            href={`${process.env.NEXT_PUBLIC_ACCURL}/files/events/${row.image_file_path}`}
+                            href={`/files/events/${row.image_file_path}`}
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <i className="fa fa-eye" title="View"></i>
+                            <i className="iconEye" title="View"></i>
                         </a>
                     ) : (
                         <i
-                            className="fa fa-eye text-muted"
+                            className="iconEye not"
                             title="No file available"
                             style={{ cursor: "not-allowed", pointerEvents: "none" }}
                         ></i>
@@ -109,7 +109,7 @@ const viewEventsPage = () => {
                 width: "8%",
                 cell: row => (
                     <a role="button" onClick={() => GridRow_Active(row.srno, row.active)}>
-                        <i className={row.Active === 1 ? 'fa fa-check' : 'fa fa-times text-danger'}
+                        <i className={row.Active === 1 ? 'iconActive' : 'iconActive not'}
                             title={row.Active === 1 ? 'Active' : 'Inactive'}></i>
                     </a>
                 )
@@ -121,10 +121,10 @@ const viewEventsPage = () => {
                 cell: row => (
                     <>
                         <a className="m-1" href={`${process.env.NEXT_PUBLIC_ACCURL}/admin/pages/add-evetns?ID=${row.srno}`}>
-                            <i className="fa fa-edit" title="Edit"></i>
+                            <i className="iconEdit" title="Edit"></i>
                         </a>
                         <a className="m-1" role="button" onClick={() => GridRow_Delete(row.srno)}>
-                            <i className="fa fa-trash" title="Delete"></i>
+                            <i className="iconDelete" title="Delete"></i>
                         </a>
                     </>
                 ),

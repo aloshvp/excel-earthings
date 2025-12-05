@@ -141,7 +141,12 @@ textarea {resize: vertical;font-family:Open Sans, sans-serif !important;}
 @-webkit-keyframes shimanim {0% {background-position: -100% 0;}100% {background-position: 100% 0;}}
 @keyframes shimanim { 0% { background-position: -1200px 0;}100% { background-position: 1200px 0;}}
 /*shimmer*/
-
+.iconEye{display: inline-block;width: 20px;height: 20px;background-image: url('../images/admin/eye.svg');background-repeat: no-repeat;background-size: contain;}
+.iconEye.not{background-image: url('../images/admin/slash.svg');}
+.iconEdit{display: inline-block;width: 20px;height: 20px;background-image: url('../images/admin/edit.svg');background-repeat: no-repeat;background-size: contain;}
+.iconDelete{display: inline-block;width: 20px;height: 20px;background-image: url('../images/admin/trash.svg');background-repeat: no-repeat;background-size: contain;}
+.iconActive{display: inline-block;width: 20px;height: 20px;background-image: url('../images/admin/check.svg');background-repeat: no-repeat;background-size: contain;}
+.iconActive.not{background-image: url('../images/admin/x.svg');}
 @media screen and (min-width: 1600px) {
     .right-panel {flex: 0 0 650px;}
     .login-container{max-width: 500px;}
