@@ -2,11 +2,17 @@
 import "@styles/staticbundles.scss";
 import CommonBanner from '@common/CommonBanner';
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { faqData } from '@utils/staticData';
 
 const Page = () => {
     const [openIndex, setOpenIndex] = useState(0);
+
+    useEffect(() => {
+        AOS.init();
+    }, []);
 
     const toggleFaq = (index) => {
         setOpenIndex(prev => (prev === index ? -1 : index));
@@ -25,9 +31,8 @@ const Page = () => {
                             <div
                                 key={idx}
                                 className={`faqItem ${openIndex === idx ? 'open' : ''}`}
-                                data-aos="fade-up" data-aos-delay={idx * 100 + 400} data-aos-duration="600" data-aos-easing="ease-out-cubic" data-aos-offset="50" data-aos-once="true"
                             >
-                                <div className="faqHeading" onClick={() => toggleFaq(idx)} data-aos="fade-up" data-aos-delay={idx * 100 + 450} data-aos-duration="500" data-aos-easing="ease-out-cubic" data-aos-offset="50" data-aos-once="true">
+                                <div className="faqHeading" onClick={() => toggleFaq(idx)}>
                                     <h3>{item.heading}</h3>
                                     <span
                                         className="faqToggle"
@@ -47,7 +52,6 @@ const Page = () => {
                                 </div>
                                 <div
                                     className="faqContent"
-                                    data-aos="fade-up" data-aos-delay={idx * 100 + 600} data-aos-duration="400" data-aos-easing="ease-out-cubic" data-aos-offset="50" data-aos-once="true"
                                     style={{
                                         maxHeight: openIndex === idx ? '500px' : '0',
                                         opacity: openIndex === idx ? 1 : 0,
