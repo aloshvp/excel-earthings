@@ -22,7 +22,7 @@ const OrderManagementPage = () => {
 
   return (
     <div className="adminCmnWrap">
-        <h2 className="admnHead">Common Form</h2>
+        <div className="admnHead"><h2>Common Form</h2></div>
         <form className="responsive-form">
             <div className="form-grid">
 

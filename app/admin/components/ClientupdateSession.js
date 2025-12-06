@@ -1,23 +1,29 @@
 'use client';
 import { updateSession } from "@lib/auth";
 import { useEffect } from "react";
-import { redirect,usePathname } from "next/navigation";
-
+import { redirect, usePathname } from "next/navigation";
 
 export function ClientUpdateSessionCtrl() {
 
-   const pathname = usePathname();
+    const pathname = usePathname();
+    const LOGIN_PATH = '/admin/login'; 
 
-   async function setUpadateSession(){
-      let result=await updateSession();
-      if(!result){
-         redirect('/admin/login');
-      }
-   }
+    async function setUpadateSession() {
+        if (pathname === LOGIN_PATH) {
+            return;
+        }
+        
+        let result = await updateSession();
 
-   useEffect(() => {
-      setUpadateSession();
-   }, [pathname]);
+        if (!result) {
+            console.log("Session update failed. Redirecting...");
+            redirect(LOGIN_PATH);
+        }
+    }
 
-   return <></>;
+    useEffect(() => {
+        setUpadateSession();
+    }, [pathname]);
+
+    return <></>;
 }
