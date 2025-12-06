@@ -34,7 +34,7 @@
     .aboutUsGlanceWrap{position:sticky;top:80px;margin-top:0 ;}
     .aboutUsMilestonesWrap{position:sticky;top:80px;height: 100vh;margin-top:0 ;}
     .aboutUsMissionWrap{position:sticky;top:80px;height:100vh;margin-top:0 ;}
-    .aboutUsCeoWrap{position:sticky;top:80px;height:100vh;margin-top:0 ;}
+    .aboutUsCeoWrap{position:sticky;top:80px;height:100vh;margin-top:-100px ;}
     .aboutUsAwardsWrap{position:sticky;top:80px;height:100vh;margin-top:0 ;}
     }
 
