@@ -114,7 +114,7 @@ textarea {resize: vertical;font-family:Open Sans, sans-serif !important;}
 
 
 /*AdminTable*/
-.AdminDataTbl{width: 100%;}
+.AdminDataTbl{width: 100%;background-color: #ffff;padding: 10px;}
 .AdminDataTbl .rdt_Table .kntihR{display: block;padding:10px;margin:20px 0 0 ;text-align:center;border-radius:6px;border:1px solid #e9e7e7;background-color: #f3f3f3;color:var(--red);}
 .AdminDataTbl .rdt_TableRow{border-left: 1px solid #ddd;}
 .AdminDataTbl .rdt_TableCol{background-color: #f8f8f8;font-weight: 700;color: #616161;padding: 10px;font-size: 14px;border-bottom-width: 1px;border: 0;border-bottom: 3px solid #ddd;vertical-align: top;}

@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { format } from 'date-fns'; // Used for formatting the date before submission
+import { format } from 'date-fns'; 
 import { alert } from "@functions/alertmessage";
 import DatePickerComponent from "@functions/datepicker";
 import { ValidateFileUpload } from "app/admin/components/ValidateFileUpload";
@@ -157,7 +157,7 @@ const AddEvents = () => {
 
     return (
         <div className="adminCmnWrap">
-            <div className="admnHead"><h2>Add Events</h2> <Link href={"/admin/pages/view-events"}>View Data</Link></div>  
+            <div className="admnHead"><h2>Add Events</h2> <Link href={"/admin/pages/view-events"}>VIEW DATA</Link></div>  
             <form className="responsive-form" onSubmit={handleSubmit}>
                 <div className="form-grid">
                     <div className="field-group">

@@ -42,7 +42,7 @@ export async function POST(req) {
                 const event_time = formData?.get('time') ?? null;
                 const event_place = formData?.get('place') ?? null;
                 const event_description = formData?.get('description') ?? null;
-                const event_active = formData?.get('active') === '1' ? 1 : 0;
+                const event_active = formData?.get('active');
                 
                 const imageFile = formData?.get('imageFile'); // The new file object from FormData
                 const old_image_file_path = formData?.get('old_image_file_path') ?? null; // Old file path string
@@ -52,7 +52,7 @@ export async function POST(req) {
                 if ((option === 'insert' || option === 'update') && (!event_heading || !event_date)) {
                     return NextResponse.json({ resData: 'Event Heading and Date are required.' }, { status: 400 });
                 }
-                if ((option === 'update' || option === 'softdeleterecord' || option === 'updatestatus') && !srno) {
+                if ((option === 'update' || option === 'delete' || option === 'updatestatus') && !srno) {
                     return NextResponse.json({ resData: 'SrNo is required for this operation.' }, { status: 400 });
                 }
                 
@@ -117,7 +117,7 @@ export async function POST(req) {
                         image_file_path,
                         event_active]);
 
-                    if (['insert', 'update', 'softdeleterecord', 'updatestatus'].includes(option)) {
+                    if (['insert', 'update', 'delete', 'updatestatus'].includes(option)) {
                         return NextResponse.json({ resData: 'success' }, { status: 200 });
                     } else {
                         return NextResponse.json({ resData: ResultData }, { status: 200 });
